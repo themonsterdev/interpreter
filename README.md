@@ -1,6 +1,6 @@
 # Interpreter
 
-![https://fr.wikipedia.org/wiki/Diagramme_syntaxique](./doc/interpreter-diagram.png)
+![https://fr.wikipedia.org/wiki/Diagramme_syntaxique](./docs/interpreter-diagram.png)
 
 ## Grammaire [EBNF]
 
@@ -31,7 +31,7 @@ print identifier
 
 ## AST (Arbre de la syntaxe abstraite)
 
-![https://fr.wikipedia.org/wiki/Diagramme_syntaxique](./doc/ast-diagram.png)
+![https://fr.wikipedia.org/wiki/Diagramme_syntaxique](./docs/ast-diagram.png)
 
 ## Usage
 
