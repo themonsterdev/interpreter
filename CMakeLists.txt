@@ -1,18 +1,36 @@
-cmake_minimum_required(VERSION 3.21.1)  # CMake version check
+cmake_minimum_required(VERSION 3.22.1)  # CMake version check
 project(interpreter)                    # Create project 'interpreter'
 
-set(CMAKE_CXX_STANDARD 14)              # Enable c++17 standard
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /W4")
-
-include(lib/tokenizer/CMakeLists.txt)
-
-add_executable(interpreter 
-    src/main.cpp
+find_package(Doxygen
+    REQUIRED dot
+    OPTIONAL_COMPONENTS mscgen dia
 )
 
-target_include_directories(interpreter
-    PUBLIC lib/tokenizer/include/
-)
-target_link_libraries(interpreter
-    tokenizer
-)
+if (DOXYGEN_FOUND)
+    set(DOXYGEN_GENERATE_HTML YES)
+    set(DOXYGEN_GENERATE_MAN NO)
+    set(DOXYGEN_OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}/doc")
+    set(DOXYGEN_PROJECT_NAME "Interprèteur")
+    set(DOXYGEN_PROJECT_BRIEF "Construire avec c++")
+    set(DOXYGEN_PROJECT_NUMBER "1.0.0")
+    set(DOXYGEN_OUTPUT_LANGUAGE "French")
+
+    set(DOXYGEN_FILES
+        lib/expression/include
+        lib/parser/include
+        lib/statement/include
+        lib/tokenizer/include
+    )
+
+    doxygen_add_docs(
+        doxygen             # target    
+        ${DOXYGEN_FILES}    # directory
+        COMMENT "Generate lib doc pages"
+    )
+endif()
+
+set(CMAKE_CXX_STANDARD "20")              # Enable c++20 standard
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /W4 /utf-8")
+
+add_subdirectory(lib)
+add_subdirectory(src)

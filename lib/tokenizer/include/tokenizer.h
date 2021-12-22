@@ -1,23 +1,50 @@
 #ifndef TOKENIZER_H
 #define TOKENIZER_H
 
-#include <vector>
-
 #include "token.h"
 
 using namespace std;
 
-class Tokenizer {
+/**
+ * Classe Tokenizer
+ * 
+ * Cette classe fais une analyse lexical sur une chaine de caractères données.
+ * 
+ * @see https://fr.wikipedia.org/wiki/Analyse_lexicale
+ */
+class Tokenizer
+{
 public:
 
-    vector<Token> getTokens( const char* characters );
+    /**
+     * Imprime les tokens générer
+     *
+     * @return void
+     */
+    static void printTokens(TokenList tokens);
 
-    Token getWordToken( const char character, int *i );
+    /**
+     * Constructeur Tokenizer
+     * 
+     * @param string les caractère d'entrée du program/script
+     */
+    Tokenizer( string characters );
+
+    /**
+     * Récupèrer les tokens de la chaine de characters.
+     * 
+     * @return vector<Token> les tokens générer
+     */
+    TokenList getTokens();
 
 private:
 
-    vector<Token> m_tokens;
-};
+    Token getWordToken( int& i );
+    Token getNumberToken( int& i );
+    Token getOperatorToken( const char character, int& i );
+    string getStringLiteralToken( string &characters, int& i );
 
+    string m_characters;
+};
 
 #endif
