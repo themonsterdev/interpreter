@@ -9,7 +9,7 @@ find_package(Doxygen
 if (DOXYGEN_FOUND)
     set(DOXYGEN_GENERATE_HTML YES)
     set(DOXYGEN_GENERATE_MAN NO)
-    set(DOXYGEN_OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}/doc")
+    set(DOXYGEN_OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}/docs")
     set(DOXYGEN_PROJECT_NAME "Interprèteur")
     set(DOXYGEN_PROJECT_BRIEF "Construire avec c++")
     set(DOXYGEN_PROJECT_NUMBER "1.0.0")
