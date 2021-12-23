@@ -2,9 +2,10 @@
 
 [Documentation (Code)](https://themonsterdev.github.io/interpreter)
 
-- Déclaration de variable (`var`).
-- Opérateurs arithmétiques (`1 + 1`).
-- Imprimer le résultat (`print`).
+- Déclaration de variable (`'var'`).
+- Assignation de variable (`'var identfier = {expression}' | 'identfier = {expression}'`).
+- Opérateurs arithmétiques (`'*' | '+' | '-' | '/' | '%'`).
+- Imprimer le résultat (`'print'`).
 
 ![https://fr.wikipedia.org/wiki/Diagramme_syntaxique](./docs/interpreter-diagram.png)
 
