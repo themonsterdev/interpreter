@@ -29,6 +29,21 @@ Digit
 ```js
 var identifier = 1 + 1
 print identifier
+
+var identifier = 2 - 1
+print identifier
+
+var identifier = 2 * 3
+print identifier
+
+var identifier = 6 / 3
+print identifier
+
+var identifier = 6 % 2
+print identifier
+
+var identifier = 1 + 1 - 1 * 2 / 2 % 2
+print identifier
 ```
 
 ## AST (Arbre de la syntaxe abstraite)
