@@ -2,7 +2,9 @@
 
 [Documentation (Code)](https://themonsterdev.github.io/interpreter)
 
-- Opérateurs arithmétiques
+- Déclaration de variable (`var`).
+- Opérateurs arithmétiques (`1 + 1`).
+- Imprimer le résultat (`print`).
 
 ![https://fr.wikipedia.org/wiki/Diagramme_syntaxique](./docs/interpreter-diagram.png)
 
