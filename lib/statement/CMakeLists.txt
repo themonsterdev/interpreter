@@ -1,6 +1,13 @@
 add_library(Statement STATIC
+    # Statement
     include/Statement.h
     src/Statement.cpp
+    # AssignmentStatement
+    include/AssignmentStatement.h
+    src/AssignmentStatement.cpp
+    # PrintStatement
+    include/PrintStatement.h
+    src/PrintStatement.cpp
 )
 
 target_include_directories(Statement

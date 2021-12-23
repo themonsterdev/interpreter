@@ -6,7 +6,6 @@
 
 #include "Token.h"
 #include "Context.h"
-#include "Expression.h"
 
 using namespace std;
 
@@ -22,32 +21,6 @@ public:
 	virtual void Execute( Context& context ) = 0;
 
 	virtual ~Statement() {};
-};
-
-class AssignmentStatement : public Statement
-{
-public:
-	AssignmentStatement( Context& context, TokenIt& it );
-
-	virtual void Execute( Context& context );
-
-private:
-
-	string m_variable;
-
-	Expression::ExprPtr m_expression;
-};
-
-class PrintStatement : public Statement
-{
-public:
-
-	PrintStatement( TokenIt& it );
-	virtual void Execute( Context& context );
-
-private:
-
-	Expression::ExprPtr m_expression;
 };
 
 typedef shared_ptr<Statement> StatementPtr;
