@@ -44,14 +44,14 @@ public:
     Token( Token::Type type );
 
     /**
-     * Définit le jeton de type
+     * Définit le type du jeton
      * 
      * @return void
      */
     void SetType(Token::Type type );
 
     /**
-     * obtenir le jeton de type
+     * obtenir le type du jeton
      * 
      * @return Token
      */
@@ -66,7 +66,7 @@ public:
     void SetData(const char data);
 
     /**
-     * obtenir les données du jeton
+     * Obtenir les données du jeton
      *
      * @return Token
      */
