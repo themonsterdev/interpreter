@@ -2,6 +2,8 @@
 
 [Documentation (Code)](https://themonsterdev.github.io/interpreter)
 
+- Opérateurs arithmétiques
+
 ![https://fr.wikipedia.org/wiki/Diagramme_syntaxique](./docs/interpreter-diagram.png)
 
 ## Grammaire [EBNF]
