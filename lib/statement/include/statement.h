@@ -17,9 +17,9 @@ class Statement
 {
 public:
 
-	static Statement* create(TokenIt& it);
+	static Statement* create( Context& context, TokenIt& it );
 
-	virtual void Execute(Context& context) = 0;
+	virtual void Execute( Context& context ) = 0;
 
 	virtual ~Statement() {};
 };
@@ -27,9 +27,9 @@ public:
 class AssignmentStatement : public Statement
 {
 public:
-	AssignmentStatement(TokenIt& it);
+	AssignmentStatement( Context& context, TokenIt& it );
 
-	virtual void Execute(Context& context);
+	virtual void Execute( Context& context );
 
 private:
 
@@ -42,8 +42,8 @@ class PrintStatement : public Statement
 {
 public:
 
-	PrintStatement(TokenIt& it);
-	virtual void Execute(Context& context);
+	PrintStatement( TokenIt& it );
+	virtual void Execute( Context& context );
 
 private:
 

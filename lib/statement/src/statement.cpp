@@ -4,7 +4,7 @@
 
 // Statement
 
-Statement* Statement::create(TokenIt& it)
+Statement* Statement::create( Context& context, TokenIt& it )
 {
 	Token::Type tokenType = it->GetType();
 	string tokenData = it->GetData();
@@ -15,7 +15,7 @@ Statement* Statement::create(TokenIt& it)
 		{
 			if ( tokenData == "var" )
 			{
-				return new AssignmentStatement( it );
+				return new AssignmentStatement( context, it );
 			}
 			else if ( tokenData == "print" )
 			{
@@ -25,6 +25,7 @@ Statement* Statement::create(TokenIt& it)
 		break;
 
 	case Token::Type::Identifier:
+		return new AssignmentStatement(context, it);
 		break;
 
 	case Token::Type::Operator:
@@ -35,13 +36,13 @@ Statement* Statement::create(TokenIt& it)
 	}
 
 	throw exception(
-		(string("Unexpected statement: ") + Token::GetStringType(tokenType) + " " + tokenData).c_str()
+		(string("Erreur: Déclaration inattendue, ") + Token::GetStringType(tokenType) + " " + tokenData).c_str()
 	);
 }
 
 // AssignmentStatement
 
-AssignmentStatement::AssignmentStatement(TokenIt& it)
+AssignmentStatement::AssignmentStatement(Context& context, TokenIt& it)
 	: m_expression( nullptr )
 {
 	Token::Type tokenType = it->GetType();
@@ -52,16 +53,50 @@ AssignmentStatement::AssignmentStatement(TokenIt& it)
 		// Expect
 		if ( tokenData != "var" )
 		{
-			throw exception( "error 1" );
+			throw exception( "Erreur: Le jeton attendu doit être un 'var' " );
 		}
 
 		it++;
 		if ( it->GetType() != Token::Type::Identifier )
 		{
-			throw exception( "error 2" );
+			throw exception(
+				(string("Erreur de syntaxe, token '") + tokenData + "' inattendu").c_str()
+			);
+		}
+
+		tokenData = it->GetData();
+		if (context.GetValue(tokenData) != -1)
+		{
+			throw exception(
+				(string("Erreur: Redéfinition de la variable ") + tokenData).c_str()
+			);
 		}
 
 		m_variable = it->GetData();
+		context.SetValue(m_variable, 0);
+
+		it++;
+		if (it->GetType() != Token::Type::Operator || it->GetData() != "=")
+		{
+			it--;
+			return;
+		}
+
+		it++;
+		m_expression = Expression::Parse(it);
+	}
+	else if (tokenType == Token::Type::Identifier)
+	{
+		long identifierValue = context.GetValue(tokenData);
+		if (identifierValue == -1)
+		{
+			throw exception(
+				(string("Erreur: variable ") + tokenData + " indéfinit").c_str()
+			);
+		}
+
+		m_variable = it->GetData();
+		context.SetValue(m_variable, 0);
 
 		it++;
 		if (it->GetType() != Token::Type::Operator || it->GetData() != "=")
@@ -90,7 +125,7 @@ PrintStatement::PrintStatement(TokenIt& it)
 	// Expect
 	if ( tokenType != Token::Type::Keyword || tokenData != "print" )
 	{
-		throw exception("error 1");
+		throw exception("Erreur: Le token doit être de type 'Token::Type::Keyword' et les donnée égale = 'print'");
 	}
 
 	it++;

@@ -40,31 +40,9 @@ bool IsOperator( char character )
         || character == '+'
         || character == '-'
         || character == '/'
-        || character == '<'
         || character == '='
-        || character == '>'
-        || character == '^'
         || character == '%';
 }
-
-class LexicalSyntaxError : public exception
-{
-public:
-    LexicalSyntaxError(const string& err) throw()
-        : m_Err(err)
-    {}
-
-    virtual ~LexicalSyntaxError() throw()
-    {}
-
-    virtual const char* what() const throw()
-    {
-        return m_Err.c_str();
-    }
-private:
-    string m_Err;
-
-};
 
 // Definitions des fonctions de la classe Tokenizer
 
@@ -118,8 +96,8 @@ TokenList Tokenizer::GetTokens()
             }
             else
             {
-                throw LexicalSyntaxError(
-                    string("Unexpected token: ") + character
+                throw exception(
+                    (string("Unexpected token: ") + character).c_str()
                 );
             }
 

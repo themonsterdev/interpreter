@@ -6,21 +6,27 @@
 
 ## Grammaire [EBNF]
 
-```bnf
+```ebnf
 Statement
     ::= print ExpressionList
     | var Identifier
 
 ExpressionList
-    ::= ([a-zA-Z_]+ | Expression)
+    ::= Identifier
+    | ArithmeticOperatorExpression
+
+ArithmeticOperatorExpression
+    ::= Number '*' Number
+    | Number '+' Number
+    | Number '-' Number
+    | Number '/' Number
+    | Number '=' Number
+    | Number '%' Number
 
 Identifier
     ::= [a-zA-Z_][a-zA-Z0-9_]+
 
 Number
-    ::= Digit Digit+
-
-Digit
     ::= [0-9]+
 ```
 

@@ -40,26 +40,27 @@ TokenList GetToken(const char* filepath)
     return tokens;
 }
 
-StatementList GetStatements( TokenList tokens )
+StatementList GetStatements( Context& context, TokenList tokens )
 {
     StatementList statements;
+    Statement* pStatement;
 
     for (
         TokenList::iterator it = tokens.begin();
         it != tokens.end();
         ++it
     ) {
-        statements.push_back(
-            StatementPtr( Statement::create(it) )
-        );
+        pStatement = Statement::create( context, it );
+        if ( pStatement != nullptr )
+        {
+            statements.push_back( StatementPtr( pStatement ) );
+        }
     }
     return statements;
 }
 
-void Execute(StatementList statements)
+void Execute( Context& context, StatementList statements )
 {
-    Context context;
-
     StatementList::iterator itEnd = statements.end();
 
     for (
@@ -82,8 +83,10 @@ int main(const int argc, const char* argv[])
     try
     {
         TokenList tokens = GetToken( argv[1] );
-        StatementList statements = GetStatements( tokens );
-        Execute( statements );
+
+        Context context;
+        StatementList statements = GetStatements( context, tokens );
+        Execute( context, statements );
     }
     catch ( exception e )
     {

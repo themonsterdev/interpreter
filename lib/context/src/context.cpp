@@ -5,7 +5,7 @@ long Context::GetValue(string variable)
 	long nResult;
 	VarMap::iterator it = this->m_symbols.find(variable);
 	if (it == this->m_symbols.end())
-		nResult = this->SetValue(variable, 0);
+		nResult = this->SetValue(variable, -1);
 	else
 		nResult = it->second;
 
