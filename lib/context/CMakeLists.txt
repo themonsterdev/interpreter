@@ -1,8 +1,8 @@
-add_library(context STATIC
-    include/context.h
-    src/context.cpp
+add_library(Context STATIC
+    include/Context.h
+    src/Context.cpp
 )
 
-target_include_directories(context
+target_include_directories(Context
     PUBLIC include/
 )

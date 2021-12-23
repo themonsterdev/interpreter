@@ -1,17 +1,17 @@
-add_library(statement STATIC
-    include/statement.h
-    src/statement.cpp
+add_library(Statement STATIC
+    include/Statement.h
+    src/Statement.cpp
 )
 
-target_include_directories(statement
+target_include_directories(Statement
     PUBLIC include/
-    PUBLIC lib/context/include/
-    PUBLIC lib/expression/include/
-    PUBLIC lib/tokenizer/include/
+    PUBLIC lib/Context/include/
+    PUBLIC lib/Expression/include/
+    PUBLIC lib/Tokenizer/include/
 )
 
-target_link_libraries(statement
-    context
-    expression
-    tokenizer
+target_link_libraries(Statement
+    Context
+    Expression
+    Tokenizer
 )

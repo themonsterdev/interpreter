@@ -1,4 +1,4 @@
-#include "context.h"
+#include "Context.h"
 
 long Context::getValue(string variable)
 {

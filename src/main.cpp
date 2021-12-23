@@ -3,19 +3,12 @@
 #include <sstream>
 
 // Tokenizer
-#include "tokenizer.h"
-#include "token.h"
+#include "Tokenizer.h"
+#include "Token.h"
 
-#include "statement.h"
+#include "Statement.h"
 
-string toString(ostream& str)
-{
-    ostringstream ss;
-    ss << str.rdbuf();
-    return ss.str();
-}
-
-TokenList getToken(const char* filepath)
+string getStringFromFile(const char* filepath)
 {
     string programText;
     ifstream is(filepath);
@@ -35,9 +28,13 @@ TokenList getToken(const char* filepath)
         cout << "Could not open file " << filepath << endl;
     }
 
-    string characters(programText);
+    return programText;
+}
 
-    Tokenizer tokenizer( characters );
+TokenList getToken(const char* filepath)
+{
+    string programText = getStringFromFile(filepath);
+    Tokenizer tokenizer(programText);
     TokenList tokens = tokenizer.getTokens();
     // Tokenizer::printTokens( tokens );
     return tokens;

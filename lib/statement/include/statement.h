@@ -4,9 +4,9 @@
 #include <thread>
 #include <list>
 
-#include "token.h"
-#include "context.h"
-#include "expression.h"
+#include "Token.h"
+#include "Context.h"
+#include "Expression.h"
 
 using namespace std;
 

@@ -1,7 +1,7 @@
 #ifndef TOKENIZER_H
 #define TOKENIZER_H
 
-#include "token.h"
+#include "Token.h"
 
 using namespace std;
 

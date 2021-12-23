@@ -1,4 +1,10 @@
-#include "expression.h"
+#include "Expression.h"
+#include "TerminalExpression.h"
+#include "AdditionExpression.h"
+#include "SubtractionExpression.h"
+#include "MultiplicationExpression.h"
+#include "DivisionExpression.h"
+#include "ModuloExpression.h"
 
 #include <iostream>
 
@@ -81,110 +87,4 @@ Expression::ExprPtr Expression::parse(TokenIt& it)
 	}
 
 	return ExprPtr(pExpression);
-}
-
-// TerminalExpression
-
-TerminalExpression::TerminalExpression(string name)
-	: m_name(name)
-{}
-
-long TerminalExpression::evaluate(Context& context)
-{
-	return context.getValue(m_name);
-}
-
-// NonTerminalExpression
-
-NonTerminalExpression::NonTerminalExpression(Expression* left, Expression* right)
-	: m_left(left)
-	, m_right(right)
-{}
-
-
-Expression* NonTerminalExpression::getRight()
-{
-	return m_right;
-}
-
-void NonTerminalExpression::setRight(Expression* right)
-{
-	m_right = right;
-}
-
-// AdditionExpression
-
-AdditionExpression::AdditionExpression(Expression* left, Expression* right)
-	: ::NonTerminalExpression(left, right)
-{}
-
-long AdditionExpression::evaluate(Context& context)
-{
-	return m_left->evaluate(context) + m_right->evaluate(context);
-}
-
-// SubtractionExpression
-
-SubtractionExpression::SubtractionExpression(Expression* left, Expression* right)
-	: ::NonTerminalExpression(left, right)
-{}
-
-long SubtractionExpression::evaluate(Context& context)
-{
-	return m_left->evaluate(context) - m_right->evaluate(context);
-}
-
-// MultiplicationExpression
-
-MultiplicationExpression::MultiplicationExpression(Expression* left, Expression* right)
-	: ::NonTerminalExpression(left, right)
-{}
-
-long MultiplicationExpression::evaluate(Context& context)
-{
-	return m_left->evaluate(context) * m_right->evaluate(context);
-}
-
-// DivisionExpression
-
-DivisionExpression::DivisionExpression(Expression* left, Expression* right)
-	: ::NonTerminalExpression(left, right)
-{}
-
-long DivisionExpression::evaluate(Context& context)
-{
-	return m_left->evaluate(context) / m_right->evaluate(context);
-}
-
-// ModuloExpression
-
-ModuloExpression::ModuloExpression(Expression* left, Expression* right)
-	: ::NonTerminalExpression(left, right)
-{}
-
-long ModuloExpression::evaluate(Context& context)
-{
-	return m_left->evaluate(context) % m_right->evaluate(context);
-}
-
-// Number
-
-Number::Number(long number)
-	: m_number(number)
-{}
-
-long Number::evaluate(Context& context)
-{
-	return m_number;
-}
-
-// Identifier
-
-Identifier::Identifier(string identifier)
-	: m_identifier(identifier)
-{}
-
-long Identifier::evaluate(Context& context)
-{
-	return context.getValue(m_identifier);
 }

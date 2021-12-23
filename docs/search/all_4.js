@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['identifier_0',['Identifier',['../class_identifier.html',1,'Identifier'],['../class_token.html#acf70e9411196c602738c3ed2428c7137a29ee5d1ebcc033234938a5234f1f2075',1,'Token::Identifier()']]]
+  ['getdata_0',['getData',['../class_token.html#a3b041e78eaf1b9a5d38561300cb01001',1,'Token']]],
+  ['gettokens_1',['getTokens',['../class_tokenizer.html#a0c3e3e76a45841bb6c653dfdf9679738',1,'Tokenizer']]],
+  ['gettype_2',['getType',['../class_token.html#abcb763ac98144b5dbfc9a0ce5b1faf09',1,'Token']]]
 ];

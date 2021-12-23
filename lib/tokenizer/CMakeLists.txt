@@ -1,10 +1,10 @@
-add_library(tokenizer STATIC
-    include/token.h
-    src/token.cpp
-    include/tokenizer.h
-    src/tokenizer.cpp
+add_library(Tokenizer STATIC
+    include/Token.h
+    src/Token.cpp
+    include/Tokenizer.h
+    src/Tokenizer.cpp
 )
 
-target_include_directories(tokenizer
+target_include_directories(Tokenizer
     PUBLIC include/
 )

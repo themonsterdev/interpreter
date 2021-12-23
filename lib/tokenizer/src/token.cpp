@@ -1,4 +1,4 @@
-#include "token.h"
+#include "Token.h"
 
 string Token::getStringType(Token::Type type)
 {

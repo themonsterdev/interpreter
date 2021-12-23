@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['terminalexpression_0',['TerminalExpression',['../class_terminal_expression.html',1,'']]],
-  ['token_1',['Token',['../class_token.html',1,'']]],
-  ['tokenizer_2',['Tokenizer',['../class_tokenizer.html',1,'']]]
+  ['statement_0',['Statement',['../class_statement.html',1,'']]],
+  ['subtractionexpression_1',['SubtractionExpression',['../class_subtraction_expression.html',1,'']]]
 ];

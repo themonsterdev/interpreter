@@ -1,7 +1,7 @@
 ﻿#include <iostream>
 #include <exception>
 
-#include "tokenizer.h"
+#include "Tokenizer.h"
 
 // Static functions private
 

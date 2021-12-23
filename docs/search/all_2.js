@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['expression_0',['Expression',['../class_expression.html',1,'']]]
+  ['divisionexpression_0',['DivisionExpression',['../class_division_expression.html',1,'']]]
 ];

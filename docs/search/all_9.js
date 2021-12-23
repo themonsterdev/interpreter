@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['parser_0',['Parser',['../class_parser.html',1,'']]],
-  ['printstatement_1',['PrintStatement',['../class_print_statement.html',1,'']]],
-  ['printtokens_2',['printTokens',['../class_tokenizer.html#a56b8b3d9f9a57f512a0cf53dcc488f0b',1,'Tokenizer']]]
+  ['operator_0',['Operator',['../class_token.html#acf70e9411196c602738c3ed2428c7137ae1b3ec89ead7f83a9245ed5c9cacfdbf',1,'Token']]]
 ];

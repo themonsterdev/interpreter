@@ -1,13 +1,13 @@
-add_library(parser STATIC
-    include/parser.h
-    src/parser.cpp
+add_library(Parser STATIC
+    include/Parser.h
+    src/Parser.cpp
 )
 
-target_include_directories(parser
+target_include_directories(Parser
     PUBLIC include/
-    PUBLIC lib/tokenizer/include/
+    PUBLIC lib/Tokenizer/include/
 )
 
-target_link_libraries(parser
-    tokenizer
+target_link_libraries(Parser
+    Tokenizer
 )
