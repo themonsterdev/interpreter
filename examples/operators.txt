@@ -1,0 +1,14 @@
+var identifier = 66 + 78
+print identifier
+
+var identifier = 2 - 1
+print identifier
+
+var identifier = 2 * 3
+print identifier
+
+var identifier = 6 / 3
+print identifier
+
+var identifier = 6 % 2
+print identifier

@@ -20,7 +20,7 @@ public:
     /**
      * Type d'énumération de jeton.
      */
-    enum Type
+    enum class Type
     {
         Keyword,    /**< enum value 0 */
         Identifier, /**< enum value 1 */
@@ -63,6 +63,7 @@ public:
      * @return void
      */
     void setData(string data);
+    void setData(const char data);
 
     /**
      * obtenir les données du jeton

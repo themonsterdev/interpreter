@@ -38,7 +38,7 @@ print identifier
 ```bash
 $ cmake --preset=default
 $ cmake --build --preset=default
-$ ./build/default/Debug/interpreter.exe
+$ ./bin/interpreter.exe ./examples/operators.txt
 ```
 
 ## Réréfences

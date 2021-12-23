@@ -40,9 +40,12 @@ public:
 private:
 
     Token getWordToken( int& i );
+    string getStringLiteralToken(string& characters, int& i);
+
     Token getNumberToken( int& i );
-    Token getOperatorToken( const char character, int& i );
-    string getStringLiteralToken( string &characters, int& i );
+    string getNumberLiteralToken(string& characters, int& i);
+
+    Token getOperatorToken( const char character );
 
     string m_characters;
 };

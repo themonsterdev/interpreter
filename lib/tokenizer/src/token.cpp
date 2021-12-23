@@ -5,16 +5,16 @@ string Token::getStringType(Token::Type type)
     string result;
     switch (type)
     {
-    case Token::Keyword:
+    case Token::Type::Keyword:
         result = "Token::Keyword";
         break;
-    case Token::Identifier:
+    case Token::Type::Identifier:
         result = "Token::Identifier";
         break;
-    case Token::Operator:
+    case Token::Type::Operator:
         result = "Token::Operator";
         break;
-    case Token::Number:
+    case Token::Type::Number:
         result = "Token::Number";
         break;
     default:
@@ -26,7 +26,7 @@ string Token::getStringType(Token::Type type)
 }
 
 Token::Token()
-    : m_type( Token::Unknown )
+    : m_type(Token::Type::Unknown )
 {}
 
 Token::Token( Token::Type type )
@@ -46,6 +46,11 @@ Token::Type Token::getType()
 void Token::setData(string data)
 {
     this->m_data = data;
+}
+
+void Token::setData(const char data)
+{
+    this->m_data += data;
 }
 
 string Token::getData()

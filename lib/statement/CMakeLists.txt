@@ -5,9 +5,13 @@ add_library(statement STATIC
 
 target_include_directories(statement
     PUBLIC include/
+    PUBLIC lib/context/include/
+    PUBLIC lib/expression/include/
     PUBLIC lib/tokenizer/include/
 )
 
 target_link_libraries(statement
+    context
+    expression
     tokenizer
 )

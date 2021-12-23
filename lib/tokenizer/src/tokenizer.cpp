@@ -36,7 +36,15 @@ bool isNumber( char character )
 
 bool isOperator( char character )
 {
-    return character == '=' || character == '+';
+    return character == '*'
+        || character == '+'
+        || character == '-'
+        || character == '/'
+        || character == '<'
+        || character == '='
+        || character == '>'
+        || character == '^'
+        || character == '%';
 }
 
 class LexicalSyntaxError : public exception
@@ -80,8 +88,6 @@ Tokenizer::Tokenizer( string characters )
 
 TokenList Tokenizer::getTokens()
 {
-    cout << "Début de l'analyse lexical..." << endl;
-
     TokenList tokens;
 
     size_t charactersLength = this->m_characters.size();
@@ -108,7 +114,7 @@ TokenList Tokenizer::getTokens()
             }
             else if ( isOperator( character ) )
             {
-                token = this->getOperatorToken(character, i);
+                token = this->getOperatorToken(character);
             }
             else
             {
@@ -121,8 +127,6 @@ TokenList Tokenizer::getTokens()
         }
     }
 
-    cout << "Analyse lexical terminer." << endl;
-
     return tokens;
 }
 
@@ -130,30 +134,14 @@ Token Tokenizer::getWordToken( int& i )
 {
     string characters;
     getStringLiteralToken(characters, i);
-    Token token( Token::Identifier );
+    Token token( Token::Type::Identifier );
 
     if ( characters == "var" || characters == "print" )
     {
-        token.setType(Token::Keyword);
+        token.setType(Token::Type::Keyword);
     }
 
     token.setData(characters);
-    return token;
-}
-
-Token Tokenizer::getNumberToken( int& i )
-{
-    string characters;
-    getStringLiteralToken(characters, i);
-    Token token(Token::Number);
-    token.setData(characters);
-    return token;
-}
-
-Token Tokenizer::getOperatorToken(const char character, int& i)
-{
-    Token token(Token::Operator);
-    token.setData(string() + character);
     return token;
 }
 
@@ -172,4 +160,38 @@ string Tokenizer::getStringLiteralToken(string &characters, int& i)
     }
 
     return characters;
+}
+
+Token Tokenizer::getNumberToken(int& i)
+{
+    string characters;
+    getNumberLiteralToken(characters, i);
+    Token token(Token::Type::Number);
+    token.setData(characters);
+    return token;
+}
+
+string Tokenizer::getNumberLiteralToken(string& characters, int& i)
+{
+    characters += this->m_characters[i];
+
+    if (i < this->m_characters.size())
+    {
+        const char nextCharacter = this->m_characters[i + 1];
+        if (isNumber(nextCharacter))
+        {
+            i++;
+            return getStringLiteralToken(characters, i);
+        }
+    }
+
+    return characters;
+}
+
+
+Token Tokenizer::getOperatorToken(const char character)
+{
+    Token token(Token::Type::Operator);
+    token.setData(character);
+    return token;
 }

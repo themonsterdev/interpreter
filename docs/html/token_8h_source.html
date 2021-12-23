@@ -82,14 +82,14 @@ $(function() {
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_token.html#acf70e9411196c602738c3ed2428c7137">   23</a></span>    <span class="keyword">enum</span> <a class="code hl_enumeration" href="class_token.html#acf70e9411196c602738c3ed2428c7137">Type</a></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_token.html#acf70e9411196c602738c3ed2428c7137">   23</a></span>    <span class="keyword">enum class</span> <a class="code hl_enumeration" href="class_token.html#acf70e9411196c602738c3ed2428c7137">Type</a></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    {</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_token.html#acf70e9411196c602738c3ed2428c7137afe90990ee4aae8fc6c43e9e33ef31482">   25</a></span>        <a class="code hl_enumvalue" href="class_token.html#acf70e9411196c602738c3ed2428c7137afe90990ee4aae8fc6c43e9e33ef31482">Keyword</a>,    </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_token.html#acf70e9411196c602738c3ed2428c7137a867d32dcb76d0a4423268da4930abdbd">   26</a></span>        <a class="code hl_enumvalue" href="class_token.html#acf70e9411196c602738c3ed2428c7137a867d32dcb76d0a4423268da4930abdbd">Identifier</a>, </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_token.html#acf70e9411196c602738c3ed2428c7137ae890a15f3fff1ed86d473f7889b6c630">   27</a></span>        <a class="code hl_enumvalue" href="class_token.html#acf70e9411196c602738c3ed2428c7137ae890a15f3fff1ed86d473f7889b6c630">Operator</a>,   </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_token.html#acf70e9411196c602738c3ed2428c7137ab491399026b53f08e3db2862241820c1">   28</a></span>        <a class="code hl_enumvalue" href="class_token.html#acf70e9411196c602738c3ed2428c7137ab491399026b53f08e3db2862241820c1">Number</a>,     </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <a class="code hl_enumvalue" href="class_token.html#acf70e9411196c602738c3ed2428c7137a074b0bae56eaab78204013522dfd82a4">Unknown</a>     </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_token.html#acf70e9411196c602738c3ed2428c7137a074b0bae56eaab78204013522dfd82a4">   30</a></span>    };</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <a class="code hl_enumvalue" href="class_token.html#acf70e9411196c602738c3ed2428c7137a220f3d3750583b9db48568a0b5b9a5f1">Keyword</a>,    </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <a class="code hl_enumvalue" href="class_token.html#acf70e9411196c602738c3ed2428c7137a29ee5d1ebcc033234938a5234f1f2075">Identifier</a>, </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <a class="code hl_enumvalue" href="class_token.html#acf70e9411196c602738c3ed2428c7137ae1b3ec89ead7f83a9245ed5c9cacfdbf">Operator</a>,   </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <a class="code hl_enumvalue" href="class_token.html#acf70e9411196c602738c3ed2428c7137ab2ee912b91d69b435159c7c3f6df7f5f">Number</a>,     </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <a class="code hl_enumvalue" href="class_token.html#acf70e9411196c602738c3ed2428c7137a88183b946cc5f0e8c96b2e66e1c74a7e">Unknown</a>     </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    };</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">static</span> <span class="keywordtype">string</span> getStringType(<a class="code hl_enumeration" href="class_token.html#acf70e9411196c602738c3ed2428c7137">Token::Type</a> type);</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
@@ -102,19 +102,20 @@ $(function() {
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_token.html#abcb763ac98144b5dbfc9a0ce5b1faf09">   58</a></span>    <a class="code hl_enumeration" href="class_token.html#acf70e9411196c602738c3ed2428c7137">Token::Type</a> <a class="code hl_function" href="class_token.html#abcb763ac98144b5dbfc9a0ce5b1faf09">getType</a>();</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_token.html#aa1f66ec2ce1ca5f7c27cbc3fbc6a30b4">   65</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_token.html#aa1f66ec2ce1ca5f7c27cbc3fbc6a30b4">setData</a>(<span class="keywordtype">string</span> data);</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="class_token.html#a3b041e78eaf1b9a5d38561300cb01001">   72</a></span>    <span class="keywordtype">string</span> <a class="code hl_function" href="class_token.html#a3b041e78eaf1b9a5d38561300cb01001">getData</a>();</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <a class="code hl_enumeration" href="class_token.html#acf70e9411196c602738c3ed2428c7137">Type</a> m_type;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordtype">string</span> m_data;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>};</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="keyword">typedef</span> list&lt;Token&gt; TokenList;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="keyword">typedef</span> TokenList::iterator TokenIt;</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_token.html#aa1f66ec2ce1ca5f7c27cbc3fbc6a30b4">setData</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> data);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="class_token.html#a3b041e78eaf1b9a5d38561300cb01001">   73</a></span>    <span class="keywordtype">string</span> <a class="code hl_function" href="class_token.html#a3b041e78eaf1b9a5d38561300cb01001">getData</a>();</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <a class="code hl_enumeration" href="class_token.html#acf70e9411196c602738c3ed2428c7137">Type</a> m_type;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordtype">string</span> m_data;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>};</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="keyword">typedef</span> list&lt;Token&gt; TokenList;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="keyword">typedef</span> TokenList::iterator TokenIt;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclass_token_html"><div class="ttname"><a href="class_token.html">Token</a></div><div class="ttdef"><b>Definition:</b> token.h:17</div></div>
 <div class="ttc" id="aclass_token_html_a3b041e78eaf1b9a5d38561300cb01001"><div class="ttname"><a href="class_token.html#a3b041e78eaf1b9a5d38561300cb01001">Token::getData</a></div><div class="ttdeci">string getData()</div></div>
 <div class="ttc" id="aclass_token_html_a3bb2e78ae28a1d8a2b18794df480dc96"><div class="ttname"><a href="class_token.html#a3bb2e78ae28a1d8a2b18794df480dc96">Token::setType</a></div><div class="ttdeci">void setType(Token::Type type)</div></div>
@@ -123,11 +124,11 @@ $(function() {
 <div class="ttc" id="aclass_token_html_aa3c5868ba4115f3189df6b2ac5b36f39"><div class="ttname"><a href="class_token.html#aa3c5868ba4115f3189df6b2ac5b36f39">Token::Token</a></div><div class="ttdeci">Token()</div></div>
 <div class="ttc" id="aclass_token_html_abcb763ac98144b5dbfc9a0ce5b1faf09"><div class="ttname"><a href="class_token.html#abcb763ac98144b5dbfc9a0ce5b1faf09">Token::getType</a></div><div class="ttdeci">Token::Type getType()</div></div>
 <div class="ttc" id="aclass_token_html_acf70e9411196c602738c3ed2428c7137"><div class="ttname"><a href="class_token.html#acf70e9411196c602738c3ed2428c7137">Token::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition:</b> token.h:24</div></div>
-<div class="ttc" id="aclass_token_html_acf70e9411196c602738c3ed2428c7137a074b0bae56eaab78204013522dfd82a4"><div class="ttname"><a href="class_token.html#acf70e9411196c602738c3ed2428c7137a074b0bae56eaab78204013522dfd82a4">Token::Unknown</a></div><div class="ttdeci">@ Unknown</div><div class="ttdef"><b>Definition:</b> token.h:29</div></div>
-<div class="ttc" id="aclass_token_html_acf70e9411196c602738c3ed2428c7137a867d32dcb76d0a4423268da4930abdbd"><div class="ttname"><a href="class_token.html#acf70e9411196c602738c3ed2428c7137a867d32dcb76d0a4423268da4930abdbd">Token::Identifier</a></div><div class="ttdeci">@ Identifier</div><div class="ttdef"><b>Definition:</b> token.h:26</div></div>
-<div class="ttc" id="aclass_token_html_acf70e9411196c602738c3ed2428c7137ab491399026b53f08e3db2862241820c1"><div class="ttname"><a href="class_token.html#acf70e9411196c602738c3ed2428c7137ab491399026b53f08e3db2862241820c1">Token::Number</a></div><div class="ttdeci">@ Number</div><div class="ttdef"><b>Definition:</b> token.h:28</div></div>
-<div class="ttc" id="aclass_token_html_acf70e9411196c602738c3ed2428c7137ae890a15f3fff1ed86d473f7889b6c630"><div class="ttname"><a href="class_token.html#acf70e9411196c602738c3ed2428c7137ae890a15f3fff1ed86d473f7889b6c630">Token::Operator</a></div><div class="ttdeci">@ Operator</div><div class="ttdef"><b>Definition:</b> token.h:27</div></div>
-<div class="ttc" id="aclass_token_html_acf70e9411196c602738c3ed2428c7137afe90990ee4aae8fc6c43e9e33ef31482"><div class="ttname"><a href="class_token.html#acf70e9411196c602738c3ed2428c7137afe90990ee4aae8fc6c43e9e33ef31482">Token::Keyword</a></div><div class="ttdeci">@ Keyword</div><div class="ttdef"><b>Definition:</b> token.h:25</div></div>
+<div class="ttc" id="aclass_token_html_acf70e9411196c602738c3ed2428c7137a220f3d3750583b9db48568a0b5b9a5f1"><div class="ttname"><a href="class_token.html#acf70e9411196c602738c3ed2428c7137a220f3d3750583b9db48568a0b5b9a5f1">Token::Type::Keyword</a></div><div class="ttdeci">@ Keyword</div></div>
+<div class="ttc" id="aclass_token_html_acf70e9411196c602738c3ed2428c7137a29ee5d1ebcc033234938a5234f1f2075"><div class="ttname"><a href="class_token.html#acf70e9411196c602738c3ed2428c7137a29ee5d1ebcc033234938a5234f1f2075">Token::Type::Identifier</a></div><div class="ttdeci">@ Identifier</div></div>
+<div class="ttc" id="aclass_token_html_acf70e9411196c602738c3ed2428c7137a88183b946cc5f0e8c96b2e66e1c74a7e"><div class="ttname"><a href="class_token.html#acf70e9411196c602738c3ed2428c7137a88183b946cc5f0e8c96b2e66e1c74a7e">Token::Type::Unknown</a></div><div class="ttdeci">@ Unknown</div></div>
+<div class="ttc" id="aclass_token_html_acf70e9411196c602738c3ed2428c7137ab2ee912b91d69b435159c7c3f6df7f5f"><div class="ttname"><a href="class_token.html#acf70e9411196c602738c3ed2428c7137ab2ee912b91d69b435159c7c3f6df7f5f">Token::Type::Number</a></div><div class="ttdeci">@ Number</div></div>
+<div class="ttc" id="aclass_token_html_acf70e9411196c602738c3ed2428c7137ae1b3ec89ead7f83a9245ed5c9cacfdbf"><div class="ttname"><a href="class_token.html#acf70e9411196c602738c3ed2428c7137ae1b3ec89ead7f83a9245ed5c9cacfdbf">Token::Type::Operator</a></div><div class="ttdeci">@ Operator</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
