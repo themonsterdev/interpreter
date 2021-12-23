@@ -38,22 +38,24 @@ Number
 ## Exemple
 
 ```js
+print 1 + 1
+
 var identifier = 1 + 1
 print identifier
 
-var identifier = 2 - 1
+identifier = 2 - 1
 print identifier
 
-var identifier = 2 * 3
+identifier = 2 * 3
 print identifier
 
-var identifier = 6 / 3
+identifier = 6 / 3
 print identifier
 
-var identifier = 6 % 2
+identifier = 6 % 2
 print identifier
 
-var identifier = 1 + 1 - 1 * 2 / 2 % 2
+identifier = 1 + 1 - 1 * 2 / 2 % 2
 print identifier
 ```
 
