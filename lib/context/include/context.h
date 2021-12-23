@@ -13,8 +13,8 @@ class Context
 {
 public:
 
-	long getValue(string variable);
-	long setValue(string variable, long value);
+	long GetValue(string variable);
+	long SetValue(string variable, long value);
 
 private:
 

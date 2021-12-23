@@ -8,81 +8,111 @@
 
 #include <iostream>
 
-Expression::ExprPtr Expression::parse(TokenIt& it)
+Expression::ExprPtr Expression::Parse(TokenIt& it)
 {
-	Token::Type tokenType = it->getType();
-	string tokenData = it->getData();
+	Token::Type tokenType = it->GetType();
+	string tokenData = it->GetData();
 
 	Expression* pExpression = nullptr;
 
-	switch (tokenType)
+	switch ( tokenType )
 	{
 	case Token::Type::Number:
 		{
-			pExpression = new Number(stoi(tokenData));
+			Expression* pLeftExpression;
+			int tokenDataNumber;
 
-			it++;
-
-			if (it->getType() == Token::Type::Operator)
-			{
-				string tokenDataOperator = it->getData();
-
-				if (tokenDataOperator == "+")
+			do {
+				if ( pExpression == nullptr )
 				{
-					pExpression = new AdditionExpression(pExpression);
-				}
-				else if (tokenDataOperator == "-")
-				{
-					pExpression = new SubtractionExpression(pExpression);
-				}
-				else if (tokenDataOperator == "*")
-				{
-					pExpression = new MultiplicationExpression(pExpression);
-				}
-				else if (tokenDataOperator == "/")
-				{
-					pExpression = new DivisionExpression(pExpression);
-				}
-				else if (tokenDataOperator == "%")
-				{
-					pExpression = new ModuloExpression(pExpression);
+					// Print left expression
+					tokenDataNumber = stoi( tokenData );
+					// cout << "Number left: " << tokenDataNumber << endl;
+					pLeftExpression = new Number( tokenDataNumber );
+					it++;
 				}
 				else
 				{
-					throw exception(
-						(string("Unexpected: ") + tokenDataOperator).c_str()
-					);
+					pLeftExpression = pExpression;
 				}
+				
 
-				it++;
 
-				if (it->getType() != Token::Type::Number)
+				if ( it->GetType() == Token::Type::Operator )
 				{
-					throw exception(
-						(string("Unexpected: ") + tokenData).c_str()
-					);
-				}
+					string tokenDataOperator = it->GetData();
 
-				reinterpret_cast<NonTerminalExpression*>(pExpression)
-					->setRight(
-						new Number( stoi(it->getData() ) )
-					);
-			}
-			else
-			{
-				it--;
-			}
+					if ( tokenDataOperator == "+" )
+					{
+						pExpression = new AdditionExpression( pLeftExpression );
+					}
+					else if ( tokenDataOperator == "-" )
+					{
+						pExpression = new SubtractionExpression( pLeftExpression );
+					}
+					else if ( tokenDataOperator == "*" )
+					{
+						pExpression = new MultiplicationExpression( pLeftExpression );
+					}
+					else if ( tokenDataOperator == "/" )
+					{
+						pExpression = new DivisionExpression( pLeftExpression );
+					}
+					else if ( tokenDataOperator == "%" )
+					{
+						pExpression = new ModuloExpression( pLeftExpression );
+					}
+					else
+					{
+						throw exception(
+							( string( "Opérateur inattendu: " ) + tokenDataOperator ).c_str()
+						);
+					}
+					// Print "Operator: ( + | - | = | ect )"
+					// cout << "Operator: " << tokenDataOperator << endl;
+
+
+
+
+					it++;
+					if (it->GetType() != Token::Type::Number)
+					{
+						throw exception(
+							(string("Unsupported operand types: Number ") + tokenDataOperator + " " + tokenData).c_str()
+						);
+					}
+
+					// Print right expression
+					tokenData = it->GetData();
+					tokenDataNumber = stoi(tokenData);
+					// cout << "Number right: " << tokenDataNumber << endl;
+
+					reinterpret_cast<NonTerminalExpression*>(pExpression)
+						->SetRight(new Number(tokenDataNumber));
+
+
+					it++;
+					if (it->GetType() != Token::Type::Operator)
+					{
+						it--;
+					}
+				}
+				else
+				{
+					it--;
+				}
+			} while (it->GetType() == Token::Type::Operator);
 		}
 		break;
 
 	case Token::Type::Identifier:
-		pExpression = new Identifier(tokenData);
+		pExpression = new Identifier( tokenData );
 		// it++;
 		break;
 
 	default:
 		throw exception(
-			(string("Unexpected : ") + tokenData).c_str()
+			(string("Unexpected expression: ") + tokenData).c_str()
 		);
 	}
 

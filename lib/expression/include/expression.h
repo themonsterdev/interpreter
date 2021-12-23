@@ -20,11 +20,11 @@ public:
 	typedef list<ExprPtr> Exprs;
 	typedef shared_ptr<Exprs> ExprsPtr;
 
-	static ExprPtr parse(TokenIt& it);
+	static ExprPtr Parse(TokenIt& it);
 
 	virtual ~Expression() {};
 
-	virtual long evaluate(Context& context) = 0;
+	virtual long Evaluate(Context& context) = 0;
 };
 
 #endif

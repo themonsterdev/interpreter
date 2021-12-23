@@ -12,10 +12,10 @@ public:
 
 	NonTerminalExpression(Expression* left, Expression* right = nullptr);
 
-	virtual long evaluate(Context& context) = 0;
+	virtual long Evaluate(Context& context) = 0;
 
-	Expression* getRight();
-	void setRight(Expression* right);
+	Expression* GetRight();
+	void SetRight(Expression* right);
 
 protected:
 

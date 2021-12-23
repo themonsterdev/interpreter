@@ -21,7 +21,7 @@ public:
      *
      * @return void
      */
-    static void printTokens(TokenList tokens);
+    static void PrintTokens(TokenList tokens);
 
     /**
      * Constructeur Tokenizer
@@ -35,17 +35,17 @@ public:
      * 
      * @return vector<Token> les tokens générer
      */
-    TokenList getTokens();
+    TokenList GetTokens();
 
 private:
 
-    Token getWordToken( int& i );
-    string getStringLiteralToken(string& characters, int& i);
+    Token GetWordToken( int& i );
+    string GetStringLiteralToken(string& characters, int& i);
 
-    Token getNumberToken( int& i );
-    string getNumberLiteralToken(string& characters, int& i);
+    Token GetNumberToken( int& i );
+    string GetNumberLiteralToken(string& characters, int& i);
 
-    Token getOperatorToken( const char character );
+    Token GetOperatorToken( const char character );
 
     string m_characters;
 };

@@ -6,8 +6,8 @@
 
 Statement* Statement::create(TokenIt& it)
 {
-	Token::Type tokenType = it->getType();
-	string tokenData = it->getData();
+	Token::Type tokenType = it->GetType();
+	string tokenData = it->GetData();
 
 	switch (tokenType)
 	{
@@ -35,7 +35,7 @@ Statement* Statement::create(TokenIt& it)
 	}
 
 	throw exception(
-		(string("Unexpected statement: ") + Token::getStringType(tokenType) + " " + tokenData).c_str()
+		(string("Unexpected statement: ") + Token::GetStringType(tokenType) + " " + tokenData).c_str()
 	);
 }
 
@@ -44,8 +44,8 @@ Statement* Statement::create(TokenIt& it)
 AssignmentStatement::AssignmentStatement(TokenIt& it)
 	: m_expression( nullptr )
 {
-	Token::Type tokenType = it->getType();
-	string tokenData = it->getData();
+	Token::Type tokenType = it->GetType();
+	string tokenData = it->GetData();
 
 	if ( tokenType == Token::Type::Keyword )
 	{
@@ -56,36 +56,36 @@ AssignmentStatement::AssignmentStatement(TokenIt& it)
 		}
 
 		it++;
-		if ( it->getType() != Token::Type::Identifier )
+		if ( it->GetType() != Token::Type::Identifier )
 		{
 			throw exception( "error 2" );
 		}
 
-		m_variable = it->getData();
+		m_variable = it->GetData();
 
 		it++;
-		if (it->getType() != Token::Type::Operator || it->getData() != "=")
+		if (it->GetType() != Token::Type::Operator || it->GetData() != "=")
 		{
 			it--;
 			return;
 		}
 
 		it++;
-		m_expression = Expression::parse(it);
+		m_expression = Expression::Parse(it);
 	}
 }
 
-void AssignmentStatement::execute(Context& context)
+void AssignmentStatement::Execute(Context& context)
 {
-	context.setValue(m_variable, m_expression ? m_expression->evaluate(context) : 0);
+	context.SetValue(m_variable, m_expression ? m_expression->Evaluate(context) : 0);
 }
 
 // PrintStatement
 
 PrintStatement::PrintStatement(TokenIt& it)
 {
-	Token::Type tokenType = it->getType();
-	string tokenData = it->getData();
+	Token::Type tokenType = it->GetType();
+	string tokenData = it->GetData();
 
 	// Expect
 	if ( tokenType != Token::Type::Keyword || tokenData != "print" )
@@ -94,10 +94,10 @@ PrintStatement::PrintStatement(TokenIt& it)
 	}
 
 	it++;
-	m_expression = Expression::parse(it);
+	m_expression = Expression::Parse(it);
 }
 
-void PrintStatement::execute(Context& context)
+void PrintStatement::Execute(Context& context)
 {
-	cout << m_expression->evaluate(context) << endl;
+	cout << m_expression->Evaluate(context) << endl;
 }

@@ -4,7 +4,7 @@ ModuloExpression::ModuloExpression(Expression* left, Expression* right)
 	: ::NonTerminalExpression(left, right)
 {}
 
-long ModuloExpression::evaluate(Context& context)
+long ModuloExpression::Evaluate(Context& context)
 {
-	return m_left->evaluate(context) % m_right->evaluate(context);
+	return m_left->Evaluate(context) % m_right->Evaluate(context);
 }

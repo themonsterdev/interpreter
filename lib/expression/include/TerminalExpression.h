@@ -12,7 +12,7 @@ public:
 
 	TerminalExpression(string name);
 
-	virtual long evaluate(Context& context);
+	virtual long Evaluate(Context& context);
 
 private:
 
@@ -24,7 +24,7 @@ class Number : public Expression
 public:
 
 	Number(long number);
-	virtual long evaluate(Context& context);
+	virtual long Evaluate(Context& context);
 
 private:
 
@@ -36,7 +36,7 @@ class Identifier : public Expression
 public:
 
 	Identifier(string identifier);
-	virtual long evaluate(Context& context);
+	virtual long Evaluate(Context& context);
 
 private:
 

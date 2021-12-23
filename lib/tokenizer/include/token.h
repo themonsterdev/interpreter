@@ -29,7 +29,7 @@ public:
         Unknown     /**< enum value 4 */
     };
 
-    static string getStringType(Token::Type type);
+    static string GetStringType(Token::Type type);
 
     /**
      * Constructeur vide
@@ -48,29 +48,29 @@ public:
      * 
      * @return void
      */
-    void setType(Token::Type type );
+    void SetType(Token::Type type );
 
     /**
      * obtenir le jeton de type
      * 
      * @return Token
      */
-    Token::Type getType();
+    Token::Type GetType();
 
     /**
      * Définit les données du jeton
      *
      * @return void
      */
-    void setData(string data);
-    void setData(const char data);
+    void SetData(string data);
+    void SetData(const char data);
 
     /**
      * obtenir les données du jeton
      *
      * @return Token
      */
-    string getData();
+    string GetData();
 
 private:
 

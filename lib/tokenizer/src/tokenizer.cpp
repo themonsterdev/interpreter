@@ -5,7 +5,7 @@
 
 // Static functions private
 
-bool isIgnore( char character )
+bool IsIgnore( char character )
 {
     return character == '\t'    // Horizontal Tab
         || character == '\n'    // Line Feed
@@ -13,28 +13,28 @@ bool isIgnore( char character )
         || character == ' ';    // Space
 }
 
-bool isUnderscore( char character )
+bool IsUnderscore( char character )
 {
     return character == '_';
 }
 
-bool isLetter( char character )
+bool IsLetter( char character )
 {
     return character >= 'A' && character <= 'Z'
         || character >= 'a' && character <= 'z';
 }
 
-bool isWord( char character )
+bool IsWord( char character )
 {
-    return isUnderscore( character ) || isLetter( character );
+    return IsUnderscore( character ) || IsLetter( character );
 }
 
-bool isNumber( char character )
+bool IsNumber( char character )
 {
     return character >= '0' && character <= '9';
 }
 
-bool isOperator( char character )
+bool IsOperator( char character )
 {
     return character == '*'
         || character == '+'
@@ -68,7 +68,7 @@ private:
 
 // Definitions des fonctions de la classe Tokenizer
 
-void Tokenizer::printTokens(TokenList tokens)
+void Tokenizer::PrintTokens(TokenList tokens)
 {
     for (
         TokenList::iterator it = tokens.begin();
@@ -76,8 +76,8 @@ void Tokenizer::printTokens(TokenList tokens)
         ++it
         ) {
         cout << "Token {" << endl;
-        cout << '\t' << "type: " << Token::getStringType(it->getType()) << "," << endl;
-        cout << '\t' << "data: " << it->getData() << endl;
+        cout << '\t' << "type: " << Token::GetStringType(it->GetType()) << "," << endl;
+        cout << '\t' << "data: " << it->GetData() << endl;
         cout << "}" << endl;
     }
 }
@@ -86,7 +86,7 @@ Tokenizer::Tokenizer( string characters )
     : m_characters( characters )
 {}
 
-TokenList Tokenizer::getTokens()
+TokenList Tokenizer::GetTokens()
 {
     TokenList tokens;
 
@@ -102,19 +102,19 @@ TokenList Tokenizer::getTokens()
         character = this->m_characters[ i ];
 
         // Si le caractère actuelle ne doit n'est pas ignorer
-        if ( !isIgnore( character ) )
+        if ( !IsIgnore( character ) )
         {
-            if ( isWord( character ) )
+            if ( IsWord( character ) )
             {
-                token = this->getWordToken( i );
+                token = this->GetWordToken( i );
             }
-            else if ( isNumber( character ) )
+            else if ( IsNumber( character ) )
             {
-                token = this->getNumberToken( i );
+                token = this->GetNumberToken( i );
             }
-            else if ( isOperator( character ) )
+            else if ( IsOperator( character ) )
             {
-                token = this->getOperatorToken(character);
+                token = this->GetOperatorToken(character);
             }
             else
             {
@@ -130,58 +130,58 @@ TokenList Tokenizer::getTokens()
     return tokens;
 }
 
-Token Tokenizer::getWordToken( int& i )
+Token Tokenizer::GetWordToken( int& i )
 {
     string characters;
-    getStringLiteralToken(characters, i);
+    GetStringLiteralToken(characters, i);
     Token token( Token::Type::Identifier );
 
     if ( characters == "var" || characters == "print" )
     {
-        token.setType(Token::Type::Keyword);
+        token.SetType(Token::Type::Keyword);
     }
 
-    token.setData(characters);
+    token.SetData(characters);
     return token;
 }
 
-string Tokenizer::getStringLiteralToken(string &characters, int& i)
+string Tokenizer::GetStringLiteralToken(string &characters, int& i)
 {
     characters += this->m_characters[ i ];
 
     if ( i < this->m_characters.size() )
     {
         const char nextCharacter = this->m_characters[ i + 1 ];
-        if ( isWord( nextCharacter ) )
+        if ( IsWord( nextCharacter ) )
         {
             i++;
-            return getStringLiteralToken(characters, i);
+            return GetStringLiteralToken( characters, i );
         }
     }
 
     return characters;
 }
 
-Token Tokenizer::getNumberToken(int& i)
+Token Tokenizer::GetNumberToken(int& i)
 {
     string characters;
-    getNumberLiteralToken(characters, i);
+    GetNumberLiteralToken(characters, i);
     Token token(Token::Type::Number);
-    token.setData(characters);
+    token.SetData(characters);
     return token;
 }
 
-string Tokenizer::getNumberLiteralToken(string& characters, int& i)
+string Tokenizer::GetNumberLiteralToken(string& characters, int& i)
 {
     characters += this->m_characters[i];
 
-    if (i < this->m_characters.size())
+    if ( i < this->m_characters.size() )
     {
         const char nextCharacter = this->m_characters[i + 1];
-        if (isNumber(nextCharacter))
+        if ( IsNumber( nextCharacter ) )
         {
             i++;
-            return getStringLiteralToken(characters, i);
+            return GetStringLiteralToken( characters, i );
         }
     }
 
@@ -189,9 +189,9 @@ string Tokenizer::getNumberLiteralToken(string& characters, int& i)
 }
 
 
-Token Tokenizer::getOperatorToken(const char character)
+Token Tokenizer::GetOperatorToken(const char character)
 {
     Token token(Token::Type::Operator);
-    token.setData(character);
+    token.SetData(character);
     return token;
 }

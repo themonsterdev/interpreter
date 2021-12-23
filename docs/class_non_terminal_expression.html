@@ -101,14 +101,14 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:a68691bee46d01c47e73b4d4fd714f3b1"><td class="memItemLeft" align="right" valign="top"><a id="a68691bee46d01c47e73b4d4fd714f3b1" name="a68691bee46d01c47e73b4d4fd714f3b1"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>NonTerminalExpression</b> (<a class="el" href="class_expression.html">Expression</a> *left, <a class="el" href="class_expression.html">Expression</a> *right=nullptr)</td></tr>
 <tr class="separator:a68691bee46d01c47e73b4d4fd714f3b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2cd2d61b774565ee3d3ac005c6ae0620"><td class="memItemLeft" align="right" valign="top">virtual long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_non_terminal_expression.html#a2cd2d61b774565ee3d3ac005c6ae0620">evaluate</a> (<a class="el" href="class_context.html">Context</a> &amp;context)=0</td></tr>
-<tr class="separator:a2cd2d61b774565ee3d3ac005c6ae0620"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab09733727da4f5ef898506f4c821caf3"><td class="memItemLeft" align="right" valign="top"><a id="ab09733727da4f5ef898506f4c821caf3" name="ab09733727da4f5ef898506f4c821caf3"></a>
-<a class="el" href="class_expression.html">Expression</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getRight</b> ()</td></tr>
-<tr class="separator:ab09733727da4f5ef898506f4c821caf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4c43337a79ae4a99edcd279872faf23"><td class="memItemLeft" align="right" valign="top"><a id="ab4c43337a79ae4a99edcd279872faf23" name="ab4c43337a79ae4a99edcd279872faf23"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setRight</b> (<a class="el" href="class_expression.html">Expression</a> *right)</td></tr>
-<tr class="separator:ab4c43337a79ae4a99edcd279872faf23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4741eb7516910b2380d223516d3e6f6d"><td class="memItemLeft" align="right" valign="top">virtual long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_non_terminal_expression.html#a4741eb7516910b2380d223516d3e6f6d">Evaluate</a> (<a class="el" href="class_context.html">Context</a> &amp;context)=0</td></tr>
+<tr class="separator:a4741eb7516910b2380d223516d3e6f6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab120bc374d0caff9c88edf248cc30adb"><td class="memItemLeft" align="right" valign="top"><a id="ab120bc374d0caff9c88edf248cc30adb" name="ab120bc374d0caff9c88edf248cc30adb"></a>
+<a class="el" href="class_expression.html">Expression</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetRight</b> ()</td></tr>
+<tr class="separator:ab120bc374d0caff9c88edf248cc30adb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07a0a462a82d21ae2f3e75ca51c805e4"><td class="memItemLeft" align="right" valign="top"><a id="a07a0a462a82d21ae2f3e75ca51c805e4" name="a07a0a462a82d21ae2f3e75ca51c805e4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRight</b> (<a class="el" href="class_expression.html">Expression</a> *right)</td></tr>
+<tr class="separator:a07a0a462a82d21ae2f3e75ca51c805e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Attributs protégés</h2></td></tr>
@@ -132,15 +132,15 @@ typedef list&lt; ExprPtr &gt;&#160;</td><td class="memItemRight" valign="bottom"
 typedef shared_ptr&lt; Exprs &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ExprsPtr</b></td></tr>
 <tr class="separator:ab86075d6b1ab461016b396398540a6c1 inherit pub_types_class_expression"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_class_expression"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_expression')"><img src="closed.png" alt="-"/>&#160;Fonctions membres publiques statiques hérités de <a class="el" href="class_expression.html">Expression</a></td></tr>
-<tr class="memitem:aa1fe46ce7d8dcedec81050d1ad24e998 inherit pub_static_methods_class_expression"><td class="memItemLeft" align="right" valign="top"><a id="aa1fe46ce7d8dcedec81050d1ad24e998" name="aa1fe46ce7d8dcedec81050d1ad24e998"></a>
-static ExprPtr&#160;</td><td class="memItemRight" valign="bottom"><b>parse</b> (TokenIt &amp;it)</td></tr>
-<tr class="separator:aa1fe46ce7d8dcedec81050d1ad24e998 inherit pub_static_methods_class_expression"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50188f46d94d53c84f9b9468241ad4a1 inherit pub_static_methods_class_expression"><td class="memItemLeft" align="right" valign="top"><a id="a50188f46d94d53c84f9b9468241ad4a1" name="a50188f46d94d53c84f9b9468241ad4a1"></a>
+static ExprPtr&#160;</td><td class="memItemRight" valign="bottom"><b>Parse</b> (TokenIt &amp;it)</td></tr>
+<tr class="separator:a50188f46d94d53c84f9b9468241ad4a1 inherit pub_static_methods_class_expression"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
 <div class="textblock"><p ><a class="el" href="class_non_terminal_expression.html">NonTerminalExpression</a> </p>
 </div><h2 class="groupheader">Documentation des fonctions membres</h2>
-<a id="a2cd2d61b774565ee3d3ac005c6ae0620" name="a2cd2d61b774565ee3d3ac005c6ae0620"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2cd2d61b774565ee3d3ac005c6ae0620">&#9670;&nbsp;</a></span>evaluate()</h2>
+<a id="a4741eb7516910b2380d223516d3e6f6d" name="a4741eb7516910b2380d223516d3e6f6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4741eb7516910b2380d223516d3e6f6d">&#9670;&nbsp;</a></span>Evaluate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -149,7 +149,7 @@ static ExprPtr&#160;</td><td class="memItemRight" valign="bottom"><b>parse</b> (
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual long NonTerminalExpression::evaluate </td>
+          <td class="memname">virtual long NonTerminalExpression::Evaluate </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_context.html">Context</a> &amp;&#160;</td>
           <td class="paramname"><em>context</em></td><td>)</td>

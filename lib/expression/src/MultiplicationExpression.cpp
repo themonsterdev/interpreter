@@ -4,7 +4,7 @@ MultiplicationExpression::MultiplicationExpression(Expression* left, Expression*
 	: ::NonTerminalExpression(left, right)
 {}
 
-long MultiplicationExpression::evaluate(Context& context)
+long MultiplicationExpression::Evaluate(Context& context)
 {
-	return m_left->evaluate(context) * m_right->evaluate(context);
+	return m_left->Evaluate(context) * m_right->Evaluate(context);
 }

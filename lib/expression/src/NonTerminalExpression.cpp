@@ -6,12 +6,12 @@ NonTerminalExpression::NonTerminalExpression(Expression* left, Expression* right
 {}
 
 
-Expression* NonTerminalExpression::getRight()
+Expression* NonTerminalExpression::GetRight()
 {
 	return m_right;
 }
 
-void NonTerminalExpression::setRight(Expression* right)
+void NonTerminalExpression::SetRight(Expression* right)
 {
 	m_right = right;
 }

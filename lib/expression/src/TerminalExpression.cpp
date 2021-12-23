@@ -6,9 +6,9 @@ TerminalExpression::TerminalExpression(string name)
 	: m_name(name)
 {}
 
-long TerminalExpression::evaluate(Context& context)
+long TerminalExpression::Evaluate(Context& context)
 {
-	return context.getValue(m_name);
+	return context.GetValue(m_name);
 }
 
 // Number
@@ -17,7 +17,7 @@ Number::Number(long number)
 	: m_number(number)
 {}
 
-long Number::evaluate(Context&)
+long Number::Evaluate(Context&)
 {
 	return m_number;
 }
@@ -28,7 +28,7 @@ Identifier::Identifier(string identifier)
 	: m_identifier(identifier)
 {}
 
-long Identifier::evaluate(Context& context)
+long Identifier::Evaluate(Context& context)
 {
-	return context.getValue(m_identifier);
+	return context.GetValue(m_identifier);
 }

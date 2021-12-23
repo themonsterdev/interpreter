@@ -81,21 +81,21 @@ $(function() {
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_tokenizer.html#a56b8b3d9f9a57f512a0cf53dcc488f0b">   24</a></span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_tokenizer.html#a56b8b3d9f9a57f512a0cf53dcc488f0b">printTokens</a>(TokenList tokens);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_tokenizer.html#a1c2ef0cc3fe72bdf1f186ae6fae8eaaf">   24</a></span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_tokenizer.html#a1c2ef0cc3fe72bdf1f186ae6fae8eaaf">PrintTokens</a>(TokenList tokens);</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_tokenizer.html#a2052eaf316eec192c11b5f7688184bbf">   31</a></span>    <a class="code hl_function" href="class_tokenizer.html#a2052eaf316eec192c11b5f7688184bbf">Tokenizer</a>( <span class="keywordtype">string</span> characters );</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_tokenizer.html#a0c3e3e76a45841bb6c653dfdf9679738">   38</a></span>    TokenList <a class="code hl_function" href="class_tokenizer.html#a0c3e3e76a45841bb6c653dfdf9679738">getTokens</a>();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_tokenizer.html#ad4eb1a3fa978a7fbfa8027407cea945b">   38</a></span>    TokenList <a class="code hl_function" href="class_tokenizer.html#ad4eb1a3fa978a7fbfa8027407cea945b">GetTokens</a>();</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_class" href="class_token.html">Token</a> getWordToken( <span class="keywordtype">int</span>&amp; i );</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">string</span> getStringLiteralToken(<span class="keywordtype">string</span>&amp; characters, <span class="keywordtype">int</span>&amp; i);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <a class="code hl_class" href="class_token.html">Token</a> GetWordToken( <span class="keywordtype">int</span>&amp; i );</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">string</span> GetStringLiteralToken(<span class="keywordtype">string</span>&amp; characters, <span class="keywordtype">int</span>&amp; i);</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <a class="code hl_class" href="class_token.html">Token</a> getNumberToken( <span class="keywordtype">int</span>&amp; i );</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">string</span> getNumberLiteralToken(<span class="keywordtype">string</span>&amp; characters, <span class="keywordtype">int</span>&amp; i);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <a class="code hl_class" href="class_token.html">Token</a> GetNumberToken( <span class="keywordtype">int</span>&amp; i );</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">string</span> GetNumberLiteralToken(<span class="keywordtype">string</span>&amp; characters, <span class="keywordtype">int</span>&amp; i);</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_class" href="class_token.html">Token</a> getOperatorToken( <span class="keyword">const</span> <span class="keywordtype">char</span> character );</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_class" href="class_token.html">Token</a> GetOperatorToken( <span class="keyword">const</span> <span class="keywordtype">char</span> character );</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordtype">string</span> m_characters;</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>};</div>
@@ -103,9 +103,9 @@ $(function() {
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclass_token_html"><div class="ttname"><a href="class_token.html">Token</a></div><div class="ttdef"><b>Definition:</b> Token.h:17</div></div>
 <div class="ttc" id="aclass_tokenizer_html"><div class="ttname"><a href="class_tokenizer.html">Tokenizer</a></div><div class="ttdef"><b>Definition:</b> Tokenizer.h:16</div></div>
-<div class="ttc" id="aclass_tokenizer_html_a0c3e3e76a45841bb6c653dfdf9679738"><div class="ttname"><a href="class_tokenizer.html#a0c3e3e76a45841bb6c653dfdf9679738">Tokenizer::getTokens</a></div><div class="ttdeci">TokenList getTokens()</div></div>
+<div class="ttc" id="aclass_tokenizer_html_a1c2ef0cc3fe72bdf1f186ae6fae8eaaf"><div class="ttname"><a href="class_tokenizer.html#a1c2ef0cc3fe72bdf1f186ae6fae8eaaf">Tokenizer::PrintTokens</a></div><div class="ttdeci">static void PrintTokens(TokenList tokens)</div></div>
 <div class="ttc" id="aclass_tokenizer_html_a2052eaf316eec192c11b5f7688184bbf"><div class="ttname"><a href="class_tokenizer.html#a2052eaf316eec192c11b5f7688184bbf">Tokenizer::Tokenizer</a></div><div class="ttdeci">Tokenizer(string characters)</div></div>
-<div class="ttc" id="aclass_tokenizer_html_a56b8b3d9f9a57f512a0cf53dcc488f0b"><div class="ttname"><a href="class_tokenizer.html#a56b8b3d9f9a57f512a0cf53dcc488f0b">Tokenizer::printTokens</a></div><div class="ttdeci">static void printTokens(TokenList tokens)</div></div>
+<div class="ttc" id="aclass_tokenizer_html_ad4eb1a3fa978a7fbfa8027407cea945b"><div class="ttname"><a href="class_tokenizer.html#ad4eb1a3fa978a7fbfa8027407cea945b">Tokenizer::GetTokens</a></div><div class="ttdeci">TokenList GetTokens()</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

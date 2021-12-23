@@ -12,7 +12,7 @@ public:
 
 	ModuloExpression(Expression* left, Expression* right = nullptr);
 
-	virtual long evaluate(Context& context);
+	virtual long Evaluate(Context& context);
 };
 
 #endif

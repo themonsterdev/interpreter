@@ -1,6 +1,6 @@
 #include "Token.h"
 
-string Token::getStringType(Token::Type type)
+string Token::GetStringType(Token::Type type)
 {
     string result;
     switch (type)
@@ -33,27 +33,27 @@ Token::Token( Token::Type type )
     : m_type( type )
 {}
 
-void Token::setType(Token::Type type)
+void Token::SetType(Token::Type type)
 {
     this->m_type = type;
 }
 
-Token::Type Token::getType()
+Token::Type Token::GetType()
 {
     return this->m_type;
 }
 
-void Token::setData(string data)
+void Token::SetData(string data)
 {
     this->m_data = data;
 }
 
-void Token::setData(const char data)
+void Token::SetData(const char data)
 {
     this->m_data += data;
 }
 
-string Token::getData()
+string Token::GetData()
 {
     return this->m_data;
 }

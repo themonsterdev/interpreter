@@ -8,11 +8,11 @@
 
 #include "Statement.h"
 
-string getStringFromFile(const char* filepath)
+string GetStringFromFile(const char* filepath)
 {
     string programText;
     ifstream is(filepath);
-    cout << filepath << endl;
+    // cout << filepath << endl;
 
     if (is)
     {
@@ -31,16 +31,16 @@ string getStringFromFile(const char* filepath)
     return programText;
 }
 
-TokenList getToken(const char* filepath)
+TokenList GetToken(const char* filepath)
 {
-    string programText = getStringFromFile(filepath);
+    string programText = GetStringFromFile(filepath);
     Tokenizer tokenizer(programText);
-    TokenList tokens = tokenizer.getTokens();
-    // Tokenizer::printTokens( tokens );
+    TokenList tokens = tokenizer.GetTokens();
+    // Tokenizer::PrintTokens( tokens );
     return tokens;
 }
 
-StatementList getStatements( TokenList tokens )
+StatementList GetStatements( TokenList tokens )
 {
     StatementList statements;
 
@@ -56,6 +56,21 @@ StatementList getStatements( TokenList tokens )
     return statements;
 }
 
+void Execute(StatementList statements)
+{
+    Context context;
+
+    StatementList::iterator itEnd = statements.end();
+
+    for (
+        StatementList::iterator it = statements.begin();
+        it != itEnd;
+        ++it
+    ) {
+        it->get()->Execute(context);
+    }
+}
+
 int main(const int argc, const char* argv[])
 {
     if (argc == 1)
@@ -66,18 +81,9 @@ int main(const int argc, const char* argv[])
 
     try
     {
-        TokenList tokens = getToken(argv[1]);
-        StatementList statements = getStatements( tokens );
-
-        Context context;
-
-        for (
-            StatementList::iterator it = statements.begin();
-            it != statements.end();
-            ++it
-        ) {
-            it->get()->execute(context);
-        }
+        TokenList tokens = GetToken( argv[1] );
+        StatementList statements = GetStatements( tokens );
+        Execute( statements );
     }
     catch ( exception e )
     {
