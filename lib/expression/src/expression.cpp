@@ -107,12 +107,22 @@ Expression::ExprPtr Expression::Parse(TokenIt& it)
 
 	case Token::Type::Identifier:
 		pExpression = new Identifier( tokenData );
-		// it++;
+
+		/*it++;
+
+		if (it->GetType() == Token::Type::Operator)
+		{
+			cout << "token " << it->GetData() << endl;
+		}
+		else
+		{
+			it--;
+		}*/
 		break;
 
 	default:
 		throw exception(
-			(string("Unexpected expression: ") + tokenData).c_str()
+			(string("Expression inattendue: ") + tokenData).c_str()
 		);
 	}
 

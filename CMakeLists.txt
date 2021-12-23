@@ -10,6 +10,8 @@ if (DOXYGEN_FOUND)
     set(DOXYGEN_GENERATE_HTML YES)
     set(DOXYGEN_HTML_OUTPUT "docs")
 
+    set(DOXYGEN_USE_MDFILE_AS_MAINPAGE "${PROJECT_SOURCE_DIR}/DOCS.md")
+
     set(DOXYGEN_OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}")
     set(DOXYGEN_PROJECT_NAME "Interprèteur")
     set(DOXYGEN_PROJECT_BRIEF "Construire avec c++")
@@ -17,6 +19,7 @@ if (DOXYGEN_FOUND)
     set(DOXYGEN_OUTPUT_LANGUAGE "French")
 
     set(DOXYGEN_FILES
+        ${PROJECT_SOURCE_DIR}/DOCS.md
         lib/context/include
         lib/expression/include
         lib/parser/include
