@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -47,6 +51,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('class_non_terminal_expression.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -61,7 +82,6 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Fonctions membres publiques</a> &#124;
@@ -77,24 +97,24 @@ Graphe d'héritage de NonTerminalExpression:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_non_terminal_expression__inherit__graph.png" border="0" usemap="#a_non_terminal_expression_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_non_terminal_expression_inherit__map" id="a_non_terminal_expression_inherit__map">
-<area shape="rect" title=" " alt="" coords="140,107,299,133"/>
-<area shape="rect" href="class_addition_expression.html" title=" " alt="" coords="361,5,495,32"/>
-<area shape="rect" href="class_division_expression.html" title=" " alt="" coords="363,56,493,83"/>
-<area shape="rect" href="class_modulo_expression.html" title=" " alt="" coords="363,107,493,133"/>
-<area shape="rect" href="class_multiplication_expression.html" title=" " alt="" coords="347,157,509,184"/>
-<area shape="rect" href="class_subtraction_expression.html" title=" " alt="" coords="351,208,505,235"/>
-<area shape="rect" href="class_expression.html" title=" " alt="" coords="5,107,92,133"/>
+<area shape="rect" title=" " alt="" coords="345,160,524,296"/>
+<area shape="rect" href="class_addition_expression.html" title=" " alt="" coords="5,344,160,436"/>
+<area shape="rect" href="class_division_expression.html" title=" " alt="" coords="185,344,335,436"/>
+<area shape="rect" href="class_modulo_expression.html" title=" " alt="" coords="360,344,509,436"/>
+<area shape="rect" href="class_multiplication_expression.html" title=" " alt="" coords="534,344,717,436"/>
+<area shape="rect" href="class_subtraction_expression.html" title=" " alt="" coords="741,344,915,436"/>
+<area shape="rect" href="class_expression.html" title=" " alt="" coords="377,5,492,112"/>
 </map>
-<center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
+</div>
 <div class="dynheader">
 Graphe de collaboration de NonTerminalExpression:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_non_terminal_expression__coll__graph.png" border="0" usemap="#a_non_terminal_expression_coll__map" alt="Collaboration graph"/></div>
 <map name="a_non_terminal_expression_coll__map" id="a_non_terminal_expression_coll__map">
-<area shape="rect" title=" " alt="" coords="5,80,164,107"/>
-<area shape="rect" href="class_expression.html" title=" " alt="" coords="41,5,128,32"/>
+<area shape="rect" title=" " alt="" coords="5,160,184,296"/>
+<area shape="rect" href="class_expression.html" title=" " alt="" coords="37,5,152,112"/>
 </map>
-<center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
@@ -252,9 +272,13 @@ Membres hérités additionnels</h2></td></tr>
 <li>lib/expression/include/<a class="el" href="_non_terminal_expression_8h_source.html">NonTerminalExpression.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_non_terminal_expression.html">NonTerminalExpression</a></li>
+    <li class="footer">Généré le Vendredi 24 Décembre 2021 07:18:10 pour Interprèteur par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
 </body>
 </html>

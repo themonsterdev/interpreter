@@ -1,12 +1,12 @@
 <map id="Expression" name="Expression">
-<area shape="rect" id="node1" title=" " alt="" coords="5,208,92,235"/>
-<area shape="rect" id="node2" href="$class_non_terminal_expression.html" title=" " alt="" coords="140,132,299,159"/>
-<area shape="rect" id="node8" href="$class_terminal_expression.html" title=" " alt="" coords="151,259,287,285"/>
-<area shape="rect" id="node3" href="$class_addition_expression.html" title=" " alt="" coords="361,5,495,32"/>
-<area shape="rect" id="node4" href="$class_division_expression.html" title=" " alt="" coords="363,56,493,83"/>
-<area shape="rect" id="node5" href="$class_modulo_expression.html" title=" " alt="" coords="363,107,493,133"/>
-<area shape="rect" id="node6" href="$class_multiplication_expression.html" title=" " alt="" coords="347,157,509,184"/>
-<area shape="rect" id="node7" href="$class_subtraction_expression.html" title=" " alt="" coords="351,208,505,235"/>
-<area shape="rect" id="node9" href="$class_identifier.html" title=" " alt="" coords="393,259,463,285"/>
-<area shape="rect" id="node10" href="$class_number.html" title=" " alt="" coords="395,309,461,336"/>
+<area shape="rect" id="node1" title=" " alt="" coords="652,5,767,112"/>
+<area shape="rect" id="node2" href="$class_non_terminal_expression.html" title=" " alt="" coords="441,160,620,296"/>
+<area shape="rect" id="node8" href="$class_terminal_expression.html" title=" " alt="" coords="906,182,1062,274"/>
+<area shape="rect" id="node3" href="$class_addition_expression.html" title=" " alt="" coords="5,344,160,436"/>
+<area shape="rect" id="node4" href="$class_division_expression.html" title=" " alt="" coords="185,344,335,436"/>
+<area shape="rect" id="node5" href="$class_modulo_expression.html" title=" " alt="" coords="360,344,509,436"/>
+<area shape="rect" id="node6" href="$class_multiplication_expression.html" title=" " alt="" coords="534,344,717,436"/>
+<area shape="rect" id="node7" href="$class_subtraction_expression.html" title=" " alt="" coords="741,344,915,436"/>
+<area shape="rect" id="node9" href="$class_identifier.html" title=" " alt="" coords="939,344,1029,436"/>
+<area shape="rect" id="node10" href="$class_number.html" title=" " alt="" coords="1053,344,1144,436"/>
 </map>

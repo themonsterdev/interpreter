@@ -10,16 +10,22 @@ if (DOXYGEN_FOUND)
     set(DOXYGEN_GENERATE_HTML YES)
     set(DOXYGEN_HTML_OUTPUT "docs")
 
-    set(DOXYGEN_USE_MDFILE_AS_MAINPAGE "${PROJECT_SOURCE_DIR}/DOCS.md")
+    set(DOXYGEN_USE_MDFILE_AS_MAINPAGE "${PROJECT_SOURCE_DIR}/doxygen/DOCUMENTATION.md")
 
     set(DOXYGEN_OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}")
+    # set(DOXYGEN_PROJECT_LOGO "Interprèteur")
     set(DOXYGEN_PROJECT_NAME "Interprèteur")
     set(DOXYGEN_PROJECT_BRIEF "Construire avec c++")
     set(DOXYGEN_PROJECT_NUMBER "1.0.0")
     set(DOXYGEN_OUTPUT_LANGUAGE "French")
 
+    set(DOXYGEN_HTML_TIMESTAMP        "YES")    # Génére la date dans le footer
+    set(DOXYGEN_HTML_DYNAMIC_SECTIONS "NO")     # Ouvre le graph auto
+    set(DOXYGEN_GENERATE_TREEVIEW "YES")        # Affiche un menu sur le coté
+    set(DOXYGEN_UML_LOOK "YES")                 # Graph detailer
+
     set(DOXYGEN_FILES
-        ${PROJECT_SOURCE_DIR}/DOCS.md
+        ${PROJECT_SOURCE_DIR}/doxygen/DOCUMENTATION.md
         lib/context/include
         lib/expression/include
         lib/parser/include
