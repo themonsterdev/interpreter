@@ -9,7 +9,7 @@ using namespace std;
 /**
  * Classe Token
  * 
- * Cette class représente un jeton lexème.
+ * Cette class représente un jeton.
  * 
  * @see https://fr.wikipedia.org/wiki/Analyse_lexicale
  */

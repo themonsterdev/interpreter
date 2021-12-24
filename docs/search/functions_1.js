@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['printtokens_0',['PrintTokens',['../class_tokenizer.html#a1c2ef0cc3fe72bdf1f186ae6fae8eaaf',1,'Tokenizer']]]
+  ['create_0',['Create',['../class_statement.html#a0a579f3a9535a286de5bdaa2831791c2',1,'Statement']]]
 ];

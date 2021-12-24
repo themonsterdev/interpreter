@@ -1,4 +1,5 @@
 <map id="Number" name="Number">
-<area shape="rect" id="node1" title=" " alt="" coords="15,80,82,107"/>
-<area shape="rect" id="node2" href="$class_expression.html" title=" " alt="" coords="5,5,92,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="40,155,107,181"/>
+<area shape="rect" id="node2" href="$class_terminal_expression.html" title=" " alt="" coords="5,80,141,107"/>
+<area shape="rect" id="node3" href="$class_expression.html" title=" " alt="" coords="30,5,117,32"/>
 </map>

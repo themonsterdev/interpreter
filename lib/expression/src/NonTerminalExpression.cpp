@@ -1,17 +1,17 @@
 #include "NonTerminalExpression.h"
 
-NonTerminalExpression::NonTerminalExpression(Expression* left, Expression* right)
+NonTerminalExpression::NonTerminalExpression(Expression::Pointer left, Expression::Pointer right)
 	: m_left(left)
 	, m_right(right)
 {}
 
 
-Expression* NonTerminalExpression::GetRight()
+Expression::Pointer NonTerminalExpression::GetRight()
 {
 	return m_right;
 }
 
-void NonTerminalExpression::SetRight(Expression* right)
+void NonTerminalExpression::SetRight(Expression::Pointer right)
 {
 	m_right = right;
 }

@@ -5,42 +5,20 @@
 
 /**
  * Classe TerminalExpression
+ * 
+ * Cette classe permet de crée une expression terminal.
  */
 class TerminalExpression : public Expression
 {
 public:
 
-	TerminalExpression(string name);
+	TerminalExpression(string value);
 
-	virtual long Evaluate(Context& context);
+	virtual long Evaluate(Context& context) = 0;
 
-private:
+protected:
 
-	string m_name;
-};
-
-class Number : public Expression
-{
-public:
-
-	Number(long number);
-	virtual long Evaluate(Context& context);
-
-private:
-
-	long m_number;
-};
-
-class Identifier : public Expression
-{
-public:
-
-	Identifier(string identifier);
-	virtual long Evaluate(Context& context);
-
-private:
-
-	string m_identifier;
+	string m_value;
 };
 
 #endif

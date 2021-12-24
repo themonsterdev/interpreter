@@ -29,8 +29,29 @@ var menudata={children:[
 {text:"Index des classes",url:"classes.html"},
 {text:"Hiérarchie des classes",url:"inherits.html"},
 {text:"Membres de classe",url:"functions.html",children:[
-{text:"Tout",url:"functions.html"},
-{text:"Fonctions",url:"functions_func.html"},
+{text:"Tout",url:"functions.html",children:[
+{text:"a",url:"functions.html#index_a"},
+{text:"c",url:"functions.html#index_c"},
+{text:"e",url:"functions.html#index_e"},
+{text:"g",url:"functions.html#index_g"},
+{text:"n",url:"functions.html#index_n"},
+{text:"p",url:"functions.html#index_p"},
+{text:"s",url:"functions.html#index_s"},
+{text:"t",url:"functions.html#index_t"},
+{text:"v",url:"functions.html#index_v"},
+{text:"~",url:"functions.html#index__7E"}]},
+{text:"Fonctions",url:"functions_func.html",children:[
+{text:"a",url:"functions_func.html#index_a"},
+{text:"c",url:"functions_func.html#index_c"},
+{text:"e",url:"functions_func.html#index_e"},
+{text:"g",url:"functions_func.html#index_g"},
+{text:"n",url:"functions_func.html#index_n"},
+{text:"p",url:"functions_func.html#index_p"},
+{text:"s",url:"functions_func.html#index_s"},
+{text:"t",url:"functions_func.html#index_t"},
+{text:"v",url:"functions_func.html#index_v"},
+{text:"~",url:"functions_func.html#index__7E"}]},
+{text:"Définitions de type",url:"functions_type.html"},
 {text:"Énumérations",url:"functions_enum.html"}]}]},
 {text:"Fichiers",url:"files.html",children:[
 {text:"Liste des fichiers",url:"files.html"}]}]}

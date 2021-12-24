@@ -10,7 +10,7 @@ class AdditionExpression : public NonTerminalExpression
 {
 public:
 
-	AdditionExpression(Expression* left, Expression* right = nullptr);
+	AdditionExpression(Expression::Pointer left, Expression::Pointer right = nullptr);
 
 	virtual long Evaluate(Context& context);
 };

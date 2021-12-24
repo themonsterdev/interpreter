@@ -1,6 +1,6 @@
 #include "MultiplicationExpression.h"
 
-MultiplicationExpression::MultiplicationExpression(Expression* left, Expression* right)
+MultiplicationExpression::MultiplicationExpression(Expression::Pointer left, Expression::Pointer right)
 	: ::NonTerminalExpression(left, right)
 {}
 

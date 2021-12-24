@@ -1,6 +1,6 @@
 #include "SubtractionExpression.h"
 
-SubtractionExpression::SubtractionExpression(Expression* left, Expression* right)
+SubtractionExpression::SubtractionExpression(Expression::Pointer left, Expression::Pointer right)
 	: ::NonTerminalExpression(left, right)
 {}
 

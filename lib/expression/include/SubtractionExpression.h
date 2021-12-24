@@ -10,7 +10,7 @@ class SubtractionExpression : public NonTerminalExpression
 {
 public:
 
-	SubtractionExpression(Expression* left, Expression* right = nullptr);
+	SubtractionExpression(Expression::Pointer left, Expression::Pointer right = nullptr);
 
 	virtual long Evaluate(Context& context);
 };

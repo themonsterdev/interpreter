@@ -10,7 +10,7 @@ class ModuloExpression : public NonTerminalExpression
 {
 public:
 
-	ModuloExpression(Expression* left, Expression* right = nullptr);
+	ModuloExpression(Expression::Pointer left, Expression::Pointer right = nullptr);
 
 	virtual long Evaluate(Context& context);
 };

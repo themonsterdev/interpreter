@@ -1,6 +1,6 @@
 #include "DivisionExpression.h"
 
-DivisionExpression::DivisionExpression(Expression* left, Expression* right)
+DivisionExpression::DivisionExpression(Expression::Pointer left, Expression::Pointer right)
 	: ::NonTerminalExpression(left, right)
 {}
 

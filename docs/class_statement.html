@@ -64,6 +64,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Types publics</a> &#124;
 <a href="#pub-methods">Fonctions membres publiques</a> &#124;
 <a href="#pub-static-methods">Fonctions membres publiques statiques</a> &#124;
 <a href="class_statement-members.html">Liste de tous les membres</a>  </div>
@@ -77,27 +78,182 @@ Graphe d'héritage de Statement:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_statement__inherit__graph.png" border="0" usemap="#a_statement_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_statement_inherit__map" id="a_statement_inherit__map">
-<area shape="rect" title=" " alt="" coords="117,5,199,32"/>
+<area shape="rect" title=" " alt="" coords="194,5,277,32"/>
 <area shape="rect" href="class_assignment_statement.html" title=" " alt="" coords="5,80,156,107"/>
 <area shape="rect" href="class_print_statement.html" title=" " alt="" coords="181,80,290,107"/>
+<area shape="rect" href="class_variable_statement.html" title=" " alt="" coords="315,80,444,107"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Types publics</h2></td></tr>
+<tr class="memitem:a98d93a62817d1aabdea1129bcb567a67"><td class="memItemLeft" align="right" valign="top">typedef shared_ptr&lt; <a class="el" href="class_statement.html">Statement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statement.html#a98d93a62817d1aabdea1129bcb567a67">Pointer</a></td></tr>
+<tr class="separator:a98d93a62817d1aabdea1129bcb567a67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a7271bfc9e9d4658d8c70f47339f0c0"><td class="memItemLeft" align="right" valign="top">typedef vector&lt; <a class="el" href="class_statement.html#a98d93a62817d1aabdea1129bcb567a67">Pointer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statement.html#a1a7271bfc9e9d4658d8c70f47339f0c0">StatementList</a></td></tr>
+<tr class="separator:a1a7271bfc9e9d4658d8c70f47339f0c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
-<tr class="memitem:a1adb916716e50fdc7687f5bbc7ee5f8a"><td class="memItemLeft" align="right" valign="top"><a id="a1adb916716e50fdc7687f5bbc7ee5f8a" name="a1adb916716e50fdc7687f5bbc7ee5f8a"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Execute</b> (<a class="el" href="class_context.html">Context</a> &amp;context)=0</td></tr>
+<tr class="memitem:a99d8be8cbb81cc0742784f3c43d8bb39"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statement.html#a99d8be8cbb81cc0742784f3c43d8bb39">~Statement</a> ()=default</td></tr>
+<tr class="separator:a99d8be8cbb81cc0742784f3c43d8bb39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1adb916716e50fdc7687f5bbc7ee5f8a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statement.html#a1adb916716e50fdc7687f5bbc7ee5f8a">Execute</a> (<a class="el" href="class_context.html">Context</a> &amp;context)=0</td></tr>
 <tr class="separator:a1adb916716e50fdc7687f5bbc7ee5f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Fonctions membres publiques statiques</h2></td></tr>
-<tr class="memitem:aa0eb0e4200493a94c2ec5be98f29129b"><td class="memItemLeft" align="right" valign="top"><a id="aa0eb0e4200493a94c2ec5be98f29129b" name="aa0eb0e4200493a94c2ec5be98f29129b"></a>
-static <a class="el" href="class_statement.html">Statement</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>create</b> (<a class="el" href="class_context.html">Context</a> &amp;context, TokenIt &amp;it)</td></tr>
-<tr class="separator:aa0eb0e4200493a94c2ec5be98f29129b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a579f3a9535a286de5bdaa2831791c2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_statement.html#a98d93a62817d1aabdea1129bcb567a67">Pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statement.html#a0a579f3a9535a286de5bdaa2831791c2">Create</a> (<a class="el" href="class_context.html">Context</a> &amp;context, TokenIt &amp;it)</td></tr>
+<tr class="separator:a0a579f3a9535a286de5bdaa2831791c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
-<div class="textblock"><p >Classe <a class="el" href="class_statement.html">Statement</a> </p>
-</div><hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
+<div class="textblock"><p >Classe <a class="el" href="class_statement.html">Statement</a></p>
+<p >Cette classe permet d'indiquer à l'intérpéteur l'existence d'une entité informatique (Variable, Routine, Ect).</p>
+<p >Il est nécessaire de déclarer les entités informatiques avant de pouvoir les utiliser.</p>
+<dl class="section see"><dt>Voir également</dt><dd><a href="https://fr.wikipedia.org/wiki/D%C3%A9claration_(informatique)">https://fr.wikipedia.org/wiki/D%C3%A9claration_(informatique)</a> </dd>
+<dd>
+<a href="https://en.wikipedia.org/wiki/Statement_(computer_science)">https://en.wikipedia.org/wiki/Statement_(computer_science)</a> </dd></dl>
+</div><h2 class="groupheader">Documentation des définitions de type membres</h2>
+<a id="a98d93a62817d1aabdea1129bcb567a67" name="a98d93a62817d1aabdea1129bcb567a67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98d93a62817d1aabdea1129bcb567a67">&#9670;&nbsp;</a></span>Pointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef shared_ptr&lt;<a class="el" href="class_statement.html">Statement</a>&gt; <a class="el" href="class_statement.html#a98d93a62817d1aabdea1129bcb567a67">Statement::Pointer</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Pointeur de déclaration intelligent.</p>
+<dl class="section return"><dt>Renvoie</dt><dd>shared_ptr&lt;Statement&gt; </dd></dl>
+
+</div>
+</div>
+<a id="a1a7271bfc9e9d4658d8c70f47339f0c0" name="a1a7271bfc9e9d4658d8c70f47339f0c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a7271bfc9e9d4658d8c70f47339f0c0">&#9670;&nbsp;</a></span>StatementList</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef vector&lt;<a class="el" href="class_statement.html#a98d93a62817d1aabdea1129bcb567a67">Pointer</a>&gt; <a class="el" href="class_statement.html#a1a7271bfc9e9d4658d8c70f47339f0c0">Statement::StatementList</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >La listes de pointeur de déclaration.</p>
+<dl class="section return"><dt>Renvoie</dt><dd>vector&lt;Pointer&gt; </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a id="a99d8be8cbb81cc0742784f3c43d8bb39" name="a99d8be8cbb81cc0742784f3c43d8bb39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99d8be8cbb81cc0742784f3c43d8bb39">&#9670;&nbsp;</a></span>~Statement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Statement::~Statement </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Déstruction de l'instance <a class="el" href="class_statement.html">Statement</a>. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="a0a579f3a9535a286de5bdaa2831791c2" name="a0a579f3a9535a286de5bdaa2831791c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a579f3a9535a286de5bdaa2831791c2">&#9670;&nbsp;</a></span>Create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_statement.html#a98d93a62817d1aabdea1129bcb567a67">Pointer</a> Statement::Create </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_context.html">Context</a> &amp;&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TokenIt &amp;&#160;</td>
+          <td class="paramname"><em>it</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Crée une nouvelle instance de déclaration.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>La référence du context actuel. </td></tr>
+    <tr><td class="paramname">it</td><td>L'itération de token. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Pointer Le pointeur de la nouvelle déclaration. </dd></dl>
+
+</div>
+</div>
+<a id="a1adb916716e50fdc7687f5bbc7ee5f8a" name="a1adb916716e50fdc7687f5bbc7ee5f8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1adb916716e50fdc7687f5bbc7ee5f8a">&#9670;&nbsp;</a></span>Execute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Statement::Execute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_context.html">Context</a> &amp;&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Exécute les instructions déclarer.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>La référence du context actuel. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>void </dd></dl>
+
+<p>Implémenté dans <a class="el" href="class_assignment_statement.html#ad155a8cb650ef476c68e22c3ee7213a2">AssignmentStatement</a>, <a class="el" href="class_print_statement.html#ab5dcb1426b77b143e5735d815886dc37">PrintStatement</a>, et <a class="el" href="class_variable_statement.html#a41c43841bc2ef76d787c06f7e90409b8">VariableStatement</a>.</p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
 <li>lib/statement/include/<a class="el" href="_statement_8h_source.html">Statement.h</a></li>
 </ul>
 </div><!-- contents -->

@@ -1,8 +1,11 @@
 #include "Statement.h"
+#include "VariableStatement.h"
 #include "AssignmentStatement.h"
 #include "PrintStatement.h"
 
-Statement* Statement::create( Context& context, TokenIt& it )
+// Utilisez la fonction make_shared lorsque cela est possible.
+
+Statement::Pointer Statement::Create( Context& context, TokenIt& it )
 {
 	Token::Type tokenType = it->GetType();
 	string tokenData = it->GetData();
@@ -10,21 +13,10 @@ Statement* Statement::create( Context& context, TokenIt& it )
 	switch (tokenType)
 	{
 	case Token::Type::Keyword:
-		{
-			if ( tokenData == "var" )
-			{
-				return new AssignmentStatement( context, it );
-			}
-			else if ( tokenData == "print" )
-			{
-				return new PrintStatement( it );
-			}
-		}
-		break;
+		return Statement::CreateKeywordStatement( context, it );
 
 	case Token::Type::Identifier:
-		return new AssignmentStatement(context, it);
-		break;
+		return make_shared<AssignmentStatement>( context, it );
 
 	case Token::Type::Operator:
 		break;
@@ -34,6 +26,27 @@ Statement* Statement::create( Context& context, TokenIt& it )
 	}
 
 	throw exception(
-		(string("Erreur: Déclaration inattendue, ") + Token::GetStringType(tokenType) + " " + tokenData).c_str()
+		( string("Erreur: Déclaration inattendue, " ) + Token::GetStringType( tokenType ) + " " + tokenData ).c_str()
 	);
+}
+
+Statement::Pointer Statement::CreateKeywordStatement( Context& context, TokenIt& it )
+{
+	Token::Type tokenType = it->GetType();
+	string tokenData = it->GetData();
+
+	if ( tokenData == "var" )
+	{
+		return make_shared<VariableStatement>( context, it );
+	}
+	else if ( tokenData == "print" )
+	{
+		return make_shared<PrintStatement>( it );
+	}
+	else
+	{
+		throw exception(
+			( string("Erreur: Déclaration keyword inattendue, " ) + Token::GetStringType( tokenType ) + " " + tokenData ).c_str()
+		);
+	}
 }

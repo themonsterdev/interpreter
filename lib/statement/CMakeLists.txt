@@ -8,6 +8,9 @@ add_library(Statement STATIC
     # PrintStatement
     include/PrintStatement.h
     src/PrintStatement.cpp
+    # VariableStatement
+    include/VariableStatement.h
+    src/VariableStatement.cpp
 )
 
 target_include_directories(Statement

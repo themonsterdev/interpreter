@@ -10,7 +10,7 @@ class DivisionExpression : public NonTerminalExpression
 {
 public:
 
-	DivisionExpression(Expression* left, Expression* right = nullptr);
+	DivisionExpression(Expression::Pointer left, Expression::Pointer right = nullptr);
 
 	virtual long Evaluate(Context& context);
 };

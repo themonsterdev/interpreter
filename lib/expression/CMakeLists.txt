@@ -23,6 +23,12 @@ add_library(Expression STATIC
     # ModuloExpression
     include/ModuloExpression.h
     src/ModuloExpression.cpp
+    # Identifier
+    include/Identifier.h
+    src/Identifier.cpp
+    # Number
+    include/Number.h
+    src/Number.cpp
 )
 
 target_include_directories(Expression

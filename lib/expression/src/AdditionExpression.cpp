@@ -1,6 +1,6 @@
 #include "AdditionExpression.h"
 
-AdditionExpression::AdditionExpression(Expression* left, Expression* right)
+AdditionExpression::AdditionExpression(Expression::Pointer left, Expression::Pointer right)
 	: ::NonTerminalExpression(left, right)
 {}
 

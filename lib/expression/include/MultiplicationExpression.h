@@ -10,7 +10,7 @@ class MultiplicationExpression : public NonTerminalExpression
 {
 public:
 
-	MultiplicationExpression(Expression* left, Expression* right = nullptr);
+	MultiplicationExpression(Expression::Pointer left, Expression::Pointer right = nullptr);
 
 	virtual long Evaluate(Context& context);
 };

@@ -1,6 +1,6 @@
 #include "ModuloExpression.h"
 
-ModuloExpression::ModuloExpression(Expression* left, Expression* right)
+ModuloExpression::ModuloExpression(Expression::Pointer left, Expression::Pointer right)
 	: ::NonTerminalExpression(left, right)
 {}
 

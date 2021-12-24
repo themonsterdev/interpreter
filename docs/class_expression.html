@@ -78,46 +78,175 @@ Graphe d'héritage de Expression:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_expression__inherit__graph.png" border="0" usemap="#a_expression_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_expression_inherit__map" id="a_expression_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,132,92,159"/>
-<area shape="rect" href="class_identifier.html" title=" " alt="" coords="184,56,255,83"/>
-<area shape="rect" href="class_non_terminal_expression.html" title=" " alt="" coords="140,107,299,133"/>
-<area shape="rect" href="class_number.html" title=" " alt="" coords="186,157,253,184"/>
-<area shape="rect" href="class_terminal_expression.html" title=" " alt="" coords="151,208,287,235"/>
+<area shape="rect" title=" " alt="" coords="5,208,92,235"/>
+<area shape="rect" href="class_non_terminal_expression.html" title=" " alt="" coords="140,132,299,159"/>
+<area shape="rect" href="class_terminal_expression.html" title=" " alt="" coords="151,259,287,285"/>
 <area shape="rect" href="class_addition_expression.html" title=" " alt="" coords="361,5,495,32"/>
 <area shape="rect" href="class_division_expression.html" title=" " alt="" coords="363,56,493,83"/>
 <area shape="rect" href="class_modulo_expression.html" title=" " alt="" coords="363,107,493,133"/>
 <area shape="rect" href="class_multiplication_expression.html" title=" " alt="" coords="347,157,509,184"/>
 <area shape="rect" href="class_subtraction_expression.html" title=" " alt="" coords="351,208,505,235"/>
+<area shape="rect" href="class_identifier.html" title=" " alt="" coords="393,259,463,285"/>
+<area shape="rect" href="class_number.html" title=" " alt="" coords="395,309,461,336"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Types publics</h2></td></tr>
-<tr class="memitem:a1ea322f684d9f43e55d80f13f4b646df"><td class="memItemLeft" align="right" valign="top"><a id="a1ea322f684d9f43e55d80f13f4b646df" name="a1ea322f684d9f43e55d80f13f4b646df"></a>
-typedef shared_ptr&lt; <a class="el" href="class_expression.html">Expression</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ExprPtr</b></td></tr>
-<tr class="separator:a1ea322f684d9f43e55d80f13f4b646df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a634ba78c9135161efdb6a4ae9fe98a24"><td class="memItemLeft" align="right" valign="top"><a id="a634ba78c9135161efdb6a4ae9fe98a24" name="a634ba78c9135161efdb6a4ae9fe98a24"></a>
-typedef list&lt; ExprPtr &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Exprs</b></td></tr>
-<tr class="separator:a634ba78c9135161efdb6a4ae9fe98a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab86075d6b1ab461016b396398540a6c1"><td class="memItemLeft" align="right" valign="top"><a id="ab86075d6b1ab461016b396398540a6c1" name="ab86075d6b1ab461016b396398540a6c1"></a>
-typedef shared_ptr&lt; Exprs &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ExprsPtr</b></td></tr>
-<tr class="separator:ab86075d6b1ab461016b396398540a6c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90046daed7d30b372f481f7c338e0d9a"><td class="memItemLeft" align="right" valign="top">typedef shared_ptr&lt; <a class="el" href="class_expression.html">Expression</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_expression.html#a90046daed7d30b372f481f7c338e0d9a">Pointer</a></td></tr>
+<tr class="separator:a90046daed7d30b372f481f7c338e0d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2a30804101b0e8dc16f7d7627341990"><td class="memItemLeft" align="right" valign="top">typedef vector&lt; <a class="el" href="class_expression.html#a90046daed7d30b372f481f7c338e0d9a">Pointer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_expression.html#ac2a30804101b0e8dc16f7d7627341990">ExpressionList</a></td></tr>
+<tr class="separator:ac2a30804101b0e8dc16f7d7627341990"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
-<tr class="memitem:a788d63f16ce2c99b920cc86c6cb1b215"><td class="memItemLeft" align="right" valign="top"><a id="a788d63f16ce2c99b920cc86c6cb1b215" name="a788d63f16ce2c99b920cc86c6cb1b215"></a>
-virtual long&#160;</td><td class="memItemRight" valign="bottom"><b>Evaluate</b> (<a class="el" href="class_context.html">Context</a> &amp;context)=0</td></tr>
+<tr class="memitem:a9d81831ea034f330627b1fddb1899517"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_expression.html#a9d81831ea034f330627b1fddb1899517">~Expression</a> ()=default</td></tr>
+<tr class="separator:a9d81831ea034f330627b1fddb1899517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a788d63f16ce2c99b920cc86c6cb1b215"><td class="memItemLeft" align="right" valign="top">virtual long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_expression.html#a788d63f16ce2c99b920cc86c6cb1b215">Evaluate</a> (<a class="el" href="class_context.html">Context</a> &amp;context)=0</td></tr>
 <tr class="separator:a788d63f16ce2c99b920cc86c6cb1b215"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Fonctions membres publiques statiques</h2></td></tr>
-<tr class="memitem:a50188f46d94d53c84f9b9468241ad4a1"><td class="memItemLeft" align="right" valign="top"><a id="a50188f46d94d53c84f9b9468241ad4a1" name="a50188f46d94d53c84f9b9468241ad4a1"></a>
-static ExprPtr&#160;</td><td class="memItemRight" valign="bottom"><b>Parse</b> (TokenIt &amp;it)</td></tr>
-<tr class="separator:a50188f46d94d53c84f9b9468241ad4a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64c7a90e599359302dbd39cfaa1e0140"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_expression.html#a90046daed7d30b372f481f7c338e0d9a">Pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_expression.html#a64c7a90e599359302dbd39cfaa1e0140">Parse</a> (TokenIt &amp;it)</td></tr>
+<tr class="separator:a64c7a90e599359302dbd39cfaa1e0140"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
-<div class="textblock"><p >Classe <a class="el" href="class_expression.html">Expression</a> </p>
-</div><hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
+<div class="textblock"><p >Classe <a class="el" href="class_expression.html">Expression</a></p>
+<dl class="section see"><dt>Voir également</dt><dd><a href="https://en.wikipedia.org/wiki/Expression_(computer_science)">https://en.wikipedia.org/wiki/Expression_(computer_science)</a> </dd>
+<dd>
+<a href="https://fr.wikipedia.org/wiki/Expression_(informatique)">https://fr.wikipedia.org/wiki/Expression_(informatique)</a> </dd></dl>
+</div><h2 class="groupheader">Documentation des définitions de type membres</h2>
+<a id="ac2a30804101b0e8dc16f7d7627341990" name="ac2a30804101b0e8dc16f7d7627341990"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2a30804101b0e8dc16f7d7627341990">&#9670;&nbsp;</a></span>ExpressionList</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef vector&lt;<a class="el" href="class_expression.html#a90046daed7d30b372f481f7c338e0d9a">Pointer</a>&gt; <a class="el" href="class_expression.html#ac2a30804101b0e8dc16f7d7627341990">Expression::ExpressionList</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >La listes de pointeur d'expression.</p>
+<dl class="section return"><dt>Renvoie</dt><dd>vector&lt;Pointer&gt; </dd></dl>
+
+</div>
+</div>
+<a id="a90046daed7d30b372f481f7c338e0d9a" name="a90046daed7d30b372f481f7c338e0d9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90046daed7d30b372f481f7c338e0d9a">&#9670;&nbsp;</a></span>Pointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef shared_ptr&lt;<a class="el" href="class_expression.html">Expression</a>&gt; <a class="el" href="class_expression.html#a90046daed7d30b372f481f7c338e0d9a">Expression::Pointer</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Pointeur d'expression intelligent.</p>
+<dl class="section return"><dt>Renvoie</dt><dd>shared_ptr&lt;Expression&gt; </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a id="a9d81831ea034f330627b1fddb1899517" name="a9d81831ea034f330627b1fddb1899517"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d81831ea034f330627b1fddb1899517">&#9670;&nbsp;</a></span>~Expression()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Expression::~Expression </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Déstruction de l'instance <a class="el" href="class_expression.html">Expression</a>. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="a788d63f16ce2c99b920cc86c6cb1b215" name="a788d63f16ce2c99b920cc86c6cb1b215"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a788d63f16ce2c99b920cc86c6cb1b215">&#9670;&nbsp;</a></span>Evaluate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual long Expression::Evaluate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_context.html">Context</a> &amp;&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Evalue l'expression enregistrée.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>La référence du context actuel. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>long </dd></dl>
+
+<p>Implémenté dans <a class="el" href="class_addition_expression.html#a7b1c5433b4b93c596354a34fa6c5b93b">AdditionExpression</a>, <a class="el" href="class_division_expression.html#a0121478d4e1dbc7e53ae94b31718d073">DivisionExpression</a>, <a class="el" href="class_identifier.html#a620770d869a3d245a6b9845f7134876c">Identifier</a>, <a class="el" href="class_modulo_expression.html#a9a3464e85ae08f6782610ff4a328bbe8">ModuloExpression</a>, <a class="el" href="class_multiplication_expression.html#af748dd508e3068a3de1d74d7da758f45">MultiplicationExpression</a>, <a class="el" href="class_number.html#a69838c6c7a591a93de304ae827ac97c1">Number</a>, <a class="el" href="class_subtraction_expression.html#a9470c5ada71c9bbb6ddf6ed4287edeb4">SubtractionExpression</a>, <a class="el" href="class_non_terminal_expression.html#a4741eb7516910b2380d223516d3e6f6d">NonTerminalExpression</a>, et <a class="el" href="class_terminal_expression.html#a1f976fecf2df930e03cfce33e5477b33">TerminalExpression</a>.</p>
+
+</div>
+</div>
+<a id="a64c7a90e599359302dbd39cfaa1e0140" name="a64c7a90e599359302dbd39cfaa1e0140"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64c7a90e599359302dbd39cfaa1e0140">&#9670;&nbsp;</a></span>Parse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_expression.html#a90046daed7d30b372f481f7c338e0d9a">Pointer</a> Expression::Parse </td>
+          <td>(</td>
+          <td class="paramtype">TokenIt &amp;&#160;</td>
+          <td class="paramname"><em>it</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Crée un pointeur d'expression avec l'itération de token spécifié.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">it</td><td>L'itération de token. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Pointer </dd></dl>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
 <li>lib/expression/include/<a class="el" href="_expression_8h_source.html">Expression.h</a></li>
 </ul>
 </div><!-- contents -->
