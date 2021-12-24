@@ -1,9 +1,0 @@
-<map id="NonTerminalExpression" name="NonTerminalExpression">
-<area shape="rect" id="node1" title=" " alt="" coords="345,160,524,296"/>
-<area shape="rect" id="node3" href="$d9/dc3/class_addition_expression.html" title=" " alt="" coords="5,344,160,436"/>
-<area shape="rect" id="node4" href="$d7/d3f/class_division_expression.html" title=" " alt="" coords="185,344,335,436"/>
-<area shape="rect" id="node5" href="$d4/dc0/class_modulo_expression.html" title=" " alt="" coords="360,344,509,436"/>
-<area shape="rect" id="node6" href="$df/d55/class_multiplication_expression.html" title=" " alt="" coords="534,344,717,436"/>
-<area shape="rect" id="node7" href="$d0/d37/class_subtraction_expression.html" title=" " alt="" coords="741,344,915,436"/>
-<area shape="rect" id="node2" href="$df/d03/class_expression.html" title=" " alt="" coords="377,5,492,112"/>
-</map>
