@@ -3,8 +3,6 @@
 #include "AssignmentStatement.h"
 #include "PrintStatement.h"
 
-// Utilisez la fonction make_shared lorsque cela est possible.
-
 Statement::Pointer Statement::Create( Context& context, TokenIt& it )
 {
 	Token::Type tokenType = it->GetType();
