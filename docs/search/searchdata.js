@@ -2,11 +2,12 @@ var indexSectionsWithContent =
 {
   0: "acdegikmnopstuv~",
   1: "acdeimnpstv",
-  2: "acegnpstv~",
-  3: "eps",
-  4: "t",
-  5: "iknou",
-  6: "d"
+  2: "acdegimnpstv~",
+  3: "m",
+  4: "eps",
+  5: "t",
+  6: "iknou",
+  7: "d"
 };
 
 var indexSectionNames =
@@ -14,10 +15,11 @@ var indexSectionNames =
   0: "all",
   1: "classes",
   2: "functions",
-  3: "typedefs",
-  4: "enums",
-  5: "enumvalues",
-  6: "pages"
+  3: "variables",
+  4: "typedefs",
+  5: "enums",
+  6: "enumvalues",
+  7: "pages"
 };
 
 var indexSectionLabels =
@@ -25,9 +27,10 @@ var indexSectionLabels =
   0: "Tout",
   1: "Classes",
   2: "Fonctions",
-  3: "Définitions de type",
-  4: "Énumérations",
-  5: "Valeurs énumérées",
-  6: "Pages"
+  3: "Variables",
+  4: "Définitions de type",
+  5: "Énumérations",
+  6: "Valeurs énumérées",
+  7: "Pages"
 };
 

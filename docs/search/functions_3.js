@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['getdata_0',['GetData',['../class_token.html#a1b852ae1b7fbb77a6de7e18a9e57e4cf',1,'Token']]],
-  ['getright_1',['GetRight',['../class_non_terminal_expression.html#a08563c3a2a8ced7ba1982bf2a4059902',1,'NonTerminalExpression']]],
-  ['gettokens_2',['GetTokens',['../class_tokenizer.html#ad4eb1a3fa978a7fbfa8027407cea945b',1,'Tokenizer']]],
-  ['gettype_3',['GetType',['../class_token.html#a183d1dba876c544e5c7c9cbaec51954e',1,'Token']]],
-  ['getvalue_4',['GetValue',['../class_context.html#a585964ac80dc57e95a34f7a2fa00246a',1,'Context']]]
+  ['evaluate_0',['Evaluate',['../class_addition_expression.html#a7b1c5433b4b93c596354a34fa6c5b93b',1,'AdditionExpression::Evaluate()'],['../class_division_expression.html#a0121478d4e1dbc7e53ae94b31718d073',1,'DivisionExpression::Evaluate()'],['../class_expression.html#a788d63f16ce2c99b920cc86c6cb1b215',1,'Expression::Evaluate()'],['../class_identifier.html#a620770d869a3d245a6b9845f7134876c',1,'Identifier::Evaluate()'],['../class_modulo_expression.html#a9a3464e85ae08f6782610ff4a328bbe8',1,'ModuloExpression::Evaluate()'],['../class_multiplication_expression.html#af748dd508e3068a3de1d74d7da758f45',1,'MultiplicationExpression::Evaluate()'],['../class_non_terminal_expression.html#a4741eb7516910b2380d223516d3e6f6d',1,'NonTerminalExpression::Evaluate()'],['../class_number.html#a69838c6c7a591a93de304ae827ac97c1',1,'Number::Evaluate()'],['../class_subtraction_expression.html#a9470c5ada71c9bbb6ddf6ed4287edeb4',1,'SubtractionExpression::Evaluate()'],['../class_terminal_expression.html#a1f976fecf2df930e03cfce33e5477b33',1,'TerminalExpression::Evaluate()']]],
+  ['execute_1',['Execute',['../class_assignment_statement.html#ad155a8cb650ef476c68e22c3ee7213a2',1,'AssignmentStatement::Execute()'],['../class_print_statement.html#ab5dcb1426b77b143e5735d815886dc37',1,'PrintStatement::Execute()'],['../class_statement.html#a1adb916716e50fdc7687f5bbc7ee5f8a',1,'Statement::Execute()'],['../class_variable_statement.html#a41c43841bc2ef76d787c06f7e90409b8',1,'VariableStatement::Execute()']]]
 ];

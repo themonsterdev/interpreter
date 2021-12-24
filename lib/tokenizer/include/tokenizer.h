@@ -26,7 +26,7 @@ public:
     /**
      * Constructeur Tokenizer
      * 
-     * @param string les caractère d'entrée du program/script
+     * @param characters les caractère d'entrée du program/script
      */
     Tokenizer( string characters );
 

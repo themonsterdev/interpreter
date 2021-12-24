@@ -29,6 +29,11 @@ public:
         Unknown     /**< enum value 4 */
     };
 
+    /**
+     * Optenir le type de jeton de type chaine de caractères.
+     * 
+     * @return string
+     */
     static string GetStringType(Token::Type type);
 
     /**
@@ -39,7 +44,7 @@ public:
     /**
      * Constructeur avec paramètre
      * 
-     * @param Token::Type Le type du jeton
+     * @param type Le type du jeton
      */
     Token( Token::Type type );
 
@@ -60,9 +65,17 @@ public:
     /**
      * Définit les données du jeton
      *
+     * @param data Les donnée de type string
      * @return void
      */
     void SetData(string data);
+
+    /**
+     * Définit les données du jeton
+     *
+     * @param data Les donnée de type char
+     * @return void
+     */
     void SetData(const char data);
 
     /**

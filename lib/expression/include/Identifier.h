@@ -10,6 +10,11 @@ class Identifier : public TerminalExpression
 {
 public:
 
+	/**
+	 * Constructeur Identifier.
+	 *
+	 * @param  value Le nom de l'identifiant
+	 */
 	Identifier(string value);
 
 	virtual long Evaluate(Context& context);

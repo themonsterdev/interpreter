@@ -38,7 +38,19 @@ public:
 
 protected:
 
-	Expression::Pointer m_left, m_right;
+	/**
+	 * Expression de gauche.
+	 *
+	 * @var m_left
+	 */
+	Expression::Pointer m_left;
+
+	/**
+	 * Expression de droite.
+	 *
+	 * @var m_right
+	 */
+	Expression::Pointer m_right;
 };
 
 #endif

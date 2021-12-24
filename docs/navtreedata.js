@@ -39,6 +39,7 @@ var NAVTREE =
       [ "Membres de classe", "functions.html", [
         [ "Tout", "functions.html", null ],
         [ "Fonctions", "functions_func.html", null ],
+        [ "Variables", "functions_vars.html", null ],
         [ "Définitions de type", "functions_type.html", null ],
         [ "Énumérations", "functions_enum.html", null ]
       ] ]

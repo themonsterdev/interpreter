@@ -10,6 +10,11 @@ class Number : public TerminalExpression
 {
 public:
 
+	/**
+	 * Constructeur Number.
+	 *
+	 * @param value La valeur de type numérique.
+	 */
 	Number(string value);
 
 	virtual long Evaluate(Context& context);

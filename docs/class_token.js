@@ -11,6 +11,7 @@ var class_token =
     [ "Token", "class_token.html#aa1b8fca986ba3bfb510b5c0c997e8d0c", null ],
     [ "GetData", "class_token.html#a1b852ae1b7fbb77a6de7e18a9e57e4cf", null ],
     [ "GetType", "class_token.html#a183d1dba876c544e5c7c9cbaec51954e", null ],
+    [ "SetData", "class_token.html#a45ab8612533525e9dd5be8da28e9db4a", null ],
     [ "SetData", "class_token.html#af1db733093950c65246b58e81a2d45aa", null ],
     [ "SetType", "class_token.html#ac44a0679705607beb0ca968e56d62473", null ]
 ];
