@@ -1,0 +1,107 @@
+
+\begin{DoxyItemize}
+\item Déclaration de variable (`\textquotesingle{}var'{\ttfamily ).}
+\item {\ttfamily Assignation de variable (}\textquotesingle{}var identfier = \{Expression\+List\}\textquotesingle{} $\vert$ \textquotesingle{}identfier = \{Expression\+List\}\textquotesingle{}{\ttfamily ).}
+\item {\ttfamily Opérateurs arithmétiques (}\textquotesingle{}$\ast$\textquotesingle{} $\vert$ \textquotesingle{}+\textquotesingle{} $\vert$ \textquotesingle{}-\/\textquotesingle{} $\vert$ \textquotesingle{}/\textquotesingle{} $\vert$ \textquotesingle{}\textquotesingle{}{\ttfamily ).}
+\item {\ttfamily Opérateurs de comparaison (}\textquotesingle{}==\textquotesingle{} $\vert$ \textquotesingle{}\texorpdfstring{$>$}{>}\textquotesingle{} $\vert$ \textquotesingle{}\texorpdfstring{$>$}{>}=\textquotesingle{} $\vert$ \textquotesingle{}\texorpdfstring{$<$}{<}\textquotesingle{} $\vert$ \textquotesingle{}\texorpdfstring{$<$}{<}=\textquotesingle{} $\vert$ \textquotesingle{}!=\textquotesingle{}{\ttfamily ).}
+\item {\ttfamily Imprimer le résultat (}\textquotesingle{}print\textquotesingle{}\`{}).
+\end{DoxyItemize}
+
+\hypertarget{_documentation_autotoc_md0}{}\doxysubsection{Grammaire \mbox{[}\+EBNF\mbox{]}}\label{_documentation_autotoc_md0}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Statement}
+\DoxyCodeLine{    ::= print ExpressionList}
+\DoxyCodeLine{    | var Identifier}
+\DoxyCodeLine{    | var Identifier = ExpressionList}
+\DoxyCodeLine{    | Identifier = ExpressionList}
+\DoxyCodeLine{}
+\DoxyCodeLine{ExpressionList}
+\DoxyCodeLine{    ::= Identifier}
+\DoxyCodeLine{    | ArithmeticOperatorExpression}
+\DoxyCodeLine{    | ComparisonOperatorExpression}
+\DoxyCodeLine{}
+\DoxyCodeLine{ArithmeticOperatorExpression}
+\DoxyCodeLine{    ::= (Number | Identifier) '*' (Number | Identifier)}
+\DoxyCodeLine{    | (Number | Identifier) '+' (Number | Identifier)}
+\DoxyCodeLine{    | (Number | Identifier) '-\/' (Number | Identifier)}
+\DoxyCodeLine{    | (Number | Identifier) '/' (Number | Identifier)}
+\DoxyCodeLine{    | (Number | Identifier) '=' (Number | Identifier)}
+\DoxyCodeLine{    | (Number | Identifier) '\%' (Number | Identifier)}
+\DoxyCodeLine{}
+\DoxyCodeLine{ComparisonOperatorExpression}
+\DoxyCodeLine{    ::= (Number | Identifier) '==' (Number | Identifier)}
+\DoxyCodeLine{    | (Number | Identifier) '>' (Number | Identifier)}
+\DoxyCodeLine{    | (Number | Identifier) '>=' (Number | Identifier)}
+\DoxyCodeLine{    | (Number | Identifier) '<' (Number | Identifier)}
+\DoxyCodeLine{    | (Number | Identifier) '<=' (Number | Identifier)}
+\DoxyCodeLine{    | (Number | Identifier) '!=' (Number | Identifier)}
+\DoxyCodeLine{}
+\DoxyCodeLine{Identifier}
+\DoxyCodeLine{    ::= [a-\/zA-\/Z\_][a-\/zA-\/Z0-\/9\_]+}
+\DoxyCodeLine{}
+\DoxyCodeLine{Number}
+\DoxyCodeLine{    ::= [0-\/9]+}
+
+\end{DoxyCode}
+\hypertarget{_documentation_autotoc_md1}{}\doxysubsection{Exemple}\label{_documentation_autotoc_md1}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{print 1 + 1}
+\DoxyCodeLine{}
+\DoxyCodeLine{var identifier = 1 + 1}
+\DoxyCodeLine{print identifier}
+\DoxyCodeLine{}
+\DoxyCodeLine{identifier = 2 -\/ 1}
+\DoxyCodeLine{print identifier}
+\DoxyCodeLine{}
+\DoxyCodeLine{identifier = 2 * 3}
+\DoxyCodeLine{print identifier}
+\DoxyCodeLine{}
+\DoxyCodeLine{identifier = 6 / 3}
+\DoxyCodeLine{print identifier}
+\DoxyCodeLine{}
+\DoxyCodeLine{identifier = 6 \% 2}
+\DoxyCodeLine{print identifier}
+\DoxyCodeLine{}
+\DoxyCodeLine{identifier = 1 + 1 -\/ 1 * 2 / 2 \% 2}
+\DoxyCodeLine{print identifier}
+
+\end{DoxyCode}
+\hypertarget{_documentation_autotoc_md2}{}\doxysubsection{AST (\+Arbre de la syntaxe abstraite)}\label{_documentation_autotoc_md2}
+\hypertarget{_documentation_autotoc_md3}{}\doxysubsection{Compilation}\label{_documentation_autotoc_md3}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$ cmake -\/-\/preset=default}
+\DoxyCodeLine{\$ cmake -\/-\/build -\/-\/preset=default}
+
+\end{DoxyCode}
+\hypertarget{_documentation_autotoc_md4}{}\doxysubsection{Usage}\label{_documentation_autotoc_md4}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\# Exemples opération arithmétique}
+\DoxyCodeLine{\$ .\(\backslash\)bin\(\backslash\)Interpreter.exe .\(\backslash\)examples\(\backslash\)operators.txt}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Exemples print}
+\DoxyCodeLine{\$ .\(\backslash\)bin\(\backslash\)Interpreter.exe .\(\backslash\)examples\(\backslash\)print.txt}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Exemples variable}
+\DoxyCodeLine{\$ .\(\backslash\)bin\(\backslash\)Interpreter.exe .\(\backslash\)examples\(\backslash\)variable.txt}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Exemples identifiant}
+\DoxyCodeLine{\$ .\(\backslash\)bin\(\backslash\)Interpreter.exe .\(\backslash\)examples\(\backslash\)identifier.txt}
+
+\end{DoxyCode}
+\hypertarget{_documentation_autotoc_md5}{}\doxysubsection{Réréfences}\label{_documentation_autotoc_md5}
+
+\begin{DoxyItemize}
+\item \href{https://fr.wikipedia.org/wiki/Interpr\%C3\%A8te_(informatique)}{\texttt{ Interpreter}}
+\item \href{https://fr.wikipedia.org/wiki/Interpr\%C3\%A9teur_(patron_de_conception)}{\texttt{ Interpréteur (patron de conception)}}
+\item \href{https://fr.wikipedia.org/wiki/Analyse_lexicale}{\texttt{ Analyse lexicale}}
+\item \href{https://fr.wikipedia.org/wiki/Analyse_syntaxique}{\texttt{ Analyse syntaxique}}
+\item \href{https://fr.wikipedia.org/wiki/Arbre_de_la_syntaxe_abstraite}{\texttt{ Arbre de la syntaxe abstraite}}
+\end{DoxyItemize}\hypertarget{_documentation_autotoc_md6}{}\doxysubsection{Resources}\label{_documentation_autotoc_md6}
+
+\begin{DoxyItemize}
+\item \href{https://www.bottlecaps.de/rr/ui}{\texttt{ Railroad Diagram Generator}} $\ast$/ 
+\end{DoxyItemize}
