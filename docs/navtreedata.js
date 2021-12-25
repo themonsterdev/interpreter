@@ -34,15 +34,13 @@ var NAVTREE =
       [ "Réréfences", "index.html#autotoc_md13", null ],
       [ "Resources", "index.html#autotoc_md14", null ]
     ] ],
-    [ "EBNF", "_e_b_n_f.html", [
-      [ "EBNF", "_e_b_n_f.html#autotoc_md0", [
-        [ "Statement:", "_e_b_n_f.html#autotoc_md1", null ],
-        [ "ExpressionList:", "_e_b_n_f.html#autotoc_md2", null ],
-        [ "ArithmeticOperatorExpression:", "_e_b_n_f.html#autotoc_md3", null ],
-        [ "ComparisonOperatorExpression:", "_e_b_n_f.html#autotoc_md4", null ],
-        [ "Identifier:", "_e_b_n_f.html#autotoc_md5", null ],
-        [ "Number:", "_e_b_n_f.html#autotoc_md6", null ]
-      ] ]
+    [ "EBNF", "md_doxygen_ebnf.html", [
+      [ "Statement:", "md_doxygen_ebnf.html#autotoc_md1", null ],
+      [ "ExpressionList:", "md_doxygen_ebnf.html#autotoc_md2", null ],
+      [ "ArithmeticOperatorExpression:", "md_doxygen_ebnf.html#autotoc_md3", null ],
+      [ "ComparisonOperatorExpression:", "md_doxygen_ebnf.html#autotoc_md4", null ],
+      [ "Identifier:", "md_doxygen_ebnf.html#autotoc_md5", null ],
+      [ "Number:", "md_doxygen_ebnf.html#autotoc_md6", null ]
     ] ],
     [ "Classes", "annotated.html", [
       [ "Liste des classes", "annotated.html", "annotated_dup" ],

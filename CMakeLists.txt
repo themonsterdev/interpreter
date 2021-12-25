@@ -25,8 +25,8 @@ if (DOXYGEN_FOUND)
     set(DOXYGEN_UML_LOOK               "YES")    # Graph detailer
 
     set(DOXYGEN_FILES
-        "doxygen/ebnf.doc"
         "doxygen/index.md"
+        "doxygen/ebnf.md"
         "lib/context/include"
         "lib/expression/include"
         "lib/parser/include"

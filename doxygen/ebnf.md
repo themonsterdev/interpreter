@@ -1,5 +1,3 @@
-/*! \page EBNF
-
 # EBNF
 
 ## Statement:
@@ -84,5 +82,3 @@ référencé par:
 
 - ArithmeticOperatorExpression
 - ComparisonOperatorExpression
-
-*/
