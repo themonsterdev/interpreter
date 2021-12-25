@@ -8,7 +8,7 @@
 - Opérateurs de comparaison (`'==' | '>' | '>=' | '<' | '<=' | '!='`).
 - Imprimer le résultat (`'print'`).
 
-![https://fr.wikipedia.org/wiki/Diagramme_syntaxique](./docs/interpreter-diagram.png)
+![https://fr.wikipedia.org/wiki/Diagramme_syntaxique](./docs/diagram/interpreter-diagram.png)
 
 ## Grammaire [EBNF]
 
@@ -73,7 +73,7 @@ print identifier
 
 ## AST (Arbre de la syntaxe abstraite)
 
-![https://fr.wikipedia.org/wiki/Diagramme_syntaxique](./docs/ast-diagram.png)
+![https://fr.wikipedia.org/wiki/Diagramme_syntaxique](./docs/diagram/ast-diagram.png)
 
 ## Usage
 
