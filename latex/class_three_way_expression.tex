@@ -1,0 +1,81 @@
+\hypertarget{class_three_way_expression}{}\doxysection{Référence de la classe Three\+Way\+Expression}
+\label{class_three_way_expression}\index{ThreeWayExpression@{ThreeWayExpression}}
+
+
+{\ttfamily \#include $<$Three\+Way\+Expression.\+h$>$}
+
+
+
+Graphe d\textquotesingle{}héritage de Three\+Way\+Expression\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{class_three_way_expression__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de Three\+Way\+Expression\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{class_three_way_expression__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_three_way_expression_a7e8c7b195a8fbc026c03ec0ae45672b8}{Three\+Way\+Expression}} (\mbox{\hyperlink{class_expression_a90046daed7d30b372f481f7c338e0d9a}{Expression\+::\+Pointer}} left, \mbox{\hyperlink{class_expression_a90046daed7d30b372f481f7c338e0d9a}{Expression\+::\+Pointer}} right=nullptr)
+\item 
+virtual long \mbox{\hyperlink{class_three_way_expression_ab8d7391d7dbe8ed8f62e0b8753762f7b}{Evaluate}} (\mbox{\hyperlink{class_context}{Context}} \&context)
+\end{DoxyCompactItemize}
+\doxysubsection*{Membres hérités additionnels}
+
+
+\doxysubsection{Description détaillée}
+\mbox{\hyperlink{class_non_terminal_expression}{Non\+Terminal\+Expression}} -\/ \mbox{\hyperlink{class_three_way_expression}{Three\+Way\+Expression}} 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_three_way_expression_a7e8c7b195a8fbc026c03ec0ae45672b8}\label{class_three_way_expression_a7e8c7b195a8fbc026c03ec0ae45672b8}} 
+\index{ThreeWayExpression@{ThreeWayExpression}!ThreeWayExpression@{ThreeWayExpression}}
+\index{ThreeWayExpression@{ThreeWayExpression}!ThreeWayExpression@{ThreeWayExpression}}
+\doxysubsubsection{\texorpdfstring{ThreeWayExpression()}{ThreeWayExpression()}}
+{\footnotesize\ttfamily Three\+Way\+Expression\+::\+Three\+Way\+Expression (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_expression_a90046daed7d30b372f481f7c338e0d9a}{Expression\+::\+Pointer}}}]{left,  }\item[{\mbox{\hyperlink{class_expression_a90046daed7d30b372f481f7c338e0d9a}{Expression\+::\+Pointer}}}]{right = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+Constructeur \mbox{\hyperlink{class_three_way_expression}{Three\+Way\+Expression}}.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em left} & Pointer de l\textquotesingle{}expression gauche. \\
+\hline
+{\em right} & Pointer de l\textquotesingle{}expression droite. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_three_way_expression_ab8d7391d7dbe8ed8f62e0b8753762f7b}\label{class_three_way_expression_ab8d7391d7dbe8ed8f62e0b8753762f7b}} 
+\index{ThreeWayExpression@{ThreeWayExpression}!Evaluate@{Evaluate}}
+\index{Evaluate@{Evaluate}!ThreeWayExpression@{ThreeWayExpression}}
+\doxysubsubsection{\texorpdfstring{Evaluate()}{Evaluate()}}
+{\footnotesize\ttfamily virtual long Three\+Way\+Expression\+::\+Evaluate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_context}{Context}} \&}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Evalue l\textquotesingle{}expression enregistrée.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em context} & La référence du context actuel. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+long 
+\end{DoxyReturn}
+
+
+Implémente \mbox{\hyperlink{class_non_terminal_expression_a4741eb7516910b2380d223516d3e6f6d}{Non\+Terminal\+Expression}}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+lib/expression/include/\+Operator/\+Comparison/Three\+Way\+Expression.\+h\end{DoxyCompactItemize}

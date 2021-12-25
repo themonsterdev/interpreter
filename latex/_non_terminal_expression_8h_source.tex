@@ -1,0 +1,31 @@
+\hypertarget{_non_terminal_expression_8h_source}{}\doxysection{Non\+Terminal\+Expression.\+h}
+\label{_non_terminal_expression_8h_source}\index{lib/expression/include/NonTerminalExpression.h@{lib/expression/include/NonTerminalExpression.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef NON\_TERMINAL\_EXPRESSION\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define NON\_TERMINAL\_EXPRESSION\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}Expression.h"{}}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{11 \textcolor{keyword}{class }\mbox{\hyperlink{class_non_terminal_expression}{NonTerminalExpression}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_expression}{Expression}}}
+\DoxyCodeLine{12 \{}
+\DoxyCodeLine{13 \textcolor{keyword}{public}:}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{21     \mbox{\hyperlink{class_non_terminal_expression_a727289a357c5a7b07bdd43c22d52105b}{NonTerminalExpression}}(\mbox{\hyperlink{class_expression_a90046daed7d30b372f481f7c338e0d9a}{Expression::Pointer}} left, \mbox{\hyperlink{class_expression_a90046daed7d30b372f481f7c338e0d9a}{Expression::Pointer}} right = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23     \textcolor{keyword}{virtual} \textcolor{keywordtype}{long} \mbox{\hyperlink{class_non_terminal_expression_a4741eb7516910b2380d223516d3e6f6d}{Evaluate}}(\mbox{\hyperlink{class_context}{Context}}\& context) = 0;}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{30     \mbox{\hyperlink{class_expression_a90046daed7d30b372f481f7c338e0d9a}{Expression::Pointer}} \mbox{\hyperlink{class_non_terminal_expression_a08563c3a2a8ced7ba1982bf2a4059902}{GetRight}}();}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{37     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_non_terminal_expression_adaf1139a5fac1884482e77e282b176a0}{SetRight}}(\mbox{\hyperlink{class_expression_a90046daed7d30b372f481f7c338e0d9a}{Expression::Pointer}} right);}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{46     \mbox{\hyperlink{class_expression_a90046daed7d30b372f481f7c338e0d9a}{Expression::Pointer}} \mbox{\hyperlink{class_non_terminal_expression_a56184661c3b7ee5b6fca7bc317bef6ef}{m\_left}};}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{53     \mbox{\hyperlink{class_expression_a90046daed7d30b372f481f7c338e0d9a}{Expression::Pointer}} \mbox{\hyperlink{class_non_terminal_expression_a8ec3c1fe332fcc727575b8b4f4fb8809}{m\_right}};}
+\DoxyCodeLine{54 \};}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

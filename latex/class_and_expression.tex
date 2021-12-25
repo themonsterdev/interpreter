@@ -1,0 +1,81 @@
+\hypertarget{class_and_expression}{}\doxysection{Référence de la classe And\+Expression}
+\label{class_and_expression}\index{AndExpression@{AndExpression}}
+
+
+{\ttfamily \#include $<$And\+Expression.\+h$>$}
+
+
+
+Graphe d\textquotesingle{}héritage de And\+Expression\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{class_and_expression__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de And\+Expression\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{class_and_expression__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_and_expression_ac0503e034f4c8eae6e61c25a6fd56a79}{And\+Expression}} (\mbox{\hyperlink{class_expression_a90046daed7d30b372f481f7c338e0d9a}{Expression\+::\+Pointer}} left, \mbox{\hyperlink{class_expression_a90046daed7d30b372f481f7c338e0d9a}{Expression\+::\+Pointer}} right=nullptr)
+\item 
+virtual long \mbox{\hyperlink{class_and_expression_a9bf7b17c0df6ba1e95ea018c930722ec}{Evaluate}} (\mbox{\hyperlink{class_context}{Context}} \&context)
+\end{DoxyCompactItemize}
+\doxysubsection*{Membres hérités additionnels}
+
+
+\doxysubsection{Description détaillée}
+\mbox{\hyperlink{class_non_terminal_expression}{Non\+Terminal\+Expression}} -\/ \mbox{\hyperlink{class_and_expression}{And\+Expression}} 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_and_expression_ac0503e034f4c8eae6e61c25a6fd56a79}\label{class_and_expression_ac0503e034f4c8eae6e61c25a6fd56a79}} 
+\index{AndExpression@{AndExpression}!AndExpression@{AndExpression}}
+\index{AndExpression@{AndExpression}!AndExpression@{AndExpression}}
+\doxysubsubsection{\texorpdfstring{AndExpression()}{AndExpression()}}
+{\footnotesize\ttfamily And\+Expression\+::\+And\+Expression (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_expression_a90046daed7d30b372f481f7c338e0d9a}{Expression\+::\+Pointer}}}]{left,  }\item[{\mbox{\hyperlink{class_expression_a90046daed7d30b372f481f7c338e0d9a}{Expression\+::\+Pointer}}}]{right = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+Constructeur \mbox{\hyperlink{class_and_expression}{And\+Expression}}.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em left} & Pointer de l\textquotesingle{}expression gauche. \\
+\hline
+{\em right} & Pointer de l\textquotesingle{}expression droite. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_and_expression_a9bf7b17c0df6ba1e95ea018c930722ec}\label{class_and_expression_a9bf7b17c0df6ba1e95ea018c930722ec}} 
+\index{AndExpression@{AndExpression}!Evaluate@{Evaluate}}
+\index{Evaluate@{Evaluate}!AndExpression@{AndExpression}}
+\doxysubsubsection{\texorpdfstring{Evaluate()}{Evaluate()}}
+{\footnotesize\ttfamily virtual long And\+Expression\+::\+Evaluate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_context}{Context}} \&}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Evalue l\textquotesingle{}expression enregistrée.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em context} & La référence du context actuel. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+long 
+\end{DoxyReturn}
+
+
+Implémente \mbox{\hyperlink{class_non_terminal_expression_a4741eb7516910b2380d223516d3e6f6d}{Non\+Terminal\+Expression}}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+lib/expression/include/\+Operator/\+Logical/And\+Expression.\+h\end{DoxyCompactItemize}

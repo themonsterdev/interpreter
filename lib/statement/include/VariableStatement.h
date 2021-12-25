@@ -17,7 +17,8 @@ public:
 	 * Constructeur de l'instance VariableStatement.
 	 * 
 	 * @param context	La référence du context actuel.
-	 * @param it		L'itération de token.
+	 * @param  begin    L'itérateur pointant sur le premier élément de la séquence tokens.
+	 * @param  end	    L'itérateur pointant sur l'élément le plus ancien de la séquence tokens.
 	 */
 	VariableStatement(Context& context, TokenIt& begin, TokenIt& end);
 

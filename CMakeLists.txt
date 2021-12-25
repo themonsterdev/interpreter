@@ -15,6 +15,8 @@ if (DOXYGEN_FOUND)
     set(DOXYGEN_PROJECT_NUMBER         "2.0.0")
     set(DOXYGEN_OUTPUT_LANGUAGE        "French")
 
+    set(DOXYGEN_GENERATE_LATEX          "YES")
+
     set(DOXYGEN_GENERATE_HTML          "YES")
     set(DOXYGEN_HTML_OUTPUT            "docs")
     set(DOXYGEN_HTML_TIMESTAMP         "YES")    # Génére la date dans le footer
@@ -33,7 +35,7 @@ if (DOXYGEN_FOUND)
     )
 
     doxygen_add_docs(Doxygen
-        FILES ${DOXYGEN_FILES}
+        ${DOXYGEN_FILES}
         COMMENT "Generate lib doc pages"
     )
 endif()
