@@ -14,26 +14,26 @@ class Context
 public:
 
 	/**
-	 * Optenir la valeur de la variable spécifié.
+	 * Obtenir la valeur de la variable spécifiée.
 	 * 
 	 * @param variable Nom de la variable.
-	 * @return void
+	 * @return long
 	 */
 	long GetValue(string variable);
 
 	/**
-	 * Ajoutée une valeur pour la variable spécifié.
+	 * Ajout d'une valeur pour la variable spécifiée.
 	 *
 	 * @param variable Nom de la variable.
 	 * @param value valeur de la variable.
 	 * @return void
 	 */
-	long SetValue(string variable, long value);
+	void SetValue(string variable, long value);
 
 private:
 
-	typedef map<std::string, long> VarMap;
-	VarMap m_symbols;
+	typedef map<std::string, long> VariableMap;
+	VariableMap m_variables;
 };
 
 #endif

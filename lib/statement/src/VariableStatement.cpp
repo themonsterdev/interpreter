@@ -1,10 +1,10 @@
 #include "VariableStatement.h"
 
-VariableStatement::VariableStatement(Context& context, TokenIt& it)
+VariableStatement::VariableStatement(Context& context, TokenIt& begin, TokenIt& end)
 	: m_expression(nullptr)
 {
-	Token::Type tokenType = it->GetType();
-	string tokenData = it->GetData();
+	Token::Type tokenType = begin->GetType();
+	string tokenData = begin->GetData();
 
 	if (tokenType == Token::Type::Keyword)
 	{
@@ -14,15 +14,15 @@ VariableStatement::VariableStatement(Context& context, TokenIt& it)
 			throw exception("Erreur: Le jeton attendu doit être un 'var' ");
 		}
 
-		it++;
-		if (it->GetType() != Token::Type::Identifier)
+		begin++;
+		if (begin->GetType() != Token::Type::Identifier)
 		{
 			throw exception(
 				(string("Erreur de syntaxe, token '") + tokenData + "' inattendu").c_str()
 			);
 		}
 
-		tokenData = it->GetData();
+		tokenData = begin->GetData();
 		if (context.GetValue(tokenData) != -1)
 		{
 			throw exception(
@@ -30,18 +30,19 @@ VariableStatement::VariableStatement(Context& context, TokenIt& it)
 			);
 		}
 
-		m_name = it->GetData();
+		m_name = begin->GetData();
 		context.SetValue(m_name, 0);
 
-		it++;
-		if (it->GetType() != Token::Type::Operator || it->GetData() != "=")
+		begin++;
+		if (begin->GetType() != Token::Type::Operator || begin->GetData() != "=")
 		{
-			it--;
-			return;
+			throw exception(
+				(string("Erreur: l'expression attendu était un `=`")).c_str()
+			);
 		}
 
-		it++;
-		m_expression = Expression::Parse(it);
+		begin++;
+		m_expression = Expression::Parse(begin, end);
 	}
 	else if (tokenType == Token::Type::Identifier)
 	{
@@ -53,18 +54,18 @@ VariableStatement::VariableStatement(Context& context, TokenIt& it)
 			);
 		}
 
-		m_name = it->GetData();
+		m_name = begin->GetData();
 		context.SetValue(m_name, 0);
 
-		it++;
-		if (it->GetType() != Token::Type::Operator || it->GetData() != "=")
+		begin++;
+		if (begin->GetType() != Token::Type::Operator || begin->GetData() != "=")
 		{
-			it--;
+			begin--;
 			return;
 		}
 
-		it++;
-		m_expression = Expression::Parse(it);
+		begin++;
+		m_expression = Expression::Parse(begin, end);
 	}
 }
 

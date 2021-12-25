@@ -61,12 +61,26 @@ print identifier
 
 ![https://fr.wikipedia.org/wiki/Diagramme_syntaxique](./ast-diagram.png)
 
-## Usage
+## Compilation
 
 ```bash
 $ cmake --preset=default
 $ cmake --build --preset=default
-$ ./bin/interpreter.exe ./examples/operators.txt
+```
+
+## Usage
+```bash
+# Exemples opération arithmétique
+$ .\bin\Interpreter.exe .\examples\operators.txt
+
+# Exemples print
+$ .\bin\Interpreter.exe .\examples\print.txt
+
+# Exemples variable
+$ .\bin\Interpreter.exe .\examples\variable.txt
+
+# Exemples identifiant
+$ .\bin\Interpreter.exe .\examples\identifier.txt
 ```
 
 ## Réréfences

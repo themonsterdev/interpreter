@@ -3,16 +3,20 @@
 long Context::GetValue(string variable)
 {
 	long nResult;
-	VarMap::iterator it = this->m_symbols.find(variable);
-	if (it == this->m_symbols.end())
-		nResult = this->SetValue(variable, -1);
-	else
+	VariableMap::iterator it = this->m_variables.find(variable);
+
+	if (it != this->m_variables.end())
 		nResult = it->second;
+	else
+	{
+		nResult = -1; // Valeur par défaut pour la variable si elle est déclaré mes non défini
+		this->SetValue(variable, nResult);
+	}
 
 	return nResult;
 }
 
-long Context::SetValue(string variable, long value)
+void Context::SetValue(string variable, long value)
 {
-	return this->m_symbols[variable] = value;
+	this->m_variables[variable] = value;
 }

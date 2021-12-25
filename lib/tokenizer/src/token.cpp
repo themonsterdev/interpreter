@@ -26,11 +26,15 @@ string Token::GetStringType(Token::Type type)
 }
 
 Token::Token()
-    : m_type(Token::Type::Unknown )
+    : m_type( Token::Type::Unknown )
+    , m_numberAtCharacter(1)
+    , m_numberLine(1)
 {}
 
 Token::Token( Token::Type type )
     : m_type( type )
+    , m_numberAtCharacter(1)
+    , m_numberLine(1)
 {}
 
 void Token::SetType(Token::Type type)
@@ -56,4 +60,24 @@ void Token::SetData(const char data)
 string Token::GetData()
 {
     return this->m_data;
+}
+
+void Token::SetNumberLine(const int numberLine)
+{
+    this->m_numberLine = numberLine;
+}
+
+int Token::GetNumberLine()
+{
+    return this->m_numberLine;
+}
+
+void Token::SetNumberAtCharacter(const int numberAtCharacter)
+{
+    this->m_numberAtCharacter = numberAtCharacter;
+}
+
+int Token::GetNumberAtCharacter()
+{
+    return this->m_numberAtCharacter;
 }

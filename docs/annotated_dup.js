@@ -1,7 +1,6 @@
 var annotated_dup =
 [
     [ "AdditionExpression", "class_addition_expression.html", "class_addition_expression" ],
-    [ "AssignmentStatement", "class_assignment_statement.html", "class_assignment_statement" ],
     [ "Context", "class_context.html", "class_context" ],
     [ "DivisionExpression", "class_division_expression.html", "class_division_expression" ],
     [ "Expression", "class_expression.html", "class_expression" ],

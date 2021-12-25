@@ -135,8 +135,8 @@ Fonctions membres publiques</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Fonctions membres publiques statiques</h2></td></tr>
-<tr class="memitem:a64c7a90e599359302dbd39cfaa1e0140"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_expression.html#a90046daed7d30b372f481f7c338e0d9a">Pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_expression.html#a64c7a90e599359302dbd39cfaa1e0140">Parse</a> (TokenIt &amp;it)</td></tr>
-<tr class="separator:a64c7a90e599359302dbd39cfaa1e0140"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0aada7a645566e22d72e30d0be2c9756"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_expression.html#a90046daed7d30b372f481f7c338e0d9a">Pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_expression.html#a0aada7a645566e22d72e30d0be2c9756">Parse</a> (TokenIt &amp;begin, TokenIt &amp;end)</td></tr>
+<tr class="separator:a0aada7a645566e22d72e30d0be2c9756"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
 <div class="textblock"><p >Classe <a class="el" href="class_expression.html">Expression</a></p>
@@ -236,12 +236,12 @@ Fonctions membres publiques statiques</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Renvoie</dt><dd>long </dd></dl>
 
-<p>Implémenté dans <a class="el" href="class_addition_expression.html#a7b1c5433b4b93c596354a34fa6c5b93b">AdditionExpression</a>, <a class="el" href="class_division_expression.html#a0121478d4e1dbc7e53ae94b31718d073">DivisionExpression</a>, <a class="el" href="class_identifier.html#a620770d869a3d245a6b9845f7134876c">Identifier</a>, <a class="el" href="class_modulo_expression.html#a9a3464e85ae08f6782610ff4a328bbe8">ModuloExpression</a>, <a class="el" href="class_multiplication_expression.html#af748dd508e3068a3de1d74d7da758f45">MultiplicationExpression</a>, <a class="el" href="class_number.html#a69838c6c7a591a93de304ae827ac97c1">Number</a>, <a class="el" href="class_subtraction_expression.html#a9470c5ada71c9bbb6ddf6ed4287edeb4">SubtractionExpression</a>, <a class="el" href="class_non_terminal_expression.html#a4741eb7516910b2380d223516d3e6f6d">NonTerminalExpression</a>, et <a class="el" href="class_terminal_expression.html#a1f976fecf2df930e03cfce33e5477b33">TerminalExpression</a>.</p>
+<p>Implémenté dans <a class="el" href="class_addition_expression.html#a7b1c5433b4b93c596354a34fa6c5b93b">AdditionExpression</a>, <a class="el" href="class_division_expression.html#a0121478d4e1dbc7e53ae94b31718d073">DivisionExpression</a>, <a class="el" href="class_modulo_expression.html#a9a3464e85ae08f6782610ff4a328bbe8">ModuloExpression</a>, <a class="el" href="class_multiplication_expression.html#af748dd508e3068a3de1d74d7da758f45">MultiplicationExpression</a>, <a class="el" href="class_subtraction_expression.html#a9470c5ada71c9bbb6ddf6ed4287edeb4">SubtractionExpression</a>, <a class="el" href="class_identifier.html#a620770d869a3d245a6b9845f7134876c">Identifier</a>, <a class="el" href="class_number.html#a69838c6c7a591a93de304ae827ac97c1">Number</a>, <a class="el" href="class_non_terminal_expression.html#a4741eb7516910b2380d223516d3e6f6d">NonTerminalExpression</a>, et <a class="el" href="class_terminal_expression.html#a1f976fecf2df930e03cfce33e5477b33">TerminalExpression</a>.</p>
 
 </div>
 </div>
-<a id="a64c7a90e599359302dbd39cfaa1e0140" name="a64c7a90e599359302dbd39cfaa1e0140"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64c7a90e599359302dbd39cfaa1e0140">&#9670;&nbsp;</a></span>Parse()</h2>
+<a id="a0aada7a645566e22d72e30d0be2c9756" name="a0aada7a645566e22d72e30d0be2c9756"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0aada7a645566e22d72e30d0be2c9756">&#9670;&nbsp;</a></span>Parse()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -253,8 +253,18 @@ Fonctions membres publiques statiques</h2></td></tr>
           <td class="memname">static <a class="el" href="class_expression.html#a90046daed7d30b372f481f7c338e0d9a">Pointer</a> Expression::Parse </td>
           <td>(</td>
           <td class="paramtype">TokenIt &amp;&#160;</td>
-          <td class="paramname"><em>it</em></td><td>)</td>
+          <td class="paramname"><em>begin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">TokenIt &amp;&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -266,11 +276,12 @@ Fonctions membres publiques statiques</h2></td></tr>
 <p >Crée un pointeur d'expression avec l'itération de token spécifié.</p>
 <dl class="params"><dt>Paramètres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">it</td><td>L'itération de token. </td></tr>
+    <tr><td class="paramname">begin</td><td>L'itérateur pointant sur le premier élément de la séquence tokens. </td></tr>
+    <tr><td class="paramname">end</td><td>L'itérateur pointant sur l'élément le plus ancien de la séquence tokens. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Renvoie</dt><dd>Pointer </dd></dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Pointer Le pointeur d'expression intelligent. </dd></dl>
 
 </div>
 </div>
@@ -283,7 +294,7 @@ Fonctions membres publiques statiques</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_expression.html">Expression</a></li>
-    <li class="footer">Généré le Vendredi 24 Décembre 2021 08:08:49 pour Interprèteur par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Généré le Samedi 25 Décembre 2021 03:35:22 pour Interprèteur par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

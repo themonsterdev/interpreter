@@ -1,5 +1,3 @@
-print 1 + 1
-
 var identifier = 1 + 1
 print identifier
 

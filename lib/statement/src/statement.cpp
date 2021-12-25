@@ -1,45 +1,46 @@
 #include "Statement.h"
 #include "VariableStatement.h"
-#include "AssignmentStatement.h"
 #include "PrintStatement.h"
 
-Statement::Pointer Statement::Create( Context& context, TokenIt& it )
+Statement::Pointer Statement::Create( Context& context, TokenIt& begin, TokenIt& end )
 {
-	Token::Type tokenType = it->GetType();
-	string tokenData = it->GetData();
+	if (begin == end)
+	{
+		throw exception(
+			string("Erreur: Déclaration null").c_str()
+		);
+	}
+
+	Token::Type tokenType = begin->GetType();
+	string tokenData = begin->GetData();
 
 	switch (tokenType)
 	{
 	case Token::Type::Keyword:
-		return Statement::CreateKeywordStatement( context, it );
+		return Statement::CreateKeywordStatement( context, begin, end );
 
 	case Token::Type::Identifier:
-		return make_shared<AssignmentStatement>( context, it );
+		return make_shared<VariableStatement>( context, begin, end );
 
-	case Token::Type::Operator:
-		break;
-
-	case Token::Type::Number:
-		break;
+	default:
+		throw exception(
+			(string("Erreur: Déclaration inattendue, ") + Token::GetStringType(tokenType) + " " + tokenData).c_str()
+		);
 	}
-
-	throw exception(
-		( string("Erreur: Déclaration inattendue, " ) + Token::GetStringType( tokenType ) + " " + tokenData ).c_str()
-	);
 }
 
-Statement::Pointer Statement::CreateKeywordStatement( Context& context, TokenIt& it )
+Statement::Pointer Statement::CreateKeywordStatement( Context& context, TokenIt& begin, TokenIt& end )
 {
-	Token::Type tokenType = it->GetType();
-	string tokenData = it->GetData();
+	Token::Type tokenType = begin->GetType();
+	string tokenData = begin->GetData();
 
 	if ( tokenData == "var" )
 	{
-		return make_shared<VariableStatement>( context, it );
+		return make_shared<VariableStatement>( context, begin, end );
 	}
 	else if ( tokenData == "print" )
 	{
-		return make_shared<PrintStatement>( it );
+		return make_shared<PrintStatement>( begin, end );
 	}
 	else
 	{

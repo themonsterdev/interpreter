@@ -1,4 +1,4 @@
-#include "Number.h"
+#include "Terminal/Number.h"
 
 Number::Number(string value)
 	: ::TerminalExpression(value)

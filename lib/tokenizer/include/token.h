@@ -85,10 +85,31 @@ public:
      */
     string GetData();
 
+    void SetNumberAtCharacter(const int numberLine);
+    int GetNumberAtCharacter();
+
+    /**
+     * Définit le numéro de ligne sur lequel le jeton à était trouvé
+     *
+     * @param numberLine le numéro de ligne.
+     * @return void
+     */
+    void SetNumberLine(const int numberLine);
+
+    /**
+     * Obtenir le numéro de ligne sur lequel le jeton à était trouvé.
+     *
+     * @return int
+     */
+    int GetNumberLine();
+
 private:
 
     Type m_type;
     string m_data;
+
+    int m_numberAtCharacter;
+    int m_numberLine;
 };
 
 typedef list<Token> TokenList;

@@ -18,7 +18,7 @@ public:
 	 * 
 	 * @param it L'itération de token.
 	 */
-	PrintStatement(TokenIt& it);
+	PrintStatement(TokenIt& begin, TokenIt& end);
 
 	virtual void Execute(Context& context);
 

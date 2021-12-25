@@ -71,6 +71,10 @@ TokenList Tokenizer::GetTokens()
     size_t charactersLength = this->m_characters.size();
     char character;
     Token token;
+    
+
+    int numberAtCharacter = 0;
+    int numberLine = 1;
 
     for (
         int i = 0;              // Commence à zéro.
@@ -96,12 +100,24 @@ TokenList Tokenizer::GetTokens()
             }
             else
             {
-                throw exception(
-                    (string("Unexpected token: ") + character).c_str()
-                );
+                string errorMessage = string("Jeton `") + character + "` inattendu.";
+                errorMessage += "\nÀ la ligne au caractère: " + to_string(numberLine) + ":" + to_string(numberAtCharacter);
+                throw exception(errorMessage.c_str());
             }
 
-            tokens.push_back( token );
+            numberAtCharacter += token.GetData().size();
+            token.SetNumberAtCharacter(numberAtCharacter);
+            token.SetNumberLine(numberLine);
+            tokens.push_back(token);
+        }
+        else if (character == '\n')
+        {
+            numberAtCharacter = 0;
+            numberLine++;
+        }
+        else
+        {
+            numberAtCharacter++;
         }
     }
 
@@ -130,7 +146,7 @@ string Tokenizer::GetStringLiteralToken(string &characters, int& i)
     if ( i < this->m_characters.size() )
     {
         const char nextCharacter = this->m_characters[ i + 1 ];
-        if ( IsWord( nextCharacter ) )
+        if ( IsWord( nextCharacter ) || IsNumber( nextCharacter ) )
         {
             i++;
             return GetStringLiteralToken( characters, i );

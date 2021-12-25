@@ -19,7 +19,7 @@ public:
 	 * @param context	La référence du context actuel.
 	 * @param it		L'itération de token.
 	 */
-	VariableStatement(Context& context, TokenIt& it);
+	VariableStatement(Context& context, TokenIt& begin, TokenIt& end);
 
 	virtual void Execute(Context& context);
 

@@ -112,8 +112,8 @@ Graphe de collaboration de VariableStatement:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
-<tr class="memitem:a83599fd12cc892a956eec24192758403"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_variable_statement.html#a83599fd12cc892a956eec24192758403">VariableStatement</a> (<a class="el" href="class_context.html">Context</a> &amp;context, TokenIt &amp;it)</td></tr>
-<tr class="separator:a83599fd12cc892a956eec24192758403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f77948468dfede7173c52574c07edac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_variable_statement.html#a0f77948468dfede7173c52574c07edac">VariableStatement</a> (<a class="el" href="class_context.html">Context</a> &amp;context, TokenIt &amp;begin, TokenIt &amp;end)</td></tr>
+<tr class="separator:a0f77948468dfede7173c52574c07edac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41c43841bc2ef76d787c06f7e90409b8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_variable_statement.html#a41c43841bc2ef76d787c06f7e90409b8">Execute</a> (<a class="el" href="class_context.html">Context</a> &amp;context)</td></tr>
 <tr class="separator:a41c43841bc2ef76d787c06f7e90409b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_statement"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_statement')"><img src="closed.png" alt="-"/>&#160;Fonctions membres publiques hérités de <a class="el" href="class_statement.html">Statement</a></td></tr>
@@ -128,15 +128,15 @@ Membres hérités additionnels</h2></td></tr>
 <tr class="memitem:a1a7271bfc9e9d4658d8c70f47339f0c0 inherit pub_types_class_statement"><td class="memItemLeft" align="right" valign="top">typedef vector&lt; <a class="el" href="class_statement.html#a98d93a62817d1aabdea1129bcb567a67">Pointer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statement.html#a1a7271bfc9e9d4658d8c70f47339f0c0">StatementList</a></td></tr>
 <tr class="separator:a1a7271bfc9e9d4658d8c70f47339f0c0 inherit pub_types_class_statement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_class_statement"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_statement')"><img src="closed.png" alt="-"/>&#160;Fonctions membres publiques statiques hérités de <a class="el" href="class_statement.html">Statement</a></td></tr>
-<tr class="memitem:a0a579f3a9535a286de5bdaa2831791c2 inherit pub_static_methods_class_statement"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_statement.html#a98d93a62817d1aabdea1129bcb567a67">Pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statement.html#a0a579f3a9535a286de5bdaa2831791c2">Create</a> (<a class="el" href="class_context.html">Context</a> &amp;context, TokenIt &amp;it)</td></tr>
-<tr class="separator:a0a579f3a9535a286de5bdaa2831791c2 inherit pub_static_methods_class_statement"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb23863b790aa389ae5bc2715c2b2538 inherit pub_static_methods_class_statement"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_statement.html#a98d93a62817d1aabdea1129bcb567a67">Pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statement.html#abb23863b790aa389ae5bc2715c2b2538">Create</a> (<a class="el" href="class_context.html">Context</a> &amp;context, TokenIt &amp;begin, TokenIt &amp;end)</td></tr>
+<tr class="separator:abb23863b790aa389ae5bc2715c2b2538 inherit pub_static_methods_class_statement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
 <div class="textblock"><p >Classe <a class="el" href="class_variable_statement.html">VariableStatement</a></p>
 <p >Cette classe est utilisée pour assigner une variable. </p>
 </div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
-<a id="a83599fd12cc892a956eec24192758403" name="a83599fd12cc892a956eec24192758403"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83599fd12cc892a956eec24192758403">&#9670;&nbsp;</a></span>VariableStatement()</h2>
+<a id="a0f77948468dfede7173c52574c07edac" name="a0f77948468dfede7173c52574c07edac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f77948468dfede7173c52574c07edac">&#9670;&nbsp;</a></span>VariableStatement()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -151,7 +151,13 @@ Membres hérités additionnels</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">TokenIt &amp;&#160;</td>
-          <td class="paramname"><em>it</em>&#160;</td>
+          <td class="paramname"><em>begin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TokenIt &amp;&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -217,7 +223,7 @@ Membres hérités additionnels</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_variable_statement.html">VariableStatement</a></li>
-    <li class="footer">Généré le Vendredi 24 Décembre 2021 08:08:49 pour Interprèteur par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Généré le Samedi 25 Décembre 2021 03:35:22 pour Interprèteur par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

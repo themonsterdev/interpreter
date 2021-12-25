@@ -16,7 +16,6 @@ var hierarchy =
     ] ],
     [ "Parser", "class_parser.html", null ],
     [ "Statement", "class_statement.html", [
-      [ "AssignmentStatement", "class_assignment_statement.html", null ],
       [ "PrintStatement", "class_print_statement.html", null ],
       [ "VariableStatement", "class_variable_statement.html", null ]
     ] ],

@@ -24,7 +24,7 @@ class Statement
 public:
 
 	/**
-	 * Pointeur de déclaration intelligent.
+	 * Pointeur Statement intelligent.
 	 * 
 	 * @return shared_ptr<Statement>
 	 */
@@ -41,10 +41,11 @@ public:
 	 * Crée une nouvelle instance de déclaration.
 	 *
 	 * @param  context	La référence du context actuel.
-	 * @param  it		L'itération de token.
-	 * @return Pointer	Le pointeur de la nouvelle déclaration.
+	 * @param  begin    L'itérateur pointant sur le premier élément de la séquence tokens.
+	 * @param  end	    L'itérateur pointant sur l'élément le plus ancien de la séquence tokens.
+	 * @return Pointer	Le pointeur Statement intelligent.
 	 */
-	static Pointer Create( Context& context, TokenIt& it );
+	static Pointer Create( Context& context, TokenIt& begin, TokenIt& end );
 
 	/**
 	 * Déstruction de l'instance Statement.
@@ -61,7 +62,7 @@ public:
 
 private:
 
-	static Pointer CreateKeywordStatement( Context& context, TokenIt& it );
+	static Pointer CreateKeywordStatement( Context& context, TokenIt& begin, TokenIt& end );
 };
 
 #endif

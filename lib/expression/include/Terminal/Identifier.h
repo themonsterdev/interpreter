@@ -13,7 +13,7 @@ public:
 	/**
 	 * Constructeur Identifier.
 	 *
-	 * @param  value Le nom de l'identifiant
+	 * @param value Le nom de l'identifiant
 	 */
 	Identifier(string value);
 

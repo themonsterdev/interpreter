@@ -1,4 +1,4 @@
-add_library(Expression STATIC
+set(SOURCE_LIST
     # Expression
     include/Expression.h
     src/Expression.cpp
@@ -8,28 +8,32 @@ add_library(Expression STATIC
     # NonTerminalExpression
     include/NonTerminalExpression.h
     src/NonTerminalExpression.cpp
+    
     # AdditionExpression
-    include/AdditionExpression.h
-    src/AdditionExpression.cpp
+    include/Operator/AdditionExpression.h
+    src/Operator/AdditionExpression.cpp
     # SubtractionExpression
-    include/SubtractionExpression.h
-    src/SubtractionExpression.cpp
+    include/Operator/SubtractionExpression.h
+    src/Operator/SubtractionExpression.cpp
     # MultiplicationExpression
-    include/MultiplicationExpression.h
-    src/MultiplicationExpression.cpp
+    include/Operator/MultiplicationExpression.h
+    src/Operator/MultiplicationExpression.cpp
     # DivisionExpression
-    include/DivisionExpression.h
-    src/DivisionExpression.cpp
+    include/Operator/DivisionExpression.h
+    src/Operator/DivisionExpression.cpp
     # ModuloExpression
-    include/ModuloExpression.h
-    src/ModuloExpression.cpp
+    include/Operator/ModuloExpression.h
+    src/Operator/ModuloExpression.cpp
+
     # Identifier
-    include/Identifier.h
-    src/Identifier.cpp
+    include/Terminal/Identifier.h
+    src/Terminal/Identifier.cpp
     # Number
-    include/Number.h
-    src/Number.cpp
+    include/Terminal/Number.h
+    src/Terminal/Number.cpp
 )
+
+add_library(Expression STATIC ${SOURCE_LIST})
 
 target_include_directories(Expression
     PUBLIC include/
@@ -41,3 +45,6 @@ target_link_libraries(Expression
     Context
     Tokenizer
 )
+
+# Create the source groups for source tree with root at CMAKE_CURRENT_SOURCE_DIR.
+source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} FILES ${SOURCE_LIST})

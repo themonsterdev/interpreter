@@ -36,10 +36,11 @@ public:
 	/**
 	 * Crée un pointeur d'expression avec l'itération de token spécifié.
 	 *
-	 * @param  it L'itération de token.
-	 * @return Pointer
+	 * @param  begin   L'itérateur pointant sur le premier élément de la séquence tokens.
+	 * @param  end	   L'itérateur pointant sur l'élément le plus ancien de la séquence tokens.
+	 * @return Pointer Le pointeur d'expression intelligent.
 	 */
-	static Pointer Parse(TokenIt& it);
+	static Pointer Parse( TokenIt& begin, TokenIt& end );
 
 	/**
 	 * Déstruction de l'instance Expression.
@@ -56,8 +57,9 @@ public:
 
 private:
 
-	static Pointer ParseExpressionFromNumber(TokenIt& it);
-	static Pointer ParseExpressionFromIdentifier(TokenIt& it);
+	static Pointer ParseExpressionFromNumber( TokenIt& begin, TokenIt& end );
+	static Pointer ParseExpressionFromIdentifier( TokenIt& begin, TokenIt& end );
+	static Pointer ParseExpressionFromOperator( Pointer leftExpression, TokenIt& begin, TokenIt& end );
 };
 
 #endif

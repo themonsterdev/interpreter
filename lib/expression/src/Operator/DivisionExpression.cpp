@@ -1,4 +1,4 @@
-#include "DivisionExpression.h"
+#include "Operator/DivisionExpression.h"
 
 DivisionExpression::DivisionExpression(Expression::Pointer left, Expression::Pointer right)
 	: ::NonTerminalExpression(left, right)

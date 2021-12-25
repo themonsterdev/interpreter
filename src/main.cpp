@@ -10,22 +10,20 @@
 
 string GetStringFromFile(const char* filepath)
 {
+    ifstream is(filepath); // open file
     string programText;
-    ifstream is(filepath);
-    // cout << filepath << endl;
 
     if (is)
     {
-        while (!is.eof())
-        {
-            char c;
-            is.get(c);
+        char c;
+        while (is.get(c)) // loop getting single characters
             programText += c;
-        }
+
+        is.close(); // close file
     }
     else
     {
-        cout << "Could not open file " << filepath << endl;
+        cout << "Impossible d'ouvrir le fichier " << filepath << endl;
     }
 
     return programText;
@@ -33,7 +31,7 @@ string GetStringFromFile(const char* filepath)
 
 TokenList GetToken(const char* filepath)
 {
-    string programText = GetStringFromFile(filepath);
+    string programText(GetStringFromFile(filepath));
     Tokenizer tokenizer(programText);
     TokenList tokens = tokenizer.GetTokens();
     // Tokenizer::PrintTokens( tokens );
@@ -45,12 +43,14 @@ Statement::StatementList GetStatements( Context& context, TokenList tokens )
     Statement::StatementList statements;
     Statement::Pointer pStatement;
 
+    TokenIt itEnd = tokens.end();
+
     for (
-        TokenList::iterator it = tokens.begin();
-        it != tokens.end();
+        TokenIt it = tokens.begin();
+        it != itEnd;
         ++it
     ) {
-        pStatement = Statement::Create( context, it );
+        pStatement = Statement::Create(context, it, itEnd);
 
         if (pStatement != nullptr && pStatement.get() != nullptr)
         {
@@ -78,8 +78,8 @@ int main(const int argc, const char* argv[])
 {
     if (argc == 1)
     {
-        cout << "Usage: Interpreter" << endl;
-        return 1;
+        cout << "Usage: Interpreter <nom de fichier>" << endl;
+        return EXIT_FAILURE;
     }
 
     try
@@ -93,8 +93,8 @@ int main(const int argc, const char* argv[])
     }
     catch ( exception e )
     {
-        cout << e.what() << endl;
+        cout << "\x1B[91mErreur: " << e.what()  << "\033[0m" << endl;
     }
 
-    return 0;
+    return EXIT_SUCCESS;
 }

@@ -29,8 +29,9 @@ var NAVTREE =
       [ "Grammaire [EBNF]", "index.html#autotoc_md1", null ],
       [ "Exemple", "index.html#autotoc_md2", null ],
       [ "AST (Arbre de la syntaxe abstraite)", "index.html#autotoc_md3", null ],
-      [ "Usage", "index.html#autotoc_md4", null ],
-      [ "Réréfences", "index.html#autotoc_md5", null ]
+      [ "Compilation", "index.html#autotoc_md4", null ],
+      [ "Usage", "index.html#autotoc_md5", null ],
+      [ "Réréfences", "index.html#autotoc_md6", null ]
     ] ],
     [ "Classes", "annotated.html", [
       [ "Liste des classes", "annotated.html", "annotated_dup" ],
