@@ -15,6 +15,8 @@
 Statement
     ::= print ExpressionList
     | var Identifier
+    | var Identifier = ExpressionList
+    | Identifier = ExpressionList
 
 ExpressionList
     ::= Identifier
