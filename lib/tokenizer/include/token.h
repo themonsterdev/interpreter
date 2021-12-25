@@ -9,7 +9,10 @@ using namespace std;
 /**
  * Classe Token
  * 
- * Cette class représente un jeton.
+ * Cette classe représente un jeton trouvé dans une chaîne de caractères spécifiée.
+ * 
+ * Un jeton est une suite de caractères dans un programme source qui correspond au motif
+ * d'un symbole lexical et qui est analysé par le Tokenizer comme une instance de ce jeton lexical.
  * 
  * @see https://fr.wikipedia.org/wiki/Analyse_lexicale
  */

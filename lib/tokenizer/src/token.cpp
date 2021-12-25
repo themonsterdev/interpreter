@@ -26,15 +26,15 @@ string Token::GetStringType(Token::Type type)
 }
 
 Token::Token()
-    : m_type( Token::Type::Unknown )
-    , m_numberAtCharacter(1)
-    , m_numberLine(1)
+    : m_type( Token::Type::Unknown )    // Définit le type de jeton inconue.
+    , m_numberAtCharacter(1)            // Définit le numéro au caractère.
+    , m_numberLine(1)                   // Définit le numéro de ligne.
 {}
 
 Token::Token( Token::Type type )
-    : m_type( type )
-    , m_numberAtCharacter(1)
-    , m_numberLine(1)
+    : m_type( type )            // Définit le type de jeton inconue.
+    , m_numberAtCharacter(1)    // Définit le numéro au caractère.
+    , m_numberLine(1)           // Définit le numéro de ligne.
 {}
 
 void Token::SetType(Token::Type type)

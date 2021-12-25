@@ -1,4 +1,4 @@
-#include "Operator/MultiplicationExpression.h"
+#include "Operator/Arithmetic/MultiplicationExpression.h"
 
 MultiplicationExpression::MultiplicationExpression(Expression::Pointer left, Expression::Pointer right)
 	: ::NonTerminalExpression(left, right)

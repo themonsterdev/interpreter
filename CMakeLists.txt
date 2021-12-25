@@ -54,6 +54,8 @@ set_property(TARGET Context PROPERTY FOLDER "Libraries")
 set_property(TARGET Expression PROPERTY FOLDER "Libraries")
 set_property(TARGET Statement PROPERTY FOLDER "Libraries")
 
+set_property(TARGET Tokenizer PROPERTY FOLDER "Libraries/Analyzer")
+set_property(TARGET Lexer PROPERTY FOLDER "Libraries/Analyzer")
+set_property(TARGET Parser PROPERTY FOLDER "Libraries/Analyzer")
+
 set_property(TARGET Interpreter PROPERTY FOLDER "Runtime")
-set_property(TARGET Tokenizer PROPERTY FOLDER "Runtime")
-set_property(TARGET Parser PROPERTY FOLDER "Runtime")

@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['parse_0',['Parse',['../class_expression.html#a0aada7a645566e22d72e30d0be2c9756',1,'Expression']]],
-  ['parser_1',['Parser',['../class_parser.html',1,'']]],
-  ['pointer_2',['Pointer',['../class_expression.html#a90046daed7d30b372f481f7c338e0d9a',1,'Expression::Pointer()'],['../class_statement.html#a98d93a62817d1aabdea1129bcb567a67',1,'Statement::Pointer()']]],
-  ['printstatement_3',['PrintStatement',['../class_print_statement.html',1,'PrintStatement'],['../class_print_statement.html#ab13e9e9b83de12d657d810a6b9ee6f1a',1,'PrintStatement::PrintStatement()']]],
-  ['printtokens_4',['PrintTokens',['../class_tokenizer.html#a1c2ef0cc3fe72bdf1f186ae6fae8eaaf',1,'Tokenizer']]]
+  ['operator_0',['Operator',['../class_token.html#acf70e9411196c602738c3ed2428c7137ae1b3ec89ead7f83a9245ed5c9cacfdbf',1,'Token']]],
+  ['orexpression_1',['OrExpression',['../class_or_expression.html',1,'OrExpression'],['../class_or_expression.html#a818f67cc473f488e141859145e28d63b',1,'OrExpression::OrExpression()']]]
 ];

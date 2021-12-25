@@ -36,11 +36,15 @@ bool IsNumber( char character )
 
 bool IsOperator( char character )
 {
-    return character == '*'
+    return character == '!'
+        || character == '*'
         || character == '+'
         || character == '-'
         || character == '/'
+        || character == '<'
         || character == '='
+        || character == '>'
+        || character == '&'
         || character == '%';
 }
 
@@ -83,7 +87,7 @@ TokenList Tokenizer::GetTokens()
     ) {
         character = this->m_characters[ i ];
 
-        // Si le caractère actuelle ne doit n'est pas ignorer
+        // Si le caractère actuelle n'est pas ignorer
         if ( !IsIgnore( character ) )
         {
             if ( IsWord( character ) )
@@ -105,7 +109,7 @@ TokenList Tokenizer::GetTokens()
                 throw exception(errorMessage.c_str());
             }
 
-            numberAtCharacter += token.GetData().size();
+            numberAtCharacter += static_cast<int>(token.GetData().size());
             token.SetNumberAtCharacter(numberAtCharacter);
             token.SetNumberLine(numberLine);
             tokens.push_back(token);

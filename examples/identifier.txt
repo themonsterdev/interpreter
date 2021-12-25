@@ -6,4 +6,4 @@ print c
 print c + 1
 
 c = 1 + c
-print c + $
+print c + 1

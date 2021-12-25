@@ -1,9 +1,18 @@
 <map id="NonTerminalExpression" name="NonTerminalExpression">
-<area shape="rect" id="node1" title=" " alt="" coords="345,160,524,296"/>
+<area shape="rect" id="node1" title=" " alt="" coords="1260,160,1439,296"/>
 <area shape="rect" id="node3" href="$class_addition_expression.html" title=" " alt="" coords="5,344,160,436"/>
-<area shape="rect" id="node4" href="$class_division_expression.html" title=" " alt="" coords="185,344,335,436"/>
-<area shape="rect" id="node5" href="$class_modulo_expression.html" title=" " alt="" coords="360,344,509,436"/>
-<area shape="rect" id="node6" href="$class_multiplication_expression.html" title=" " alt="" coords="534,344,717,436"/>
-<area shape="rect" id="node7" href="$class_subtraction_expression.html" title=" " alt="" coords="741,344,915,436"/>
-<area shape="rect" id="node2" href="$class_expression.html" title=" " alt="" coords="377,5,492,112"/>
+<area shape="rect" id="node4" href="$class_and_expression.html" title=" " alt="" coords="184,344,315,436"/>
+<area shape="rect" id="node5" href="$class_division_expression.html" title=" " alt="" coords="339,344,490,436"/>
+<area shape="rect" id="node6" href="$class_equal_to_expression.html" title=" " alt="" coords="515,344,669,436"/>
+<area shape="rect" id="node7" href="$class_greater_than_expression.html" title=" " alt="" coords="693,344,872,436"/>
+<area shape="rect" id="node8" href="$class_greater_than_or_equal_to_expression.html" title=" " alt="" coords="897,344,1135,436"/>
+<area shape="rect" id="node9" href="$class_less_than_expression.html" title=" " alt="" coords="1160,344,1323,436"/>
+<area shape="rect" id="node10" href="$class_less_than_or_equal_to_expression.html" title=" " alt="" coords="1347,344,1571,436"/>
+<area shape="rect" id="node11" href="$class_modulo_expression.html" title=" " alt="" coords="1595,344,1744,436"/>
+<area shape="rect" id="node12" href="$class_multiplication_expression.html" title=" " alt="" coords="1769,344,1951,436"/>
+<area shape="rect" id="node13" href="$class_not_equal_to_expression.html" title=" " alt="" coords="1975,344,2150,436"/>
+<area shape="rect" id="node14" href="$class_or_expression.html" title=" " alt="" coords="2174,344,2295,436"/>
+<area shape="rect" id="node15" href="$class_subtraction_expression.html" title=" " alt="" coords="2320,344,2493,436"/>
+<area shape="rect" id="node16" href="$class_three_way_expression.html" title=" " alt="" coords="2518,344,2685,436"/>
+<area shape="rect" id="node2" href="$class_expression.html" title=" " alt="" coords="1292,5,1407,112"/>
 </map>

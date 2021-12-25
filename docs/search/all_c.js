@@ -1,7 +1,11 @@
 var searchData=
 [
-  ['terminalexpression_0',['TerminalExpression',['../class_terminal_expression.html',1,'TerminalExpression'],['../class_terminal_expression.html#a7185503c6203c3e5de58649a7c58992d',1,'TerminalExpression::TerminalExpression()']]],
-  ['token_1',['Token',['../class_token.html',1,'Token'],['../class_token.html#aa3c5868ba4115f3189df6b2ac5b36f39',1,'Token::Token()'],['../class_token.html#aa1b8fca986ba3bfb510b5c0c997e8d0c',1,'Token::Token(Token::Type type)']]],
-  ['tokenizer_2',['Tokenizer',['../class_tokenizer.html',1,'Tokenizer'],['../class_tokenizer.html#a2052eaf316eec192c11b5f7688184bbf',1,'Tokenizer::Tokenizer()']]],
-  ['type_3',['Type',['../class_token.html#acf70e9411196c602738c3ed2428c7137',1,'Token']]]
+  ['setdata_0',['SetData',['../class_token.html#af1db733093950c65246b58e81a2d45aa',1,'Token::SetData(string data)'],['../class_token.html#a45ab8612533525e9dd5be8da28e9db4a',1,'Token::SetData(const char data)']]],
+  ['setnumberline_1',['SetNumberLine',['../class_token.html#a2a00f5d5d4e275d20aeecb3bbcb1afa6',1,'Token']]],
+  ['setright_2',['SetRight',['../class_non_terminal_expression.html#adaf1139a5fac1884482e77e282b176a0',1,'NonTerminalExpression']]],
+  ['settype_3',['SetType',['../class_token.html#ac44a0679705607beb0ca968e56d62473',1,'Token']]],
+  ['setvalue_4',['SetValue',['../class_context.html#a93f1af02b522749dad739037ce6a1af2',1,'Context']]],
+  ['statement_5',['Statement',['../class_statement.html',1,'']]],
+  ['statementlist_6',['StatementList',['../class_statement.html#a1a7271bfc9e9d4658d8c70f47339f0c0',1,'Statement']]],
+  ['subtractionexpression_7',['SubtractionExpression',['../class_subtraction_expression.html',1,'SubtractionExpression'],['../class_subtraction_expression.html#af46d87051634cbfe8490fe25723ab1c6',1,'SubtractionExpression::SubtractionExpression()']]]
 ];

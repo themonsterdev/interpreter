@@ -1,5 +1,8 @@
 #include "PrintStatement.h"
 
+// Opérateurs de comparaison
+#include "Operator/Comparison/EqualToExpression.h"
+
 #include <iostream>
 
 PrintStatement::PrintStatement(TokenIt& begin, TokenIt& end)
@@ -35,5 +38,12 @@ PrintStatement::PrintStatement(TokenIt& begin, TokenIt& end)
 
 void PrintStatement::Execute(Context& context)
 {
-	cout << m_expression->Evaluate(context) << endl;
+	// if (dynamic_cast<EqualToExpression*>(m_expression.get()) != nullptr)
+	// {
+	// 	cout << (m_expression->Evaluate(context) ? "true" : "false") << endl;
+	// }
+	// else
+	// {
+		cout << m_expression->Evaluate(context) << endl;
+	// }
 }

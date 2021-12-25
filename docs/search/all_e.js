@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['variablestatement_0',['VariableStatement',['../class_variable_statement.html',1,'VariableStatement'],['../class_variable_statement.html#a0f77948468dfede7173c52574c07edac',1,'VariableStatement::VariableStatement()']]]
+  ['unknown_0',['Unknown',['../class_token.html#acf70e9411196c602738c3ed2428c7137a88183b946cc5f0e8c96b2e66e1c74a7e',1,'Token']]]
 ];
