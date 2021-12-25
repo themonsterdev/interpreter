@@ -8,7 +8,7 @@ find_package(Doxygen
 
 if (DOXYGEN_FOUND)
     set(DOXYGEN_OUTPUT_DIRECTORY       "${PROJECT_SOURCE_DIR}")
-    set(DOXYGEN_USE_MDFILE_AS_MAINPAGE "doxygen/index.markdown")
+    set(DOXYGEN_USE_MDFILE_AS_MAINPAGE "doxygen/index.md")
 
     set(DOXYGEN_PROJECT_NAME           "Interprèteur")
     set(DOXYGEN_PROJECT_BRIEF          "Construire avec c++")
@@ -23,8 +23,8 @@ if (DOXYGEN_FOUND)
     set(DOXYGEN_UML_LOOK               "YES")    # Graph detailer
 
     set(DOXYGEN_FILES
-        "doxygen/ebnf.markdown"
-        "doxygen/index.markdown"
+        "doxygen/ebnf.md"
+        "doxygen/index.md"
         "lib/context/include"
         "lib/expression/include"
         "lib/parser/include"
