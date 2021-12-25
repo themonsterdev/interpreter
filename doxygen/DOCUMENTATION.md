@@ -26,6 +26,14 @@ ArithmeticOperatorExpression
     | Number '=' Number
     | Number '%' Number
 
+ComparisonOperatorExpression
+    ::= Number '==' Number
+    | Number '>' Number
+    | Number '>=' Number
+    | Number '<' Number
+    | Number '<=' Number
+    | Number '!=' Number
+
 Identifier
     ::= [a-zA-Z_][a-zA-Z0-9_]+
 
