@@ -1,8 +1,9 @@
 # Documentation
 
 - Déclaration de variable (`'var'`).
-- Assignation de variable (`'var identfier = {expression}' | 'identfier = {expression}'`).
+- Assignation de variable (`'var identfier = {ExpressionList}' | 'identfier = {ExpressionList}'`).
 - Opérateurs arithmétiques (`'*' | '+' | '-' | '/' | '%'`).
+- Opérateurs de comparaison (`'==' | '>' | '>=' | '<' | '<=' | '!='`).
 - Imprimer le résultat (`'print'`).
 
 ![https://fr.wikipedia.org/wiki/Diagramme_syntaxique](./interpreter-diagram.png)
@@ -97,6 +98,11 @@ $ .\bin\Interpreter.exe .\examples\identifier.txt
 ## Réréfences
 
 - [Interpreter](https://fr.wikipedia.org/wiki/Interpr%C3%A8te_(informatique))
+- [Interpréteur (patron de conception)](https://fr.wikipedia.org/wiki/Interpr%C3%A9teur_(patron_de_conception))
 - [Analyse lexicale](https://fr.wikipedia.org/wiki/Analyse_lexicale)
 - [Analyse syntaxique](https://fr.wikipedia.org/wiki/Analyse_syntaxique)
 - [Arbre de la syntaxe abstraite](https://fr.wikipedia.org/wiki/Arbre_de_la_syntaxe_abstraite)
+
+## Resources
+
+- [Railroad Diagram Generator](https://www.bottlecaps.de/rr/ui)

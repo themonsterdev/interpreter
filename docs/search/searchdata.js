@@ -7,7 +7,7 @@ var indexSectionsWithContent =
   4: "eps",
   5: "t",
   6: "iknou",
-  7: "d"
+  7: "de"
 };
 
 var indexSectionNames =

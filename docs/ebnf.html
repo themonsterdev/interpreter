@@ -1,0 +1,317 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      
+      
+      <meta name="generator" content="Railroad Diagram Generator 1.63">
+      
+      <style type="text/css">
+    ::-moz-selection
+    {
+      color: #F0F5FF;
+      background: #00050F;
+    }
+    ::selection
+    {
+      color: #F0F5FF;
+      background: #00050F;
+    }
+    .ebnf a, .grammar a
+    {
+      text-decoration: none;
+    }
+    .ebnf a:hover, .grammar a:hover
+    {
+      color: #000205;
+      text-decoration: underline;
+    }
+    .signature
+    {
+      color: #002B80;
+      font-size: 11px;
+      text-align: right;
+    }
+    body
+    {
+      font: normal 12px Verdana, sans-serif;
+      color: #00050F;
+      background: #F0F5FF;
+    }
+    a:link, a:visited
+    {
+      color: #00050F;
+    }
+    a:link.signature, a:visited.signature
+    {
+      color: #002B80;
+    }
+    a.button, #tabs li a
+    {
+      padding: 0.25em 0.5em;
+      border: 1px solid #002B80;
+      background: #C6D4F1;
+      color: #002B80;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.button:hover, #tabs li a:hover
+    {
+      color: #000205;
+      background: #D1E0FF;
+      border-color: #000205;
+    }
+    #tabs
+    {
+      padding: 3px 10px;
+      margin-left: 0;
+      margin-top: 58px;
+      border-bottom: 1px solid #00050F;
+    }
+    #tabs li
+    {
+      list-style: none;
+      margin-left: 5px;
+      display: inline;
+    }
+    #tabs li a
+    {
+      border-bottom: 1px solid #00050F;
+    }
+    #tabs li a.active
+    {
+      color: #00050F;
+      background: #F0F5FF;
+      border-color: #00050F;
+      border-bottom: 1px solid #F0F5FF;
+      outline: none;
+    }
+    #divs div
+    {
+      display: none;
+      overflow:auto;
+    }
+    #divs div.active
+    {
+      display: block;
+    }
+    #text
+    {
+      border-color: #002B80;
+      background: #FAFCFF;
+      color: #000205;
+    }
+    .small
+    {
+      vertical-align: top;
+      text-align: right;
+      font-size: 9px;
+      font-weight: normal;
+      line-height: 120%;
+    }
+    td.small
+    {
+      padding-top: 0px;
+    }
+    .hidden
+    {
+      visibility: hidden;
+    }
+    td:hover .hidden
+    {
+      visibility: visible;
+    }
+    div.download
+    {
+      display: none;
+      background: #F0F5FF;
+      position: absolute;
+      right: 34px;
+      top: 94px;
+      padding: 10px;
+      border: 1px dotted #00050F;
+    }
+    #divs div.ebnf, .ebnf code
+    {
+      display: block;
+      padding: 10px;
+      background: #D1E0FF;
+      width: 992px;
+    }
+    #divs div.grammar
+    {
+      display: block;
+      padding-left: 16px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      background: #D1E0FF;
+    }
+    pre
+    {
+      margin: 0px;
+    }
+    .ebnf div
+    {
+      padding-left: 13ch;
+      text-indent: -13ch;
+    }
+    .ebnf code, .grammar code, textarea, pre
+    {
+      font:12px SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+    }
+    tr.option-line td:first-child
+    {
+      text-align: right
+    }
+    tr.option-text td
+    {
+      padding-bottom: 10px
+    }
+    table.palette
+    {
+      border-top: 1px solid #000205;
+      border-right: 1px solid #000205;
+      margin-bottom: 4px
+    }
+    td.palette
+    {
+      border-bottom: 1px solid #000205;
+      border-left: 1px solid #000205;
+    }
+    a.palette
+    {
+      padding: 2px 3px 2px 10px;
+      text-decoration: none;
+    }
+    .palette
+    {
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -o-user-select: none;
+      -ms-user-select: none;
+    }
+  </style>
+   </head>
+   
+   <body>
+      
+      <p style="font-size: 14px; font-weight:bold"><a name="Statement">Statement:</a></p><img border="0" src="diagram/Statement.png" height="157" width="459" usemap="#Statement.map"><map name="Statement.map"><area shape="rect" coords="69,1,117,33" href="#print" title="print"><area shape="rect" coords="69,45,147,77" href="#Identifier" title="Identifier"><area shape="rect" coords="237,1,349,33" href="#ExpressionList" title="ExpressionList"><area shape="rect" coords="49,89,89,121" href="#var" title="var"><area shape="rect" coords="109,89,187,121" href="#Identifier" title="Identifier"><area shape="rect" coords="277,121,389,153" href="#ExpressionList" title="ExpressionList"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#Statement" title="Statement">Statement</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::= ( <a href="#print" title="print">print</a> | <a href="#Identifier" title="Identifier">Identifier</a> '=' ) <a href="#ExpressionList" title="ExpressionList">ExpressionList</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <a href="#var" title="var">var</a> <a href="#Identifier" title="Identifier">Identifier</a> ( '=' <a href="#ExpressionList" title="ExpressionList">ExpressionList</a> )?</div></code></div>
+         </p>
+      
+      <p>no references</p><br><p style="font-size: 14px; font-weight:bold"><a name="ExpressionList">ExpressionList:</a></p><img border="0" src="diagram/ExpressionList.png" height="125" width="321" usemap="#ExpressionList.map"><map name="ExpressionList.map"><area shape="rect" coords="49,1,127,33" href="#Identifier" title="Identifier"><area shape="rect" coords="49,45,259,77" href="#ArithmeticOperatorExpression" title="ArithmeticOperatorExpression"><area shape="rect" coords="49,89,271,121" href="#ComparisonOperatorExpression" title="ComparisonOperatorExpression"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#ExpressionList" title="ExpressionList">ExpressionList</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::= <a href="#Identifier" title="Identifier">Identifier</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <a href="#ArithmeticOperatorExpression" title="ArithmeticOperatorExpression">ArithmeticOperatorExpression</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <a href="#ComparisonOperatorExpression" title="ComparisonOperatorExpression">ComparisonOperatorExpression</a></div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#Statement" title="Statement">Statement</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="ArithmeticOperatorExpression">ArithmeticOperatorExpression:</a></p><img border="0" src="diagram/ArithmeticOperatorExpression.png" height="257" width="409" usemap="#ArithmeticOperatorExpression.map"><map name="ArithmeticOperatorExpression.map"><area shape="rect" coords="49,1,119,33" href="#Number" title="Number"><area shape="rect" coords="49,45,127,77" href="#Identifier" title="Identifier"><area shape="rect" coords="281,1,351,33" href="#Number" title="Number"><area shape="rect" coords="281,45,359,77" href="#Identifier" title="Identifier"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#ArithmeticOperatorExpression" title="ArithmeticOperatorExpression">ArithmeticOperatorExpression</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::= ( <a href="#Number" title="Number">Number</a> | <a href="#Identifier" title="Identifier">Identifier</a> ) ( '*' | '+' | '-' | '/' | '=' | '%' ) ( <a href="#Number" title="Number">Number</a> | <a href="#Identifier" title="Identifier">Identifier</a> )</div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#ExpressionList" title="ExpressionList">ExpressionList</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="ComparisonOperatorExpression">ComparisonOperatorExpression:</a></p><img border="0" src="diagram/ComparisonOperatorExpression.png" height="257" width="415" usemap="#ComparisonOperatorExpression.map"><map name="ComparisonOperatorExpression.map"><area shape="rect" coords="49,1,119,33" href="#Number" title="Number"><area shape="rect" coords="49,45,127,77" href="#Identifier" title="Identifier"><area shape="rect" coords="287,1,357,33" href="#Number" title="Number"><area shape="rect" coords="287,45,365,77" href="#Identifier" title="Identifier"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#ComparisonOperatorExpression" title="ComparisonOperatorExpression">ComparisonOperatorExpression</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::= ( <a href="#Number" title="Number">Number</a> | <a href="#Identifier" title="Identifier">Identifier</a> ) ( '==' | '&gt;' | '&gt;=' | '&lt;' | '&lt;=' | '!=' ) ( <a href="#Number" title="Number">Number</a> | <a href="#Identifier" title="Identifier">Identifier</a> )</div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#ExpressionList" title="ExpressionList">ExpressionList</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="Identifier">Identifier:</a></p><img border="0" src="diagram/Identifier.png" height="185" width="323"><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#Identifier" title="Identifier">Identifier</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::= [a-zA-Z_] [a-zA-Z0-9_]+</div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#ArithmeticOperatorExpression" title="ArithmeticOperatorExpression">ArithmeticOperatorExpression</a></li>
+            
+            <li><a href="#ComparisonOperatorExpression" title="ComparisonOperatorExpression">ComparisonOperatorExpression</a></li>
+            
+            <li><a href="#ExpressionList" title="ExpressionList">ExpressionList</a></li>
+            
+            <li><a href="#Statement" title="Statement">Statement</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="Number">Number:</a></p><img border="0" src="diagram/Number.png" height="53" width="161"><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#Number" title="Number">Number</a>&nbsp;&nbsp;&nbsp;::= [0-9]+</div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#ArithmeticOperatorExpression" title="ArithmeticOperatorExpression">ArithmeticOperatorExpression</a></li>
+            
+            <li><a href="#ComparisonOperatorExpression" title="ComparisonOperatorExpression">ComparisonOperatorExpression</a></li>
+            </ul>
+         </p><br><hr>
+      
+      <p>
+         
+         <table border="0" class="signature">
+            
+            <tr>
+               
+               <td style="width: 100%">&nbsp;</td>
+               
+               <td valign="top">
+                  
+                  <nobr class="signature">... generated by <a name="Railroad-Diagram-Generator" class="signature" title="https://www.bottlecaps.de/rr/ui" href="https://www.bottlecaps.de/rr/ui" target="_blank">RR - Railroad Diagram Generator</a></nobr>
+                  </td>
+               
+               <td><a name="Railroad-Diagram-Generator" title="https://www.bottlecaps.de/rr/ui" href="https://www.bottlecaps.de/rr/ui" target="_blank"><img border="0" src="diagram/rr-1.63.png" height="16" width="16"></a></td>
+               </tr>
+            </table>
+         </p>
+      </body>
+   </html>

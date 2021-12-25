@@ -25,7 +25,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Interprèteur<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">Interprèteur<span id="projectnumber">&#160;2.0.0</span>
    </div>
    <div id="projectbrief">Construire avec c++</div>
   </td>
@@ -86,14 +86,15 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
   <div class="headertitle"><div class="title">Documentation </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p ><a class="anchor" id="md_doxygen_DOCUMENTATION"></a></p><ul>
+<div class="textblock"><p ><a class="anchor" id="md_doxygen_index"></a></p><ul>
 <li>Déclaration de variable (&lsquo;'var&rsquo;<code>).</code></li>
-<li><code>Assignation de variable (</code>'var identfier = {expression}' | 'identfier = {expression}'<code>).</code></li>
+<li><code>Assignation de variable (</code>'var identfier = {ExpressionList}' | 'identfier = {ExpressionList}'<code>).</code></li>
 <li><code>Opérateurs arithmétiques (</code>'*' | '+' | '-' | '/' | ''<code>).</code></li>
+<li><code>Opérateurs de comparaison (</code>'==' | '&gt;' | '&gt;=' | '&lt;' | '&lt;=' | '!='<code>).</code></li>
 <li><code>Imprimer le résultat (</code>'print'`).</li>
 </ul>
 <p ><img src="./interpreter-diagram.png" alt="https://fr.wikipedia.org/wiki/Diagramme_syntaxique" class="inline"/></p>
-<h1><a class="anchor" id="autotoc_md1"></a>
+<h1><a class="anchor" id="autotoc_md8"></a>
 Grammaire [EBNF]</h1>
 <div class="fragment"><div class="line">Statement</div>
 <div class="line">    ::= print ExpressionList</div>
@@ -127,7 +128,7 @@ Grammaire [EBNF]</h1>
 <div class="line"> </div>
 <div class="line">Number</div>
 <div class="line">    ::= [0-9]+</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md2"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md9"></a>
 Exemple</h1>
 <div class="fragment"><div class="line">print 1 + 1</div>
 <div class="line"> </div>
@@ -148,14 +149,14 @@ Exemple</h1>
 <div class="line"> </div>
 <div class="line">identifier = 1 + 1 - 1 * 2 / 2 % 2</div>
 <div class="line">print identifier</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md3"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md10"></a>
 AST (Arbre de la syntaxe abstraite)</h1>
 <p ><img src="./ast-diagram.png" alt="https://fr.wikipedia.org/wiki/Diagramme_syntaxique" class="inline"/></p>
-<h1><a class="anchor" id="autotoc_md4"></a>
+<h1><a class="anchor" id="autotoc_md11"></a>
 Compilation</h1>
 <div class="fragment"><div class="line">$ cmake --preset=default</div>
 <div class="line">$ cmake --build --preset=default</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md5"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md12"></a>
 Usage</h1>
 <div class="fragment"><div class="line"># Exemples opération arithmétique</div>
 <div class="line">$ .\bin\Interpreter.exe .\examples\operators.txt</div>
@@ -168,13 +169,19 @@ Usage</h1>
 <div class="line"> </div>
 <div class="line"># Exemples identifiant</div>
 <div class="line">$ .\bin\Interpreter.exe .\examples\identifier.txt</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md6"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md13"></a>
 Réréfences</h1>
 <ul>
 <li><a href="https://fr.wikipedia.org/wiki/Interpr%C3%A8te_(informatique)">Interpreter</a></li>
+<li><a href="https://fr.wikipedia.org/wiki/Interpr%C3%A9teur_(patron_de_conception)">Interpréteur (patron de conception)</a></li>
 <li><a href="https://fr.wikipedia.org/wiki/Analyse_lexicale">Analyse lexicale</a></li>
 <li><a href="https://fr.wikipedia.org/wiki/Analyse_syntaxique">Analyse syntaxique</a></li>
-<li><a href="https://fr.wikipedia.org/wiki/Arbre_de_la_syntaxe_abstraite">Arbre de la syntaxe abstraite</a> </li>
+<li><a href="https://fr.wikipedia.org/wiki/Arbre_de_la_syntaxe_abstraite">Arbre de la syntaxe abstraite</a></li>
+</ul>
+<h1><a class="anchor" id="autotoc_md14"></a>
+Resources</h1>
+<ul>
+<li><a href="https://www.bottlecaps.de/rr/ui">Railroad Diagram Generator</a> </li>
 </ul>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
@@ -182,7 +189,7 @@ Réréfences</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Généré le Samedi 25 Décembre 2021 06:28:38 pour Interprèteur par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Généré le Samedi 25 Décembre 2021 07:27:03 pour Interprèteur par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
