@@ -1,0 +1,29 @@
+\hypertarget{_context_8h_source}{}\doxysection{Context.\+h}
+\label{_context_8h_source}\index{lib/context/include/Context.h@{lib/context/include/Context.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CONTEXT\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CONTEXT\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <map>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{class_context}{Context}}}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14 \textcolor{keyword}{public}:}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{22     \textcolor{keywordtype}{long} \mbox{\hyperlink{class_context_a585964ac80dc57e95a34f7a2fa00246a}{GetValue}}(\textcolor{keywordtype}{string} variable);}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_context_a93f1af02b522749dad739037ce6a1af2}{SetValue}}(\textcolor{keywordtype}{string} variable, \textcolor{keywordtype}{long} value);}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 \textcolor{keyword}{private}:}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35     \textcolor{keyword}{typedef} map<std::string, long> VariableMap;}
+\DoxyCodeLine{36     VariableMap m\_variables;}
+\DoxyCodeLine{37 \};}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,83 @@
+\hypertarget{class_multiplication_expression}{}\doxysection{Référence de la classe Multiplication\+Expression}
+\label{class_multiplication_expression}\index{MultiplicationExpression@{MultiplicationExpression}}
+
+
+{\ttfamily \#include $<$Multiplication\+Expression.\+h$>$}
+
+
+
+Graphe d\textquotesingle{}héritage de Multiplication\+Expression\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{class_multiplication_expression__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Graphe de collaboration de Multiplication\+Expression\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{class_multiplication_expression__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_multiplication_expression_a84d4d6dfbe120de09871ccefc1f311a2}{Multiplication\+Expression}} (\mbox{\hyperlink{class_expression_a90046daed7d30b372f481f7c338e0d9a}{Expression\+::\+Pointer}} left, \mbox{\hyperlink{class_expression_a90046daed7d30b372f481f7c338e0d9a}{Expression\+::\+Pointer}} right=nullptr)
+\item 
+virtual long \mbox{\hyperlink{class_multiplication_expression_af748dd508e3068a3de1d74d7da758f45}{Evaluate}} (\mbox{\hyperlink{class_context}{Context}} \&context)
+\end{DoxyCompactItemize}
+\doxysubsection*{Membres hérités additionnels}
+
+
+\doxysubsection{Description détaillée}
+\mbox{\hyperlink{class_non_terminal_expression}{Non\+Terminal\+Expression}} -\/ \mbox{\hyperlink{class_multiplication_expression}{Multiplication\+Expression}} 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_multiplication_expression_a84d4d6dfbe120de09871ccefc1f311a2}\label{class_multiplication_expression_a84d4d6dfbe120de09871ccefc1f311a2}} 
+\index{MultiplicationExpression@{MultiplicationExpression}!MultiplicationExpression@{MultiplicationExpression}}
+\index{MultiplicationExpression@{MultiplicationExpression}!MultiplicationExpression@{MultiplicationExpression}}
+\doxysubsubsection{\texorpdfstring{MultiplicationExpression()}{MultiplicationExpression()}}
+{\footnotesize\ttfamily Multiplication\+Expression\+::\+Multiplication\+Expression (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_expression_a90046daed7d30b372f481f7c338e0d9a}{Expression\+::\+Pointer}}}]{left,  }\item[{\mbox{\hyperlink{class_expression_a90046daed7d30b372f481f7c338e0d9a}{Expression\+::\+Pointer}}}]{right = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+Constructeur \mbox{\hyperlink{class_multiplication_expression}{Multiplication\+Expression}}.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em left} & Pointer de l\textquotesingle{}expression gauche. \\
+\hline
+{\em right} & Pointer de l\textquotesingle{}expression droite. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_multiplication_expression_af748dd508e3068a3de1d74d7da758f45}\label{class_multiplication_expression_af748dd508e3068a3de1d74d7da758f45}} 
+\index{MultiplicationExpression@{MultiplicationExpression}!Evaluate@{Evaluate}}
+\index{Evaluate@{Evaluate}!MultiplicationExpression@{MultiplicationExpression}}
+\doxysubsubsection{\texorpdfstring{Evaluate()}{Evaluate()}}
+{\footnotesize\ttfamily virtual long Multiplication\+Expression\+::\+Evaluate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_context}{Context}} \&}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Evalue l\textquotesingle{}expression enregistrée.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em context} & La référence du context actuel. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+long 
+\end{DoxyReturn}
+
+
+Implémente \mbox{\hyperlink{class_non_terminal_expression_a4741eb7516910b2380d223516d3e6f6d}{Non\+Terminal\+Expression}}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+lib/expression/include/\+Operator/\+Arithmetic/Multiplication\+Expression.\+h\end{DoxyCompactItemize}

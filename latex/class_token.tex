@@ -1,0 +1,236 @@
+\hypertarget{class_token}{}\doxysection{Référence de la classe Token}
+\label{class_token}\index{Token@{Token}}
+
+
+{\ttfamily \#include $<$Token.\+h$>$}
+
+
+
+Graphe de collaboration de Token\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{class_token__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{class_token_acf70e9411196c602738c3ed2428c7137}{Type}} \{ \newline
+\mbox{\hyperlink{class_token_acf70e9411196c602738c3ed2428c7137a220f3d3750583b9db48568a0b5b9a5f1}{Keyword}}
+, \mbox{\hyperlink{class_token_acf70e9411196c602738c3ed2428c7137a29ee5d1ebcc033234938a5234f1f2075}{Identifier}}
+, \mbox{\hyperlink{class_token_acf70e9411196c602738c3ed2428c7137ae1b3ec89ead7f83a9245ed5c9cacfdbf}{Operator}}
+, \mbox{\hyperlink{class_token_acf70e9411196c602738c3ed2428c7137ab2ee912b91d69b435159c7c3f6df7f5f}{Number}}
+, \newline
+\mbox{\hyperlink{class_token_acf70e9411196c602738c3ed2428c7137a88183b946cc5f0e8c96b2e66e1c74a7e}{Unknown}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_token_aa3c5868ba4115f3189df6b2ac5b36f39}{Token}} ()
+\item 
+\mbox{\hyperlink{class_token_aa1b8fca986ba3bfb510b5c0c997e8d0c}{Token}} (\mbox{\hyperlink{class_token_acf70e9411196c602738c3ed2428c7137}{Token\+::\+Type}} type)
+\item 
+void \mbox{\hyperlink{class_token_ac44a0679705607beb0ca968e56d62473}{Set\+Type}} (\mbox{\hyperlink{class_token_acf70e9411196c602738c3ed2428c7137}{Token\+::\+Type}} type)
+\item 
+\mbox{\hyperlink{class_token_acf70e9411196c602738c3ed2428c7137}{Token\+::\+Type}} \mbox{\hyperlink{class_token_a183d1dba876c544e5c7c9cbaec51954e}{Get\+Type}} ()
+\item 
+void \mbox{\hyperlink{class_token_af1db733093950c65246b58e81a2d45aa}{Set\+Data}} (string data)
+\item 
+void \mbox{\hyperlink{class_token_a45ab8612533525e9dd5be8da28e9db4a}{Set\+Data}} (const char data)
+\item 
+string \mbox{\hyperlink{class_token_a1b852ae1b7fbb77a6de7e18a9e57e4cf}{Get\+Data}} ()
+\item 
+\mbox{\Hypertarget{class_token_a6a3cf2aa645f2e28a71fbcafa16ed03e}\label{class_token_a6a3cf2aa645f2e28a71fbcafa16ed03e}} 
+void {\bfseries Set\+Number\+At\+Character} (const int number\+Line)
+\item 
+\mbox{\Hypertarget{class_token_a21823a3f85622dfab2c23016729bb391}\label{class_token_a21823a3f85622dfab2c23016729bb391}} 
+int {\bfseries Get\+Number\+At\+Character} ()
+\item 
+void \mbox{\hyperlink{class_token_a2a00f5d5d4e275d20aeecb3bbcb1afa6}{Set\+Number\+Line}} (const int number\+Line)
+\item 
+int \mbox{\hyperlink{class_token_aef5346388384491c536a8fe307c0eff6}{Get\+Number\+Line}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_token_a68657b5fed811a1e6c61a5c9db83e9e4}{Get\+String\+Type}} (\mbox{\hyperlink{class_token_acf70e9411196c602738c3ed2428c7137}{Token\+::\+Type}} type)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Classe \mbox{\hyperlink{class_token}{Token}}
+
+Cette classe représente un jeton trouvé dans une chaîne de caractères spécifiée.
+
+Un jeton est une suite de caractères dans un programme source qui correspond au motif d\textquotesingle{}un symbole lexical et qui est analysé par le \mbox{\hyperlink{class_tokenizer}{Tokenizer}} comme une instance de ce jeton lexical.
+
+\begin{DoxySeeAlso}{Voir également}
+\href{https://fr.wikipedia.org/wiki/Analyse_lexicale}{\texttt{ https\+://fr.\+wikipedia.\+org/wiki/\+Analyse\+\_\+lexicale}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Documentation des énumérations membres}
+\mbox{\Hypertarget{class_token_acf70e9411196c602738c3ed2428c7137}\label{class_token_acf70e9411196c602738c3ed2428c7137}} 
+\index{Token@{Token}!Type@{Type}}
+\index{Type@{Type}!Token@{Token}}
+\doxysubsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{class_token_acf70e9411196c602738c3ed2428c7137}{Token\+::\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+Type d\textquotesingle{}énumération de jeton. \begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Keyword@{Keyword}!Token@{Token}}\index{Token@{Token}!Keyword@{Keyword}}}\mbox{\Hypertarget{class_token_acf70e9411196c602738c3ed2428c7137a220f3d3750583b9db48568a0b5b9a5f1}\label{class_token_acf70e9411196c602738c3ed2428c7137a220f3d3750583b9db48568a0b5b9a5f1}} 
+Keyword&enum value 0 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Identifier@{Identifier}!Token@{Token}}\index{Token@{Token}!Identifier@{Identifier}}}\mbox{\Hypertarget{class_token_acf70e9411196c602738c3ed2428c7137a29ee5d1ebcc033234938a5234f1f2075}\label{class_token_acf70e9411196c602738c3ed2428c7137a29ee5d1ebcc033234938a5234f1f2075}} 
+Identifier&enum value 1 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Operator@{Operator}!Token@{Token}}\index{Token@{Token}!Operator@{Operator}}}\mbox{\Hypertarget{class_token_acf70e9411196c602738c3ed2428c7137ae1b3ec89ead7f83a9245ed5c9cacfdbf}\label{class_token_acf70e9411196c602738c3ed2428c7137ae1b3ec89ead7f83a9245ed5c9cacfdbf}} 
+Operator&enum value 2 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Number@{Number}!Token@{Token}}\index{Token@{Token}!Number@{Number}}}\mbox{\Hypertarget{class_token_acf70e9411196c602738c3ed2428c7137ab2ee912b91d69b435159c7c3f6df7f5f}\label{class_token_acf70e9411196c602738c3ed2428c7137ab2ee912b91d69b435159c7c3f6df7f5f}} 
+Number&enum value 3 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Unknown@{Unknown}!Token@{Token}}\index{Token@{Token}!Unknown@{Unknown}}}\mbox{\Hypertarget{class_token_acf70e9411196c602738c3ed2428c7137a88183b946cc5f0e8c96b2e66e1c74a7e}\label{class_token_acf70e9411196c602738c3ed2428c7137a88183b946cc5f0e8c96b2e66e1c74a7e}} 
+Unknown&enum value 4 \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{class_token_aa3c5868ba4115f3189df6b2ac5b36f39}\label{class_token_aa3c5868ba4115f3189df6b2ac5b36f39}} 
+\index{Token@{Token}!Token@{Token}}
+\index{Token@{Token}!Token@{Token}}
+\doxysubsubsection{\texorpdfstring{Token()}{Token()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Token\+::\+Token (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructeur vide \mbox{\Hypertarget{class_token_aa1b8fca986ba3bfb510b5c0c997e8d0c}\label{class_token_aa1b8fca986ba3bfb510b5c0c997e8d0c}} 
+\index{Token@{Token}!Token@{Token}}
+\index{Token@{Token}!Token@{Token}}
+\doxysubsubsection{\texorpdfstring{Token()}{Token()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Token\+::\+Token (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_token_acf70e9411196c602738c3ed2428c7137}{Token\+::\+Type}}}]{type }\end{DoxyParamCaption})}
+
+Constructeur avec paramètre
+
+
+\begin{DoxyParams}{Paramètres}
+{\em type} & Le type du jeton \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{class_token_a1b852ae1b7fbb77a6de7e18a9e57e4cf}\label{class_token_a1b852ae1b7fbb77a6de7e18a9e57e4cf}} 
+\index{Token@{Token}!GetData@{GetData}}
+\index{GetData@{GetData}!Token@{Token}}
+\doxysubsubsection{\texorpdfstring{GetData()}{GetData()}}
+{\footnotesize\ttfamily string Token\+::\+Get\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Obtenir les données du jeton
+
+\begin{DoxyReturn}{Renvoie}
+\mbox{\hyperlink{class_token}{Token}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_token_aef5346388384491c536a8fe307c0eff6}\label{class_token_aef5346388384491c536a8fe307c0eff6}} 
+\index{Token@{Token}!GetNumberLine@{GetNumberLine}}
+\index{GetNumberLine@{GetNumberLine}!Token@{Token}}
+\doxysubsubsection{\texorpdfstring{GetNumberLine()}{GetNumberLine()}}
+{\footnotesize\ttfamily int Token\+::\+Get\+Number\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Obtenir le numéro de ligne sur lequel le jeton à était trouvé.
+
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_token_a68657b5fed811a1e6c61a5c9db83e9e4}\label{class_token_a68657b5fed811a1e6c61a5c9db83e9e4}} 
+\index{Token@{Token}!GetStringType@{GetStringType}}
+\index{GetStringType@{GetStringType}!Token@{Token}}
+\doxysubsubsection{\texorpdfstring{GetStringType()}{GetStringType()}}
+{\footnotesize\ttfamily static string Token\+::\+Get\+String\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_token_acf70e9411196c602738c3ed2428c7137}{Token\+::\+Type}}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Optenir le type de jeton de type chaine de caractères.
+
+\begin{DoxyReturn}{Renvoie}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_token_a183d1dba876c544e5c7c9cbaec51954e}\label{class_token_a183d1dba876c544e5c7c9cbaec51954e}} 
+\index{Token@{Token}!GetType@{GetType}}
+\index{GetType@{GetType}!Token@{Token}}
+\doxysubsubsection{\texorpdfstring{GetType()}{GetType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_token_acf70e9411196c602738c3ed2428c7137}{Token\+::\+Type}} Token\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+obtenir le type du jeton
+
+\begin{DoxyReturn}{Renvoie}
+\mbox{\hyperlink{class_token}{Token}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_token_a45ab8612533525e9dd5be8da28e9db4a}\label{class_token_a45ab8612533525e9dd5be8da28e9db4a}} 
+\index{Token@{Token}!SetData@{SetData}}
+\index{SetData@{SetData}!Token@{Token}}
+\doxysubsubsection{\texorpdfstring{SetData()}{SetData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Token\+::\+Set\+Data (\begin{DoxyParamCaption}\item[{const char}]{data }\end{DoxyParamCaption})}
+
+Définit les données du jeton
+
+
+\begin{DoxyParams}{Paramètres}
+{\em data} & Les donnée de type char \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_token_af1db733093950c65246b58e81a2d45aa}\label{class_token_af1db733093950c65246b58e81a2d45aa}} 
+\index{Token@{Token}!SetData@{SetData}}
+\index{SetData@{SetData}!Token@{Token}}
+\doxysubsubsection{\texorpdfstring{SetData()}{SetData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Token\+::\+Set\+Data (\begin{DoxyParamCaption}\item[{string}]{data }\end{DoxyParamCaption})}
+
+Définit les données du jeton
+
+
+\begin{DoxyParams}{Paramètres}
+{\em data} & Les donnée de type string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_token_a2a00f5d5d4e275d20aeecb3bbcb1afa6}\label{class_token_a2a00f5d5d4e275d20aeecb3bbcb1afa6}} 
+\index{Token@{Token}!SetNumberLine@{SetNumberLine}}
+\index{SetNumberLine@{SetNumberLine}!Token@{Token}}
+\doxysubsubsection{\texorpdfstring{SetNumberLine()}{SetNumberLine()}}
+{\footnotesize\ttfamily void Token\+::\+Set\+Number\+Line (\begin{DoxyParamCaption}\item[{const int}]{number\+Line }\end{DoxyParamCaption})}
+
+Définit le numéro de ligne sur lequel le jeton à était trouvé
+
+
+\begin{DoxyParams}{Paramètres}
+{\em number\+Line} & le numéro de ligne. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_token_ac44a0679705607beb0ca968e56d62473}\label{class_token_ac44a0679705607beb0ca968e56d62473}} 
+\index{Token@{Token}!SetType@{SetType}}
+\index{SetType@{SetType}!Token@{Token}}
+\doxysubsubsection{\texorpdfstring{SetType()}{SetType()}}
+{\footnotesize\ttfamily void Token\+::\+Set\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_token_acf70e9411196c602738c3ed2428c7137}{Token\+::\+Type}}}]{type }\end{DoxyParamCaption})}
+
+Définit le type du jeton
+
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+lib/tokenizer/include/Token.\+h\end{DoxyCompactItemize}
