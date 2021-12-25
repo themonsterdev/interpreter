@@ -102,14 +102,23 @@ Grammaire [EBNF]</h1>
 <div class="line">ExpressionList</div>
 <div class="line">    ::= Identifier</div>
 <div class="line">    | ArithmeticOperatorExpression</div>
+<div class="line">    | ComparisonOperatorExpression</div>
 <div class="line"> </div>
 <div class="line">ArithmeticOperatorExpression</div>
-<div class="line">    ::= Number &#39;*&#39; Number</div>
-<div class="line">    | Number &#39;+&#39; Number</div>
-<div class="line">    | Number &#39;-&#39; Number</div>
-<div class="line">    | Number &#39;/&#39; Number</div>
-<div class="line">    | Number &#39;=&#39; Number</div>
-<div class="line">    | Number &#39;%&#39; Number</div>
+<div class="line">    ::= (Number | Identifier) &#39;*&#39; (Number | Identifier)</div>
+<div class="line">    | (Number | Identifier) &#39;+&#39; (Number | Identifier)</div>
+<div class="line">    | (Number | Identifier) &#39;-&#39; (Number | Identifier)</div>
+<div class="line">    | (Number | Identifier) &#39;/&#39; (Number | Identifier)</div>
+<div class="line">    | (Number | Identifier) &#39;=&#39; (Number | Identifier)</div>
+<div class="line">    | (Number | Identifier) &#39;%&#39; (Number | Identifier)</div>
+<div class="line"> </div>
+<div class="line">ComparisonOperatorExpression</div>
+<div class="line">    ::= (Number | Identifier) &#39;==&#39; (Number | Identifier)</div>
+<div class="line">    | (Number | Identifier) &#39;&gt;&#39; (Number | Identifier)</div>
+<div class="line">    | (Number | Identifier) &#39;&gt;=&#39; (Number | Identifier)</div>
+<div class="line">    | (Number | Identifier) &#39;&lt;&#39; (Number | Identifier)</div>
+<div class="line">    | (Number | Identifier) &#39;&lt;=&#39; (Number | Identifier)</div>
+<div class="line">    | (Number | Identifier) &#39;!=&#39; (Number | Identifier)</div>
 <div class="line"> </div>
 <div class="line">Identifier</div>
 <div class="line">    ::= [a-zA-Z_][a-zA-Z0-9_]+</div>
@@ -171,7 +180,7 @@ Réréfences</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Généré le Samedi 25 Décembre 2021 06:21:39 pour Interprèteur par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Généré le Samedi 25 Décembre 2021 06:27:08 pour Interprèteur par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
