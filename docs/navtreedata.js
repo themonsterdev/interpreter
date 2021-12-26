@@ -25,22 +25,24 @@
 var NAVTREE =
 [
   [ "Interprèteur", "index.html", [
-    [ "Documentation", "index.html", [
-      [ "Grammaire [EBNF]", "index.html#autotoc_md8", null ],
-      [ "Exemple", "index.html#autotoc_md9", null ],
-      [ "AST (Arbre de la syntaxe abstraite)", "index.html#autotoc_md10", null ],
-      [ "Compilation", "index.html#autotoc_md11", null ],
-      [ "Usage", "index.html#autotoc_md12", null ],
-      [ "Réréfences", "index.html#autotoc_md13", null ],
-      [ "Resources", "index.html#autotoc_md14", null ]
+    [ "Page principale", "index.html", [
+      [ "Diagram", "index.html#autotoc_md8", [
+        [ "Interpréteur", "index.html#autotoc_md9", null ],
+        [ "AST (Arbre de la syntaxe abstraite)", "index.html#autotoc_md10", null ]
+      ] ],
+      [ "Pré-requis", "index.html#autotoc_md11", null ],
+      [ "Instructions", "index.html#autotoc_md12", null ],
+      [ "Exemple", "index.html#autotoc_md13", null ],
+      [ "Réréfences", "index.html#autotoc_md14", null ],
+      [ "Resources", "index.html#autotoc_md15", null ]
     ] ],
-    [ "EBNF", "md_doxygen_ebnf.html", [
-      [ "Statement:", "md_doxygen_ebnf.html#autotoc_md1", null ],
-      [ "ExpressionList:", "md_doxygen_ebnf.html#autotoc_md2", null ],
-      [ "ArithmeticOperatorExpression:", "md_doxygen_ebnf.html#autotoc_md3", null ],
-      [ "ComparisonOperatorExpression:", "md_doxygen_ebnf.html#autotoc_md4", null ],
-      [ "Identifier:", "md_doxygen_ebnf.html#autotoc_md5", null ],
-      [ "Number:", "md_doxygen_ebnf.html#autotoc_md6", null ]
+    [ "EBNF", "md_ebnf.html", [
+      [ "Statement:", "md_ebnf.html#autotoc_md1", null ],
+      [ "ExpressionList:", "md_ebnf.html#autotoc_md2", null ],
+      [ "ArithmeticOperatorExpression:", "md_ebnf.html#autotoc_md3", null ],
+      [ "ComparisonOperatorExpression:", "md_ebnf.html#autotoc_md4", null ],
+      [ "Identifier:", "md_ebnf.html#autotoc_md5", null ],
+      [ "Number:", "md_ebnf.html#autotoc_md6", null ]
     ] ],
     [ "Classes", "annotated.html", [
       [ "Liste des classes", "annotated.html", "annotated_dup" ],
@@ -55,14 +57,18 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Fichiers", "files.html", [
-      [ "Liste des fichiers", "files.html", "files_dup" ]
+      [ "Liste des fichiers", "files.html", "files_dup" ],
+      [ "Membres de fichier", "globals.html", [
+        [ "Tout", "globals.html", null ],
+        [ "Définitions de type", "globals_type.html", null ]
+      ] ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"_addition_expression_8h_source.html"
+"_addition_expression_8h.html"
 ];
 
 var SYNCONMSG = 'cliquez pour désactiver la synchronisation du panel';

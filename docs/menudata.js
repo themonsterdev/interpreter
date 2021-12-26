@@ -66,4 +66,7 @@ var menudata={children:[
 {text:"Définitions de type",url:"functions_type.html"},
 {text:"Énumérations",url:"functions_enum.html"}]}]},
 {text:"Fichiers",url:"files.html",children:[
-{text:"Liste des fichiers",url:"files.html"}]}]}
+{text:"Liste des fichiers",url:"files.html"},
+{text:"Membres de fichier",url:"globals.html",children:[
+{text:"Tout",url:"globals.html"},
+{text:"Définitions de type",url:"globals_type.html"}]}]}]}

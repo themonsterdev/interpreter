@@ -1,43 +1,40 @@
 cmake_minimum_required(VERSION 3.22.1)  # CMake version check
+
 project(interpreter)                    # Create project 'interpreter'
 
+# check if Doxygen is installed
 find_package(Doxygen
     REQUIRED dot
     OPTIONAL_COMPONENTS mscgen dia
 )
-
 if (DOXYGEN_FOUND)
-    set(DOXYGEN_OUTPUT_DIRECTORY       "${PROJECT_SOURCE_DIR}")
-    set(DOXYGEN_USE_MDFILE_AS_MAINPAGE "doxygen/index.md")
+    # set input and output files
+    set(DOXYGEN_IN  "doxygen/config/Doxyfile")
+    set(DOXYGEN_OUT "Doxyfile")
 
-    set(DOXYGEN_PROJECT_NAME           "Interprèteur")
-    set(DOXYGEN_PROJECT_BRIEF          "Construire avec c++")
-    set(DOXYGEN_PROJECT_NUMBER         "2.0.0")
-    set(DOXYGEN_OUTPUT_LANGUAGE        "French")
+    # request to configure the file
+    configure_file(${DOXYGEN_IN} ${DOXYGEN_OUT} @ONLY)
+    message("Doxygen build started")
 
-    set(DOXYGEN_GENERATE_LATEX          "YES")
-
-    set(DOXYGEN_GENERATE_HTML          "YES")
-    set(DOXYGEN_HTML_OUTPUT            "docs")
-    set(DOXYGEN_HTML_TIMESTAMP         "YES")    # Génére la date dans le footer
-    set(DOXYGEN_HTML_DYNAMIC_SECTIONS  "NO")     # Ouvre le graph auto
-    set(DOXYGEN_GENERATE_TREEVIEW      "YES")    # Affiche un menu sur le coté
-    set(DOXYGEN_UML_LOOK               "YES")    # Graph detailer
-
-    set(DOXYGEN_FILES
-        "doxygen/index.md"
-        "doxygen/ebnf.md"
-        "lib/context/include"
-        "lib/expression/include"
-        "lib/parser/include"
-        "lib/statement/include"
-        "lib/tokenizer/include"
-    )
-
-    doxygen_add_docs(Doxygen
-        ${DOXYGEN_FILES}
-        COMMENT "Generate lib doc pages"
-    )
+    # note the option ALL which allows to build the docs together with the application
+    add_custom_target( Doxygen ALL
+        COMMAND ${DOXYGEN_EXECUTABLE} ${DOXYGEN_OUT}
+        WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
+        SOURCES
+            "doxygen/config/Doxyfile"
+            "doxygen/config/DoxygenLayout.xml"
+            "doxygen/diagram/ebnf/ArithmeticOperatorExpression.png"
+            "doxygen/diagram/ebnf/ComparisonOperatorExpression.png"
+            "doxygen/diagram/ebnf/ExpressionList.png"
+            "doxygen/diagram/ebnf/Identifier.png"
+            "doxygen/diagram/ebnf/Number.png"
+            "doxygen/diagram/ebnf/Statement.png"
+            "doxygen/diagram/ast-diagram.png"
+            "doxygen/diagram/interpreter-diagram.png"
+            "doxygen/ebnf.md"
+            "doxygen/index.md"
+        COMMENT "Generating API documentation with Doxygen"
+        VERBATIM )
 endif()
 
 set(CMAKE_CXX_STANDARD "20")              # Enable c++20 standard
@@ -58,4 +55,4 @@ set_property(TARGET Tokenizer PROPERTY FOLDER "Libraries/Analyzer")
 set_property(TARGET Lexer PROPERTY FOLDER "Libraries/Analyzer")
 set_property(TARGET Parser PROPERTY FOLDER "Libraries/Analyzer")
 
-set_property(TARGET Interpreter PROPERTY FOLDER "Runtime")
+set_property(TARGET Interpreter PROPERTY FOLDER "Main")

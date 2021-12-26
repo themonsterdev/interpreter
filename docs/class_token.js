@@ -10,10 +10,12 @@ var class_token =
     [ "Token", "class_token.html#aa3c5868ba4115f3189df6b2ac5b36f39", null ],
     [ "Token", "class_token.html#aa1b8fca986ba3bfb510b5c0c997e8d0c", null ],
     [ "GetData", "class_token.html#a1b852ae1b7fbb77a6de7e18a9e57e4cf", null ],
+    [ "GetNumberAtCharacter", "class_token.html#a21823a3f85622dfab2c23016729bb391", null ],
     [ "GetNumberLine", "class_token.html#aef5346388384491c536a8fe307c0eff6", null ],
     [ "GetType", "class_token.html#a183d1dba876c544e5c7c9cbaec51954e", null ],
     [ "SetData", "class_token.html#a45ab8612533525e9dd5be8da28e9db4a", null ],
     [ "SetData", "class_token.html#af1db733093950c65246b58e81a2d45aa", null ],
+    [ "SetNumberAtCharacter", "class_token.html#a6a3cf2aa645f2e28a71fbcafa16ed03e", null ],
     [ "SetNumberLine", "class_token.html#a2a00f5d5d4e275d20aeecb3bbcb1afa6", null ],
     [ "SetType", "class_token.html#ac44a0679705607beb0ca968e56d62473", null ]
 ];

@@ -2,7 +2,7 @@
 
 ## Statement:
 
-![diagram/Statement.png](diagram/Statement.png)
+![Statement.png](Statement.png)
 
 ```ebnf
 Statement
@@ -14,7 +14,7 @@ aucune référence
 
 ## ExpressionList:
 
-![diagram/ExpressionList.png](diagram/ExpressionList.png)
+![ExpressionList.png](ExpressionList.png)
 
 ```ebnf
 ExpressionList
@@ -29,7 +29,7 @@ référencé par:
 
 ## ArithmeticOperatorExpression:
 
-![diagram/ArithmeticOperatorExpression.png](diagram/ArithmeticOperatorExpression.png)
+![ArithmeticOperatorExpression.png](ArithmeticOperatorExpression.png)
 
 ```ebnf
 ArithmeticOperatorExpression
@@ -42,7 +42,7 @@ référencé par:
 
 ## ComparisonOperatorExpression:
 
-![diagram/ComparisonOperatorExpression.png](diagram/ComparisonOperatorExpression.png)
+![ComparisonOperatorExpression.png](ComparisonOperatorExpression.png)
 
 ```ebnf
 ComparisonOperatorExpression
@@ -55,7 +55,7 @@ référencé par:
 
 ## Identifier:
 
-![diagram/Identifier.png](diagram/Identifier.png)
+![Identifier.png](Identifier.png)
 
 ```ebnf
 Identifier
@@ -71,7 +71,7 @@ référencé par:
 
 ## Number:
 
-![diagram/Number.png](diagram/Number.png)
+![Number.png](Number.png)
 
 ```ebnf
 Number

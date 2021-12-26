@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Interprèteur:  Fichier source de lib/expression/include/Expression.h</title>
+<title>Interprèteur:  Fichier source de C:/Users/themo/OneDrive/Documents/GitHub/interpreter/lib/expression/include/Expression.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -86,11 +86,11 @@ $(document).ready(function(){initNavTree('_expression_8h_source.html',''); initR
   <div class="headertitle"><div class="title">Expression.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef EXPRESSION_H</span></div>
+<a href="_expression_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef EXPRESSION_H</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define EXPRESSION_H</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;Context.h&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;Token.h&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="_context_8h.html">Context.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="_token_8h.html">Token.h</a>&quot;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('_expression_8h_source.html',''); initR
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_expression.html#ac2a30804101b0e8dc16f7d7627341990">   34</a></span>    <span class="keyword">typedef</span> vector&lt;Pointer&gt; <a class="code hl_typedef" href="class_expression.html#ac2a30804101b0e8dc16f7d7627341990">ExpressionList</a>;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_expression.html#a0aada7a645566e22d72e30d0be2c9756">   43</a></span>    <span class="keyword">static</span> <a class="code hl_typedef" href="class_expression.html#a90046daed7d30b372f481f7c338e0d9a">Pointer</a> <a class="code hl_function" href="class_expression.html#a0aada7a645566e22d72e30d0be2c9756">Parse</a>( TokenIt&amp; begin, TokenIt&amp; end );</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_expression.html#a0aada7a645566e22d72e30d0be2c9756">   43</a></span>    <span class="keyword">static</span> <a class="code hl_typedef" href="class_expression.html#a90046daed7d30b372f481f7c338e0d9a">Pointer</a> <a class="code hl_function" href="class_expression.html#a0aada7a645566e22d72e30d0be2c9756">Parse</a>( <a class="code hl_typedef" href="_token_8h.html#a3f246b6ceb89f07b85bb0b3455dae167">TokenIt</a>&amp; begin, <a class="code hl_typedef" href="_token_8h.html#a3f246b6ceb89f07b85bb0b3455dae167">TokenIt</a>&amp; end );</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_expression.html#a9d81831ea034f330627b1fddb1899517">   48</a></span>    <span class="keyword">virtual</span> <a class="code hl_function" href="class_expression.html#a9d81831ea034f330627b1fddb1899517">~Expression</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
@@ -113,12 +113,15 @@ $(document).ready(function(){initNavTree('_expression_8h_source.html',''); initR
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keyword">static</span> <a class="code hl_typedef" href="class_expression.html#a90046daed7d30b372f481f7c338e0d9a">Pointer</a> ParseExpressionFromNumber( TokenIt&amp; begin, TokenIt&amp; end );</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keyword">static</span> <a class="code hl_typedef" href="class_expression.html#a90046daed7d30b372f481f7c338e0d9a">Pointer</a> ParseExpressionFromIdentifier( TokenIt&amp; begin, TokenIt&amp; end );</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">static</span> <a class="code hl_typedef" href="class_expression.html#a90046daed7d30b372f481f7c338e0d9a">Pointer</a> ParseExpressionFromOperator( <a class="code hl_typedef" href="class_expression.html#a90046daed7d30b372f481f7c338e0d9a">Pointer</a> leftExpression, TokenIt&amp; begin, TokenIt&amp; end );</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keyword">static</span> <a class="code hl_typedef" href="class_expression.html#a90046daed7d30b372f481f7c338e0d9a">Pointer</a> ParseExpressionFromNumber( <a class="code hl_typedef" href="_token_8h.html#a3f246b6ceb89f07b85bb0b3455dae167">TokenIt</a>&amp; begin, <a class="code hl_typedef" href="_token_8h.html#a3f246b6ceb89f07b85bb0b3455dae167">TokenIt</a>&amp; end );</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keyword">static</span> <a class="code hl_typedef" href="class_expression.html#a90046daed7d30b372f481f7c338e0d9a">Pointer</a> ParseExpressionFromIdentifier( <a class="code hl_typedef" href="_token_8h.html#a3f246b6ceb89f07b85bb0b3455dae167">TokenIt</a>&amp; begin, <a class="code hl_typedef" href="_token_8h.html#a3f246b6ceb89f07b85bb0b3455dae167">TokenIt</a>&amp; end );</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">static</span> <a class="code hl_typedef" href="class_expression.html#a90046daed7d30b372f481f7c338e0d9a">Pointer</a> ParseExpressionFromOperator( <a class="code hl_typedef" href="class_expression.html#a90046daed7d30b372f481f7c338e0d9a">Pointer</a> leftExpression, <a class="code hl_typedef" href="_token_8h.html#a3f246b6ceb89f07b85bb0b3455dae167">TokenIt</a>&amp; begin, <a class="code hl_typedef" href="_token_8h.html#a3f246b6ceb89f07b85bb0b3455dae167">TokenIt</a>&amp; end );</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>};</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_context_8h_html"><div class="ttname"><a href="_context_8h.html">Context.h</a></div></div>
+<div class="ttc" id="a_token_8h_html"><div class="ttname"><a href="_token_8h.html">Token.h</a></div></div>
+<div class="ttc" id="a_token_8h_html_a3f246b6ceb89f07b85bb0b3455dae167"><div class="ttname"><a href="_token_8h.html#a3f246b6ceb89f07b85bb0b3455dae167">TokenIt</a></div><div class="ttdeci">TokenList::iterator TokenIt</div><div class="ttdef"><b>Definition:</b> Token.h:119</div></div>
 <div class="ttc" id="aclass_context_html"><div class="ttname"><a href="class_context.html">Context</a></div><div class="ttdef"><b>Definition:</b> Context.h:13</div></div>
 <div class="ttc" id="aclass_expression_html"><div class="ttname"><a href="class_expression.html">Expression</a></div><div class="ttdef"><b>Definition:</b> Expression.h:19</div></div>
 <div class="ttc" id="aclass_expression_html_a0aada7a645566e22d72e30d0be2c9756"><div class="ttname"><a href="class_expression.html#a0aada7a645566e22d72e30d0be2c9756">Expression::Parse</a></div><div class="ttdeci">static Pointer Parse(TokenIt &amp;begin, TokenIt &amp;end)</div></div>
@@ -131,8 +134,8 @@ $(document).ready(function(){initNavTree('_expression_8h_source.html',''); initR
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_07d98a99df93d0f406d2059c8cfd29fa.html">expression</a></li><li class="navelem"><a class="el" href="dir_ef1f4fd4d78c68943e0c03ad087416fe.html">include</a></li><li class="navelem"><b>Expression.h</b></li>
-    <li class="footer">Généré le Samedi 25 Décembre 2021 08:46:26 pour Interprèteur par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_07d98a99df93d0f406d2059c8cfd29fa.html">expression</a></li><li class="navelem"><a class="el" href="dir_ef1f4fd4d78c68943e0c03ad087416fe.html">include</a></li><li class="navelem"><a class="el" href="_expression_8h.html">Expression.h</a></li>
+    <li class="footer">Généré le Dimanche 26 Décembre 2021 08:08:01 pour Interprèteur par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
