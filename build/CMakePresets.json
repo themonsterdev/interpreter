@@ -1,0 +1,34 @@
+{
+    "version": 3,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 22,
+        "patch": 1
+    },
+    "configurePresets": [
+        {
+            "name": "default",
+            "displayName": "Default Config",
+            "description": "Default build using Visual Studio 17 2022 generator",
+            "generator": "Visual Studio 17 2022",
+            "binaryDir": "${sourceDir}/default"
+        },
+        {
+            "name": "linux",
+            "displayName": "Linux Config",
+            "description": "Linux build using Unix Makefiles generator",
+            "generator": "Unix Makefiles",
+            "binaryDir": "${sourceDir}/linux"
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "default",
+            "configurePreset": "default"
+        },
+        {
+            "name": "linux",
+            "configurePreset": "linux"
+        }
+    ]
+}

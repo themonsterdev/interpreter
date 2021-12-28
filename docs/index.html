@@ -27,7 +27,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Interprèteur<span id="projectnumber">&#160;2.0.0</span>
    </div>
-   <div id="projectbrief">Construire avec c++</div>
+   <div id="projectbrief">Compiler avec c++</div>
   </td>
  </tr>
  </tbody>
@@ -86,93 +86,50 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
   <div class="headertitle"><div class="title">Page principale </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p ><a class="anchor" id="md_index"></a> Ce programme montre comment créer un interpréteur pour un langage de programmation. Il utilise le modèle de conception Intepreter <a href="https://en.wikipedia.org/wiki/Interpreter_pattern">Gang of Four</a> pour implémenter un langage simple. Il est écrit en C++ et se compile sous <code>Windows</code>, <code>Linux</code>, <code>MacOs</code>.</p>
+<div class="textblock"><p >Ce programme montre comment créer un interpréteur pour un langage de programmation. Il utilise le modèle de conception Intepreter <a href="https://en.wikipedia.org/wiki/Interpreter_pattern">Gang of Four</a> pour implémenter un langage simple. Il est écrit en C++ et se compile sous <code>Windows</code>, <code>Linux</code>, <code>MacOs</code>.</p>
 <p >L'interpréteur peux interpréter:</p>
 <ul>
-<li>Déclaration de variable (&lsquo;'var&rsquo;<code>).</code></li>
-<li><code>Assignation de variable (</code>'var identfier = {ExpressionList}' | 'identfier = {ExpressionList}'<code>).</code></li>
-<li><code>Opérateurs arithmétiques (</code>'*' | '+' | '-' | '/' | ''<code>).</code></li>
-<li><code>Opérateurs de comparaison (</code>'==' | '&gt;' | '&gt;=' | '&lt;' | '&lt;=' | '!='<code>).</code></li>
-<li><code>Imprimer le résultat (</code>'print'`).</li>
-</ul>
-<h1><a class="anchor" id="autotoc_md8"></a>
-Diagram</h1>
-<h2><a class="anchor" id="autotoc_md9"></a>
-Interpréteur</h2>
-<p ><img src="interpreter-diagram.png" alt="https://fr.wikipedia.org/wiki/Diagramme_syntaxique" class="inline"/></p>
-<h2><a class="anchor" id="autotoc_md10"></a>
-AST (Arbre de la syntaxe abstraite)</h2>
-<p ><img src="ast-diagram.png" alt="https://fr.wikipedia.org/wiki/Diagramme_syntaxique" class="inline"/></p>
-<h1><a class="anchor" id="autotoc_md11"></a>
-Pré-requis</h1>
-<ul>
-<li><a href="https://cmake.org">CMake (Compilation)</a> <code>13.22.1</code>.</li>
-<li><b>[Optionnel]</b> <a href="https://www.doxygen.nl/index.html">Doxygen (Documentation)</a> <code>1.9.2</code>.</li>
-<li><b>[Optionnel]</b> <a href="http://graphviz.org">Graphviz (Diagram)</a> <code>2.50.0</code>.</li>
-</ul>
-<h1><a class="anchor" id="autotoc_md12"></a>
-Instructions</h1>
-<p >Faire un clone de ce dépôt:</p>
-<div class="fragment"><div class="line">$ git clone https://github.com/themonsterdev/interpreter.git</div>
-</div><!-- fragment --><p >Naviguer vers le répertoire du référentiel cloné:</p>
-<div class="fragment"><div class="line">$ cd interpreter</div>
-</div><!-- fragment --><p >Exécutez <code>CMake</code> pour configurer le projet et générer un système de construction natif:</p>
-<div class="fragment"><div class="line">$ cmake --preset=default</div>
-</div><!-- fragment --><p >Ensuite, appelez ce système de construction pour compiler le projet:</p>
-<div class="fragment"><div class="line">$ cmake --build --preset=default</div>
-</div><!-- fragment --><p >Enfin, essayez d'utiliser l'interpréteur nouvellement construit avec ces exemples de scripts:</p>
-<div class="fragment"><div class="line">$ ./build/default/interpreter.exe -h</div>
-<div class="line">$ ./build/default/interpreter.exe -f ./examples/comparison.lsp</div>
-<div class="line">$ ./build/default/interpreter.exe -f ./examples/identifier.lsp</div>
-<div class="line">$ ./build/default/interpreter.exe -f ./examples/operator.lsp</div>
-<div class="line">$ ./build/default/interpreter.exe -f ./examples/print.lsp</div>
-<div class="line">$ ./build/default/interpreter.exe -f ./examples/variable.lsp</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md13"></a>
-Exemple</h1>
-<p >exemple.lsp:</p>
-<div class="fragment"><div class="line">print 1 + 1</div>
-<div class="line"> </div>
-<div class="line">var identifier = 1 + 1</div>
-<div class="line">print identifier</div>
-<div class="line"> </div>
-<div class="line">identifier = 2 - 1</div>
-<div class="line">print identifier</div>
-<div class="line"> </div>
-<div class="line">identifier = 2 * 3</div>
-<div class="line">print identifier</div>
-<div class="line"> </div>
-<div class="line">identifier = 6 / 3</div>
-<div class="line">print identifier</div>
-<div class="line"> </div>
-<div class="line">identifier = 6 % 2</div>
-<div class="line">print identifier</div>
-<div class="line"> </div>
-<div class="line">identifier = 1 + 1 - 1 * 2 / 2 % 2</div>
-<div class="line">print identifier</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md14"></a>
-Réréfences</h1>
-<ul>
-<li><a href="https://fr.wikipedia.org/wiki/Interpr%C3%A8te_(informatique)">Interpreter</a><ul>
-<li><a href="https://en.wikipedia.org/wiki/Interpreter_pattern">Interpréteur (patron de conception)</a></li>
-<li><a href="https://github.com/jamesdhutton/Interpreter">Implémentation de l'interpréteur en C++</a></li>
+<li>Déclaration (&lsquo;'print {ExpressionList}&rsquo;<code>).</code></li>
+<li><code>Définition de variable (</code>'var identfier'<code>).</code></li>
+<li><code>Assignation de variable (</code>'var identfier = {ExpressionList}' | 'identfier = {ExpressionList}'`).</li>
+<li>Opérateurs<ul>
+<li>Arithmétiques (&lsquo;&rsquo;*' | '+' | '-' | '/' | ''<code>).</code></li>
+<li><code>Comparaison (</code>'==' | '&gt;' | '&gt;=' | '&lt;' | '&lt;=' | '!='`).</li>
 </ul>
 </li>
-<li><a href="https://fr.wikipedia.org/wiki/Analyse_lexicale">Analyse lexicale</a></li>
-<li><a href="https://fr.wikipedia.org/wiki/Analyse_syntaxique">Analyse syntaxique</a></li>
-<li><a href="https://fr.wikipedia.org/wiki/Arbre_de_la_syntaxe_abstraite">Arbre de la syntaxe abstraite</a></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md15"></a>
-Resources</h1>
-<ul>
-<li><a href="https://www.bottlecaps.de/rr/ui">Railroad Diagram Generator</a> </li>
-</ul>
+<h2><a class="anchor" id="autotoc_md21"></a>
+Pré-requis</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"></th><th class="markdownTableHeadNone"></th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a href="https://cmake.org">CMake (Compilation)</a>   </td><td class="markdownTableBodyNone"><code>13.22.1</code>   </td></tr>
+</table>
+<h2><a class="anchor" id="autotoc_md22"></a>
+Instructions</h2>
+<p >Faire un clone de ce dépôt:</p>
+<div class="fragment"><div class="line">$ git clone https://github.com/themonsterdev/interpreter.git</div>
+</div><!-- fragment --><p >Ensuite, accédez au répertoire de <code>build</code> et exécutez <code>CMake</code> pour configurer le projet et générer un système de build natif :</p>
+<div class="fragment"><div class="line">$ cd interpreter/build</div>
+<div class="line">$ cmake --preset=default</div>
+</div><!-- fragment --><p >Ensuite, appelez ce système de construction pour compiler le projet :</p>
+<div class="fragment"><div class="line">$ cmake --build --preset=default</div>
+</div><!-- fragment --><p >Enfin, essayez d'utiliser l'interpréteur nouvellement construit avec ces exemples de scripts:</p>
+<div class="fragment"><div class="line">$ ./default/Interpreter/Debug/Interpreter.exe -h</div>
+<div class="line">$ ./default/Interpreter/Debug/Interpreter.exe -f ../examples/comparison.lsp</div>
+<div class="line">$ ./default/Interpreter/Debug/Interpreter.exe -f ../examples/identifier.lsp</div>
+<div class="line">$ ./default/Interpreter/Debug/Interpreter.exe -f ../examples/operator.lsp</div>
+<div class="line">$ ./default/Interpreter/Debug/Interpreter.exe -f ../examples/print.lsp</div>
+<div class="line">$ ./default/Interpreter/Debug/Interpreter.exe -f ../examples/variable.lsp</div>
+</div><!-- fragment --><p ><a href="https://github.com/themonsterdev/interpreter">Github</a> </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Généré le Dimanche 26 Décembre 2021 08:08:01 pour Interprèteur par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Généré le Mardi 28 Décembre 2021 07:14:02 pour Interprèteur par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

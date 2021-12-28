@@ -50,13 +50,13 @@ bool IsOperator( char character )
 
 // Definitions des fonctions de la classe Tokenizer
 
-void Tokenizer::PrintTokens(TokenList tokens)
+void Tokenizer::PrintTokens(Token::List tokens)
 {
     for (
-        TokenList::iterator it = tokens.begin();
+        Token::Iterator it = tokens.begin();
         it != tokens.end();
         ++it
-        ) {
+    ) {
         cout << "Token {" << endl;
         cout << '\t' << "type: " << Token::GetStringType(it->GetType()) << "," << endl;
         cout << '\t' << "data: " << it->GetData() << endl;
@@ -68,14 +68,13 @@ Tokenizer::Tokenizer( string characters )
     : m_characters( characters )
 {}
 
-TokenList Tokenizer::GetTokens()
+Token::List Tokenizer::GetTokens()
 {
-    TokenList tokens;
+    Token::List tokens;
 
     size_t charactersLength = this->m_characters.size();
     char character;
     Token token;
-    
 
     int numberAtCharacter = 0;
     int numberLine = 1;
@@ -149,7 +148,7 @@ string Tokenizer::GetStringLiteralToken(string &characters, int& i)
 
     if ( i < this->m_characters.size() )
     {
-        const char nextCharacter = this->m_characters[ i + 1 ];
+        const char nextCharacter = this->m_characters[ (size_t)i + 1 ];
         if ( IsWord( nextCharacter ) || IsNumber( nextCharacter ) )
         {
             i++;
@@ -175,7 +174,7 @@ string Tokenizer::GetNumberLiteralToken(string& characters, int& i)
 
     if ( i < this->m_characters.size() )
     {
-        const char nextCharacter = this->m_characters[i + 1];
+        const char nextCharacter = this->m_characters[ (size_t)i + 1 ];
         if ( IsNumber( nextCharacter ) )
         {
             i++;
@@ -185,7 +184,6 @@ string Tokenizer::GetNumberLiteralToken(string& characters, int& i)
 
     return characters;
 }
-
 
 Token Tokenizer::GetOperatorToken(const char character)
 {

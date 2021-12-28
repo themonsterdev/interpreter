@@ -2,7 +2,7 @@
 #include "VariableStatement.h"
 #include "PrintStatement.h"
 
-Statement::Pointer Statement::Create( Context& context, TokenIt& begin, TokenIt& end )
+Statement::Pointer Statement::Create( Context& context, Token::Iterator& begin, Token::Iterator& end )
 {
 	if (begin == end)
 	{
@@ -29,7 +29,7 @@ Statement::Pointer Statement::Create( Context& context, TokenIt& begin, TokenIt&
 	}
 }
 
-Statement::Pointer Statement::CreateKeywordStatement( Context& context, TokenIt& begin, TokenIt& end )
+Statement::Pointer Statement::CreateKeywordStatement( Context& context, Token::Iterator& begin, Token::Iterator& end )
 {
 	Token::Type tokenType = begin->GetType();
 	string tokenData = begin->GetData();

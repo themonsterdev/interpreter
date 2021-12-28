@@ -19,7 +19,7 @@ public:
 	 * @param  begin    L'itérateur pointant sur le premier élément de la séquence tokens.
 	 * @param  end	    L'itérateur pointant sur l'élément le plus ancien de la séquence tokens.
 	 */
-	PrintStatement(TokenIt& begin, TokenIt& end);
+	PrintStatement( Token::Iterator& begin, Token::Iterator& end );
 
 	virtual void Execute(Context& context);
 

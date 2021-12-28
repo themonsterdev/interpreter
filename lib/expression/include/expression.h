@@ -40,7 +40,7 @@ public:
 	 * @param  end	   L'itérateur pointant sur l'élément le plus ancien de la séquence tokens.
 	 * @return Pointer Le pointeur d'expression intelligent.
 	 */
-	static Pointer Parse( TokenIt& begin, TokenIt& end );
+	static Pointer Parse(Token::Iterator& begin, Token::Iterator& end );
 
 	/**
 	 * Déstruction de l'instance Expression.
@@ -57,9 +57,9 @@ public:
 
 private:
 
-	static Pointer ParseExpressionFromNumber( TokenIt& begin, TokenIt& end );
-	static Pointer ParseExpressionFromIdentifier( TokenIt& begin, TokenIt& end );
-	static Pointer ParseExpressionFromOperator( Pointer leftExpression, TokenIt& begin, TokenIt& end );
+	static Pointer ParseExpressionFromNumber( Token::Iterator& begin, Token::Iterator& end );
+	static Pointer ParseExpressionFromIdentifier( Token::Iterator& begin, Token::Iterator& end );
+	static Pointer ParseExpressionFromOperator( Pointer leftExpression, Token::Iterator& begin, Token::Iterator& end );
 };
 
 #endif

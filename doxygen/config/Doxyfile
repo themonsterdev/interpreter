@@ -44,7 +44,7 @@ PROJECT_NUMBER         = "2.0.0"
 # for a project that appears at the top of each page and should give viewer a
 # quick idea about the purpose of the project. Keep the description short.
 
-PROJECT_BRIEF          = "Construire avec c++"
+PROJECT_BRIEF          = "Compiler avec c++"
 
 # With the PROJECT_LOGO tag one can specify a logo or an icon that is included
 # in the documentation. The maximum height of the logo should not exceed 55
@@ -58,7 +58,7 @@ PROJECT_LOGO           =
 # entered, it will be relative to the location where doxygen was started. If
 # left blank the current directory will be used.
 
-OUTPUT_DIRECTORY       = @CMAKE_CURRENT_SOURCE_DIR@/
+OUTPUT_DIRECTORY       = @CMAKE_CURRENT_SOURCE_DIR@/../../
 
 # If the CREATE_SUBDIRS tag is set to YES then doxygen will create 4096 sub-
 # directories (in 2 levels) under the output directory of each output format and
@@ -162,7 +162,7 @@ FULL_PATH_NAMES        = YES
 # will be relative from the directory where doxygen is started.
 # This tag requires that the tag FULL_PATH_NAMES is set to YES.
 
-STRIP_FROM_PATH        = @CMAKE_CURRENT_SOURCE_DIR@/doxygen
+STRIP_FROM_PATH        = @CMAKE_CURRENT_SOURCE_DIR@
 
 # The STRIP_FROM_INC_PATH tag can be used to strip a user-defined part of the
 # path mentioned in the documentation of a class, which tells the reader which
@@ -772,7 +772,7 @@ FILE_VERSION_FILTER    =
 # DoxygenLayout.xml, doxygen will parse it automatically even if the LAYOUT_FILE
 # tag is left empty.
 
-LAYOUT_FILE            = @CMAKE_CURRENT_SOURCE_DIR@/doxygen/config/DoxygenLayout.xml
+LAYOUT_FILE            = @CMAKE_CURRENT_SOURCE_DIR@/../config/DoxygenLayout.xml
 
 # The CITE_BIB_FILES tag can be used to specify one or more bib files containing
 # the reference definitions. This must be a list of .bib files. The .bib
@@ -871,16 +871,24 @@ WARN_LOGFILE           =
 # spaces. See also FILE_PATTERNS and EXTENSION_MAPPING
 # Note: If this tag is empty the current directory is searched.
 
-INPUT                  = @CMAKE_CURRENT_SOURCE_DIR@/doxygen/index.md
-INPUT                  += @CMAKE_CURRENT_SOURCE_DIR@/doxygen/ebnf.md
+INPUT                  = @CMAKE_CURRENT_SOURCE_DIR@/../doxygen.md
+INPUT                  += @CMAKE_CURRENT_SOURCE_DIR@/../grammar-ebnf.md
+INPUT                  += @CMAKE_CURRENT_SOURCE_DIR@/../index.md
 
-INPUT                  += @CMAKE_CURRENT_SOURCE_DIR@/lib/context/include/
+INPUT                  += @CMAKE_CURRENT_SOURCE_DIR@/../dessign-pattern/index.md
+INPUT                  += @CMAKE_CURRENT_SOURCE_DIR@/../dessign-pattern/interpreter.md
 
-INPUT                  += @CMAKE_CURRENT_SOURCE_DIR@/lib/expression/include/
+INPUT                  += @CMAKE_CURRENT_SOURCE_DIR@/../../interpreter/include/
 
-INPUT                  += @CMAKE_CURRENT_SOURCE_DIR@/lib/parser/include/
-INPUT                  += @CMAKE_CURRENT_SOURCE_DIR@/lib/statement/include/
-INPUT                  += @CMAKE_CURRENT_SOURCE_DIR@/lib/tokenizer/include/
+INPUT                  += @CMAKE_CURRENT_SOURCE_DIR@/../../lib/context/include/
+INPUT                  += @CMAKE_CURRENT_SOURCE_DIR@/../../lib/expression/include/
+INPUT                  += @CMAKE_CURRENT_SOURCE_DIR@/../../lib/parser/include/
+INPUT                  += @CMAKE_CURRENT_SOURCE_DIR@/../../lib/statement/include/
+INPUT                  += @CMAKE_CURRENT_SOURCE_DIR@/../../lib/tokenizer/include/
+
+INPUT                  += @CMAKE_CURRENT_SOURCE_DIR@/../dia/
+INPUT                  += @CMAKE_CURRENT_SOURCE_DIR@/../msc/
+INPUT                  += @CMAKE_CURRENT_SOURCE_DIR@/../dot/
 
 # This tag can be used to specify the character encoding of the source files
 # that doxygen parses. Internally doxygen uses the UTF-8 encoding. Doxygen uses
@@ -1034,7 +1042,7 @@ FILTER_SOURCE_PATTERNS =
 # (index.html). This can be useful if you have a project on for instance GitHub
 # and want to reuse the introduction page also for the doxygen output.
 
-USE_MDFILE_AS_MAINPAGE = @CMAKE_CURRENT_SOURCE_DIR@/doxygen/index.md
+USE_MDFILE_AS_MAINPAGE = @CMAKE_CURRENT_SOURCE_DIR@/../index.md
 
 #---------------------------------------------------------------------------
 # Configuration options related to source browsing
@@ -1268,14 +1276,14 @@ HTML_EXTRA_STYLESHEET  =
 # files will be copied as-is; there are no commands or markers available.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-HTML_EXTRA_FILES       = @CMAKE_CURRENT_SOURCE_DIR@/doxygen/diagram/ebnf/ArithmeticOperatorExpression.png \
-                         @CMAKE_CURRENT_SOURCE_DIR@/doxygen/diagram/ebnf/ComparisonOperatorExpression.png \
-                         @CMAKE_CURRENT_SOURCE_DIR@/doxygen/diagram/ebnf/ExpressionList.png \
-                         @CMAKE_CURRENT_SOURCE_DIR@/doxygen/diagram/ebnf/Identifier.png \
-                         @CMAKE_CURRENT_SOURCE_DIR@/doxygen/diagram/ebnf/Number.png \
-                         @CMAKE_CURRENT_SOURCE_DIR@/doxygen/diagram/ebnf/Statement.png \
-                         @CMAKE_CURRENT_SOURCE_DIR@/doxygen/diagram/ast-diagram.png \
-                         @CMAKE_CURRENT_SOURCE_DIR@/doxygen/diagram/interpreter-diagram.png
+HTML_EXTRA_FILES       = @CMAKE_CURRENT_SOURCE_DIR@/../diagram/ebnf/ArithmeticOperatorExpression.png \
+                         @CMAKE_CURRENT_SOURCE_DIR@/../diagram/ebnf/ComparisonOperatorExpression.png \
+                         @CMAKE_CURRENT_SOURCE_DIR@/../diagram/ebnf/ExpressionList.png \
+                         @CMAKE_CURRENT_SOURCE_DIR@/../diagram/ebnf/Identifier.png \
+                         @CMAKE_CURRENT_SOURCE_DIR@/../diagram/ebnf/Number.png \
+                         @CMAKE_CURRENT_SOURCE_DIR@/../diagram/ebnf/Statement.png \
+                         @CMAKE_CURRENT_SOURCE_DIR@/../diagram/ast-diagram.png \
+                         @CMAKE_CURRENT_SOURCE_DIR@/../diagram/interpreter-diagram.png
 
 # The HTML_COLORSTYLE_HUE tag controls the color of the HTML output. Doxygen
 # will adjust the colors in the style sheet and background images according to
@@ -2457,7 +2465,7 @@ DOT_WRAP_THRESHOLD     = 17
 # The default value is: NO.
 # This tag requires that the tag HAVE_DOT is set to YES.
 
-TEMPLATE_RELATIONS     = NO
+TEMPLATE_RELATIONS     = YES
 
 # If the INCLUDE_GRAPH, ENABLE_PREPROCESSING and SEARCH_INCLUDES tags are set to
 # YES then doxygen will generate a graph for each documented file showing the
@@ -2555,19 +2563,19 @@ DOT_PATH               =
 # command).
 # This tag requires that the tag HAVE_DOT is set to YES.
 
-DOTFILE_DIRS           =
+DOTFILE_DIRS           = @CMAKE_CURRENT_SOURCE_DIR@/../dot/
 
 # The MSCFILE_DIRS tag can be used to specify one or more directories that
 # contain msc files that are included in the documentation (see the \mscfile
 # command).
 
-MSCFILE_DIRS           =
+MSCFILE_DIRS           = @CMAKE_CURRENT_SOURCE_DIR@/../msc/
 
 # The DIAFILE_DIRS tag can be used to specify one or more directories that
 # contain dia files that are included in the documentation (see the \diafile
 # command).
 
-DIAFILE_DIRS           =
+DIAFILE_DIRS           = @CMAKE_CURRENT_SOURCE_DIR@/../dia/
 
 # When using plantuml, the PLANTUML_JAR_PATH tag should be used to specify the
 # path where java can find the plantuml.jar file. If left blank, it is assumed
@@ -2575,17 +2583,17 @@ DIAFILE_DIRS           =
 # generate a warning when it encounters a \startuml command in this case and
 # will not generate output for the diagram.
 
-PLANTUML_JAR_PATH      =
+PLANTUML_JAR_PATH      = @CMAKE_CURRENT_SOURCE_DIR@/../../externals/plantuml.jar
 
 # When using plantuml, the PLANTUML_CFG_FILE tag can be used to specify a
 # configuration file for plantuml.
 
-PLANTUML_CFG_FILE      =
+PLANTUML_CFG_FILE      = @CMAKE_CURRENT_SOURCE_DIR@/../uml/config/plantuml.cfg
 
 # When using plantuml, the specified paths are searched for files specified by
 # the !include statement in a plantuml block.
 
-PLANTUML_INCLUDE_PATH  =
+PLANTUML_INCLUDE_PATH  = @CMAKE_CURRENT_SOURCE_DIR@/../uml/
 
 # The DOT_GRAPH_MAX_NODES tag can be used to set the maximum number of nodes
 # that will be shown in the graph. If the number of nodes in a graph becomes
@@ -2609,7 +2617,7 @@ DOT_GRAPH_MAX_NODES    = 50
 # Minimum value: 0, maximum value: 1000, default value: 0.
 # This tag requires that the tag HAVE_DOT is set to YES.
 
-MAX_DOT_GRAPH_DEPTH    = 0
+MAX_DOT_GRAPH_DEPTH    = 2
 
 # Set the DOT_TRANSPARENT tag to YES to generate images with a transparent
 # background. This is disabled by default, because dot on Windows does not seem

@@ -21,7 +21,7 @@ public:
      *
      * @return void
      */
-    static void PrintTokens(TokenList tokens);
+    static void PrintTokens(Token::List tokens);
 
     /**
      * Constructeur Tokenizer
@@ -35,7 +35,7 @@ public:
      * 
      * @return vector<Token> les tokens générer
      */
-    TokenList GetTokens();
+    Token::List GetTokens();
 
 private:
 

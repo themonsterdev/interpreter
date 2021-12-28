@@ -1,6 +1,6 @@
 #include "VariableStatement.h"
 
-VariableStatement::VariableStatement(Context& context, TokenIt& begin, TokenIt& end)
+VariableStatement::VariableStatement(Context& context, Token::Iterator& begin, Token::Iterator& end )
 	: m_expression(nullptr)
 {
 	Token::Type tokenType = begin->GetType();

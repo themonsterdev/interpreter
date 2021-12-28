@@ -27,7 +27,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Interprèteur<span id="projectnumber">&#160;2.0.0</span>
    </div>
-   <div id="projectbrief">Construire avec c++</div>
+   <div id="projectbrief">Compiler avec c++</div>
   </td>
  </tr>
  </tbody>
@@ -132,13 +132,46 @@ Fonctions membres publiques</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Fonctions membres publiques statiques</h2></td></tr>
-<tr class="memitem:abb23863b790aa389ae5bc2715c2b2538"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_statement.html#a98d93a62817d1aabdea1129bcb567a67">Pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statement.html#abb23863b790aa389ae5bc2715c2b2538">Create</a> (<a class="el" href="class_context.html">Context</a> &amp;context, <a class="el" href="_token_8h.html#a3f246b6ceb89f07b85bb0b3455dae167">TokenIt</a> &amp;begin, <a class="el" href="_token_8h.html#a3f246b6ceb89f07b85bb0b3455dae167">TokenIt</a> &amp;end)</td></tr>
-<tr class="separator:abb23863b790aa389ae5bc2715c2b2538"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a7f6643bd857bb30cd69ce56d519e88"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_statement.html#a98d93a62817d1aabdea1129bcb567a67">Pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_statement.html#a8a7f6643bd857bb30cd69ce56d519e88">Create</a> (<a class="el" href="class_context.html">Context</a> &amp;context, <a class="el" href="class_token.html#a92b106e1b5160495111437387f88d2e4">Token::Iterator</a> &amp;begin, <a class="el" href="class_token.html#a92b106e1b5160495111437387f88d2e4">Token::Iterator</a> &amp;end)</td></tr>
+<tr class="separator:a8a7f6643bd857bb30cd69ce56d519e88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
 <div class="textblock"><p >Classe <a class="el" href="class_statement.html">Statement</a></p>
 <p >Cette classe permet d'indiquer à l'intérpéteur l'existence d'une entité informatique (Variable, Routine, Ect).</p>
 <p >Il est nécessaire de déclarer les entités informatiques avant de pouvoir les utiliser.</p>
+<h1><a class="anchor" id="autotoc_md23"></a>
+Déclaration et définition</h1>
+<p >Il faut bien différencier la déclaration et la définition.</p>
+<ul>
+<li>La déclaration ne fait qu'indiquer l'existence d'une entité informatique sans la créer</li>
+<li>La définition l'instancie, c'est-à-dire qu'elle la crée.</li>
+</ul>
+<p >Par exemple, l'implémentation d'une routine est sa définition.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">#   </th><th class="markdownTableHeadNone">Déclaration   </th><th class="markdownTableHeadNone">Définition    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Variable   </td><td class="markdownTableBodyNone"><div class="fragment"><div class="line">extern int Var; </div>
+</div><!-- fragment -->   </td><td class="markdownTableBodyNone"><div class="fragment"><div class="line">int Var; </div>
+</div><!-- fragment -->    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Fonction   </td><td class="markdownTableBodyNone"><div class="fragment"><div class="line">int Somme ( int Var1, int Var2 ); </div>
+</div><!-- fragment -->   </td><td class="markdownTableBodyNone"><div class="fragment"><div class="line">int Somme ( int Var1, int Var2 ) { return Var1 + Var2; } </div>
+</div><!-- fragment -->   </td></tr>
+</table>
+<p >Dans certains langages de programmation, tel que le langage C/C++, la définition inclut la déclaration, ce qui signifie que la présence de la définition dans une unité (module) d'un programme permet d'y omettre la déclaration.</p>
+<h1><a class="anchor" id="autotoc_md24"></a>
+Précision du type de l'entité informatique dans la déclaration</h1>
+<p >Une déclaration (et par conséquent une définition) comporte souvent un type ; c'est le type retourné par l'entité informatique. Voici par exemple la définition d'un entier, valable dans plusieurs langages de programmation :</p>
+<div class="fragment"><div class="line">int i;</div>
+</div><!-- fragment --><p >Dans d'autres langages, le type n'a pas besoin d'être précisé ; il sera déterminé en fonction de l'initialiseur de la variable. Par exemple, avec C++1x, cette instruction définit une variable de type caractère :</p>
+<div class="fragment"><div class="line">auto c = &#39;.&#39;;</div>
+</div><!-- fragment --><p >Ce concept s'appelle l'inférence de types.</p>
+<h1><a class="anchor" id="autotoc_md25"></a>
+Liste de déclarations</h1>
+<p >Il est souvent possible de déclarer plusieurs variables en une seule instruction. Par exemple, en langage C :</p>
+<div class="fragment"><div class="line">int i, j;</div>
+</div><!-- fragment --><p >Leur type doit alors être commun (ici entier).</p>
 <dl class="section see"><dt>Voir également</dt><dd><a href="https://fr.wikipedia.org/wiki/D%C3%A9claration_(informatique)">https://fr.wikipedia.org/wiki/D%C3%A9claration_(informatique)</a> </dd>
 <dd>
 <a href="https://en.wikipedia.org/wiki/Statement_(computer_science)">https://en.wikipedia.org/wiki/Statement_(computer_science)</a> </dd></dl>
@@ -203,8 +236,8 @@ Fonctions membres publiques statiques</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Documentation des fonctions membres</h2>
-<a id="abb23863b790aa389ae5bc2715c2b2538" name="abb23863b790aa389ae5bc2715c2b2538"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb23863b790aa389ae5bc2715c2b2538">&#9670;&nbsp;</a></span>Create()</h2>
+<a id="a8a7f6643bd857bb30cd69ce56d519e88" name="a8a7f6643bd857bb30cd69ce56d519e88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a7f6643bd857bb30cd69ce56d519e88">&#9670;&nbsp;</a></span>Create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -221,13 +254,13 @@ Fonctions membres publiques statiques</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_token_8h.html#a3f246b6ceb89f07b85bb0b3455dae167">TokenIt</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="class_token.html#a92b106e1b5160495111437387f88d2e4">Token::Iterator</a> &amp;&#160;</td>
           <td class="paramname"><em>begin</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_token_8h.html#a3f246b6ceb89f07b85bb0b3455dae167">TokenIt</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="class_token.html#a92b106e1b5160495111437387f88d2e4">Token::Iterator</a> &amp;&#160;</td>
           <td class="paramname"><em>end</em>&#160;</td>
         </tr>
         <tr>
@@ -300,7 +333,7 @@ Fonctions membres publiques statiques</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_statement.html">Statement</a></li>
-    <li class="footer">Généré le Dimanche 26 Décembre 2021 08:08:01 pour Interprèteur par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Généré le Mardi 28 Décembre 2021 07:14:02 pour Interprèteur par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -27,7 +27,7 @@
 
 #include <iostream>
 
-Expression::Pointer Expression::Parse( TokenIt& begin, TokenIt& end )
+Expression::Pointer Expression::Parse( Token::Iterator& begin, Token::Iterator& end )
 {
 	if ( begin == end )
 	{
@@ -54,7 +54,7 @@ Expression::Pointer Expression::Parse( TokenIt& begin, TokenIt& end )
 	}
 }
 
-Expression::Pointer Expression::ParseExpressionFromNumber( TokenIt& begin, TokenIt& end )
+Expression::Pointer Expression::ParseExpressionFromNumber( Token::Iterator& begin, Token::Iterator& end)
 {
 	if ( begin == end )
 	{
@@ -75,7 +75,7 @@ Expression::Pointer Expression::ParseExpressionFromNumber( TokenIt& begin, Token
 	return pExpression;
 }
 
-Expression::Pointer Expression::ParseExpressionFromIdentifier( TokenIt& begin, TokenIt& end )
+Expression::Pointer Expression::ParseExpressionFromIdentifier( Token::Iterator& begin, Token::Iterator& end)
 {
 	if ( begin == end )
 	{
@@ -96,7 +96,7 @@ Expression::Pointer Expression::ParseExpressionFromIdentifier( TokenIt& begin, T
 	return pExpression;
 }
 
-Expression::Pointer Expression::ParseExpressionFromOperator( Expression::Pointer leftExpression, TokenIt& begin, TokenIt& end )
+Expression::Pointer Expression::ParseExpressionFromOperator( Expression::Pointer leftExpression, Token::Iterator& begin, Token::Iterator& end )
 {
 	if ( begin == end )
 	{

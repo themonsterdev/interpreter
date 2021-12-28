@@ -1,14 +1,18 @@
 var searchData=
 [
-  ['terminalexpression_0',['TerminalExpression',['../class_terminal_expression.html',1,'TerminalExpression'],['../class_terminal_expression.html#a7185503c6203c3e5de58649a7c58992d',1,'TerminalExpression::TerminalExpression()']]],
-  ['terminalexpression_2eh_1',['TerminalExpression.h',['../_terminal_expression_8h.html',1,'']]],
-  ['threewayexpression_2',['ThreeWayExpression',['../class_three_way_expression.html',1,'ThreeWayExpression'],['../class_three_way_expression.html#a7e8c7b195a8fbc026c03ec0ae45672b8',1,'ThreeWayExpression::ThreeWayExpression()']]],
-  ['threewayexpression_2eh_3',['ThreeWayExpression.h',['../_three_way_expression_8h.html',1,'']]],
-  ['token_4',['Token',['../class_token.html',1,'Token'],['../class_token.html#aa3c5868ba4115f3189df6b2ac5b36f39',1,'Token::Token()'],['../class_token.html#aa1b8fca986ba3bfb510b5c0c997e8d0c',1,'Token::Token(Token::Type type)']]],
-  ['token_2eh_5',['Token.h',['../_token_8h.html',1,'']]],
-  ['tokenit_6',['TokenIt',['../_token_8h.html#a3f246b6ceb89f07b85bb0b3455dae167',1,'Token.h']]],
-  ['tokenizer_7',['Tokenizer',['../class_tokenizer.html',1,'Tokenizer'],['../class_tokenizer.html#a2052eaf316eec192c11b5f7688184bbf',1,'Tokenizer::Tokenizer()']]],
-  ['tokenizer_2eh_8',['Tokenizer.h',['../_tokenizer_8h.html',1,'']]],
-  ['tokenlist_9',['TokenList',['../_token_8h.html#aa4629c91ebededc0c3aefdd9270f0440',1,'Token.h']]],
-  ['type_10',['Type',['../class_token.html#acf70e9411196c602738c3ed2428c7137',1,'Token']]]
+  ['setdata_0',['SetData',['../class_token.html#af1db733093950c65246b58e81a2d45aa',1,'Token::SetData(string data)'],['../class_token.html#a45ab8612533525e9dd5be8da28e9db4a',1,'Token::SetData(const char data)']]],
+  ['setnumberatcharacter_1',['SetNumberAtCharacter',['../class_token.html#a6a3cf2aa645f2e28a71fbcafa16ed03e',1,'Token']]],
+  ['setnumberline_2',['SetNumberLine',['../class_token.html#a2a00f5d5d4e275d20aeecb3bbcb1afa6',1,'Token']]],
+  ['setright_3',['SetRight',['../class_non_terminal_expression.html#adaf1139a5fac1884482e77e282b176a0',1,'NonTerminalExpression']]],
+  ['settype_4',['SetType',['../class_token.html#ac44a0679705607beb0ca968e56d62473',1,'Token']]],
+  ['setvalue_5',['SetValue',['../class_context.html#a93f1af02b522749dad739037ce6a1af2',1,'Context']]],
+  ['statement_6',['Statement',['../class_statement.html',1,'']]],
+  ['statement_2eh_7',['Statement.h',['../_statement_8h.html',1,'']]],
+  ['statementlist_8',['StatementList',['../class_statement.html#a1a7271bfc9e9d4658d8c70f47339f0c0',1,'Statement']]],
+  ['streamtokenizer_9',['StreamTokenizer',['../class_stream_tokenizer.html',1,'StreamTokenizer'],['../class_stream_tokenizer.html#a5013f0715c8022c94f8eb195305323fb',1,'StreamTokenizer::StreamTokenizer(string filename)'],['../class_stream_tokenizer.html#a38b463acb8cd7ada3660eb02c78c2f6a',1,'StreamTokenizer::StreamTokenizer(string filename, string delim)'],['../class_stream_tokenizer.html#a2d107207456c21c05293790e5b4fa9a0',1,'StreamTokenizer::StreamTokenizer(string filename, string delim, bool returnDelims)']]],
+  ['streamtokenizer_2eh_10',['StreamTokenizer.h',['../_stream_tokenizer_8h.html',1,'']]],
+  ['stringtokenizer_11',['StringTokenizer',['../class_string_tokenizer.html',1,'StringTokenizer'],['../class_string_tokenizer.html#a2f06bee7cad78a32e6acd458d1a1b418',1,'StringTokenizer::StringTokenizer(string str)'],['../class_string_tokenizer.html#a325d661782542a357a285436934831f9',1,'StringTokenizer::StringTokenizer(string str, string delim)'],['../class_string_tokenizer.html#affb41b6726f63b35c07d9e55232e5dbf',1,'StringTokenizer::StringTokenizer(string str, string delim, bool returnDelims)']]],
+  ['stringtokenizer_2eh_12',['StringTokenizer.h',['../_string_tokenizer_8h.html',1,'']]],
+  ['subtractionexpression_13',['SubtractionExpression',['../class_subtraction_expression.html',1,'SubtractionExpression'],['../class_subtraction_expression.html#af46d87051634cbfe8490fe25723ab1c6',1,'SubtractionExpression::SubtractionExpression()']]],
+  ['subtractionexpression_2eh_14',['SubtractionExpression.h',['../_subtraction_expression_8h.html',1,'']]]
 ];

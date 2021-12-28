@@ -24,11 +24,14 @@ var hierarchy =
         [ "Number", "class_number.html", null ]
       ] ]
     ] ],
+    [ "Interpreter", "class_interpreter.html", null ],
     [ "Parser", "class_parser.html", null ],
     [ "Statement", "class_statement.html", [
       [ "PrintStatement", "class_print_statement.html", null ],
       [ "VariableStatement", "class_variable_statement.html", null ]
     ] ],
+    [ "StreamTokenizer", "class_stream_tokenizer.html", null ],
+    [ "StringTokenizer", "class_string_tokenizer.html", null ],
     [ "Token", "class_token.html", null ],
     [ "Tokenizer", "class_tokenizer.html", null ]
 ];

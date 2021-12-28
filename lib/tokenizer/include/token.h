@@ -20,9 +20,12 @@ class Token
 {
 public:
 
+    typedef list<Token> List;
+    typedef List::iterator Iterator;
+
     /**
-     * Type d'énumération de jeton.
-     */
+    * Type d'énumération de jeton.
+    */
     enum class Type
     {
         Keyword,    /**< enum value 0 */
@@ -114,8 +117,5 @@ private:
     int m_numberAtCharacter;
     int m_numberLine;
 };
-
-typedef list<Token> TokenList;
-typedef TokenList::iterator TokenIt;
 
 #endif

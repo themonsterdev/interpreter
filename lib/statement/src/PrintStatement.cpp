@@ -5,7 +5,7 @@
 
 #include <iostream>
 
-PrintStatement::PrintStatement(TokenIt& begin, TokenIt& end)
+PrintStatement::PrintStatement( Token::Iterator& begin, Token::Iterator& end )
 {
 	// Expect
 	if (begin == end)

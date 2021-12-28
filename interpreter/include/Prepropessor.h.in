@@ -1,0 +1,4 @@
+// the configured options and settings for Interpreter
+#define INTERPRETER_VERSION_MAJOR @Interpreter_VERSION_MAJOR@
+#define INTERPRETER_VERSION_MINOR @Interpreter_VERSION_MINOR@
+#define INTERPRETER_VERSION_PATCH @Interpreter_VERSION_PATCH@
