@@ -1,0 +1,81 @@
+@startuml inline_umlgraph_1.svg
+!theme custom from themes
+skinparam linetype polyline
+left to right direction
+scale 800*800
+
+class Context {
+    -m_variables: map<string, long>
+    +void SetVariable(string name, long value)
+    +long GetVariable(string name)
+}
+
+class Client {
+    -m_context: Context
+}
+
+interface Expression {
+    +void Interpret(Context context)
+}
+
+class TerminalExpression extends Expression {
+    +void Interpret(Context context)
+}
+
+abstract class NonTerminalExpression extends Expression {
+    #m_leftExpression: Expression
+    #m_rightExpression: Expression
+    +void Interpret(Context context)
+    +Expression* GetLeftExpression()
+    +Expression* GetRightExpression()
+}
+
+Client *--> Context
+Client --> Expression
+
+NonTerminalExpression *--> Expression
+@enduml
+@startuml inline_umlgraph_2.svg
+!theme custom from themes
+scale 600*400
+
+object Client
+
+object AdditionExpression #446e9b/deedff {
+    start: 1 + 2 * 3
+}
+
+object NumberExpression1 {
+   left: 1
+}
+
+object MultiplicationExpression #446e9b/ffffff {
+    final: 1 + 2 = 3
+}
+
+object NumberExpression2 {
+   right: 2
+}
+
+object NumberExpression3 {
+    left: 3
+}
+
+object NumberExpression4 {
+    final: 3 * 3 = 9
+}
+
+object NumberExpression5 {
+    right: 3
+}
+
+Client -right-> AdditionExpression
+
+AdditionExpression --|> NumberExpression1
+AdditionExpression --|> MultiplicationExpression
+AdditionExpression --|> NumberExpression2
+
+MultiplicationExpression --|> NumberExpression3
+MultiplicationExpression --|> NumberExpression4
+MultiplicationExpression --|> NumberExpression5
+@enduml

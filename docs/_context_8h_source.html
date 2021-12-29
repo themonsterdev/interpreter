@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Interprèteur:  Fichier source de C:/Users/themo/OneDrive/Documents/GitHub/interpreter/lib/context/include/Context.h</title>
+<title>Interprèteur:  Fichier source de C:/Users/themo/OneDrive/Documents/GitHub/interpreter/src/client/include/Context.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -89,36 +89,27 @@ $(document).ready(function(){initNavTree('_context_8h_source.html',''); initResi
 <a href="_context_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef CONTEXT_H</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define CONTEXT_H</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;stack&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">using namespace </span>std;</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_context.html">   12</a></span><span class="keyword">class </span><a class="code hl_class" href="class_context.html">Context</a></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_context.html#a585964ac80dc57e95a34f7a2fa00246a">   22</a></span>    <span class="keywordtype">long</span> <a class="code hl_function" href="class_context.html#a585964ac80dc57e95a34f7a2fa00246a">GetValue</a>(<span class="keywordtype">string</span> variable);</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_context.html#a93f1af02b522749dad739037ce6a1af2">   31</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_context.html#a93f1af02b522749dad739037ce6a1af2">SetValue</a>(<span class="keywordtype">string</span> variable, <span class="keywordtype">long</span> value);</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">typedef</span> map&lt;std::string, long&gt; VariableMap;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    VariableMap m_variables;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>};</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    stack&lt;string&gt; m_variables;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>};</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclass_context_html"><div class="ttname"><a href="class_context.html">Context</a></div><div class="ttdef"><b>Definition:</b> Context.h:13</div></div>
-<div class="ttc" id="aclass_context_html_a585964ac80dc57e95a34f7a2fa00246a"><div class="ttname"><a href="class_context.html#a585964ac80dc57e95a34f7a2fa00246a">Context::GetValue</a></div><div class="ttdeci">long GetValue(string variable)</div></div>
-<div class="ttc" id="aclass_context_html_a93f1af02b522749dad739037ce6a1af2"><div class="ttname"><a href="class_context.html#a93f1af02b522749dad739037ce6a1af2">Context::SetValue</a></div><div class="ttdeci">void SetValue(string variable, long value)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_667cb04c6f08c3d714b1edff3156e391.html">context</a></li><li class="navelem"><a class="el" href="dir_9e4afcea9cb0f4a83bd459356c5a5cc0.html">include</a></li><li class="navelem"><a class="el" href="_context_8h.html">Context.h</a></li>
-    <li class="footer">Généré le Mardi 28 Décembre 2021 07:14:02 pour Interprèteur par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_6908ff505388a07996d238c763adbdab.html">client</a></li><li class="navelem"><a class="el" href="dir_c7a20b80ce65e841dd30fc88a8acdace.html">include</a></li><li class="navelem"><a class="el" href="_context_8h.html">Context.h</a></li>
+    <li class="footer">Généré le Mercredi 29 Décembre 2021 18:07:40 pour Interprèteur par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

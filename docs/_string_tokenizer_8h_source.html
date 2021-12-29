@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Interprèteur:  Fichier source de C:/Users/themo/OneDrive/Documents/GitHub/interpreter/lib/tokenizer/include/StringTokenizer.h</title>
+<title>Interprèteur:  Fichier source de C:/Users/themo/OneDrive/Documents/GitHub/interpreter/src/tokenizer/include/StringTokenizer.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -89,53 +89,39 @@ $(document).ready(function(){initNavTree('_string_tokenizer_8h_source.html','');
 <a href="_string_tokenizer_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef STRING_TOKENIZER_H</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define STRING_TOKENIZER_H</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;string&gt;</span>   <span class="comment">// std::string</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="_abstract_tokenizer_8h.html">AbstractTokenizer.h</a>&quot;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">using namespace </span>std;</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_string_tokenizer.html">    8</a></span><span class="keyword">class </span><a class="code hl_class" href="class_string_tokenizer.html">StringTokenizer</a></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_string_tokenizer.html#a2f06bee7cad78a32e6acd458d1a1b418">   15</a></span>    <a class="code hl_function" href="class_string_tokenizer.html#a2f06bee7cad78a32e6acd458d1a1b418">StringTokenizer</a>(<span class="keywordtype">string</span> str);</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_string_tokenizer.html#a325d661782542a357a285436934831f9">   16</a></span>    <a class="code hl_function" href="class_string_tokenizer.html#a325d661782542a357a285436934831f9">StringTokenizer</a>(<span class="keywordtype">string</span> str, <span class="keywordtype">string</span> delim);</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_string_tokenizer.html#affb41b6726f63b35c07d9e55232e5dbf">   17</a></span>    <a class="code hl_function" href="class_string_tokenizer.html#affb41b6726f63b35c07d9e55232e5dbf">StringTokenizer</a>(<span class="keywordtype">string</span> str, <span class="keywordtype">string</span> delim, <span class="keywordtype">bool</span> returnDelims);</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_string_tokenizer.html">    6</a></span><span class="keyword">class </span><a class="code hl_class" href="class_string_tokenizer.html">StringTokenizer</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_abstract_tokenizer.html">AbstractTokenizer</a></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_string_tokenizer.html#a2f06bee7cad78a32e6acd458d1a1b418">   13</a></span>    <a class="code hl_function" href="class_string_tokenizer.html#a2f06bee7cad78a32e6acd458d1a1b418">StringTokenizer</a>(<span class="keywordtype">string</span> str);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="comment">// Tokenizer</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_string_tokenizer.html#ab74198df1e5b95ca5153a821a6eaa50c">   16</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_string_tokenizer.html#ab74198df1e5b95ca5153a821a6eaa50c">HasNext</a>();</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_string_tokenizer.html#a70e352a94f2b9ee79fd2ec0c4ce438eb">   17</a></span>    <span class="keyword">virtual</span> <a class="code hl_class" href="class_token.html">Token</a> <a class="code hl_function" href="class_string_tokenizer.html#a70e352a94f2b9ee79fd2ec0c4ce438eb">GetNext</a>();</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_string_tokenizer.html#aabd40ea43e857ef78658b45fcdbbc977">   22</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_string_tokenizer.html#aabd40ea43e857ef78658b45fcdbbc977">CountTokens</a>();</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_string_tokenizer.html#ab87e8795956f0a2c44f48077387e7a4f">   27</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_string_tokenizer.html#ab87e8795956f0a2c44f48077387e7a4f">HasMoreTokens</a>();</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_string_tokenizer.html#abb883ee36fdfc23f641b101e0a7d1e61">   32</a></span>    <span class="keywordtype">string</span> <a class="code hl_function" href="class_string_tokenizer.html#abb883ee36fdfc23f641b101e0a7d1e61">GetNextToken</a>() noexcept(false);</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>private:</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">string</span> m_str;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">string</span> m_delim;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordtype">bool</span> m_returnDelims;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">int</span> m_tokenCount;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">string</span>::iterator m_itBegin;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">string</span>::iterator m_itEnd;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordtype">string</span> GetStringLiteralToken(<span class="keywordtype">string</span>&amp; characters);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordtype">bool</span> IsIgnoredToken();</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>};</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclass_string_tokenizer_html"><div class="ttname"><a href="class_string_tokenizer.html">StringTokenizer</a></div><div class="ttdef"><b>Definition:</b> StringTokenizer.h:9</div></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordtype">string</span> m_swCharacters;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordtype">size_t</span> m_sCurrentIndex;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>};</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_abstract_tokenizer_8h_html"><div class="ttname"><a href="_abstract_tokenizer_8h.html">AbstractTokenizer.h</a></div></div>
+<div class="ttc" id="aclass_abstract_tokenizer_html"><div class="ttname"><a href="class_abstract_tokenizer.html">AbstractTokenizer</a></div><div class="ttdef"><b>Definition:</b> AbstractTokenizer.h:7</div></div>
+<div class="ttc" id="aclass_string_tokenizer_html"><div class="ttname"><a href="class_string_tokenizer.html">StringTokenizer</a></div><div class="ttdef"><b>Definition:</b> StringTokenizer.h:7</div></div>
 <div class="ttc" id="aclass_string_tokenizer_html_a2f06bee7cad78a32e6acd458d1a1b418"><div class="ttname"><a href="class_string_tokenizer.html#a2f06bee7cad78a32e6acd458d1a1b418">StringTokenizer::StringTokenizer</a></div><div class="ttdeci">StringTokenizer(string str)</div></div>
-<div class="ttc" id="aclass_string_tokenizer_html_a325d661782542a357a285436934831f9"><div class="ttname"><a href="class_string_tokenizer.html#a325d661782542a357a285436934831f9">StringTokenizer::StringTokenizer</a></div><div class="ttdeci">StringTokenizer(string str, string delim)</div></div>
-<div class="ttc" id="aclass_string_tokenizer_html_aabd40ea43e857ef78658b45fcdbbc977"><div class="ttname"><a href="class_string_tokenizer.html#aabd40ea43e857ef78658b45fcdbbc977">StringTokenizer::CountTokens</a></div><div class="ttdeci">int CountTokens()</div></div>
-<div class="ttc" id="aclass_string_tokenizer_html_ab87e8795956f0a2c44f48077387e7a4f"><div class="ttname"><a href="class_string_tokenizer.html#ab87e8795956f0a2c44f48077387e7a4f">StringTokenizer::HasMoreTokens</a></div><div class="ttdeci">bool HasMoreTokens()</div></div>
-<div class="ttc" id="aclass_string_tokenizer_html_abb883ee36fdfc23f641b101e0a7d1e61"><div class="ttname"><a href="class_string_tokenizer.html#abb883ee36fdfc23f641b101e0a7d1e61">StringTokenizer::GetNextToken</a></div><div class="ttdeci">string GetNextToken() noexcept(false)</div></div>
-<div class="ttc" id="aclass_string_tokenizer_html_affb41b6726f63b35c07d9e55232e5dbf"><div class="ttname"><a href="class_string_tokenizer.html#affb41b6726f63b35c07d9e55232e5dbf">StringTokenizer::StringTokenizer</a></div><div class="ttdeci">StringTokenizer(string str, string delim, bool returnDelims)</div></div>
+<div class="ttc" id="aclass_string_tokenizer_html_a70e352a94f2b9ee79fd2ec0c4ce438eb"><div class="ttname"><a href="class_string_tokenizer.html#a70e352a94f2b9ee79fd2ec0c4ce438eb">StringTokenizer::GetNext</a></div><div class="ttdeci">virtual Token GetNext()</div></div>
+<div class="ttc" id="aclass_string_tokenizer_html_ab74198df1e5b95ca5153a821a6eaa50c"><div class="ttname"><a href="class_string_tokenizer.html#ab74198df1e5b95ca5153a821a6eaa50c">StringTokenizer::HasNext</a></div><div class="ttdeci">virtual bool HasNext()</div></div>
+<div class="ttc" id="aclass_token_html"><div class="ttname"><a href="class_token.html">Token</a></div><div class="ttdef"><b>Definition:</b> Token.h:10</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_b280378005982635dceac4caa563a9f9.html">tokenizer</a></li><li class="navelem"><a class="el" href="dir_bd433701faaccebeaa237499c5fb23a8.html">include</a></li><li class="navelem"><a class="el" href="_string_tokenizer_8h.html">StringTokenizer.h</a></li>
-    <li class="footer">Généré le Mardi 28 Décembre 2021 07:14:02 pour Interprèteur par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_4aee0cf75b9ddffc23e5629384dbdb4a.html">tokenizer</a></li><li class="navelem"><a class="el" href="dir_c27dc170a342446cd99a8b67ca3626d2.html">include</a></li><li class="navelem"><a class="el" href="_string_tokenizer_8h.html">StringTokenizer.h</a></li>
+    <li class="footer">Généré le Mercredi 29 Décembre 2021 18:07:40 pour Interprèteur par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

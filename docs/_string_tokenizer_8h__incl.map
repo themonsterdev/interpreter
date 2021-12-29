@@ -1,4 +1,8 @@
-<map id="C:/Users/themo/OneDrive/Documents/GitHub/interpreter/lib/tokenizer/include/StringTokenizer.h" name="C:/Users/themo/OneDrive/Documents/GitHub/interpreter/lib/tokenizer/include/StringTokenizer.h">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,252,61"/>
-<area shape="rect" id="node2" title=" " alt="" coords="101,109,156,136"/>
+<map id="C:/Users/themo/OneDrive/Documents/GitHub/interpreter/src/tokenizer/include/StringTokenizer.h" name="C:/Users/themo/OneDrive/Documents/GitHub/interpreter/src/tokenizer/include/StringTokenizer.h">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,256,61"/>
+<area shape="rect" id="node2" href="$_abstract_tokenizer_8h.html" title=" " alt="" coords="61,109,200,136"/>
+<area shape="rect" id="node3" href="$_tokenizer_interface_8h.html" title=" " alt="" coords="35,184,226,211"/>
+<area shape="rect" id="node4" href="$_token_8h.html" title=" " alt="" coords="133,259,201,285"/>
+<area shape="rect" id="node5" title=" " alt="" coords="69,333,123,360"/>
+<area shape="rect" id="node6" title=" " alt="" coords="147,333,186,360"/>
 </map>

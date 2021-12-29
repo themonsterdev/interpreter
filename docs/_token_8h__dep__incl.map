@@ -1,12 +1,11 @@
-<map id="C:/Users/themo/OneDrive/Documents/GitHub/interpreter/lib/tokenizer/include/Token.h" name="C:/Users/themo/OneDrive/Documents/GitHub/interpreter/lib/tokenizer/include/Token.h">
-<area shape="rect" id="node1" title=" " alt="" coords="304,5,503,61"/>
-<area shape="rect" id="node2" href="$_interpreter_8h.html" title=" " alt="" coords="10,221,213,277"/>
-<area shape="rect" id="node3" href="$_expression_8h.html" title=" " alt="" coords="539,109,769,165"/>
-<area shape="rect" id="node8" href="$_statement_8h.html" title=" " alt="" coords="293,109,514,165"/>
-<area shape="rect" id="node9" href="$_stream_tokenizer_8h.html" title=" " alt="" coords="793,109,1048,165"/>
-<area shape="rect" id="node10" href="$_tokenizer_8h.html" title=" " alt="" coords="5,109,217,165"/>
-<area shape="rect" id="node4" href="$_non_terminal_expression_8h.html" title=" " alt="" coords="1106,213,1333,284"/>
-<area shape="rect" id="node5" href="$_terminal_expression_8h.html" title=" " alt="" coords="802,221,1082,277"/>
-<area shape="rect" id="node6" href="$_print_statement_8h.html" title=" " alt="" coords="530,221,778,277"/>
-<area shape="rect" id="node7" href="$_variable_statement_8h.html" title=" " alt="" coords="237,221,505,277"/>
+<map id="C:/Users/themo/OneDrive/Documents/GitHub/interpreter/src/tokenizer/include/Token.h" name="C:/Users/themo/OneDrive/Documents/GitHub/interpreter/src/tokenizer/include/Token.h">
+<area shape="rect" id="node1" title=" " alt="" coords="109,5,308,61"/>
+<area shape="rect" id="node2" href="$_client_8h.html" title=" " alt="" coords="117,436,316,492"/>
+<area shape="rect" id="node3" href="$_parser_8h.html" title=" " alt="" coords="34,228,233,284"/>
+<area shape="rect" id="node4" href="$_printing_statement_8h.html" title=" " alt="" coords="84,117,332,173"/>
+<area shape="rect" id="node5" href="$_variable_statement_8h.html" title=" " alt="" coords="356,117,607,173"/>
+<area shape="rect" id="node6" href="$_tokenizer_interface_8h.html" title=" " alt="" coords="632,109,830,180"/>
+<area shape="rect" id="node7" href="$_abstract_tokenizer_8h.html" title=" " alt="" coords="446,228,712,284"/>
+<area shape="rect" id="node8" href="$_stream_tokenizer_8h.html" title=" " alt="" coords="171,332,430,388"/>
+<area shape="rect" id="node9" href="$_string_tokenizer_8h.html" title=" " alt="" coords="454,332,704,388"/>
 </map>

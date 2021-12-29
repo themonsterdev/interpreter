@@ -85,8 +85,7 @@ $(document).ready(function(){initNavTree('class_token.html',''); initResizable()
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Types publics</a> &#124;
-<a href="#pub-methods">Fonctions membres publiques</a> &#124;
-<a href="#pub-static-methods">Fonctions membres publiques statiques</a> &#124;
+<a href="#pub-attribs">Attributs publics</a> &#124;
 <a href="class_token-members.html">Liste de tous les membres</a>  </div>
   <div class="headertitle"><div class="title">Référence de la classe Token</div></div>
 </div><!--header-->
@@ -98,65 +97,34 @@ $(document).ready(function(){initNavTree('class_token.html',''); initResizable()
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="class_token__coll__graph.png" border="0" usemap="#a_token_coll__map" alt="Collaboration graph"/></div>
-<map name="a_token_coll__map" id="a_token_coll__map">
-<area shape="rect" title=" " alt="" coords="5,5,183,244"/>
-</map>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_token__coll__graph.svg" width="300" height="228"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Types publics</h2></td></tr>
-<tr class="memitem:acf70e9411196c602738c3ed2428c7137"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_token.html#acf70e9411196c602738c3ed2428c7137">Type</a> { <br />
-&#160;&#160;<a class="el" href="class_token.html#acf70e9411196c602738c3ed2428c7137a220f3d3750583b9db48568a0b5b9a5f1">Keyword</a>
-, <a class="el" href="class_token.html#acf70e9411196c602738c3ed2428c7137a29ee5d1ebcc033234938a5234f1f2075">Identifier</a>
-, <a class="el" href="class_token.html#acf70e9411196c602738c3ed2428c7137ae1b3ec89ead7f83a9245ed5c9cacfdbf">Operator</a>
-, <a class="el" href="class_token.html#acf70e9411196c602738c3ed2428c7137ab2ee912b91d69b435159c7c3f6df7f5f">Number</a>
-, <br />
-&#160;&#160;<a class="el" href="class_token.html#acf70e9411196c602738c3ed2428c7137a88183b946cc5f0e8c96b2e66e1c74a7e">Unknown</a>
-<br />
+<tr class="memitem:a276314f73a3eb5ca1eff3457e53b6c8d"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_token.html#a276314f73a3eb5ca1eff3457e53b6c8d">Type</a> : int { <a class="el" href="class_token.html#a276314f73a3eb5ca1eff3457e53b6c8da290d4ae99752b348c98c416bfc024037">TT_WORD</a> = -4
+, <a class="el" href="class_token.html#a276314f73a3eb5ca1eff3457e53b6c8da5a8688ee5001ef4aad539dc53b78de9b">TT_NUMBER</a> = -3
+, <a class="el" href="class_token.html#a276314f73a3eb5ca1eff3457e53b6c8da865127dcb4d92792592226f671effa75">TT_EOL</a> = -2
+, <a class="el" href="class_token.html#a276314f73a3eb5ca1eff3457e53b6c8da907f29263043ee0c9ae3da35fc014f8a">TT_EOF</a> = EOF
  }</td></tr>
-<tr class="separator:acf70e9411196c602738c3ed2428c7137"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a276314f73a3eb5ca1eff3457e53b6c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25694827706ac6a13cb99884d2272dcb"><td class="memItemLeft" align="right" valign="top">typedef list&lt; <a class="el" href="class_token.html">Token</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_token.html#a25694827706ac6a13cb99884d2272dcb">List</a></td></tr>
 <tr class="separator:a25694827706ac6a13cb99884d2272dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92b106e1b5160495111437387f88d2e4"><td class="memItemLeft" align="right" valign="top">typedef List::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_token.html#a92b106e1b5160495111437387f88d2e4">Iterator</a></td></tr>
 <tr class="separator:a92b106e1b5160495111437387f88d2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
-Fonctions membres publiques</h2></td></tr>
-<tr class="memitem:aa3c5868ba4115f3189df6b2ac5b36f39"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_token.html#aa3c5868ba4115f3189df6b2ac5b36f39">Token</a> ()</td></tr>
-<tr class="separator:aa3c5868ba4115f3189df6b2ac5b36f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1b8fca986ba3bfb510b5c0c997e8d0c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_token.html#aa1b8fca986ba3bfb510b5c0c997e8d0c">Token</a> (<a class="el" href="class_token.html#acf70e9411196c602738c3ed2428c7137">Token::Type</a> type)</td></tr>
-<tr class="separator:aa1b8fca986ba3bfb510b5c0c997e8d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac44a0679705607beb0ca968e56d62473"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_token.html#ac44a0679705607beb0ca968e56d62473">SetType</a> (<a class="el" href="class_token.html#acf70e9411196c602738c3ed2428c7137">Token::Type</a> type)</td></tr>
-<tr class="separator:ac44a0679705607beb0ca968e56d62473"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a183d1dba876c544e5c7c9cbaec51954e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_token.html#acf70e9411196c602738c3ed2428c7137">Token::Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_token.html#a183d1dba876c544e5c7c9cbaec51954e">GetType</a> ()</td></tr>
-<tr class="separator:a183d1dba876c544e5c7c9cbaec51954e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1db733093950c65246b58e81a2d45aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_token.html#af1db733093950c65246b58e81a2d45aa">SetData</a> (string data)</td></tr>
-<tr class="separator:af1db733093950c65246b58e81a2d45aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45ab8612533525e9dd5be8da28e9db4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_token.html#a45ab8612533525e9dd5be8da28e9db4a">SetData</a> (const char data)</td></tr>
-<tr class="separator:a45ab8612533525e9dd5be8da28e9db4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b852ae1b7fbb77a6de7e18a9e57e4cf"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_token.html#a1b852ae1b7fbb77a6de7e18a9e57e4cf">GetData</a> ()</td></tr>
-<tr class="separator:a1b852ae1b7fbb77a6de7e18a9e57e4cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a3cf2aa645f2e28a71fbcafa16ed03e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_token.html#a6a3cf2aa645f2e28a71fbcafa16ed03e">SetNumberAtCharacter</a> (const int numberLine)</td></tr>
-<tr class="separator:a6a3cf2aa645f2e28a71fbcafa16ed03e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21823a3f85622dfab2c23016729bb391"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_token.html#a21823a3f85622dfab2c23016729bb391">GetNumberAtCharacter</a> ()</td></tr>
-<tr class="separator:a21823a3f85622dfab2c23016729bb391"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a00f5d5d4e275d20aeecb3bbcb1afa6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_token.html#a2a00f5d5d4e275d20aeecb3bbcb1afa6">SetNumberLine</a> (const int numberLine)</td></tr>
-<tr class="separator:a2a00f5d5d4e275d20aeecb3bbcb1afa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef5346388384491c536a8fe307c0eff6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_token.html#aef5346388384491c536a8fe307c0eff6">GetNumberLine</a> ()</td></tr>
-<tr class="separator:aef5346388384491c536a8fe307c0eff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
-Fonctions membres publiques statiques</h2></td></tr>
-<tr class="memitem:a68657b5fed811a1e6c61a5c9db83e9e4"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_token.html#a68657b5fed811a1e6c61a5c9db83e9e4">GetStringType</a> (<a class="el" href="class_token.html#acf70e9411196c602738c3ed2428c7137">Token::Type</a> type)</td></tr>
-<tr class="separator:a68657b5fed811a1e6c61a5c9db83e9e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Attributs publics</h2></td></tr>
+<tr class="memitem:ae46b6b806df89709a13a14dc76c86623"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_token.html#ae46b6b806df89709a13a14dc76c86623">type</a></td></tr>
+<tr class="separator:ae46b6b806df89709a13a14dc76c86623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89952132313f821679315c41fe487f11"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_token.html#a89952132313f821679315c41fe487f11">word</a></td></tr>
+<tr class="separator:a89952132313f821679315c41fe487f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1937cc30f9d7712b9f901e8c315fb575"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_token.html#a1937cc30f9d7712b9f901e8c315fb575">character</a></td></tr>
+<tr class="separator:a1937cc30f9d7712b9f901e8c315fb575"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb996d0a007843a0ee5ce45abeb350e3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_token.html#aeb996d0a007843a0ee5ce45abeb350e3">number</a></td></tr>
+<tr class="separator:aeb996d0a007843a0ee5ce45abeb350e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
-<div class="textblock"><p >Classe <a class="el" href="class_token.html">Token</a></p>
-<p >Cette classe représente un jeton trouvé dans une chaîne de caractères spécifiée.</p>
-<p >Un jeton est une suite de caractères dans un programme source qui correspond au motif d'un symbole lexical et qui est analysé par le <a class="el" href="class_tokenizer.html">Tokenizer</a> comme une instance de ce jeton lexical.</p>
-<dl class="section see"><dt>Voir également</dt><dd><a href="https://fr.wikipedia.org/wiki/Analyse_lexicale">https://fr.wikipedia.org/wiki/Analyse_lexicale</a> </dd></dl>
-</div><h2 class="groupheader">Documentation des définitions de type membres</h2>
+<h2 class="groupheader">Documentation des définitions de type membres</h2>
 <a id="a92b106e1b5160495111437387f88d2e4" name="a92b106e1b5160495111437387f88d2e4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a92b106e1b5160495111437387f88d2e4">&#9670;&nbsp;</a></span>Iterator</h2>
 
@@ -186,8 +154,8 @@ Fonctions membres publiques statiques</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Documentation des énumérations membres</h2>
-<a id="acf70e9411196c602738c3ed2428c7137" name="acf70e9411196c602738c3ed2428c7137"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf70e9411196c602738c3ed2428c7137">&#9670;&nbsp;</a></span>Type</h2>
+<a id="a276314f73a3eb5ca1eff3457e53b6c8d" name="a276314f73a3eb5ca1eff3457e53b6c8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a276314f73a3eb5ca1eff3457e53b6c8d">&#9670;&nbsp;</a></span>Type</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -196,7 +164,7 @@ Fonctions membres publiques statiques</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum class <a class="el" href="class_token.html#acf70e9411196c602738c3ed2428c7137">Token::Type</a></td>
+          <td class="memname">enum class <a class="el" href="class_token.html#a276314f73a3eb5ca1eff3457e53b6c8d">Token::Type</a> : int</td>
         </tr>
       </table>
   </td>
@@ -205,287 +173,74 @@ Fonctions membres publiques statiques</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Type d'énumération de jeton. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="acf70e9411196c602738c3ed2428c7137a220f3d3750583b9db48568a0b5b9a5f1" name="acf70e9411196c602738c3ed2428c7137a220f3d3750583b9db48568a0b5b9a5f1"></a>Keyword&#160;</td><td class="fielddoc"><p >enum value 0 </p>
-</td></tr>
-<tr><td class="fieldname"><a id="acf70e9411196c602738c3ed2428c7137a29ee5d1ebcc033234938a5234f1f2075" name="acf70e9411196c602738c3ed2428c7137a29ee5d1ebcc033234938a5234f1f2075"></a>Identifier&#160;</td><td class="fielddoc"><p >enum value 1 </p>
-</td></tr>
-<tr><td class="fieldname"><a id="acf70e9411196c602738c3ed2428c7137ae1b3ec89ead7f83a9245ed5c9cacfdbf" name="acf70e9411196c602738c3ed2428c7137ae1b3ec89ead7f83a9245ed5c9cacfdbf"></a>Operator&#160;</td><td class="fielddoc"><p >enum value 2 </p>
-</td></tr>
-<tr><td class="fieldname"><a id="acf70e9411196c602738c3ed2428c7137ab2ee912b91d69b435159c7c3f6df7f5f" name="acf70e9411196c602738c3ed2428c7137ab2ee912b91d69b435159c7c3f6df7f5f"></a>Number&#160;</td><td class="fielddoc"><p >enum value 3 </p>
-</td></tr>
-<tr><td class="fieldname"><a id="acf70e9411196c602738c3ed2428c7137a88183b946cc5f0e8c96b2e66e1c74a7e" name="acf70e9411196c602738c3ed2428c7137a88183b946cc5f0e8c96b2e66e1c74a7e"></a>Unknown&#160;</td><td class="fielddoc"><p >enum value 4 </p>
-</td></tr>
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="a276314f73a3eb5ca1eff3457e53b6c8da290d4ae99752b348c98c416bfc024037" name="a276314f73a3eb5ca1eff3457e53b6c8da290d4ae99752b348c98c416bfc024037"></a>TT_WORD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a276314f73a3eb5ca1eff3457e53b6c8da5a8688ee5001ef4aad539dc53b78de9b" name="a276314f73a3eb5ca1eff3457e53b6c8da5a8688ee5001ef4aad539dc53b78de9b"></a>TT_NUMBER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a276314f73a3eb5ca1eff3457e53b6c8da865127dcb4d92792592226f671effa75" name="a276314f73a3eb5ca1eff3457e53b6c8da865127dcb4d92792592226f671effa75"></a>TT_EOL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a276314f73a3eb5ca1eff3457e53b6c8da907f29263043ee0c9ae3da35fc014f8a" name="a276314f73a3eb5ca1eff3457e53b6c8da907f29263043ee0c9ae3da35fc014f8a"></a>TT_EOF&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
 </div>
-<h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
-<a id="aa3c5868ba4115f3189df6b2ac5b36f39" name="aa3c5868ba4115f3189df6b2ac5b36f39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3c5868ba4115f3189df6b2ac5b36f39">&#9670;&nbsp;</a></span>Token() <span class="overload">[1/2]</span></h2>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a id="a1937cc30f9d7712b9f901e8c315fb575" name="a1937cc30f9d7712b9f901e8c315fb575"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1937cc30f9d7712b9f901e8c315fb575">&#9670;&nbsp;</a></span>character</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Token::Token </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Constructeur vide </p>
-
-</div>
-</div>
-<a id="aa1b8fca986ba3bfb510b5c0c997e8d0c" name="aa1b8fca986ba3bfb510b5c0c997e8d0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1b8fca986ba3bfb510b5c0c997e8d0c">&#9670;&nbsp;</a></span>Token() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Token::Token </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token.html#acf70e9411196c602738c3ed2428c7137">Token::Type</a>&#160;</td>
-          <td class="paramname"><em>type</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Constructeur avec paramètre</p>
-<dl class="params"><dt>Paramètres</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">type</td><td>Le type du jeton </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<h2 class="groupheader">Documentation des fonctions membres</h2>
-<a id="a1b852ae1b7fbb77a6de7e18a9e57e4cf" name="a1b852ae1b7fbb77a6de7e18a9e57e4cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b852ae1b7fbb77a6de7e18a9e57e4cf">&#9670;&nbsp;</a></span>GetData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">string Token::GetData </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Obtenir les données du jeton</p>
-<dl class="section return"><dt>Renvoie</dt><dd><a class="el" href="class_token.html">Token</a> </dd></dl>
-
-</div>
-</div>
-<a id="a21823a3f85622dfab2c23016729bb391" name="a21823a3f85622dfab2c23016729bb391"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21823a3f85622dfab2c23016729bb391">&#9670;&nbsp;</a></span>GetNumberAtCharacter()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Token::GetNumberAtCharacter </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">char Token::character</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aef5346388384491c536a8fe307c0eff6" name="aef5346388384491c536a8fe307c0eff6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef5346388384491c536a8fe307c0eff6">&#9670;&nbsp;</a></span>GetNumberLine()</h2>
+<a id="aeb996d0a007843a0ee5ce45abeb350e3" name="aeb996d0a007843a0ee5ce45abeb350e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb996d0a007843a0ee5ce45abeb350e3">&#9670;&nbsp;</a></span>number</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Token::GetNumberLine </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Obtenir le numéro de ligne sur lequel le jeton à était trouvé.</p>
-<dl class="section return"><dt>Renvoie</dt><dd>int </dd></dl>
-
-</div>
-</div>
-<a id="a68657b5fed811a1e6c61a5c9db83e9e4" name="a68657b5fed811a1e6c61a5c9db83e9e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68657b5fed811a1e6c61a5c9db83e9e4">&#9670;&nbsp;</a></span>GetStringType()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static string Token::GetStringType </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token.html#acf70e9411196c602738c3ed2428c7137">Token::Type</a>&#160;</td>
-          <td class="paramname"><em>type</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Optenir le type de jeton de type chaine de caractères.</p>
-<dl class="section return"><dt>Renvoie</dt><dd>string </dd></dl>
-
-</div>
-</div>
-<a id="a183d1dba876c544e5c7c9cbaec51954e" name="a183d1dba876c544e5c7c9cbaec51954e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a183d1dba876c544e5c7c9cbaec51954e">&#9670;&nbsp;</a></span>GetType()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_token.html#acf70e9411196c602738c3ed2428c7137">Token::Type</a> Token::GetType </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >obtenir le type du jeton</p>
-<dl class="section return"><dt>Renvoie</dt><dd><a class="el" href="class_token.html">Token</a> </dd></dl>
-
-</div>
-</div>
-<a id="a45ab8612533525e9dd5be8da28e9db4a" name="a45ab8612533525e9dd5be8da28e9db4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45ab8612533525e9dd5be8da28e9db4a">&#9670;&nbsp;</a></span>SetData() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Token::SetData </td>
-          <td>(</td>
-          <td class="paramtype">const char&#160;</td>
-          <td class="paramname"><em>data</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Définit les données du jeton</p>
-<dl class="params"><dt>Paramètres</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">data</td><td>Les donnée de type char </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Renvoie</dt><dd>void </dd></dl>
-
-</div>
-</div>
-<a id="af1db733093950c65246b58e81a2d45aa" name="af1db733093950c65246b58e81a2d45aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af1db733093950c65246b58e81a2d45aa">&#9670;&nbsp;</a></span>SetData() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Token::SetData </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>data</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Définit les données du jeton</p>
-<dl class="params"><dt>Paramètres</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">data</td><td>Les donnée de type string </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Renvoie</dt><dd>void </dd></dl>
-
-</div>
-</div>
-<a id="a6a3cf2aa645f2e28a71fbcafa16ed03e" name="a6a3cf2aa645f2e28a71fbcafa16ed03e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a3cf2aa645f2e28a71fbcafa16ed03e">&#9670;&nbsp;</a></span>SetNumberAtCharacter()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Token::SetNumberAtCharacter </td>
-          <td>(</td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>numberLine</em></td><td>)</td>
-          <td></td>
+          <td class="memname">double Token::number</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a2a00f5d5d4e275d20aeecb3bbcb1afa6" name="a2a00f5d5d4e275d20aeecb3bbcb1afa6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a00f5d5d4e275d20aeecb3bbcb1afa6">&#9670;&nbsp;</a></span>SetNumberLine()</h2>
+<a id="ae46b6b806df89709a13a14dc76c86623" name="ae46b6b806df89709a13a14dc76c86623"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae46b6b806df89709a13a14dc76c86623">&#9670;&nbsp;</a></span>type</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Token::SetNumberLine </td>
-          <td>(</td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>numberLine</em></td><td>)</td>
-          <td></td>
+          <td class="memname">int Token::type</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Définit le numéro de ligne sur lequel le jeton à était trouvé</p>
-<dl class="params"><dt>Paramètres</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">numberLine</td><td>le numéro de ligne. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Renvoie</dt><dd>void </dd></dl>
 
 </div>
 </div>
-<a id="ac44a0679705607beb0ca968e56d62473" name="ac44a0679705607beb0ca968e56d62473"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac44a0679705607beb0ca968e56d62473">&#9670;&nbsp;</a></span>SetType()</h2>
+<a id="a89952132313f821679315c41fe487f11" name="a89952132313f821679315c41fe487f11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89952132313f821679315c41fe487f11">&#9670;&nbsp;</a></span>word</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Token::SetType </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_token.html#acf70e9411196c602738c3ed2428c7137">Token::Type</a>&#160;</td>
-          <td class="paramname"><em>type</em></td><td>)</td>
-          <td></td>
+          <td class="memname">string Token::word</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Définit le type du jeton</p>
-<dl class="section return"><dt>Renvoie</dt><dd>void </dd></dl>
 
 </div>
 </div>
 <hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
-<li>C:/Users/themo/OneDrive/Documents/GitHub/interpreter/lib/tokenizer/include/<a class="el" href="_token_8h_source.html">Token.h</a></li>
+<li>C:/Users/themo/OneDrive/Documents/GitHub/interpreter/src/tokenizer/include/<a class="el" href="_token_8h_source.html">Token.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -493,7 +248,7 @@ Fonctions membres publiques statiques</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_token.html">Token</a></li>
-    <li class="footer">Généré le Mardi 28 Décembre 2021 07:14:02 pour Interprèteur par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Généré le Mercredi 29 Décembre 2021 18:07:41 pour Interprèteur par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

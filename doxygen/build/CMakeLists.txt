@@ -13,30 +13,34 @@ if (DOXYGEN_FOUND)
     message("Doxygen build started")
 
     set(SOURCE_LIST
-        # Graph Files
-        "../dia/example.dia"
-        "../msc/example.msc"
-        "../dot/example.dot"
         # Config Files
         "../config/Doxyfile"
         "../config/DoxygenLayout.xml"
+
+        # Graph Files
+        "../diagrams/dia/example.dia"
+        "../diagrams/msc/example.msc"
+        "../diagrams/dot/example.dot"
+
         # Image Files
-        "../diagram/ebnf/ArithmeticOperatorExpression.png"
-        "../diagram/ebnf/ComparisonOperatorExpression.png"
-        "../diagram/ebnf/ExpressionList.png"
-        "../diagram/ebnf/Identifier.png"
-        "../diagram/ebnf/Number.png"
-        "../diagram/ebnf/Statement.png"
-        "../diagram/ast-diagram.png"
-        "../diagram/interpreter-diagram.png"
-        # Page Readme
-        "../grammar-ebnf.md"
-        "../dessign-pattern/index.md"
-        "../dessign-pattern/interpreter.md"
-        "../doxygen.md"
-        "../index.md"
+        "../images/ebnf/ArithmeticOperatorExpression.png"
+        "../images/ebnf/ComparisonOperatorExpression.png"
+        "../images/ebnf/ExpressionList.png"
+        "../images/ebnf/Identifier.png"
+        "../images/ebnf/Number.png"
+        "../images/ebnf/Statement.png"
+        "../images/ast-diagram.png"
+        "../images/interpreter-diagram.png"
+
+        # Page
+        "../pages/grammar-ebnf.md"
+        "../pages/dessign-pattern/dessign-pattern.md"
+        "../pages/dessign-pattern/interpreter.md"
+        "../pages/doxygen.md"
+        "../pages/index.md"
+
         # Project README
-        "../../README.md"
+        "../../../README.md"
     )
 
     # note the option ALL which allows to build the docs together with the application
@@ -47,6 +51,4 @@ if (DOXYGEN_FOUND)
         COMMENT "Generating API documentation with Doxygen"
         VERBATIM
     )
-
-    set_property(TARGET Doxygen PROPERTY FOLDER "Documentation")
 endif()

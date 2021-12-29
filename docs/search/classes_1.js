@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['context_0',['Context',['../class_context.html',1,'']]]
+  ['client_0',['Client',['../class_client.html',1,'']]],
+  ['context_1',['Context',['../class_context.html',1,'']]]
 ];

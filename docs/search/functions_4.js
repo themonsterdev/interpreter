@@ -1,16 +1,7 @@
 var searchData=
 [
-  ['getdata_0',['GetData',['../class_token.html#a1b852ae1b7fbb77a6de7e18a9e57e4cf',1,'Token']]],
-  ['getnexttoken_1',['GetNextToken',['../class_stream_tokenizer.html#a5674b566fb5a2d3fac1943664fad25ee',1,'StreamTokenizer::GetNextToken()'],['../class_string_tokenizer.html#abb883ee36fdfc23f641b101e0a7d1e61',1,'StringTokenizer::GetNextToken()']]],
-  ['getnumberatcharacter_2',['GetNumberAtCharacter',['../class_token.html#a21823a3f85622dfab2c23016729bb391',1,'Token']]],
-  ['getnumberline_3',['GetNumberLine',['../class_token.html#aef5346388384491c536a8fe307c0eff6',1,'Token']]],
-  ['getnumbertoken_4',['GetNumberToken',['../class_stream_tokenizer.html#a6eb25059d9d88cf0cab8f29abbadea13',1,'StreamTokenizer']]],
-  ['getright_5',['GetRight',['../class_non_terminal_expression.html#a08563c3a2a8ced7ba1982bf2a4059902',1,'NonTerminalExpression']]],
-  ['getstringtoken_6',['GetStringToken',['../class_stream_tokenizer.html#a25c2494b3cfbc8fa4fe61bcb58664dda',1,'StreamTokenizer']]],
-  ['getstringtype_7',['GetStringType',['../class_token.html#a68657b5fed811a1e6c61a5c9db83e9e4',1,'Token']]],
-  ['gettokens_8',['GetTokens',['../class_tokenizer.html#a1f38f7ab4b1d68daffe160bd43142ebe',1,'Tokenizer']]],
-  ['gettype_9',['GetType',['../class_token.html#a183d1dba876c544e5c7c9cbaec51954e',1,'Token']]],
-  ['getvalue_10',['GetValue',['../class_context.html#a585964ac80dc57e95a34f7a2fa00246a',1,'Context']]],
-  ['greaterthanexpression_11',['GreaterThanExpression',['../class_greater_than_expression.html#a55c88982389221c13206011d5901e1f2',1,'GreaterThanExpression']]],
-  ['greaterthanorequaltoexpression_12',['GreaterThanOrEqualToExpression',['../class_greater_than_or_equal_to_expression.html#a69d98464bf9fd440d2dd8976aa2dae55',1,'GreaterThanOrEqualToExpression']]]
+  ['interpret_0',['Interpret',['../class_client.html#a6f894da8b4b1e39da6bf6c82d2e2c7a0',1,'Client::Interpret()'],['../class_statement_interface.html#ac52acfb80fcb6013094149fe8e2e47b2',1,'StatementInterface::Interpret()'],['../class_printing_statement.html#a7f4f482f2626312d8cfb97f9a0f76b66',1,'PrintingStatement::Interpret()'],['../class_variable_statement.html#a438fb814349c790d4b61a1c0b7901488',1,'VariableStatement::Interpret()']]],
+  ['isdelim_1',['IsDelim',['../class_abstract_tokenizer.html#ad5648293237e965fcc6a128b20c6ee7e',1,'AbstractTokenizer']]],
+  ['isnumber_2',['IsNumber',['../class_abstract_tokenizer.html#afa419726da1883f1d09f1aa5f0ab19e0',1,'AbstractTokenizer']]],
+  ['isword_3',['IsWord',['../class_abstract_tokenizer.html#ae2cc7d6d7640244d091a72be83105d88',1,'AbstractTokenizer']]]
 ];

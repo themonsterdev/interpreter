@@ -2,22 +2,14 @@ var class_token =
 [
     [ "Iterator", "class_token.html#a92b106e1b5160495111437387f88d2e4", null ],
     [ "List", "class_token.html#a25694827706ac6a13cb99884d2272dcb", null ],
-    [ "Type", "class_token.html#acf70e9411196c602738c3ed2428c7137", [
-      [ "Keyword", "class_token.html#acf70e9411196c602738c3ed2428c7137a220f3d3750583b9db48568a0b5b9a5f1", null ],
-      [ "Identifier", "class_token.html#acf70e9411196c602738c3ed2428c7137a29ee5d1ebcc033234938a5234f1f2075", null ],
-      [ "Operator", "class_token.html#acf70e9411196c602738c3ed2428c7137ae1b3ec89ead7f83a9245ed5c9cacfdbf", null ],
-      [ "Number", "class_token.html#acf70e9411196c602738c3ed2428c7137ab2ee912b91d69b435159c7c3f6df7f5f", null ],
-      [ "Unknown", "class_token.html#acf70e9411196c602738c3ed2428c7137a88183b946cc5f0e8c96b2e66e1c74a7e", null ]
+    [ "Type", "class_token.html#a276314f73a3eb5ca1eff3457e53b6c8d", [
+      [ "TT_WORD", "class_token.html#a276314f73a3eb5ca1eff3457e53b6c8da290d4ae99752b348c98c416bfc024037", null ],
+      [ "TT_NUMBER", "class_token.html#a276314f73a3eb5ca1eff3457e53b6c8da5a8688ee5001ef4aad539dc53b78de9b", null ],
+      [ "TT_EOL", "class_token.html#a276314f73a3eb5ca1eff3457e53b6c8da865127dcb4d92792592226f671effa75", null ],
+      [ "TT_EOF", "class_token.html#a276314f73a3eb5ca1eff3457e53b6c8da907f29263043ee0c9ae3da35fc014f8a", null ]
     ] ],
-    [ "Token", "class_token.html#aa3c5868ba4115f3189df6b2ac5b36f39", null ],
-    [ "Token", "class_token.html#aa1b8fca986ba3bfb510b5c0c997e8d0c", null ],
-    [ "GetData", "class_token.html#a1b852ae1b7fbb77a6de7e18a9e57e4cf", null ],
-    [ "GetNumberAtCharacter", "class_token.html#a21823a3f85622dfab2c23016729bb391", null ],
-    [ "GetNumberLine", "class_token.html#aef5346388384491c536a8fe307c0eff6", null ],
-    [ "GetType", "class_token.html#a183d1dba876c544e5c7c9cbaec51954e", null ],
-    [ "SetData", "class_token.html#a45ab8612533525e9dd5be8da28e9db4a", null ],
-    [ "SetData", "class_token.html#af1db733093950c65246b58e81a2d45aa", null ],
-    [ "SetNumberAtCharacter", "class_token.html#a6a3cf2aa645f2e28a71fbcafa16ed03e", null ],
-    [ "SetNumberLine", "class_token.html#a2a00f5d5d4e275d20aeecb3bbcb1afa6", null ],
-    [ "SetType", "class_token.html#ac44a0679705607beb0ca968e56d62473", null ]
+    [ "character", "class_token.html#a1937cc30f9d7712b9f901e8c315fb575", null ],
+    [ "number", "class_token.html#aeb996d0a007843a0ee5ce45abeb350e3", null ],
+    [ "type", "class_token.html#ae46b6b806df89709a13a14dc76c86623", null ],
+    [ "word", "class_token.html#a89952132313f821679315c41fe487f11", null ]
 ];

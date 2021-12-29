@@ -1,0 +1,6 @@
+<map id="TokenizerInterface" name="TokenizerInterface">
+<area shape="rect" id="node1" title=" " alt="" coords="78,5,233,112"/>
+<area shape="rect" id="node2" href="$class_abstract_tokenizer.html" title=" " alt="" coords="78,160,233,296"/>
+<area shape="rect" id="node3" href="$class_stream_tokenizer.html" title=" " alt="" coords="5,344,145,451"/>
+<area shape="rect" id="node4" href="$class_string_tokenizer.html" title=" " alt="" coords="169,344,301,451"/>
+</map>
