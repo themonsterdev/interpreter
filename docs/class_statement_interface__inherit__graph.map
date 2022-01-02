@@ -1,5 +1,6 @@
 <map id="StatementInterface" name="StatementInterface">
 <area shape="rect" id="node1" title=" " alt="" coords="85,5,243,97"/>
-<area shape="rect" id="node2" href="$class_printing_statement.html" title=" " alt="" coords="5,145,152,237"/>
-<area shape="rect" id="node3" href="$class_variable_statement.html" title=" " alt="" coords="176,145,325,237"/>
+<area shape="rect" id="node2" href="$class_abstract_statement.html" title=" " alt="" coords="99,145,229,223"/>
+<area shape="rect" id="node3" href="$class_printing_statement.html" title=" " alt="" coords="5,271,152,363"/>
+<area shape="rect" id="node4" href="$class_variable_statement.html" title=" " alt="" coords="176,271,325,363"/>
 </map>

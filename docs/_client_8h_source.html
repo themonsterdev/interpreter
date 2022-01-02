@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Interprèteur:  Fichier source de C:/Users/themo/OneDrive/Documents/GitHub/interpreter/src/client/include/Client.h</title>
+<title>Interprèteur:  Fichier source de Client.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -89,68 +89,45 @@ $(document).ready(function(){initNavTree('_client_8h_source.html',''); initResiz
 <a href="_client_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef CLIENT_H</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define CLIENT_H</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;Preprocessor.h&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="_stream_tokenizer_8h.html">StreamTokenizer.h</a>&quot;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="_string_tokenizer_8h.html">StringTokenizer.h</a>&quot;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="_token_8h.html">Token.h</a>&quot;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="_context_8h.html">Context.h</a>&quot;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_parser_8h.html">Parser.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="stdafx_8h.html">stdafx.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="_tokenizer_interface_8h.html">Tokenizer/Interface/TokenizerInterface.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="_parser_8h.html">Parser/Parser.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="_context_8h.html">Context.h</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_client.html">    9</a></span><span class="keyword">class </span><a class="code hl_class" href="class_client.html">Client</a></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;cassert&gt;</span>  <span class="comment">// assert</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;iostream&gt;</span> <span class="comment">// std::cout</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;list&gt;</span>     <span class="comment">// std::list</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <a class="code hl_class" href="class_context.html">Context</a> m_context;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <a class="code hl_class" href="class_parser.html">Parser</a> m_parser;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_client.html#a6f894da8b4b1e39da6bf6c82d2e2c7a0">   18</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_client.html#a6f894da8b4b1e39da6bf6c82d2e2c7a0">Interpret</a>(<a class="code hl_class" href="class_tokenizer_interface.html">TokenizerInterface</a>&amp; tokenizer);</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_client.html">   20</a></span><span class="keyword">class </span><a class="code hl_class" href="class_client.html">Client</a></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>{</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_client.html#aff9bc97ea48383621a2f1d7911440f9c">   29</a></span>    <span class="keyword">static</span> <a class="code hl_class" href="class_client.html">Client</a>* <a class="code hl_function" href="class_client.html#aff9bc97ea48383621a2f1d7911440f9c">Get</a>();</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_client.html#ae51af7aa6b8f591496a8f6a4a87a14bf">   34</a></span>    <a class="code hl_function" href="class_client.html#ae51af7aa6b8f591496a8f6a4a87a14bf">Client</a>();</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_client.html#a840e519ca781888cbd54181572ebe3a7">   39</a></span>    <a class="code hl_function" href="class_client.html#a840e519ca781888cbd54181572ebe3a7">~Client</a>();</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_client.html#a6f894da8b4b1e39da6bf6c82d2e2c7a0">   41</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_client.html#a6f894da8b4b1e39da6bf6c82d2e2c7a0">Interpret</a>(<a class="code hl_class" href="class_tokenizer_interface.html">TokenizerInterface</a>&amp; tokenizer);</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    shared_ptr&lt;Context&gt; m_pContext;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    unique_ptr&lt;Parser&gt; m_pParser;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <a class="code hl_typedef" href="class_token.html#a25694827706ac6a13cb99884d2272dcb">Token::List</a> Tokenize(<a class="code hl_class" href="class_tokenizer_interface.html">TokenizerInterface</a>&amp; tokenizer);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <a class="code hl_class" href="class_context.html">Context</a>* GetContext();</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_class" href="class_parser.html">Parser</a>* GetParser();</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>};</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">static</span> <a class="code hl_typedef" href="class_token.html#a25694827706ac6a13cb99884d2272dcb">Token::List</a> Tokenize(<a class="code hl_class" href="class_tokenizer_interface.html">TokenizerInterface</a>&amp; tokenizer);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>};</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="a_context_8h_html"><div class="ttname"><a href="_context_8h.html">Context.h</a></div></div>
 <div class="ttc" id="a_parser_8h_html"><div class="ttname"><a href="_parser_8h.html">Parser.h</a></div></div>
-<div class="ttc" id="a_stream_tokenizer_8h_html"><div class="ttname"><a href="_stream_tokenizer_8h.html">StreamTokenizer.h</a></div></div>
-<div class="ttc" id="a_string_tokenizer_8h_html"><div class="ttname"><a href="_string_tokenizer_8h.html">StringTokenizer.h</a></div></div>
-<div class="ttc" id="a_token_8h_html"><div class="ttname"><a href="_token_8h.html">Token.h</a></div></div>
-<div class="ttc" id="aclass_client_html"><div class="ttname"><a href="class_client.html">Client</a></div><div class="ttdef"><b>Definition:</b> Client.h:21</div></div>
+<div class="ttc" id="a_tokenizer_interface_8h_html"><div class="ttname"><a href="_tokenizer_interface_8h.html">TokenizerInterface.h</a></div></div>
+<div class="ttc" id="aclass_client_html"><div class="ttname"><a href="class_client.html">Client</a></div><div class="ttdef"><b>Definition:</b> Client.h:10</div></div>
 <div class="ttc" id="aclass_client_html_a6f894da8b4b1e39da6bf6c82d2e2c7a0"><div class="ttname"><a href="class_client.html#a6f894da8b4b1e39da6bf6c82d2e2c7a0">Client::Interpret</a></div><div class="ttdeci">void Interpret(TokenizerInterface &amp;tokenizer)</div></div>
-<div class="ttc" id="aclass_client_html_a840e519ca781888cbd54181572ebe3a7"><div class="ttname"><a href="class_client.html#a840e519ca781888cbd54181572ebe3a7">Client::~Client</a></div><div class="ttdeci">~Client()</div></div>
-<div class="ttc" id="aclass_client_html_ae51af7aa6b8f591496a8f6a4a87a14bf"><div class="ttname"><a href="class_client.html#ae51af7aa6b8f591496a8f6a4a87a14bf">Client::Client</a></div><div class="ttdeci">Client()</div></div>
-<div class="ttc" id="aclass_client_html_aff9bc97ea48383621a2f1d7911440f9c"><div class="ttname"><a href="class_client.html#aff9bc97ea48383621a2f1d7911440f9c">Client::Get</a></div><div class="ttdeci">static Client * Get()</div></div>
-<div class="ttc" id="aclass_context_html"><div class="ttname"><a href="class_context.html">Context</a></div><div class="ttdef"><b>Definition:</b> Context.h:13</div></div>
-<div class="ttc" id="aclass_parser_html"><div class="ttname"><a href="class_parser.html">Parser</a></div><div class="ttdef"><b>Definition:</b> Parser.h:21</div></div>
-<div class="ttc" id="aclass_token_html_a25694827706ac6a13cb99884d2272dcb"><div class="ttname"><a href="class_token.html#a25694827706ac6a13cb99884d2272dcb">Token::List</a></div><div class="ttdeci">list&lt; Token &gt; List</div><div class="ttdef"><b>Definition:</b> Token.h:13</div></div>
-<div class="ttc" id="aclass_tokenizer_interface_html"><div class="ttname"><a href="class_tokenizer_interface.html">TokenizerInterface</a></div><div class="ttdef"><b>Definition:</b> TokenizerInterface.h:18</div></div>
+<div class="ttc" id="aclass_context_html"><div class="ttname"><a href="class_context.html">Context</a></div><div class="ttdef"><b>Definition:</b> Context.h:12</div></div>
+<div class="ttc" id="aclass_parser_html"><div class="ttname"><a href="class_parser.html">Parser</a></div><div class="ttdef"><b>Definition:</b> Parser.h:17</div></div>
+<div class="ttc" id="aclass_token_html_a25694827706ac6a13cb99884d2272dcb"><div class="ttname"><a href="class_token.html#a25694827706ac6a13cb99884d2272dcb">Token::List</a></div><div class="ttdeci">list&lt; Token &gt; List</div><div class="ttdef"><b>Definition:</b> Token.h:10</div></div>
+<div class="ttc" id="aclass_tokenizer_interface_html"><div class="ttname"><a href="class_tokenizer_interface.html">TokenizerInterface</a></div><div class="ttdef"><b>Definition:</b> TokenizerInterface.h:15</div></div>
+<div class="ttc" id="astdafx_8h_html"><div class="ttname"><a href="stdafx_8h.html">stdafx.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_6908ff505388a07996d238c763adbdab.html">client</a></li><li class="navelem"><a class="el" href="dir_c7a20b80ce65e841dd30fc88a8acdace.html">include</a></li><li class="navelem"><a class="el" href="_client_8h.html">Client.h</a></li>
-    <li class="footer">Généré le Mercredi 29 Décembre 2021 18:07:40 pour Interprèteur par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="_client_8h.html">Client.h</a></li>
+    <li class="footer">Généré le Dimanche 2 Janvier 2022 23:40:13 pour Interprèteur par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

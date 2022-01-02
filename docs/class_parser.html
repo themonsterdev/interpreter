@@ -84,76 +84,201 @@ $(document).ready(function(){initNavTree('class_parser.html',''); initResizable(
 
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Types publics</a> &#124;
 <a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pub-static-methods">Fonctions membres publiques statiques</a> &#124;
 <a href="class_parser-members.html">Liste de tous les membres</a>  </div>
   <div class="headertitle"><div class="title">Référence de la classe Parser</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="_parser_8h_source.html">Parser.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_parser_8h_source.html">Parser/Parser.h</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Graphe de collaboration de Parser:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_parser__coll__graph.svg" width="87" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_parser__coll__graph.svg" width="219" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
-Types publics</h2></td></tr>
-<tr class="memitem:a896a77a3411c4249854c8faa2b4fa9d7"><td class="memItemLeft" align="right" valign="top">typedef shared_ptr&lt; <a class="el" href="class_statement_interface.html">StatementInterface</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_parser.html#a896a77a3411c4249854c8faa2b4fa9d7">Statement</a></td></tr>
-<tr class="separator:a896a77a3411c4249854c8faa2b4fa9d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93ccf06eb463657801aa8ad41e4c40c3"><td class="memItemLeft" align="right" valign="top">typedef stack&lt; <a class="el" href="class_parser.html#a896a77a3411c4249854c8faa2b4fa9d7">Statement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_parser.html#a93ccf06eb463657801aa8ad41e4c40c3">StatementList</a></td></tr>
-<tr class="separator:a93ccf06eb463657801aa8ad41e4c40c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
-<tr class="memitem:ab29d4096b55db3a7a36bbfe6fc2e7d83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_parser.html#a93ccf06eb463657801aa8ad41e4c40c3">StatementList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_parser.html#ab29d4096b55db3a7a36bbfe6fc2e7d83">Parse</a> (<a class="el" href="class_token.html#a25694827706ac6a13cb99884d2272dcb">Token::List</a> &amp;tokens)</td></tr>
-<tr class="separator:ab29d4096b55db3a7a36bbfe6fc2e7d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ed42cde5ee3a6950567cb76fe695afa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_statement_interface.html#adcd619f73e010535a9d570e6d4d307a6">StatementInterface::Queue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_parser.html#a5ed42cde5ee3a6950567cb76fe695afa">Parse</a> (<a class="el" href="class_token.html#a25694827706ac6a13cb99884d2272dcb">Token::List</a> &amp;tokens)</td></tr>
+<tr class="separator:a5ed42cde5ee3a6950567cb76fe695afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Fonctions membres publiques statiques</h2></td></tr>
+<tr class="memitem:afaeed3f9ea5b5d92f2a2abe260cae9c2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_statement_interface.html#afbf7f31eae4ce2314278e400e4290c8a">StatementInterface::Pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_parser.html#afaeed3f9ea5b5d92f2a2abe260cae9c2">GetStatement</a> (<a class="el" href="class_token.html#a92b106e1b5160495111437387f88d2e4">Token::Iterator</a> &amp;begin, <a class="el" href="class_token.html#a92b106e1b5160495111437387f88d2e4">Token::Iterator</a> &amp;end)</td></tr>
+<tr class="separator:afaeed3f9ea5b5d92f2a2abe260cae9c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0b14524314e95cd917011969775c072"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_expression_interface.html#a346dd9c03f294a1939d2c10e6f7afbdf">ExpressionInterface::Pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_parser.html#ab0b14524314e95cd917011969775c072">GetLiteralExpression</a> (<a class="el" href="class_token.html#a92b106e1b5160495111437387f88d2e4">Token::Iterator</a> &amp;begin, <a class="el" href="class_token.html#a92b106e1b5160495111437387f88d2e4">Token::Iterator</a> &amp;end)</td></tr>
+<tr class="separator:ab0b14524314e95cd917011969775c072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6338b7f3df8e3f784aeacbcaf934a6a6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_expression_interface.html#a346dd9c03f294a1939d2c10e6f7afbdf">ExpressionInterface::Pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_parser.html#a6338b7f3df8e3f784aeacbcaf934a6a6">GetLiteralNumberExpression</a> (<a class="el" href="class_token.html#a92b106e1b5160495111437387f88d2e4">Token::Iterator</a> &amp;begin, <a class="el" href="class_token.html#a92b106e1b5160495111437387f88d2e4">Token::Iterator</a> &amp;end)</td></tr>
+<tr class="separator:a6338b7f3df8e3f784aeacbcaf934a6a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace6a82d77891f445592a1ebeadb6c031"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_expression_interface.html#a346dd9c03f294a1939d2c10e6f7afbdf">ExpressionInterface::Pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_parser.html#ace6a82d77891f445592a1ebeadb6c031">GetOperatorExpression</a> (<a class="el" href="class_expression_interface.html#a346dd9c03f294a1939d2c10e6f7afbdf">ExpressionInterface::Pointer</a> operand1, <a class="el" href="class_token.html#a92b106e1b5160495111437387f88d2e4">Token::Iterator</a> &amp;begin, <a class="el" href="class_token.html#a92b106e1b5160495111437387f88d2e4">Token::Iterator</a> &amp;end)</td></tr>
+<tr class="separator:ace6a82d77891f445592a1ebeadb6c031"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
 <div class="textblock"><p >Classe <a class="el" href="class_parser.html">Parser</a></p>
 <p >Cette classe permet de faire une analyse syntaxique.</p>
 <dl class="section see"><dt>Voir également</dt><dd><a href="https://fr.wikipedia.org/wiki/Analyse_syntaxique">https://fr.wikipedia.org/wiki/Analyse_syntaxique</a> </dd></dl>
-</div><h2 class="groupheader">Documentation des définitions de type membres</h2>
-<a id="a896a77a3411c4249854c8faa2b4fa9d7" name="a896a77a3411c4249854c8faa2b4fa9d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a896a77a3411c4249854c8faa2b4fa9d7">&#9670;&nbsp;</a></span>Statement</h2>
+</div><h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="ab0b14524314e95cd917011969775c072" name="ab0b14524314e95cd917011969775c072"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0b14524314e95cd917011969775c072">&#9670;&nbsp;</a></span>GetLiteralExpression()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef shared_ptr&lt;<a class="el" href="class_statement_interface.html">StatementInterface</a>&gt; <a class="el" href="class_parser.html#a896a77a3411c4249854c8faa2b4fa9d7">Parser::Statement</a></td>
+          <td class="memname">static <a class="el" href="class_expression_interface.html#a346dd9c03f294a1939d2c10e6f7afbdf">ExpressionInterface::Pointer</a> Parser::GetLiteralExpression </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_token.html#a92b106e1b5160495111437387f88d2e4">Token::Iterator</a> &amp;&#160;</td>
+          <td class="paramname"><em>begin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_token.html#a92b106e1b5160495111437387f88d2e4">Token::Iterator</a> &amp;&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a93ccf06eb463657801aa8ad41e4c40c3" name="a93ccf06eb463657801aa8ad41e4c40c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93ccf06eb463657801aa8ad41e4c40c3">&#9670;&nbsp;</a></span>StatementList</h2>
+<a id="a6338b7f3df8e3f784aeacbcaf934a6a6" name="a6338b7f3df8e3f784aeacbcaf934a6a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6338b7f3df8e3f784aeacbcaf934a6a6">&#9670;&nbsp;</a></span>GetLiteralNumberExpression()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef stack&lt;<a class="el" href="class_parser.html#a896a77a3411c4249854c8faa2b4fa9d7">Statement</a>&gt; <a class="el" href="class_parser.html#a93ccf06eb463657801aa8ad41e4c40c3">Parser::StatementList</a></td>
+          <td class="memname">static <a class="el" href="class_expression_interface.html#a346dd9c03f294a1939d2c10e6f7afbdf">ExpressionInterface::Pointer</a> Parser::GetLiteralNumberExpression </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_token.html#a92b106e1b5160495111437387f88d2e4">Token::Iterator</a> &amp;&#160;</td>
+          <td class="paramname"><em>begin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_token.html#a92b106e1b5160495111437387f88d2e4">Token::Iterator</a> &amp;&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<h2 class="groupheader">Documentation des fonctions membres</h2>
-<a id="ab29d4096b55db3a7a36bbfe6fc2e7d83" name="ab29d4096b55db3a7a36bbfe6fc2e7d83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab29d4096b55db3a7a36bbfe6fc2e7d83">&#9670;&nbsp;</a></span>Parse()</h2>
+<a id="ace6a82d77891f445592a1ebeadb6c031" name="ace6a82d77891f445592a1ebeadb6c031"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace6a82d77891f445592a1ebeadb6c031">&#9670;&nbsp;</a></span>GetOperatorExpression()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_expression_interface.html#a346dd9c03f294a1939d2c10e6f7afbdf">ExpressionInterface::Pointer</a> Parser::GetOperatorExpression </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_expression_interface.html#a346dd9c03f294a1939d2c10e6f7afbdf">ExpressionInterface::Pointer</a>&#160;</td>
+          <td class="paramname"><em>operand1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_token.html#a92b106e1b5160495111437387f88d2e4">Token::Iterator</a> &amp;&#160;</td>
+          <td class="paramname"><em>begin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_token.html#a92b106e1b5160495111437387f88d2e4">Token::Iterator</a> &amp;&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afaeed3f9ea5b5d92f2a2abe260cae9c2" name="afaeed3f9ea5b5d92f2a2abe260cae9c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afaeed3f9ea5b5d92f2a2abe260cae9c2">&#9670;&nbsp;</a></span>GetStatement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_statement_interface.html#afbf7f31eae4ce2314278e400e4290c8a">StatementInterface::Pointer</a> Parser::GetStatement </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_token.html#a92b106e1b5160495111437387f88d2e4">Token::Iterator</a> &amp;&#160;</td>
+          <td class="paramname"><em>begin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_token.html#a92b106e1b5160495111437387f88d2e4">Token::Iterator</a> &amp;&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ed42cde5ee3a6950567cb76fe695afa" name="a5ed42cde5ee3a6950567cb76fe695afa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ed42cde5ee3a6950567cb76fe695afa">&#9670;&nbsp;</a></span>Parse()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_parser.html#a93ccf06eb463657801aa8ad41e4c40c3">StatementList</a> Parser::Parse </td>
+          <td class="memname"><a class="el" href="class_statement_interface.html#adcd619f73e010535a9d570e6d4d307a6">StatementInterface::Queue</a> Parser::Parse </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_token.html#a25694827706ac6a13cb99884d2272dcb">Token::List</a> &amp;&#160;</td>
           <td class="paramname"><em>tokens</em></td><td>)</td>
@@ -165,7 +290,7 @@ Fonctions membres publiques</h2></td></tr>
 </div>
 </div>
 <hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
-<li>C:/Users/themo/OneDrive/Documents/GitHub/interpreter/src/parser/include/<a class="el" href="_parser_8h_source.html">Parser.h</a></li>
+<li><a class="el" href="_parser_8h_source.html">Parser.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -173,7 +298,7 @@ Fonctions membres publiques</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_parser.html">Parser</a></li>
-    <li class="footer">Généré le Mercredi 29 Décembre 2021 18:07:41 pour Interprèteur par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Généré le Dimanche 2 Janvier 2022 23:40:13 pour Interprèteur par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

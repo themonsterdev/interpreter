@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['hasnext_0',['HasNext',['../class_tokenizer_interface.html#a4df6a5a5cf1fc1db5084f13b02990151',1,'TokenizerInterface::HasNext()'],['../class_stream_tokenizer.html#a0ff12e43685a0af6a6d3fae6abf9540c',1,'StreamTokenizer::HasNext()'],['../class_string_tokenizer.html#ab74198df1e5b95ca5153a821a6eaa50c',1,'StringTokenizer::HasNext()']]]
+  ['expect_0',['Expect',['../class_abstract_statement.html#ae9bc7d9963f886f1f04f2d2c6389bd88',1,'AbstractStatement']]],
+  ['expressioninterface_1',['ExpressionInterface',['../class_expression_interface.html',1,'']]],
+  ['expressioninterface_2eh_2',['ExpressionInterface.h',['../_expression_interface_8h.html',1,'']]]
 ];

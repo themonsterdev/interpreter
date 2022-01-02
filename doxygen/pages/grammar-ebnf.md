@@ -86,3 +86,4 @@ référencé par:
 ## Références
 
 - [Railroad Diagram Generator](https://www.bottlecaps.de/rr/ui)
+- https://fr.wikipedia.org/wiki/Diagramme_syntaxique

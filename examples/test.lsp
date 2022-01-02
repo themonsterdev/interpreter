@@ -1,2 +1,5 @@
-var _identifier1 = 1
-print _identifier1 
+var a = 1
+print a
+
+var b = 1 + 2 + 3 + 4
+print b

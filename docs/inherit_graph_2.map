@@ -1,3 +1,12 @@
 <map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
-<area shape="rect" id="node1" href="$class_parser.html" title=" " alt="" coords="5,5,65,32"/>
+<area shape="rect" id="node1" href="$class_expression_interface.html" title=" " alt="" coords="5,56,141,83"/>
+<area shape="rect" id="node2" href="$class_abstract_expression.html" title=" " alt="" coords="189,56,325,83"/>
+<area shape="rect" id="node3" href="$class_identifier_expression.html" title=" " alt="" coords="375,5,509,32"/>
+<area shape="rect" id="node4" href="$class_number_expression.html" title=" " alt="" coords="376,56,508,83"/>
+<area shape="rect" id="node5" href="$class_operator_expression.html" title=" " alt="" coords="373,107,511,133"/>
+<area shape="rect" id="node6" href="$class_addition_expression.html" title=" " alt="" coords="573,5,707,32"/>
+<area shape="rect" id="node7" href="$class_division_expression.html" title=" " alt="" coords="575,56,705,83"/>
+<area shape="rect" id="node8" href="$class_modulo_expression.html" title=" " alt="" coords="575,107,705,133"/>
+<area shape="rect" id="node9" href="$class_multiplication_expression.html" title=" " alt="" coords="559,157,721,184"/>
+<area shape="rect" id="node10" href="$class_subtraction_expression.html" title=" " alt="" coords="563,208,717,235"/>
 </map>

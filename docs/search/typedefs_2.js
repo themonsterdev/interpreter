@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['statement_0',['Statement',['../class_parser.html#a896a77a3411c4249854c8faa2b4fa9d7',1,'Parser']]],
-  ['statementlist_1',['StatementList',['../class_parser.html#a93ccf06eb463657801aa8ad41e4c40c3',1,'Parser']]]
+  ['pointer_0',['Pointer',['../class_expression_interface.html#a346dd9c03f294a1939d2c10e6f7afbdf',1,'ExpressionInterface::Pointer()'],['../class_statement_interface.html#afbf7f31eae4ce2314278e400e4290c8a',1,'StatementInterface::Pointer()']]]
 ];

@@ -73,33 +73,44 @@ class Client {
     -m_context: Context
 }
 
-interface Expression {
+abstract class AbstractExpression {
     +void Interpret(Context context)
 }
 
-class TerminalExpression extends Expression {
+class TerminalExpression extends AbstractExpression {
     +void Interpret(Context context)
 }
 
-abstract class NonTerminalExpression extends Expression {
-    #m_leftExpression: Expression
-    #m_rightExpression: Expression
+class NonTerminalExpression extends AbstractExpression {
+    #m_leftExpression: AbstractExpression
+    #m_rightExpression: AbstractExpression
     +void Interpret(Context context)
-    +Expression* GetLeftExpression()
-    +Expression* GetRightExpression()
+    +AbstractExpression* GetLeftExpression()
+    +AbstractExpression* GetRightExpression()
 }
 
 Client *--> Context
-Client --> Expression
+Client --> AbstractExpression
 
-NonTerminalExpression *--> Expression
+NonTerminalExpression *--> AbstractExpression
 @enduml
 
 Dans le [diagramme de classes UML](https://fr.wikipedia.org/wiki/Diagramme_de_classes) ci-dessus:
 
-- La classe Client fait référence à l'interface commune Expression pour interpréter une expression.
-- La classe TerminalExpression n'a pas d'enfants et interprète directement une expression.
-- La classe NonTerminalExpression maintient un conteneur d'expressions enfants et transmet les requêtes d' interprétation à ces derniers expressions.  
+- Client
+    - Construit (ou reçoit) un arbre syntaxique abstrait représentant une phrase particulière dans le langage que la grammaire définit. L'arbre syntaxique abstrait est assemblé à partir d'instances des classes NonterminalExpression et TerminalExpression.
+    - Invoque l'opération Interpréter.
+- Context
+    - Contient des informations qui sont globales à l'interprète.
+- AbstractExpression
+    - Déclare une opération abstraite d'Interpret qui est commune à tous les noeuds de l'arbre syntaxique abstrait.
+- TerminalExpression (NumberExpression, BooleanExpression, ...)
+    - Met en œuvre une opération d'interprétation associée à des symboles terminaux dans la grammaire.
+    - Une instance est nécessaire pour chaque symbole terminal d'une phrase.
+- NonterminalExpression (AdditionExpression, SubstractionExpression, ...)
+    - Une telle classe est nécessaire pour chaque Opérateur O ::= O1 O2 ... On dans la grammaire.
+    - Maintient des expressions d'instance de type AbstractExpression pour chacun des symboles O1 à On.
+    - Implémente une opération Interpret pour les symboles non terminaux de la grammaire. Interpret s'appelle typiquement de manière récursive sur les expressions représentant O1 à On.
 
 ### Arbre de syntaxe abstraite
 

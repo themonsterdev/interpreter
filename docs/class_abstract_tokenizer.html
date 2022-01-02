@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('class_abstract_tokenizer.html',''); in
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pro-methods">Fonctions membres protégées</a> &#124;
 <a href="#pro-static-methods">Fonctions membres protégées statiques</a> &#124;
 <a href="#pro-attribs">Attributs protégés</a> &#124;
 <a href="class_abstract_tokenizer-members.html">Liste de tous les membres</a>  </div>
@@ -92,20 +93,20 @@ $(document).ready(function(){initNavTree('class_abstract_tokenizer.html',''); in
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="_abstract_tokenizer_8h_source.html">AbstractTokenizer.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_abstract_tokenizer_8h_source.html">Tokenizer/AbstractTokenizer.h</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Graphe d'héritage de AbstractTokenizer:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_abstract_tokenizer__inherit__graph.svg" width="307" height="456"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_abstract_tokenizer__inherit__graph.svg" width="307" height="530"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Graphe de collaboration de AbstractTokenizer:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_abstract_tokenizer__coll__graph.svg" width="291" height="316"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_abstract_tokenizer__coll__graph.svg" width="412" height="375"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -114,13 +115,20 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="separator:ad5dd529f11552a1bb522f97077148270"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6495b21ee52ec52bf39bd229a2de130"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_tokenizer.html#af6495b21ee52ec52bf39bd229a2de130">~AbstractTokenizer</a> ()=default</td></tr>
 <tr class="separator:af6495b21ee52ec52bf39bd229a2de130"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89e9a1cf3a87627f32c5e1bbdb8033cd"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_tokenizer.html#a89e9a1cf3a87627f32c5e1bbdb8033cd">HasNext</a> ()</td></tr>
+<tr class="separator:a89e9a1cf3a87627f32c5e1bbdb8033cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07c5bced7a0ce87f3cbf0f414313004c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_token.html">Token</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_tokenizer.html#a07c5bced7a0ce87f3cbf0f414313004c">GetNext</a> ()</td></tr>
+<tr class="separator:a07c5bced7a0ce87f3cbf0f414313004c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacc0145bf93963e69dd3d79bb51a75d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_tokenizer.html#aacc0145bf93963e69dd3d79bb51a75d8">Keywords</a> (list&lt; string &gt; keywords)</td></tr>
+<tr class="separator:aacc0145bf93963e69dd3d79bb51a75d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_tokenizer_interface"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_tokenizer_interface')"><img src="closed.png" alt="-"/>&#160;Fonctions membres publiques hérités de <a class="el" href="class_tokenizer_interface.html">TokenizerInterface</a></td></tr>
 <tr class="memitem:a69a1467466a034b530e90c09f451a59a inherit pub_methods_class_tokenizer_interface"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tokenizer_interface.html#a69a1467466a034b530e90c09f451a59a">~TokenizerInterface</a> ()=default</td></tr>
 <tr class="separator:a69a1467466a034b530e90c09f451a59a inherit pub_methods_class_tokenizer_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4df6a5a5cf1fc1db5084f13b02990151 inherit pub_methods_class_tokenizer_interface"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tokenizer_interface.html#a4df6a5a5cf1fc1db5084f13b02990151">HasNext</a> ()=0</td></tr>
-<tr class="separator:a4df6a5a5cf1fc1db5084f13b02990151 inherit pub_methods_class_tokenizer_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b837c784dab593182cb45736ea08ba4 inherit pub_methods_class_tokenizer_interface"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_token.html">Token</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tokenizer_interface.html#a4b837c784dab593182cb45736ea08ba4">GetNext</a> ()=0</td></tr>
-<tr class="separator:a4b837c784dab593182cb45736ea08ba4 inherit pub_methods_class_tokenizer_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Fonctions membres protégées</h2></td></tr>
+<tr class="memitem:ae3f7967efbee708f2f3b8f69149ce275"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_tokenizer.html#ae3f7967efbee708f2f3b8f69149ce275">IsKeyword</a> (string wsValue)</td></tr>
+<tr class="separator:ae3f7967efbee708f2f3b8f69149ce275"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
 Fonctions membres protégées statiques</h2></td></tr>
@@ -135,6 +143,8 @@ Fonctions membres protégées statiques</h2></td></tr>
 Attributs protégés</h2></td></tr>
 <tr class="memitem:abcdbe42611bdd903e3205ab4a2a59837"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_tokenizer.html#abcdbe42611bdd903e3205ab4a2a59837">m_cCurrentChar</a></td></tr>
 <tr class="separator:abcdbe42611bdd903e3205ab4a2a59837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1444db2a0a32ad95864f757b2201ebea"><td class="memItemLeft" align="right" valign="top">list&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_tokenizer.html#a1444db2a0a32ad95864f757b2201ebea">m_keywords</a></td></tr>
+<tr class="separator:a1444db2a0a32ad95864f757b2201ebea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
 <a id="ad5dd529f11552a1bb522f97077148270" name="ad5dd529f11552a1bb522f97077148270"></a>
@@ -180,6 +190,64 @@ Attributs protégés</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="a07c5bced7a0ce87f3cbf0f414313004c" name="a07c5bced7a0ce87f3cbf0f414313004c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07c5bced7a0ce87f3cbf0f414313004c">&#9670;&nbsp;</a></span>GetNext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_token.html">Token</a> AbstractTokenizer::GetNext </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implémente <a class="el" href="class_tokenizer_interface.html#a4b837c784dab593182cb45736ea08ba4">TokenizerInterface</a>.</p>
+
+<p>Réimplémentée dans <a class="el" href="class_stream_tokenizer.html#a1ec7eae3e004e5564bc1a044c399498e">StreamTokenizer</a>, et <a class="el" href="class_string_tokenizer.html#a70e352a94f2b9ee79fd2ec0c4ce438eb">StringTokenizer</a>.</p>
+
+</div>
+</div>
+<a id="a89e9a1cf3a87627f32c5e1bbdb8033cd" name="a89e9a1cf3a87627f32c5e1bbdb8033cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89e9a1cf3a87627f32c5e1bbdb8033cd">&#9670;&nbsp;</a></span>HasNext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool AbstractTokenizer::HasNext </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implémente <a class="el" href="class_tokenizer_interface.html#a4df6a5a5cf1fc1db5084f13b02990151">TokenizerInterface</a>.</p>
+
+<p>Réimplémentée dans <a class="el" href="class_stream_tokenizer.html#a0ff12e43685a0af6a6d3fae6abf9540c">StreamTokenizer</a>, et <a class="el" href="class_string_tokenizer.html#ab74198df1e5b95ca5153a821a6eaa50c">StringTokenizer</a>.</p>
+
+</div>
+</div>
 <a id="ad5648293237e965fcc6a128b20c6ee7e" name="ad5648293237e965fcc6a128b20c6ee7e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad5648293237e965fcc6a128b20c6ee7e">&#9670;&nbsp;</a></span>IsDelim()</h2>
 
@@ -200,6 +268,32 @@ Attributs protégés</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae3f7967efbee708f2f3b8f69149ce275" name="ae3f7967efbee708f2f3b8f69149ce275"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3f7967efbee708f2f3b8f69149ce275">&#9670;&nbsp;</a></span>IsKeyword()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AbstractTokenizer::IsKeyword </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>wsValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -258,6 +352,24 @@ Attributs protégés</h2></td></tr>
 
 </div>
 </div>
+<a id="aacc0145bf93963e69dd3d79bb51a75d8" name="aacc0145bf93963e69dd3d79bb51a75d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacc0145bf93963e69dd3d79bb51a75d8">&#9670;&nbsp;</a></span>Keywords()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AbstractTokenizer::Keywords </td>
+          <td>(</td>
+          <td class="paramtype">list&lt; string &gt;&#160;</td>
+          <td class="paramname"><em>keywords</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Documentation des données membres</h2>
 <a id="abcdbe42611bdd903e3205ab4a2a59837" name="abcdbe42611bdd903e3205ab4a2a59837"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abcdbe42611bdd903e3205ab4a2a59837">&#9670;&nbsp;</a></span>m_cCurrentChar</h2>
@@ -281,8 +393,30 @@ Attributs protégés</h2></td></tr>
 
 </div>
 </div>
+<a id="a1444db2a0a32ad95864f757b2201ebea" name="a1444db2a0a32ad95864f757b2201ebea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1444db2a0a32ad95864f757b2201ebea">&#9670;&nbsp;</a></span>m_keywords</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">list&lt;string&gt; AbstractTokenizer::m_keywords</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
-<li>C:/Users/themo/OneDrive/Documents/GitHub/interpreter/src/tokenizer/include/<a class="el" href="_abstract_tokenizer_8h_source.html">AbstractTokenizer.h</a></li>
+<li><a class="el" href="_abstract_tokenizer_8h_source.html">AbstractTokenizer.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -290,7 +424,7 @@ Attributs protégés</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_abstract_tokenizer.html">AbstractTokenizer</a></li>
-    <li class="footer">Généré le Mercredi 29 Décembre 2021 18:07:41 pour Interprèteur par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Généré le Dimanche 2 Janvier 2022 23:40:13 pour Interprèteur par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

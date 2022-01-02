@@ -1,5 +1,7 @@
 var class_statement_interface =
 [
-    [ "~StatementInterface", "class_statement_interface.html#a87610ef404db1e2397fc13fb3fbfd31c", null ],
-    [ "Interpret", "class_statement_interface.html#ac52acfb80fcb6013094149fe8e2e47b2", null ]
+    [ "Pointer", "class_statement_interface.html#afbf7f31eae4ce2314278e400e4290c8a", null ],
+    [ "Queue", "class_statement_interface.html#adcd619f73e010535a9d570e6d4d307a6", null ],
+    [ "~StatementInterface", "class_statement_interface.html#ad8b80e1069c9d102c82486862dccc4a6", null ],
+    [ "Interpret", "class_statement_interface.html#a163b87ab3b1127cfc53f345b6683bfff", null ]
 ];

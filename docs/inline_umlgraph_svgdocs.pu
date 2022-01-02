@@ -14,26 +14,26 @@ class Client {
     -m_context: Context
 }
 
-interface Expression {
+abstract class AbstractExpression {
     +void Interpret(Context context)
 }
 
-class TerminalExpression extends Expression {
+class TerminalExpression extends AbstractExpression {
     +void Interpret(Context context)
 }
 
-abstract class NonTerminalExpression extends Expression {
-    #m_leftExpression: Expression
-    #m_rightExpression: Expression
+class NonTerminalExpression extends AbstractExpression {
+    #m_leftExpression: AbstractExpression
+    #m_rightExpression: AbstractExpression
     +void Interpret(Context context)
-    +Expression* GetLeftExpression()
-    +Expression* GetRightExpression()
+    +AbstractExpression* GetLeftExpression()
+    +AbstractExpression* GetRightExpression()
 }
 
 Client *--> Context
-Client --> Expression
+Client --> AbstractExpression
 
-NonTerminalExpression *--> Expression
+NonTerminalExpression *--> AbstractExpression
 @enduml
 @startuml inline_umlgraph_2.svg
 !theme custom from themes

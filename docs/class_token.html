@@ -85,27 +85,26 @@ $(document).ready(function(){initNavTree('class_token.html',''); initResizable()
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Types publics</a> &#124;
-<a href="#pub-attribs">Attributs publics</a> &#124;
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
 <a href="class_token-members.html">Liste de tous les membres</a>  </div>
   <div class="headertitle"><div class="title">Référence de la classe Token</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="_token_8h_source.html">Token.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_token_8h_source.html">Tokenizer/Token.h</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Graphe de collaboration de Token:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_token__coll__graph.svg" width="300" height="228"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_token__coll__graph.svg" width="152" height="206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Types publics</h2></td></tr>
-<tr class="memitem:a276314f73a3eb5ca1eff3457e53b6c8d"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_token.html#a276314f73a3eb5ca1eff3457e53b6c8d">Type</a> : int { <a class="el" href="class_token.html#a276314f73a3eb5ca1eff3457e53b6c8da290d4ae99752b348c98c416bfc024037">TT_WORD</a> = -4
-, <a class="el" href="class_token.html#a276314f73a3eb5ca1eff3457e53b6c8da5a8688ee5001ef4aad539dc53b78de9b">TT_NUMBER</a> = -3
-, <a class="el" href="class_token.html#a276314f73a3eb5ca1eff3457e53b6c8da865127dcb4d92792592226f671effa75">TT_EOL</a> = -2
-, <a class="el" href="class_token.html#a276314f73a3eb5ca1eff3457e53b6c8da907f29263043ee0c9ae3da35fc014f8a">TT_EOF</a> = EOF
+<tr class="memitem:a276314f73a3eb5ca1eff3457e53b6c8d"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_token.html#a276314f73a3eb5ca1eff3457e53b6c8d">Type</a> : int { <a class="el" href="class_token.html#a276314f73a3eb5ca1eff3457e53b6c8da6fcc416051346daca31c571646af127a">IDENTIFIER</a> = -5
+, <a class="el" href="class_token.html#a276314f73a3eb5ca1eff3457e53b6c8da780bc0722dd01d4a8d9869f060734be6">KEYWORD</a> = -1
+, <a class="el" href="class_token.html#a276314f73a3eb5ca1eff3457e53b6c8da34f55eca38e0605a84f169ff61a2a396">NUMBER</a> = -3
  }</td></tr>
 <tr class="separator:a276314f73a3eb5ca1eff3457e53b6c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25694827706ac6a13cb99884d2272dcb"><td class="memItemLeft" align="right" valign="top">typedef list&lt; <a class="el" href="class_token.html">Token</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_token.html#a25694827706ac6a13cb99884d2272dcb">List</a></td></tr>
@@ -113,16 +112,26 @@ Types publics</h2></td></tr>
 <tr class="memitem:a92b106e1b5160495111437387f88d2e4"><td class="memItemLeft" align="right" valign="top">typedef List::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_token.html#a92b106e1b5160495111437387f88d2e4">Iterator</a></td></tr>
 <tr class="separator:a92b106e1b5160495111437387f88d2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Attributs publics</h2></td></tr>
-<tr class="memitem:ae46b6b806df89709a13a14dc76c86623"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_token.html#ae46b6b806df89709a13a14dc76c86623">type</a></td></tr>
-<tr class="separator:ae46b6b806df89709a13a14dc76c86623"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89952132313f821679315c41fe487f11"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_token.html#a89952132313f821679315c41fe487f11">word</a></td></tr>
-<tr class="separator:a89952132313f821679315c41fe487f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1937cc30f9d7712b9f901e8c315fb575"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_token.html#a1937cc30f9d7712b9f901e8c315fb575">character</a></td></tr>
-<tr class="separator:a1937cc30f9d7712b9f901e8c315fb575"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb996d0a007843a0ee5ce45abeb350e3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_token.html#aeb996d0a007843a0ee5ce45abeb350e3">number</a></td></tr>
-<tr class="separator:aeb996d0a007843a0ee5ce45abeb350e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:aa3c5868ba4115f3189df6b2ac5b36f39"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_token.html#aa3c5868ba4115f3189df6b2ac5b36f39">Token</a> ()</td></tr>
+<tr class="separator:aa3c5868ba4115f3189df6b2ac5b36f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74d0e62bf7db2f88256ac1ad0607027d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_token.html#a74d0e62bf7db2f88256ac1ad0607027d">Token</a> (string ws, <a class="el" href="class_token.html#a276314f73a3eb5ca1eff3457e53b6c8d">Type</a> type=<a class="el" href="class_token.html#a276314f73a3eb5ca1eff3457e53b6c8da6fcc416051346daca31c571646af127a">Type::IDENTIFIER</a>)</td></tr>
+<tr class="separator:a74d0e62bf7db2f88256ac1ad0607027d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04cfbb9488a193c266af4a73245f5ab5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_token.html#a04cfbb9488a193c266af4a73245f5ab5">Token</a> (const long d, <a class="el" href="class_token.html#a276314f73a3eb5ca1eff3457e53b6c8d">Type</a> type=<a class="el" href="class_token.html#a276314f73a3eb5ca1eff3457e53b6c8da34f55eca38e0605a84f169ff61a2a396">Type::NUMBER</a>)</td></tr>
+<tr class="separator:a04cfbb9488a193c266af4a73245f5ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32dd4cf819f9ec5f6fa41e73978ad83d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_token.html#a32dd4cf819f9ec5f6fa41e73978ad83d">Token</a> (const char c)</td></tr>
+<tr class="separator:a32dd4cf819f9ec5f6fa41e73978ad83d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeee780336f4504a86a66d25d77ca72e6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_token.html#aeee780336f4504a86a66d25d77ca72e6">HasType</a> (int type)</td></tr>
+<tr class="separator:aeee780336f4504a86a66d25d77ca72e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04e016e0abf14ab9ae925401580222db"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_token.html#a04e016e0abf14ab9ae925401580222db">GetType</a> ()</td></tr>
+<tr class="separator:a04e016e0abf14ab9ae925401580222db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dcd3890612416fc0d71aee3a935e22a"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_token.html#a6dcd3890612416fc0d71aee3a935e22a">GetCharValue</a> ()</td></tr>
+<tr class="separator:a6dcd3890612416fc0d71aee3a935e22a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab49497faba390821c31a1969bbf3b2de"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_token.html#ab49497faba390821c31a1969bbf3b2de">GetWordValue</a> ()</td></tr>
+<tr class="separator:ab49497faba390821c31a1969bbf3b2de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47430cf2ec3aa98047a244424122bff9"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_token.html#a47430cf2ec3aa98047a244424122bff9">GetNumberValue</a> ()</td></tr>
+<tr class="separator:a47430cf2ec3aa98047a244424122bff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Documentation des définitions de type membres</h2>
 <a id="a92b106e1b5160495111437387f88d2e4" name="a92b106e1b5160495111437387f88d2e4"></a>
@@ -174,65 +183,186 @@ Attributs publics</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="a276314f73a3eb5ca1eff3457e53b6c8da290d4ae99752b348c98c416bfc024037" name="a276314f73a3eb5ca1eff3457e53b6c8da290d4ae99752b348c98c416bfc024037"></a>TT_WORD&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a276314f73a3eb5ca1eff3457e53b6c8da5a8688ee5001ef4aad539dc53b78de9b" name="a276314f73a3eb5ca1eff3457e53b6c8da5a8688ee5001ef4aad539dc53b78de9b"></a>TT_NUMBER&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a276314f73a3eb5ca1eff3457e53b6c8da865127dcb4d92792592226f671effa75" name="a276314f73a3eb5ca1eff3457e53b6c8da865127dcb4d92792592226f671effa75"></a>TT_EOL&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a276314f73a3eb5ca1eff3457e53b6c8da907f29263043ee0c9ae3da35fc014f8a" name="a276314f73a3eb5ca1eff3457e53b6c8da907f29263043ee0c9ae3da35fc014f8a"></a>TT_EOF&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="a276314f73a3eb5ca1eff3457e53b6c8da6fcc416051346daca31c571646af127a" name="a276314f73a3eb5ca1eff3457e53b6c8da6fcc416051346daca31c571646af127a"></a>IDENTIFIER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a276314f73a3eb5ca1eff3457e53b6c8da780bc0722dd01d4a8d9869f060734be6" name="a276314f73a3eb5ca1eff3457e53b6c8da780bc0722dd01d4a8d9869f060734be6"></a>KEYWORD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a276314f73a3eb5ca1eff3457e53b6c8da34f55eca38e0605a84f169ff61a2a396" name="a276314f73a3eb5ca1eff3457e53b6c8da34f55eca38e0605a84f169ff61a2a396"></a>NUMBER&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
 </div>
-<h2 class="groupheader">Documentation des données membres</h2>
-<a id="a1937cc30f9d7712b9f901e8c315fb575" name="a1937cc30f9d7712b9f901e8c315fb575"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1937cc30f9d7712b9f901e8c315fb575">&#9670;&nbsp;</a></span>character</h2>
+<h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a id="aa3c5868ba4115f3189df6b2ac5b36f39" name="aa3c5868ba4115f3189df6b2ac5b36f39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3c5868ba4115f3189df6b2ac5b36f39">&#9670;&nbsp;</a></span>Token() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char Token::character</td>
+          <td class="memname">Token::Token </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aeb996d0a007843a0ee5ce45abeb350e3" name="aeb996d0a007843a0ee5ce45abeb350e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb996d0a007843a0ee5ce45abeb350e3">&#9670;&nbsp;</a></span>number</h2>
+<a id="a74d0e62bf7db2f88256ac1ad0607027d" name="a74d0e62bf7db2f88256ac1ad0607027d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74d0e62bf7db2f88256ac1ad0607027d">&#9670;&nbsp;</a></span>Token() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double Token::number</td>
+          <td class="memname">Token::Token </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>ws</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_token.html#a276314f73a3eb5ca1eff3457e53b6c8d">Type</a>&#160;</td>
+          <td class="paramname"><em>type</em> = <code><a class="el" href="class_token.html#a276314f73a3eb5ca1eff3457e53b6c8da6fcc416051346daca31c571646af127a">Type::IDENTIFIER</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ae46b6b806df89709a13a14dc76c86623" name="ae46b6b806df89709a13a14dc76c86623"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae46b6b806df89709a13a14dc76c86623">&#9670;&nbsp;</a></span>type</h2>
+<a id="a04cfbb9488a193c266af4a73245f5ab5" name="a04cfbb9488a193c266af4a73245f5ab5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04cfbb9488a193c266af4a73245f5ab5">&#9670;&nbsp;</a></span>Token() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Token::type</td>
+          <td class="memname">Token::Token </td>
+          <td>(</td>
+          <td class="paramtype">const long&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_token.html#a276314f73a3eb5ca1eff3457e53b6c8d">Type</a>&#160;</td>
+          <td class="paramname"><em>type</em> = <code><a class="el" href="class_token.html#a276314f73a3eb5ca1eff3457e53b6c8da34f55eca38e0605a84f169ff61a2a396">Type::NUMBER</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a89952132313f821679315c41fe487f11" name="a89952132313f821679315c41fe487f11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89952132313f821679315c41fe487f11">&#9670;&nbsp;</a></span>word</h2>
+<a id="a32dd4cf819f9ec5f6fa41e73978ad83d" name="a32dd4cf819f9ec5f6fa41e73978ad83d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32dd4cf819f9ec5f6fa41e73978ad83d">&#9670;&nbsp;</a></span>Token() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string Token::word</td>
+          <td class="memname">Token::Token </td>
+          <td>(</td>
+          <td class="paramtype">const char&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="a6dcd3890612416fc0d71aee3a935e22a" name="a6dcd3890612416fc0d71aee3a935e22a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dcd3890612416fc0d71aee3a935e22a">&#9670;&nbsp;</a></span>GetCharValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char Token::GetCharValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a47430cf2ec3aa98047a244424122bff9" name="a47430cf2ec3aa98047a244424122bff9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47430cf2ec3aa98047a244424122bff9">&#9670;&nbsp;</a></span>GetNumberValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long Token::GetNumberValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a04e016e0abf14ab9ae925401580222db" name="a04e016e0abf14ab9ae925401580222db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04e016e0abf14ab9ae925401580222db">&#9670;&nbsp;</a></span>GetType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Token::GetType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab49497faba390821c31a1969bbf3b2de" name="ab49497faba390821c31a1969bbf3b2de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab49497faba390821c31a1969bbf3b2de">&#9670;&nbsp;</a></span>GetWordValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Token::GetWordValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeee780336f4504a86a66d25d77ca72e6" name="aeee780336f4504a86a66d25d77ca72e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeee780336f4504a86a66d25d77ca72e6">&#9670;&nbsp;</a></span>HasType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Token::HasType </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -240,7 +370,7 @@ Attributs publics</h2></td></tr>
 </div>
 </div>
 <hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
-<li>C:/Users/themo/OneDrive/Documents/GitHub/interpreter/src/tokenizer/include/<a class="el" href="_token_8h_source.html">Token.h</a></li>
+<li><a class="el" href="_token_8h_source.html">Token.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -248,7 +378,7 @@ Attributs publics</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_token.html">Token</a></li>
-    <li class="footer">Généré le Mercredi 29 Décembre 2021 18:07:41 pour Interprèteur par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Généré le Dimanche 2 Janvier 2022 23:40:13 pour Interprèteur par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

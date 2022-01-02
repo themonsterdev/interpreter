@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['operator_0',['Operator',['../class_token.html#acf70e9411196c602738c3ed2428c7137ae1b3ec89ead7f83a9245ed5c9cacfdbf',1,'Token']]]
+  ['none_0',['NONE',['../class_expression_interface.html#a2abf73979866cf99769024ac12b2c922ab50339a10e1de285ac99d4c3990b8693',1,'ExpressionInterface']]],
+  ['number_1',['NUMBER',['../class_expression_interface.html#a2abf73979866cf99769024ac12b2c922a34f55eca38e0605a84f169ff61a2a396',1,'ExpressionInterface::NUMBER()'],['../class_token.html#a276314f73a3eb5ca1eff3457e53b6c8da34f55eca38e0605a84f169ff61a2a396',1,'Token::NUMBER()']]]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Interprèteur:  Fichier source de C:/Users/themo/OneDrive/Documents/GitHub/interpreter/src/tokenizer/include/Interface/TokenizerInterface.h</title>
+<title>Interprèteur:  Fichier source de TokenizerInterface.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -89,25 +89,22 @@ $(document).ready(function(){initNavTree('_tokenizer_interface_8h_source.html','
 <a href="_tokenizer_interface_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef TOKENIZER_INTERFACE_H</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define TOKENIZER_INTERFACE_H</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="_token_8h.html">Token.h</a>&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;string&gt;</span> <span class="comment">// std::string</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">using namespace </span>std;</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_tokenizer_interface.html">   17</a></span><span class="keyword">class </span><a class="code hl_class" href="class_tokenizer_interface.html">TokenizerInterface</a></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_tokenizer_interface.html#a69a1467466a034b530e90c09f451a59a">   21</a></span>    <a class="code hl_function" href="class_tokenizer_interface.html#a69a1467466a034b530e90c09f451a59a">~TokenizerInterface</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_tokenizer_interface.html#a4df6a5a5cf1fc1db5084f13b02990151">   23</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_tokenizer_interface.html#a4df6a5a5cf1fc1db5084f13b02990151">HasNext</a>() = 0;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_tokenizer_interface.html#a4b837c784dab593182cb45736ea08ba4">   24</a></span>    <span class="keyword">virtual</span> <a class="code hl_class" href="class_token.html">Token</a> <a class="code hl_function" href="class_tokenizer_interface.html#a4b837c784dab593182cb45736ea08ba4">GetNext</a>() = 0;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>};</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="_token_8h.html">Tokenizer/Token.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_tokenizer_interface.html">   14</a></span><span class="keyword">class </span><a class="code hl_class" href="class_tokenizer_interface.html">TokenizerInterface</a></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_tokenizer_interface.html#a69a1467466a034b530e90c09f451a59a">   18</a></span>    <a class="code hl_function" href="class_tokenizer_interface.html#a69a1467466a034b530e90c09f451a59a">~TokenizerInterface</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_tokenizer_interface.html#a4df6a5a5cf1fc1db5084f13b02990151">   20</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_tokenizer_interface.html#a4df6a5a5cf1fc1db5084f13b02990151">HasNext</a>() = 0;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_tokenizer_interface.html#a4b837c784dab593182cb45736ea08ba4">   21</a></span>    <span class="keyword">virtual</span> <a class="code hl_class" href="class_token.html">Token</a> <a class="code hl_function" href="class_tokenizer_interface.html#a4b837c784dab593182cb45736ea08ba4">GetNext</a>() = 0;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>};</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="a_token_8h_html"><div class="ttname"><a href="_token_8h.html">Token.h</a></div></div>
-<div class="ttc" id="aclass_token_html"><div class="ttname"><a href="class_token.html">Token</a></div><div class="ttdef"><b>Definition:</b> Token.h:10</div></div>
-<div class="ttc" id="aclass_tokenizer_interface_html"><div class="ttname"><a href="class_tokenizer_interface.html">TokenizerInterface</a></div><div class="ttdef"><b>Definition:</b> TokenizerInterface.h:18</div></div>
+<div class="ttc" id="aclass_token_html"><div class="ttname"><a href="class_token.html">Token</a></div><div class="ttdef"><b>Definition:</b> Token.h:7</div></div>
+<div class="ttc" id="aclass_tokenizer_interface_html"><div class="ttname"><a href="class_tokenizer_interface.html">TokenizerInterface</a></div><div class="ttdef"><b>Definition:</b> TokenizerInterface.h:15</div></div>
 <div class="ttc" id="aclass_tokenizer_interface_html_a4b837c784dab593182cb45736ea08ba4"><div class="ttname"><a href="class_tokenizer_interface.html#a4b837c784dab593182cb45736ea08ba4">TokenizerInterface::GetNext</a></div><div class="ttdeci">virtual Token GetNext()=0</div></div>
 <div class="ttc" id="aclass_tokenizer_interface_html_a4df6a5a5cf1fc1db5084f13b02990151"><div class="ttname"><a href="class_tokenizer_interface.html#a4df6a5a5cf1fc1db5084f13b02990151">TokenizerInterface::HasNext</a></div><div class="ttdeci">virtual bool HasNext()=0</div></div>
 <div class="ttc" id="aclass_tokenizer_interface_html_a69a1467466a034b530e90c09f451a59a"><div class="ttname"><a href="class_tokenizer_interface.html#a69a1467466a034b530e90c09f451a59a">TokenizerInterface::~TokenizerInterface</a></div><div class="ttdeci">~TokenizerInterface()=default</div></div>
@@ -116,8 +113,8 @@ $(document).ready(function(){initNavTree('_tokenizer_interface_8h_source.html','
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_4aee0cf75b9ddffc23e5629384dbdb4a.html">tokenizer</a></li><li class="navelem"><a class="el" href="dir_c27dc170a342446cd99a8b67ca3626d2.html">include</a></li><li class="navelem"><a class="el" href="dir_d1f440960bf574cc49a2aa6971336a67.html">Interface</a></li><li class="navelem"><a class="el" href="_tokenizer_interface_8h.html">TokenizerInterface.h</a></li>
-    <li class="footer">Généré le Mercredi 29 Décembre 2021 18:07:40 pour Interprèteur par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_cdb26a52970c2cf39de494d2ebe2609e.html">Tokenizer</a></li><li class="navelem"><a class="el" href="dir_540fa13d49fbdd4dce3717750c6feb78.html">Interface</a></li><li class="navelem"><a class="el" href="_tokenizer_interface_8h.html">TokenizerInterface.h</a></li>
+    <li class="footer">Généré le Dimanche 2 Janvier 2022 23:40:13 pour Interprèteur par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -1,8 +1,17 @@
-<map id="C:/Users/themo/OneDrive/Documents/GitHub/interpreter/src/tokenizer/include/StringTokenizer.h" name="C:/Users/themo/OneDrive/Documents/GitHub/interpreter/src/tokenizer/include/StringTokenizer.h">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,256,61"/>
-<area shape="rect" id="node2" href="$_abstract_tokenizer_8h.html" title=" " alt="" coords="61,109,200,136"/>
-<area shape="rect" id="node3" href="$_tokenizer_interface_8h.html" title=" " alt="" coords="35,184,226,211"/>
-<area shape="rect" id="node4" href="$_token_8h.html" title=" " alt="" coords="133,259,201,285"/>
-<area shape="rect" id="node5" title=" " alt="" coords="69,333,123,360"/>
-<area shape="rect" id="node6" title=" " alt="" coords="147,333,186,360"/>
+<map id="StringTokenizer.h" name="StringTokenizer.h">
+<area shape="rect" id="node1" title=" " alt="" coords="434,5,557,32"/>
+<area shape="rect" id="node2" href="$_abstract_tokenizer_8h.html" title=" " alt="" coords="426,80,565,107"/>
+<area shape="rect" id="node3" href="$_tokenizer_interface_8h.html" title=" " alt="" coords="400,155,591,181"/>
+<area shape="rect" id="node4" href="$_token_8h.html" title=" " alt="" coords="431,229,559,256"/>
+<area shape="rect" id="node5" href="$stdafx_8h.html" title=" " alt="" coords="461,304,529,331"/>
+<area shape="rect" id="node6" href="$_preprocessor_8h.html" title=" " alt="" coords="5,379,116,405"/>
+<area shape="rect" id="node7" title=" " alt="" coords="141,379,210,405"/>
+<area shape="rect" id="node8" title=" " alt="" coords="235,379,300,405"/>
+<area shape="rect" id="node9" title=" " alt="" coords="325,379,397,405"/>
+<area shape="rect" id="node10" title=" " alt="" coords="421,379,487,405"/>
+<area shape="rect" id="node11" title=" " alt="" coords="511,379,565,405"/>
+<area shape="rect" id="node12" title=" " alt="" coords="589,379,644,405"/>
+<area shape="rect" id="node13" title=" " alt="" coords="668,379,725,405"/>
+<area shape="rect" id="node14" title=" " alt="" coords="749,379,788,405"/>
+<area shape="rect" id="node15" title=" " alt="" coords="812,379,859,405"/>
 </map>

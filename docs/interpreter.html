@@ -119,9 +119,29 @@ Patron de conception Interpreter</h3>
 </div>
 <p >Dans le <a href="https://fr.wikipedia.org/wiki/Diagramme_de_classes">diagramme de classes UML</a> ci-dessus:</p>
 <ul>
-<li>La classe <a class="el" href="class_client.html">Client</a> fait référence à l'interface commune Expression pour interpréter une expression.</li>
-<li>La classe TerminalExpression n'a pas d'enfants et interprète directement une expression.</li>
-<li>La classe NonTerminalExpression maintient un conteneur d'expressions enfants et transmet les requêtes d' interprétation à ces derniers expressions. <br  />
+<li><a class="el" href="class_client.html">Client</a><ul>
+<li>Construit (ou reçoit) un arbre syntaxique abstrait représentant une phrase particulière dans le langage que la grammaire définit. L'arbre syntaxique abstrait est assemblé à partir d'instances des classes NonterminalExpression et TerminalExpression.</li>
+<li>Invoque l'opération Interpréter.</li>
+</ul>
+</li>
+<li><a class="el" href="class_context.html">Context</a><ul>
+<li>Contient des informations qui sont globales à l'interprète.</li>
+</ul>
+</li>
+<li><a class="el" href="class_abstract_expression.html">AbstractExpression</a><ul>
+<li>Déclare une opération abstraite d'Interpret qui est commune à tous les noeuds de l'arbre syntaxique abstrait.</li>
+</ul>
+</li>
+<li>TerminalExpression (<a class="el" href="class_number_expression.html">NumberExpression</a>, BooleanExpression, ...)<ul>
+<li>Met en œuvre une opération d'interprétation associée à des symboles terminaux dans la grammaire.</li>
+<li>Une instance est nécessaire pour chaque symbole terminal d'une phrase.</li>
+</ul>
+</li>
+<li>NonterminalExpression (<a class="el" href="class_addition_expression.html">AdditionExpression</a>, SubstractionExpression, ...)<ul>
+<li>Une telle classe est nécessaire pour chaque Opérateur O ::= O1 O2 ... On dans la grammaire.</li>
+<li>Maintient des expressions d'instance de type <a class="el" href="class_abstract_expression.html">AbstractExpression</a> pour chacun des symboles O1 à On.</li>
+<li>Implémente une opération Interpret pour les symboles non terminaux de la grammaire. Interpret s'appelle typiquement de manière récursive sur les expressions représentant O1 à On.</li>
+</ul>
 </li>
 </ul>
 <h3><a class="anchor" id="autotoc_md5"></a>
@@ -135,7 +155,7 @@ Arbre de syntaxe abstraite</h3>
 <li>L'objet <a class="el" href="class_client.html">Client</a> envoie une demande d'interprétation à l'<a href="https://fr.wikipedia.org/wiki/Arbre_de_la_syntaxe_abstraite">arbre de syntaxe abstraite</a>.</li>
 <li>La requête est transmise à tous les objets en bas de l'arborescence. <br  />
 </li>
-<li>Les objets NonTerminalExpression (AdditionExpression, MultiplicationExpression) transmettent la requête à leurs expressions enfants. <br  />
+<li>Les objets NonTerminalExpression (<a class="el" href="class_addition_expression.html">AdditionExpression</a>, <a class="el" href="class_multiplication_expression.html">MultiplicationExpression</a>) transmettent la requête à leurs expressions enfants. <br  />
 </li>
 <li>Les objets TerminalExpression (NumberExpression1, NumberExpression2, ...) effectuent directement l'interprétation.</li>
 </ul>
@@ -227,7 +247,7 @@ Java</h2>
 <div class="line">        System.out.println(<span class="stringliteral">&quot;&#39;&quot;</span> + expression +<span class="stringliteral">&quot;&#39; equals &quot;</span> + p.evaluate());</div>
 <div class="line">    }</div>
 <div class="line">}</div>
-<div class="ttc" id="aclass_parser_html"><div class="ttname"><a href="class_parser.html">Parser</a></div><div class="ttdef"><b>Definition:</b> Parser.h:21</div></div>
+<div class="ttc" id="aclass_parser_html"><div class="ttname"><a href="class_parser.html">Parser</a></div><div class="ttdef"><b>Definition:</b> Parser.h:17</div></div>
 </div><!-- fragment --><p >Ce programme affiche :</p>
 <div class="fragment"><div class="line">&#39;42 4 2 - +&#39; equals 44</div>
 </div><!-- fragment --><h1><a class="anchor" id="autotoc_md9"></a>
@@ -242,7 +262,7 @@ Références</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="pattern.html">Patron de conception</a></li>
-    <li class="footer">Généré le Mercredi 29 Décembre 2021 18:07:41 pour Interprèteur par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Généré le Dimanche 2 Janvier 2022 23:40:13 pour Interprèteur par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

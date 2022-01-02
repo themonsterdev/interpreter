@@ -1,0 +1,12 @@
+<map id="ExpressionInterface" name="ExpressionInterface">
+<area shape="rect" id="node1" title=" " alt="" coords="178,5,342,171"/>
+<area shape="rect" id="node2" href="$class_abstract_expression.html" title=" " alt="" coords="182,219,338,413"/>
+<area shape="rect" id="node3" href="$class_identifier_expression.html" title=" " alt="" coords="5,483,160,575"/>
+<area shape="rect" id="node4" href="$class_number_expression.html" title=" " alt="" coords="184,483,336,575"/>
+<area shape="rect" id="node5" href="$class_operator_expression.html" title=" " alt="" coords="360,461,525,597"/>
+<area shape="rect" id="node6" href="$class_addition_expression.html" title=" " alt="" coords="13,645,168,737"/>
+<area shape="rect" id="node7" href="$class_division_expression.html" title=" " alt="" coords="193,645,343,737"/>
+<area shape="rect" id="node8" href="$class_modulo_expression.html" title=" " alt="" coords="368,645,517,737"/>
+<area shape="rect" id="node9" href="$class_multiplication_expression.html" title=" " alt="" coords="542,645,725,737"/>
+<area shape="rect" id="node10" href="$class_subtraction_expression.html" title=" " alt="" coords="749,645,923,737"/>
+</map>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Interprèteur:  Fichier source de C:/Users/themo/OneDrive/Documents/GitHub/interpreter/src/parser/include/Interface/StatementInterface.h</title>
+<title>Interprèteur:  Fichier source de StatementInterface.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -95,24 +95,29 @@ $(document).ready(function(){initNavTree('_statement_interface_8h_source.html','
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_statement_interface.html#a87610ef404db1e2397fc13fb3fbfd31c">   15</a></span>    <a class="code hl_function" href="class_statement_interface.html#a87610ef404db1e2397fc13fb3fbfd31c">~StatementInterface</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_statement_interface.html#ac52acfb80fcb6013094149fe8e2e47b2">   17</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_statement_interface.html#ac52acfb80fcb6013094149fe8e2e47b2">Interpret</a>(<a class="code hl_class" href="class_context.html">Context</a>* context) = 0;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>};</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_statement_interface.html#afbf7f31eae4ce2314278e400e4290c8a">   15</a></span>    <span class="keyword">typedef</span> shared_ptr&lt;StatementInterface&gt;  <a class="code hl_typedef" href="class_statement_interface.html#afbf7f31eae4ce2314278e400e4290c8a">Pointer</a>;    <span class="comment">// Définie un type de pointeur de déclaration.</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_statement_interface.html#adcd619f73e010535a9d570e6d4d307a6">   16</a></span>    <span class="keyword">typedef</span> queue&lt;Pointer&gt;                  <a class="code hl_typedef" href="class_statement_interface.html#adcd619f73e010535a9d570e6d4d307a6">Queue</a>;      <span class="comment">// Définie un type de fil d&#39;attente de déclarations.</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_statement_interface.html#ad8b80e1069c9d102c82486862dccc4a6">   18</a></span>    <span class="keyword">virtual</span> <a class="code hl_function" href="class_statement_interface.html#ad8b80e1069c9d102c82486862dccc4a6">~StatementInterface</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_statement_interface.html#a163b87ab3b1127cfc53f345b6683bfff">   20</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_statement_interface.html#a163b87ab3b1127cfc53f345b6683bfff">Interpret</a>(<a class="code hl_class" href="class_context.html">Context</a>&amp; context) = 0;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>};</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="a_context_8h_html"><div class="ttname"><a href="_context_8h.html">Context.h</a></div></div>
-<div class="ttc" id="aclass_context_html"><div class="ttname"><a href="class_context.html">Context</a></div><div class="ttdef"><b>Definition:</b> Context.h:13</div></div>
+<div class="ttc" id="aclass_context_html"><div class="ttname"><a href="class_context.html">Context</a></div><div class="ttdef"><b>Definition:</b> Context.h:12</div></div>
 <div class="ttc" id="aclass_statement_interface_html"><div class="ttname"><a href="class_statement_interface.html">StatementInterface</a></div><div class="ttdef"><b>Definition:</b> StatementInterface.h:12</div></div>
-<div class="ttc" id="aclass_statement_interface_html_a87610ef404db1e2397fc13fb3fbfd31c"><div class="ttname"><a href="class_statement_interface.html#a87610ef404db1e2397fc13fb3fbfd31c">StatementInterface::~StatementInterface</a></div><div class="ttdeci">~StatementInterface()=default</div></div>
-<div class="ttc" id="aclass_statement_interface_html_ac52acfb80fcb6013094149fe8e2e47b2"><div class="ttname"><a href="class_statement_interface.html#ac52acfb80fcb6013094149fe8e2e47b2">StatementInterface::Interpret</a></div><div class="ttdeci">virtual void Interpret(Context *context)=0</div></div>
+<div class="ttc" id="aclass_statement_interface_html_a163b87ab3b1127cfc53f345b6683bfff"><div class="ttname"><a href="class_statement_interface.html#a163b87ab3b1127cfc53f345b6683bfff">StatementInterface::Interpret</a></div><div class="ttdeci">virtual void Interpret(Context &amp;context)=0</div></div>
+<div class="ttc" id="aclass_statement_interface_html_ad8b80e1069c9d102c82486862dccc4a6"><div class="ttname"><a href="class_statement_interface.html#ad8b80e1069c9d102c82486862dccc4a6">StatementInterface::~StatementInterface</a></div><div class="ttdeci">virtual ~StatementInterface()=default</div></div>
+<div class="ttc" id="aclass_statement_interface_html_adcd619f73e010535a9d570e6d4d307a6"><div class="ttname"><a href="class_statement_interface.html#adcd619f73e010535a9d570e6d4d307a6">StatementInterface::Queue</a></div><div class="ttdeci">queue&lt; Pointer &gt; Queue</div><div class="ttdef"><b>Definition:</b> StatementInterface.h:16</div></div>
+<div class="ttc" id="aclass_statement_interface_html_afbf7f31eae4ce2314278e400e4290c8a"><div class="ttname"><a href="class_statement_interface.html#afbf7f31eae4ce2314278e400e4290c8a">StatementInterface::Pointer</a></div><div class="ttdeci">shared_ptr&lt; StatementInterface &gt; Pointer</div><div class="ttdef"><b>Definition:</b> StatementInterface.h:15</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_6cd8491d143eb218b70983dbdb3c58bc.html">parser</a></li><li class="navelem"><a class="el" href="dir_11cf11b467f1f53d6eb02ef30c7d14c5.html">include</a></li><li class="navelem"><a class="el" href="dir_1bfc36e6880e0024d8710c53e7e68b2e.html">Interface</a></li><li class="navelem"><a class="el" href="_statement_interface_8h.html">StatementInterface.h</a></li>
-    <li class="footer">Généré le Mercredi 29 Décembre 2021 18:07:40 pour Interprèteur par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_fb53cc43fd05fab54279929bc9fd20cb.html">Parser</a></li><li class="navelem"><a class="el" href="dir_9685f3663f5e893d433d37943736cc8f.html">Statement</a></li><li class="navelem"><a class="el" href="dir_743b2fae107ca0fa0f4c0651cac436e0.html">Interface</a></li><li class="navelem"><a class="el" href="_statement_interface_8h.html">StatementInterface.h</a></li>
+    <li class="footer">Généré le Dimanche 2 Janvier 2022 23:40:13 pour Interprèteur par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

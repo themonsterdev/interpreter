@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['get_0',['Get',['../class_client.html#aff9bc97ea48383621a2f1d7911440f9c',1,'Client']]],
-  ['getnext_1',['GetNext',['../class_tokenizer_interface.html#a4b837c784dab593182cb45736ea08ba4',1,'TokenizerInterface::GetNext()'],['../class_stream_tokenizer.html#a1ec7eae3e004e5564bc1a044c399498e',1,'StreamTokenizer::GetNext()'],['../class_string_tokenizer.html#a70e352a94f2b9ee79fd2ec0c4ce438eb',1,'StringTokenizer::GetNext()']]],
-  ['grammaire_20ebnf_2',['Grammaire EBNF',['../md__c___users_themo__one_drive__documents__git_hub_interpreter_doxygen_pages_grammar_ebnf.html',1,'']]],
-  ['grammar_2debnf_2emd_3',['grammar-ebnf.md',['../grammar-ebnf_8md.html',1,'']]]
+  ['dessign_2dpattern_2emd_0',['dessign-pattern.md',['../dessign-pattern_8md.html',1,'']]],
+  ['divisionexpression_1',['DivisionExpression',['../class_division_expression.html',1,'DivisionExpression'],['../class_division_expression.html#abf626500064a9a2ce52342135d6d9c17',1,'DivisionExpression::DivisionExpression()']]],
+  ['divisionexpression_2eh_2',['DivisionExpression.h',['../_division_expression_8h.html',1,'']]],
+  ['dointerpret_3',['DoInterpret',['../class_addition_expression.html#a91f10fea967192d95926275e42bc8843',1,'AdditionExpression::DoInterpret()'],['../class_division_expression.html#a2ee7ba18a0829b31c323c3177f6b6fda',1,'DivisionExpression::DoInterpret()'],['../class_modulo_expression.html#ae133cbe5b34082bdb0d819179b26400d',1,'ModuloExpression::DoInterpret()'],['../class_multiplication_expression.html#aefdc670fc495af42a6abff1bb3a89139',1,'MultiplicationExpression::DoInterpret()'],['../class_subtraction_expression.html#a6348c2beff010acf14fe28fb0002c232',1,'SubtractionExpression::DoInterpret()'],['../class_operator_expression.html#a3a3a2468b5668e49d06936870930558c',1,'OperatorExpression::DoInterpret()']]],
+  ['doxygen_4',['Doxygen',['../md__c___users_themo__one_drive__documents__git_hub_interpreter_doxygen_pages_doxygen.html',1,'']]],
+  ['doxygen_2emd_5',['doxygen.md',['../doxygen_8md.html',1,'']]]
 ];

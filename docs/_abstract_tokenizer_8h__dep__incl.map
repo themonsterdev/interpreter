@@ -1,6 +1,5 @@
-<map id="C:/Users/themo/OneDrive/Documents/GitHub/interpreter/src/tokenizer/include/AbstractTokenizer.h" name="C:/Users/themo/OneDrive/Documents/GitHub/interpreter/src/tokenizer/include/AbstractTokenizer.h">
-<area shape="rect" id="node1" title=" " alt="" coords="140,5,407,61"/>
-<area shape="rect" id="node2" href="$_stream_tokenizer_8h.html" title=" " alt="" coords="5,109,264,165"/>
-<area shape="rect" id="node4" href="$_string_tokenizer_8h.html" title=" " alt="" coords="288,109,539,165"/>
-<area shape="rect" id="node3" href="$_client_8h.html" title=" " alt="" coords="174,213,373,269"/>
+<map id="AbstractTokenizer.h" name="AbstractTokenizer.h">
+<area shape="rect" id="node1" title=" " alt="" coords="76,5,215,32"/>
+<area shape="rect" id="node2" href="$_stream_tokenizer_8h.html" title=" " alt="" coords="5,80,136,107"/>
+<area shape="rect" id="node3" href="$_string_tokenizer_8h.html" title=" " alt="" coords="160,80,283,107"/>
 </map>

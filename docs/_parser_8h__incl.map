@@ -1,10 +1,18 @@
-<map id="C:/Users/themo/OneDrive/Documents/GitHub/interpreter/src/parser/include/Parser.h" name="C:/Users/themo/OneDrive/Documents/GitHub/interpreter/src/parser/include/Parser.h">
-<area shape="rect" id="node1" title=" " alt="" coords="184,5,382,61"/>
-<area shape="rect" id="node2" href="$_statement_interface_8h.html" title=" " alt="" coords="30,109,224,136"/>
-<area shape="rect" id="node4" title=" " alt="" coords="42,259,97,285"/>
-<area shape="rect" id="node6" href="$_token_8h.html" title=" " alt="" coords="249,109,317,136"/>
-<area shape="rect" id="node7" title=" " alt="" coords="297,184,336,211"/>
-<area shape="rect" id="node8" title=" " alt="" coords="392,109,462,136"/>
-<area shape="rect" id="node3" href="$_context_8h.html" title=" " alt="" coords="88,184,166,211"/>
-<area shape="rect" id="node5" title=" " alt="" coords="149,259,204,285"/>
+<map id="Parser.h" name="Parser.h">
+<area shape="rect" id="node1" title=" " alt="" coords="411,5,481,32"/>
+<area shape="rect" id="node2" href="$_statement_interface_8h.html" title=" " alt="" coords="199,80,346,121"/>
+<area shape="rect" id="node15" href="$_expression_interface_8h.html" title=" " alt="" coords="371,80,521,121"/>
+<area shape="rect" id="node16" href="$_token_8h.html" title=" " alt="" coords="495,169,623,196"/>
+<area shape="rect" id="node3" href="$_context_8h.html" title=" " alt="" coords="392,169,471,196"/>
+<area shape="rect" id="node4" href="$stdafx_8h.html" title=" " alt="" coords="461,244,529,271"/>
+<area shape="rect" id="node5" href="$_preprocessor_8h.html" title=" " alt="" coords="5,319,116,345"/>
+<area shape="rect" id="node6" title=" " alt="" coords="141,319,210,345"/>
+<area shape="rect" id="node7" title=" " alt="" coords="235,319,300,345"/>
+<area shape="rect" id="node8" title=" " alt="" coords="325,319,397,345"/>
+<area shape="rect" id="node9" title=" " alt="" coords="421,319,487,345"/>
+<area shape="rect" id="node10" title=" " alt="" coords="511,319,565,345"/>
+<area shape="rect" id="node11" title=" " alt="" coords="589,319,644,345"/>
+<area shape="rect" id="node12" title=" " alt="" coords="668,319,725,345"/>
+<area shape="rect" id="node13" title=" " alt="" coords="749,319,788,345"/>
+<area shape="rect" id="node14" title=" " alt="" coords="812,319,859,345"/>
 </map>
