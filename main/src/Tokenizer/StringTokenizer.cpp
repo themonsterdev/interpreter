@@ -15,12 +15,12 @@ bool StringTokenizer::HasNext()
 
 	m_cCurrentChar = m_swCharacters[m_sCurrentIndex++];
 
-	return __super::HasNext();
+	return AbstractTokenizer::HasNext();
 }
 
 Token StringTokenizer::GetNext()
 {
-	Token token = __super::GetNext();
+	Token token = AbstractTokenizer::GetNext();
 
 	string wsValue;
 	wsValue += m_cCurrentChar;

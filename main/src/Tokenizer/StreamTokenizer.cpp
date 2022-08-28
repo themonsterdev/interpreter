@@ -6,9 +6,9 @@ StreamTokenizer::StreamTokenizer(string filename)
 {
 	m_sfs.open(filename);
 
-	if (!m_sfs.is_open())
+	if (!m_sfs || !m_sfs.is_open())
 	{
-		throw exception((string("Impossible d'ouvrir le fichier ") + filename).c_str());
+		throw((string("Impossible d'ouvrir le fichier ") + filename).c_str());
 	}
 }
 
@@ -21,12 +21,12 @@ bool StreamTokenizer::HasNext()
 
 	m_sfs.get(m_cCurrentChar);
 
-	return __super::HasNext();
+	return AbstractTokenizer::HasNext();
 }
 
 Token StreamTokenizer::GetNext()
 {
-	Token token = __super::GetNext();
+	Token token = AbstractTokenizer::GetNext();
 
 	string wsValue;
 	wsValue += m_cCurrentChar;
@@ -45,6 +45,8 @@ Token StreamTokenizer::GetNext()
 			wsValue += m_cCurrentChar;
 		}
 
+		// cout << wsValue << endl;
+
 		bool isKeyword = IsKeyword(wsValue);
 		token = Token(wsValue, isKeyword ? Token::Type::KEYWORD : Token::Type::IDENTIFIER);
 	}
@@ -62,10 +64,13 @@ Token StreamTokenizer::GetNext()
 			wsValue += m_cCurrentChar;
 		}
 
+		// cout << wsValue << endl;
+
 		token = Token(stol(wsValue));
 	}
 	else
 	{
+		// cout << m_cCurrentChar << endl;
 		token = Token(m_cCurrentChar);
 	}
 

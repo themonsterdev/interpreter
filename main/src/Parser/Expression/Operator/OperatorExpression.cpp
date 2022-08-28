@@ -5,16 +5,23 @@
 OperatorExpression::OperatorExpression(ExpressionInterface::Pointer expression, Token::Iterator& begin, Token::Iterator& end)
     : ::AbstractExpression()
 {
-    assert(begin != end);
+    assert(begin != end);                                                                       // Vérifie qu'un jeton est bien présent.
+    begin++;                                                                                    // Next le symbole opération
+
     assert(expression != nullptr);
-    assert(expression->GetType() == (int)ExpressionInterface::Type::NUMBER);
+    assert(
+        expression->GetType() == (int)ExpressionInterface::Type::NUMBER ||
+        expression->GetType() == (int)ExpressionInterface::Type::IDENTIFIER
+    );
     m_leftExpression = expression;
 
-    begin++;                                                                                    // Next le +
     assert(begin != end);																	    // Vérifie qu'un jeton est bien présent.
-    assert(begin->HasType((int)Token::Type::NUMBER));									        // Vérifie que le jeton est bien un nombre.
-    // ExpressionInterface::Pointer pExpression = Parser::GetLiteralExpression(begin, end);        // Définie un pointeur d'expression.
-    ExpressionInterface::Pointer pExpression = make_shared<NumberExpression>(begin, end);    // Définie un pointeur d'expression.
+    assert(
+        begin->HasType((int)Token::Type::NUMBER) ||
+        begin->HasType((int)Token::Type::IDENTIFIER)
+    );                                                                                          // Vérifie que le jeton est bien un nombre.
+    ExpressionInterface::Pointer pExpression = Parser::GetLiteralExpression(begin, end);     // Définie un pointeur d'expression.
+    // ExpressionInterface::Pointer pExpression = make_shared<NumberExpression>(begin, end);       // Définie un pointeur d'expression.
     assert(pExpression != nullptr);		
     m_rightExpression = pExpression;
 

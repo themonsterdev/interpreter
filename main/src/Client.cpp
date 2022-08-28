@@ -27,5 +27,7 @@ Token::List Client::Tokenize(TokenizerInterface& tokenizer)
         tokens.push_back(token);                // Ajoute le jeton à la liste de jetons.
     }
 
+    cout << "Tokens size (" << tokens.size() << ")" << endl;
+
     return tokens;                              // Retourne la liste des jetons.
 }
