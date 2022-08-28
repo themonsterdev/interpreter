@@ -21,6 +21,7 @@ public:
 
 	static ExpressionInterface::Pointer GetLiteralExpression(Token::Iterator& begin, Token::Iterator& end);
 	static ExpressionInterface::Pointer GetLiteralNumberExpression(Token::Iterator& begin, Token::Iterator& end);
+	static ExpressionInterface::Pointer GetLiteralIdentifierExpression(Token::Iterator& begin, Token::Iterator& end);
 	static ExpressionInterface::Pointer GetOperatorExpression(ExpressionInterface::Pointer operand1, Token::Iterator& begin, Token::Iterator& end);
 
 	StatementInterface::Queue Parse(Token::List& tokens);

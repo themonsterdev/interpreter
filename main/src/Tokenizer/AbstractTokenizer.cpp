@@ -32,7 +32,7 @@ Token AbstractTokenizer::GetNext()
 {
 	if (m_cCurrentChar == '\0')
 	{
-		throw exception("AbstractTokenizer::GetNext");
+		throw("AbstractTokenizer::GetNext");
 	}
 
 	return Token('\0');

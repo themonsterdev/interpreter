@@ -34,12 +34,14 @@ StatementInterface::Pointer Parser::GetStatement(Token::Iterator& begin, Token::
 	case (int)Token::Type::IDENTIFIER:							// Le jeton est de type chaine de caractères.
 		return make_shared<VariableStatement>(begin, end);		// Crée un pointeur de déclaration `print`.
 		break;
-	}
 
-	// Sinon retourne une erreur.
-	string error("Unexpected: ");
-	error += to_string(begin->GetType());
-	throw exception(error.c_str());
+	default:
+		// Sinon retourne une erreur.
+		string error("Unexpected: ");
+		error += to_string(begin->GetType());
+		throw (error.c_str());
+		break;
+	}
 }
 
 ExpressionInterface::Pointer Parser::GetLiteralExpression(Token::Iterator& begin, Token::Iterator& end)
@@ -51,11 +53,13 @@ ExpressionInterface::Pointer Parser::GetLiteralExpression(Token::Iterator& begin
 		switch (begin->GetType())													// Switch sur le type de l'expression.
 		{
 		case (int)Token::Type::NUMBER:												// Se jeton est de type nombre litéral
+			// cout << begin->GetNumberValue() << endl;
 			pExpression = Parser::GetLiteralNumberExpression(begin, end);			// Crée l'expression d'un nombre.
 			break;
 
 		case (int)Token::Type::IDENTIFIER:											// Le jeton est de type chaine de caractères.
-			return make_shared<IdentifierExpression>(begin, end);					// Crée un pointeur d'expression `identifier`.
+			// cout << begin->GetWordValue() << endl;
+			pExpression = Parser::GetLiteralIdentifierExpression(begin, end);		// Crée un pointeur d'expression `identifier`.
 			break;
 
 		default:																	// Si aucune expressions à correspondu.
@@ -80,11 +84,24 @@ ExpressionInterface::Pointer Parser::GetLiteralNumberExpression(Token::Iterator&
 	return Parser::GetOperatorExpression(pExpression, begin, end);							// Retourne le pointeur de l'expression.
 }
 
+ExpressionInterface::Pointer Parser::GetLiteralIdentifierExpression(Token::Iterator& begin, Token::Iterator& end)
+{
+	assert(begin != end);																		// Vérifie qu'un jeton est bien présent.
+	assert(begin->HasType((int)Token::Type::IDENTIFIER));										// Vérifie que le jeton est bien un identifiant.
+
+	ExpressionInterface::Pointer pExpression = make_shared<IdentifierExpression>(begin, end);	// Définie un pointeur d'expression.
+	assert(pExpression != nullptr);																// Vérifie que l'expression à bien était crée.
+
+	return Parser::GetOperatorExpression(pExpression, begin, end);								// Retourne le pointeur de l'expression.
+}
+
 ExpressionInterface::Pointer Parser::GetOperatorExpression(ExpressionInterface::Pointer operand1, Token::Iterator& begin, Token::Iterator& end)
 {
 	if (begin != end)																	// Si un jeton est encore présent.
 	{
 		ExpressionInterface::Pointer pExpression;										// Définie un pointeur d'expression.
+
+		// cout << '+' << " " << (char)begin->GetType() << endl;
 
 		switch (begin->GetType())														// Switch sur le type du jeton.
 		{
@@ -135,12 +152,16 @@ StatementInterface::Queue Parser::Parse(Token::List& tokens)
 	Token::Iterator begin = tokens.begin();				// Définie le premier jeton.
 	Token::Iterator end = tokens.end();					// Définie la fin de l'itération.
 
+	cout << "\x1B[91m" << "START"<< "\033[0m" << endl;
+
 	while (begin != end)								// Tant qu'un jeton est présent.
 	{
 		pStatement = Parser::GetStatement(begin, end);	// Définie le pointeur de déclaration pour se jeton.
 		assert(pStatement != nullptr);					// Vérifie que la d'éclaration n'est pas null.
 		statements.push(pStatement);					// Ajoute la déclaration à la liste.
 	}
+
+	cout << "\x1B[91m" << "END" << "\033[0m" << endl;
 
 	return statements;									// Retourne la liste de déclarations.
 }

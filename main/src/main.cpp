@@ -96,6 +96,10 @@ int main(const int argc, const char* argv[])
     {
         cout << "\x1B[91mErreur: " << e.what() << "\033[0m" << endl;
     }
+    catch(const char*& e)
+    {
+        return EXIT_SUCCESS; 
+    }
 
     return EXIT_FAILURE;
 }
